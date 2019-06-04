@@ -1,0 +1,363 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  {
+    "key": "cmd+w",
+    "command": "-workbench.action.closeWindow",
+    "when": "!editorIsOpen"
+  },
+  {
+    "key": "cmd+l",
+    "command": "editor.action.deleteLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+shift+k",
+    "command": "-editor.action.deleteLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+k cmd+d",
+    "command": "editor.action.formatDocument",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "-editor.action.formatDocument",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+u",
+    "command": "cursorWordLeft"
+  },
+  {
+    "key": "cmd+i",
+    "command": "cursorWordRight"
+  },
+  {
+    "key": "cmd+k cmd+s",
+    "command": "editor.action.insertSnippet"
+  },
+  {
+    "key": "cmd+q",
+    "command": "-workbench.action.quickOpenView"
+  },
+  {
+    "key": "cmd+q",
+    "command": "-workbench.action.quickOpenNavigateNextInViewPicker",
+    "when": "inQuickOpen && inViewsPicker"
+  },
+  {
+    "key": "cmd+shift+q",
+    "command": "-workbench.action.quickOpenNavigatePreviousInViewPicker",
+    "when": "inQuickOpen && inViewsPicker"
+  },
+  {
+    "key": "alt+w",
+    "command": "-toggleFindWholeWord",
+    "when": "editorFocus"
+  },
+  {
+    "key": "alt+w",
+    "command": "-toggleSearchWholeWord",
+    "when": "searchInputBoxFocus && searchViewletVisible"
+  },
+  {
+    "key": "cmd+q",
+    "command": "workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "cmd+w",
+    "command": "-workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "cmd+o",
+    "command": "-workbench.action.files.openFile"
+  },
+  {
+    "key": "cmd+h",
+    "command": "-editor.action.startFindReplaceAction"
+  },
+  {
+    "key": "cmd+o",
+    "command": "cursorLineStart"
+  },
+  {
+    "key": "cmd+h",
+    "command": "cursorLineEnd"
+  },
+  {
+    "key": "cmd+'",
+    "command": "deleteAllRight"
+  },
+  {
+    "key": "alt+i",
+    "command": "cursorRight"
+  },
+  {
+    "key": "alt+u",
+    "command": "cursorLeft"
+  },
+  {
+    "key": "cmd+m",
+    "command": "-editor.action.toggleTabFocusMode"
+  },
+  {
+    "key": "alt+s",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "cmd+;",
+    "command": "editor.action.refactor",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+shift+r",
+    "command": "-editor.action.refactor",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+e",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "cmd+e",
+    "command": "-workbench.action.quickOpenNavigateNextInFilePicker",
+    "when": "inFilesPicker && inQuickOpen"
+  },
+  {
+    "key": "cmd+e",
+    "command": "workbench.action.showCommands"
+  },
+  {
+    "key": "cmd+shift+p",
+    "command": "-workbench.action.showCommands"
+  },
+  {
+    "key": "cmd+Enter",
+    "command": "editor.action.quickFix"
+  },
+  {
+    "key": "shift+alt+e",
+    "command": "-PowerShell.ExpandAlias",
+    "when": "editorTextFocus && editorLangId == 'powershell'"
+  },
+  {
+    "key": "shift+alt+e",
+    "command": "workbench.action.maximizeEditor"
+  },
+  {
+    "key": "cmd+n",
+    "command": "cursorDown",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+n",
+    "command": "-workbench.action.files.newUntitledFile"
+  },
+  {
+    "key": "cmd+p",
+    "command": "cursorUp",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+p",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "cmd+n",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "cmd+p",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "cmd+k cmd+,",
+    "command": "editor.action.joinLines"
+  },
+  {
+    "key": "cmd+shift+k",
+    "command": "-editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+shift+l",
+    "command": "-editor.action.deleteLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+numpad_subtract",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "cmd+numpad_add",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "cmd+numpad_add",
+    "command": "editor.action.fontZoomIn"
+  },
+  {
+    "key": "cmd+numpad_subtract",
+    "command": "editor.action.fontZoomOut"
+  },
+  {
+    "key": "cmd+`",
+    "command": "-workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "cmd+k cmd+l",
+    "command": "workbench.action.openGlobalKeybindings"
+  },
+  {
+    "key": "cmd+k cmd+s",
+    "command": "-workbench.action.openGlobalKeybindings"
+  },
+  {
+    "key": "cmd+k cmd+;",
+    "command": "workbench.action.openGlobalSettings"
+  },
+  {
+    "key": "alt+l alt+a",
+    "command": "editor.action.sortLinesAscending"
+  },
+  {
+    "key": "alt+l alt+d",
+    "command": "editor.action.sortLinesDescending"
+  },
+  {
+    "key": "alt+l",
+    "command": "-toggleFindInSelection",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+m cmd+m",
+    "command": "editor.fold",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+k q",
+    "command": "workbench.action.closeEditorsInOtherGroups"
+  },
+  {
+    "key": "cmd+b",
+    "command": "-workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "alt+p",
+    "command": "workbench.action.togglePanel"
+  },
+  {
+    "key": "cmd+j",
+    "command": "-workbench.action.togglePanel"
+  },
+  {
+    "key": "cmd+j",
+    "command": "editor.action.joinLines"
+  },
+  {
+    "key": "cmd+k t",
+    "command": "workbench.action.selectTheme"
+  },
+  {
+    "key": "cmd+k cmd+t",
+    "command": "-workbench.action.selectTheme"
+  },
+  {
+    "key": "alt+s",
+    "command": "-gitlens.showQuickRepoStatus",
+    "when": "gitlens:enabled && gitlens:keymap == 'alternate'"
+  },
+  {
+    "key": "alt+f",
+    "command": "filesExplorer.findInWorkspace"
+  },
+  {
+    "key": "alt+up",
+    "command": "workbench.action.focusAboveGroup"
+  },
+  {
+    "key": "cmd+k cmd+up",
+    "command": "-workbench.action.focusAboveGroup"
+  },
+  {
+    "key": "alt+down",
+    "command": "workbench.action.focusBelowGroup"
+  },
+  {
+    "key": "cmd+k cmd+down",
+    "command": "-workbench.action.focusBelowGroup"
+  },
+  {
+    "key": "cmd+k cmd+right",
+    "command": "-workbench.action.focusRightGroup"
+  },
+  {
+    "key": "cmd+k cmd+left",
+    "command": "-workbench.action.focusLeftGroup"
+  },
+  {
+    "key": "alt+=",
+    "command": "workbench.action.increaseViewSize"
+  },
+  {
+    "key": "alt+-",
+    "command": "workbench.action.decreaseViewSize"
+  },
+  {
+    "key": "alt+down",
+    "command": "editor.action.moveLinesDownAction"
+  },
+  {
+    "key": "alt+up",
+    "command": "editor.action.moveLinesUpAction"
+  },
+  {
+    "key": "cmd+shift+v",
+    "command": "markdown.extension.togglePreview",
+    "when": "!terminalFocus && editorLangId == 'markdown'"
+  },
+  {
+    "key": "cmd+k cmd+v",
+    "command": "adoc.previewToSide",
+    "when": "editorLangId == 'asciidoc'"
+  },
+  {
+    "key": "cmd+k v",
+    "command": "-adoc.previewToSide",
+    "when": "editorLangId == 'asciidoc'"
+  },
+  {
+    "key": "cmd+k cmd+t",
+    "command": "workbench.action.terminal.focusNext"
+  },
+  {
+    "key": "alt+e",
+    "command": "workbench.files.action.showActiveFileInExplorer"
+  },
+  {
+    "key": "cmd+,",
+    "command": "-workbench.action.openSettings"
+  },
+  {
+    "key": "cmd+,",
+    "command": "workbench.action.quickOpenNavigateNextInFilePicker",
+    "when": "inFilesPicker && inQuickOpen"
+  },
+  {
+    "key": "cmd+p",
+    "command": "-workbench.action.quickOpenNavigateNextInFilePicker",
+    "when": "inFilesPicker && inQuickOpen"
+  },
+  {
+    "key": "cmd+,",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "cmd+w",
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  }
+]
