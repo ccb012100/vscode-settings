@@ -70,10 +70,6 @@
     "command": "-workbench.action.closeActiveEditor"
   },
   {
-    "key": "cmd+o",
-    "command": "-workbench.action.files.openFile"
-  },
-  {
     "key": "cmd+h",
     "command": "-editor.action.startFindReplaceAction"
   },
@@ -90,11 +86,11 @@
     "command": "deleteAllRight"
   },
   {
-    "key": "alt+i",
+    "key": "ctrl+i",
     "command": "cursorRight"
   },
   {
-    "key": "alt+u",
+    "key": "ctrl+u",
     "command": "cursorLeft"
   },
   {
@@ -313,21 +309,6 @@
   {
     "key": "alt+up",
     "command": "editor.action.moveLinesUpAction"
-  },
-  {
-    "key": "cmd+shift+v",
-    "command": "markdown.extension.togglePreview",
-    "when": "!terminalFocus && editorLangId == 'markdown'"
-  },
-  {
-    "key": "cmd+k cmd+v",
-    "command": "adoc.previewToSide",
-    "when": "editorLangId == 'asciidoc'"
-  },
-  {
-    "key": "cmd+k v",
-    "command": "-adoc.previewToSide",
-    "when": "editorLangId == 'asciidoc'"
   },
   {
     "key": "cmd+k cmd+t",
