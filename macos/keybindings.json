@@ -11,7 +11,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+h ctrl+d",
+    "key": "ctrl+k ctrl+d",
     "command": "editor.action.formatDocument",
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -420,14 +420,9 @@
     "when": "textInputFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+h ctrl+c",
+    "key": "ctrl+j ctrl+c",
     "command": "editor.action.clipboardCopyAction",
     "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+j ctrl+j",
-    "command": "-editor.action.joinLines",
-    "when": "editorTextFocus && !editorReadonly"
   },
   {
     "key": "alt+]",
@@ -441,5 +436,15 @@
     "key": "ctrl+j a",
     "command": "editor.action.selectAll",
     "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+j ctrl+j",
+    "command": "editor.action.joinLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "-editor.action.joinLines",
+    "when": "editorTextFocus && !editorReadonly"
   }
 ]
