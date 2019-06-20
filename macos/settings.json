@@ -230,5 +230,8 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "git.confirmSync": false
+  "git.confirmSync": false,
+  "gitlens.defaultDateStyle": "absolute",
+  "gitlens.keymap": "none",
+  "git.autoStash": true
 }
