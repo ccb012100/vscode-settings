@@ -77,7 +77,7 @@
     "command": "cursorLineStart"
   },
   {
-    "key": "ctrl+m",
+    "key": "cmd+enter",
     "command": "cursorLineEnd"
   },
   {
@@ -248,11 +248,6 @@
     "command": "-workbench.action.selectTheme"
   },
   {
-    "key": "alt+s",
-    "command": "-gitlens.showQuickRepoStatus",
-    "when": "gitlens:enabled && gitlens:keymap == 'alternate'"
-  },
-  {
     "key": "alt+f",
     "command": "filesExplorer.findInWorkspace"
   },
@@ -351,7 +346,7 @@
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+,",
+    "key": "ctrl+/",
     "command": "undo"
   },
   {
@@ -387,12 +382,12 @@
     "when": "!editorIsOpen && !multipleEditorGroups"
   },
   {
-    "key": "ctrl+k ctrl+v",
+    "key": "ctrl+y",
     "command": "editor.action.clipboardPasteAction",
     "when": "textInputFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+/",
+    "key": "ctrl+x ctrl+;",
     "command": "editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -410,12 +405,12 @@
     "command": "-editor.action.copyLinesDownAction"
   },
   {
-    "key": "ctrl+k ctrl+x",
+    "key": "ctrl+k x",
     "command": "editor.action.clipboardCutAction",
     "when": "textInputFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+k ctrl+c",
+    "key": "ctrl+k c",
     "command": "editor.action.clipboardCopyAction",
     "when": "textInputFocus"
   },
@@ -448,21 +443,6 @@
     "when": "editorLangId == 'markdown'"
   },
   {
-    "key": "shift+cmd+v",
-    "command": "-markdown.extension.togglePreview",
-    "when": "!terminalFocus"
-  },
-  {
-    "key": "shift+alt+v",
-    "command": "markdown.extension.togglePreviewToSide",
-    "when": "!terminalFocus"
-  },
-  {
-    "key": "cmd+k v",
-    "command": "-markdown.extension.togglePreviewToSide",
-    "when": "!terminalFocus"
-  },
-  {
     "key": "ctrl+,",
     "command": "-workbench.action.quickOpen"
   },
@@ -474,11 +454,6 @@
     "key": "cmd+w",
     "command": "-workbench.action.closeWindow",
     "when": "!editorIsOpen && !multipleEditorGroups"
-  },
-  {
-    "key": "alt+w",
-    "command": "-gitlens.diffLineWithWorking",
-    "when": "editorTextFocus && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /tracked/"
   },
   {
     "key": "alt+w",
@@ -496,5 +471,48 @@
     "key": "cmd+w",
     "command": "-workbench.action.closeGroup",
     "when": "activeEditorGroupEmpty && multipleEditorGroups"
+  },
+  {
+    "key": "cmd+k cmd+right",
+    "command": "-workbench.action.focusRightGroup"
+  },
+  {
+    "key": "cmd+k cmd+left",
+    "command": "-workbench.action.focusLeftGroup"
+  },
+  {
+    "key": "cmd+enter",
+    "command": "-breadcrumbs.revealFocused",
+    "when": "breadcrumbsActive && breadcrumbsVisible"
+  },
+  {
+    "key": "cmd+enter",
+    "command": "-breadcrumbs.revealFocusedFromTreeAside",
+    "when": "breadcrumbsActive && breadcrumbsVisible && listFocus && !inputFocus"
+  },
+  {
+    "key": "cmd+enter",
+    "command": "-debug.openBreakpointToSide",
+    "when": "breakpointsFocused"
+  },
+  {
+    "key": "cmd+enter",
+    "command": "-scm.acceptInput",
+    "when": "scmRepository"
+  },
+  {
+    "key": "cmd+enter",
+    "command": "-workbench.action.submitComment",
+    "when": "commentEditorFocused"
+  },
+  {
+    "key": "cmd+enter",
+    "command": "-editor.action.insertLineAfter",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "editor.action.insertLineAfter",
+    "when": "editorTextFocus && !editorReadonly"
   }
 ]
