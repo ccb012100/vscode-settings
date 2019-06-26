@@ -77,7 +77,7 @@
     "command": "cursorLineStart"
   },
   {
-    "key": "cmd+enter",
+    "key": "ctrl+e",
     "command": "cursorLineEnd"
   },
   {
@@ -120,7 +120,7 @@
     "when": "inFilesPicker && inQuickOpen"
   },
   {
-    "key": "ctrl+e",
+    "key": "cmd+e",
     "command": "workbench.action.showCommands"
   },
   {
@@ -294,10 +294,6 @@
   {
     "key": "ctrl+h ctrl+t",
     "command": "workbench.action.terminal.focusNext"
-  },
-  {
-    "key": "alt+e",
-    "command": "workbench.files.action.showActiveFileInExplorer"
   },
   {
     "key": "ctrl+,",
@@ -514,5 +510,9 @@
     "key": "ctrl+m",
     "command": "editor.action.insertLineAfter",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+e",
+    "command": "-actions.findWithSelection"
   }
 ]
