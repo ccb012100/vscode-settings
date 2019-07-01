@@ -120,7 +120,7 @@
     "when": "inFilesPicker && inQuickOpen"
   },
   {
-    "key": "cmd+e",
+    "key": "ctrl+space",
     "command": "workbench.action.showCommands"
   },
   {
@@ -292,6 +292,14 @@
     "command": "editor.action.moveLinesUpAction"
   },
   {
+    "key": "cmd+down",
+    "command": "editor.action.moveLinesDownAction"
+  },
+  {
+    "key": "cmd+up",
+    "command": "editor.action.moveLinesUpAction"
+  },
+  {
     "key": "ctrl+h ctrl+t",
     "command": "workbench.action.terminal.focusNext"
   },
@@ -340,10 +348,6 @@
     "key": "ctrl+e",
     "command": "-cursorLineEnd",
     "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+/",
-    "command": "undo"
   },
   {
     "key": "alt+space",
@@ -514,5 +518,78 @@
   {
     "key": "cmd+e",
     "command": "-actions.findWithSelection"
+  },
+  {
+    "key": "tab",
+    "command": "-acceptSelectedSuggestion",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "shift+cmd+up",
+    "command": "-cursorTopSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+down",
+    "command": "-cursorBottom",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+space",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+space",
+    "command": "toggleSuggestionDetails",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "-toggleSuggestionDetails",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "editor.action.previousMatchFindAction",
+    "when": "editorFocus"
+  },
+  {
+    "key": "shift+cmd+g",
+    "command": "-editor.action.previousMatchFindAction",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "-workbench.action.openRecent"
+  },
+  {
+    "key": "ctrl+r ctrl+r",
+    "command": "-editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+r ctrl+w",
+    "command": "-editor.action.toggleRenderWhitespace"
+  },
+  {
+    "key": "tab",
+    "command": "acceptSelectedSuggestion",
+    "when": "suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
+  },
+  {
+      "key": "ctrl+/",
+      "command": "undo",
+      "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "editor.action.nextMatchFindAction",
+    "when": "editorFocus"
   }
 ]

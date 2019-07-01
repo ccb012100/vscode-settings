@@ -1,0 +1,90 @@
+{
+  "workbench.enablePreviewFeatures": true,
+  // editor
+  "editor.codeLens": false,
+  "editor.fontFamily": "Fira Code, mononoki, Ubuntu Mono, Inconsolata",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 12,
+  "editor.letterSpacing": 1,
+  "editor.minimap.enabled": true,
+  "editor.minimap.maxColumn": 60,
+  "editor.minimap.renderCharacters": false,
+  "editor.renderWhitespace": "none",
+  "editor.suggest.localityBonus": true,
+  "editor.tabCompletion": "on",
+  "editor.wordWrap": "on",
+  // explorer
+  "explorer.confirmDragAndDrop": false,
+  // files
+  "files.associations": {
+    "*.vssettings": "xml",
+    "*.adoc": "asciidoc"
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/*.js": {
+      "when": "$(basename).ts"
+    },
+    "**/*.js.map": {
+      "when": "$(basename)"
+    }
+  },
+  "files.trimTrailingWhitespace": true,
+  // Git
+  "git.allowForcePush": true,
+  "git.confirmForcePush": true,
+  "git.alwaysShowStagedChangesResourceGroup": true,
+  "git.autofetch": true,
+  "git.defaultCloneDirectory": "C:/code",
+  "git.enableSmartCommit": true,
+  "git.fetchOnPull": true,
+  "git.promptToSaveFilesBeforeCommit": true,
+  "git.rebaseWhenSync": true,
+  "git.scanRepositories": [
+    "C:/code, C:/temp, C:/GitHub"
+  ],
+  // search
+  "search.location": "panel",
+  "search.showLineNumbers": true,
+  // terminal
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.enableBell": true,
+  "terminal.integrated.env.windows": {
+    "MSYSTEM": "MINGW64",
+    "MSYS2_PATH_TYPE": "inherit",
+    "CHERE_INVOKING": "1"
+  },
+  "terminal.external.windowsExec": "C:\\tools\\msys64\\msys2_shell.cmd",
+  "terminal.integrated.fontFamily": "Fira Mono for Powerline",
+  "terminal.integrated.shell.windows": "C:\\tools\\msys64\\msys2_shell.cmd",
+  "terminal.integrated.shellArgs.windows": [
+    "-defterm",
+    "-here",
+    "-no-start"
+  ],
+  // window
+  "window.titleBarStyle": "custom",
+  "window.zoomLevel": 0,
+  // workbench
+  "workbench.colorTheme": "HCQ (High Color Queries)",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.showTabs": true,
+  "workbench.statusBar.feedback.visible": false,
+  // Zen Mode
+  "zenMode.hideStatusBar": false,
+  "editor.suggestSelection": "first",
+  "workbench.sideBar.location": "right",
+  "editor.multiCursorModifier": "alt",
+  "terminal.external.osxExec": "zsh",
+  "terminal.integrated.shell.osx": "zsh",
+  "window.nativeTabs": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+}
