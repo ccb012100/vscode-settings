@@ -11,11 +11,11 @@
   "omnisharp.autoStart": true,
   // editor
   "editor.codeLens": false,
-  "editor.fontFamily": "Fira Code, Ubuntu Mono, Inconsolata",
+  "editor.fontFamily": "Consolas",
   "editor.fontLigatures": true,
-  "editor.fontSize": 12,
+  "editor.fontSize": 14,
   "editor.letterSpacing": 1,
-  "editor.minimap.enabled": true,
+  "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 60,
   "editor.minimap.renderCharacters": false,
   "editor.renderWhitespace": "none",
@@ -59,7 +59,6 @@
     "suppressShowKeyBindingsNotice": true
   },
   "gitlens.defaultGravatarsStyle": "retro",
-  "gitlens.settings.mode": "advanced",
   // Markdown
   "markdown.extension.orderedList.autoRenumber": false,
   "markdown.preview.fontFamily": "Ubuntu Mono",
@@ -85,12 +84,6 @@
     "MSYS2_PATH_TYPE": "inherit",
     "CHERE_INVOKING": "1"
   },
-  "terminal.external.windowsExec": "C:\\tools\\msys64\\msys2_shell.cmd",
-  // "terminal.integrated.cwd": "initial",
-  // "terminal.integrated.experimentalBufferImpl": "TypedArray",
-  "terminal.integrated.fontFamily": "Fira Mono for Powerline",
-  "terminal.integrated.shell.windows": "C:\\tools\\msys64\\msys2_shell.cmd",
-  "terminal.integrated.shellArgs.windows": ["-defterm", "-here", "-no-start"],
   // ts-lint
   "tslint.alwaysShowRuleFailuresAsWarnings": true,
   // TypeScript
@@ -108,53 +101,26 @@
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 0,
   // workbench
-  "workbench.colorTheme": "Darcula Extended",
+  "workbench.colorTheme": "Spacemacs - dark",
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.showTabs": true,
   // this should be released in November
   //  "workbench.editor.highlightModifiedTabs": true,
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.statusBar.feedback.visible": false,
+  "workbench.iconTheme": "material-icon-theme",
   // Zen Mode
   "zenMode.hideStatusBar": false,
   // YAML
   "yaml.format.enable": true,
-  // AsciiDoc
-  "[asciidoc]": {
-    "editor.fontSize": 14,
-    "editor.fontFamily": "Ubuntu Mono, 'Courier New', monospace",
-    "editor.quickSuggestions": true,
-    "editor.wordWrap": "on"
-  },
   // Markdown
   "[markdown]": {
-    "editor.fontFamily": "Ubuntu Mono, 'Courier New', monospace",
+    "editor.fontFamily": "Consolas, 'Courier New', monospace",
     "editor.fontSize": 14,
     "editor.quickSuggestions": true,
     "files.trimTrailingWhitespace": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.colorCustomizations": {
-    "activityBarBadge.background": "#2979FF",
-    "breadcrumb.activeSelectionForeground": "#2979FF",
-    "editorSuggestWidget.highlightForeground": "#2979FF",
-    "editorWidget.border": "#2979FF",
-    "editorWidget.resizeBorder": "#2979FF",
-    "list.activeSelectionForeground": "#2979FF",
-    "list.highlightForeground": "#2979FF",
-    "list.inactiveSelectionForeground": "#2979FF",
-    "menu.selectionForeground": "#2979FF",
-    "menubar.selectionForeground": "#2979FF",
-    "notificationLink.foreground": "#2979FF",
-    "panelTitle.activeBorder": "#2979FF",
-    "pickerGroup.foreground": "#2979FF",
-    "progressBar.background": "#2979FF",
-    "scrollbarSlider.activeBackground": "#2979FF50",
-    "settings.headerForeground": "#2979FF",
-    "settings.modifiedItemIndicator": "#2979FF",
-    "tab.activeBorder": "#2979FF",
-    "tab.activeModifiedBorder": "#FFC300",
-    "textLink.foreground": "#2979FF"
+    "tab.activeModifiedBorder": "#FFC300"
   },
   "gitlens.views.compare.files.layout": "list",
   "editor.suggestSelection": "first",
@@ -230,11 +196,11 @@
   "python.jediEnabled": false,
   "terminal.external.osxExec": "zsh",
   "terminal.integrated.shell.osx": "zsh",
-  "window.nativeTabs": true,
   "vs-kubernetes": {
     "vs-kubernetes.helm-path": "/Users/cbocardo/.vs-kubernetes/tools/helm/darwin-amd64/helm",
     "vs-kubernetes.minikube-path": "/Users/cbocardo/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
     "vs-kubernetes.kubectl-path": "/Users/cbocardo/.vs-kubernetes/tools/kubectl/kubectl",
     "vs-kubernetes.draft-path": "/Users/cbocardo/.vs-kubernetes/tools/draft/darwin-amd64/draft"
-  }
+  },
+  "vsicons.dontShowNewVersionMessage": true
 }
