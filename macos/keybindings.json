@@ -85,11 +85,11 @@
     "command": "deleteAllRight"
   },
   {
-    "key": "cmd+i",
+    "key": "ctrl+f",
     "command": "cursorRight"
   },
   {
-    "key": "cmd+u",
+    "key": "ctrl+j",
     "command": "cursorLeft"
   },
   {
@@ -332,7 +332,7 @@
     "command": "workbench.action.files.save"
   },
   {
-    "key": "ctrl+f",
+    "key": "ctrl+k f",
     "command": "actions.find"
   },
   {
@@ -424,7 +424,7 @@
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+j",
+    "key": "ctrl+k j",
     "command": "editor.action.joinLines",
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -671,5 +671,10 @@
     "key": "cmd+d",
     "command": "deleteWordRight",
     "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "-editor.action.joinLines",
+    "when": "editorTextFocus && !editorReadonly"
   }
 ]
