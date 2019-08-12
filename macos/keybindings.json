@@ -57,7 +57,7 @@
     "when": "searchInputBoxFocus && searchViewletVisible"
   },
   {
-    "key": "ctrl+q",
+    "key": "ctrl+x k",
     "command": "workbench.action.closeActiveEditor"
   },
   {
@@ -676,5 +676,19 @@
     "key": "ctrl+j",
     "command": "-editor.action.joinLines",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+u",
+    "command": "-cursorUndo",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "-cursorLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+k w",
+    "command": "-workbench.action.closeEditorsInGroup"
   }
 ]
