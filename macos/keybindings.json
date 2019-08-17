@@ -57,7 +57,7 @@
     "when": "searchInputBoxFocus && searchViewletVisible"
   },
   {
-    "key": "ctrl+x k",
+    "key": "ctrl+q",
     "command": "workbench.action.closeActiveEditor"
   },
   {
@@ -89,7 +89,7 @@
     "command": "cursorRight"
   },
   {
-    "key": "ctrl+j",
+    "key": "ctrl+b",
     "command": "cursorLeft"
   },
   {
@@ -424,7 +424,7 @@
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+k j",
+    "key": "ctrl+j",
     "command": "editor.action.joinLines",
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -690,5 +690,27 @@
   {
     "key": "cmd+k w",
     "command": "-workbench.action.closeEditorsInGroup"
+  },
+  {
+    "key": "ctrl+x ctrl+/",
+    "command": "editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+a",
+    "command": "-editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+f4",
+    "command": "-workbench.action.closeActiveEditor"
+  },
+  {
+    "key" : "ctrl+x k",
+    "command": "workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "-workbench.debug.viewlet.action.addFunctionBreakpointAction"
   }
 ]
