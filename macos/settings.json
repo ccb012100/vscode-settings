@@ -206,6 +206,6 @@
   },
   "git.confirmSync": false,
   "git.autoStash": true,
-  "workbench.colorTheme": "Monokai",
+  "workbench.colorTheme": "Gruvbox Dark (Hard)",
   "editor.acceptSuggestionOnCommitCharacter": false
 }
