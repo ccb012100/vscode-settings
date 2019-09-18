@@ -11,7 +11,7 @@
   "omnisharp.autoStart": true,
   // editor
   "editor.codeLens": false,
-  "editor.fontFamily": "Fira Code, mononoki, Ubuntu Mono, Inconsolata",
+  "editor.fontFamily": "Fira Code, Hack, mononoki, Consolas, Ubuntu Mono, Inconsolata",
   "editor.fontLigatures": true,
   "editor.fontSize": 12,
   "editor.letterSpacing": 1,
@@ -48,7 +48,7 @@
   "git.confirmForcePush": true,
   "git.alwaysShowStagedChangesResourceGroup": true,
   "git.autofetch": true,
-  "git.defaultCloneDirectory": "C:/code",
+  "git.defaultCloneDirectory": "/Users/cbocardo/tools",
   "git.enableSmartCommit": true,
   "git.fetchOnPull": true,
   "git.promptToSaveFilesBeforeCommit": true,
@@ -81,10 +81,13 @@
   },
   "terminal.external.windowsExec": "C:\\tools\\msys64\\msys2_shell.cmd",
   // "terminal.integrated.cwd": "${fileDirname}",
-  "terminal.integrated.fontFamily": "Fira Mono for Powerline",
+  "terminal.integrated.fontFamily": "Hack Nerd Font",
   "terminal.integrated.shell.windows": "C:\\tools\\msys64\\msys2_shell.cmd",
-  "terminal.integrated.shellArgs.windows": ["-defterm", "-here", "-no-start"],
-  "terminal.integrated.inheritEnv": false,
+  "terminal.integrated.shellArgs.windows": [
+    "-defterm",
+    "-here",
+    "-no-start"
+  ],
   // ts-lint
   "tslint.alwaysShowRuleFailuresAsWarnings": true,
   // TypeScript
@@ -204,8 +207,11 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "git.confirmSync": false,
   "git.autoStash": true,
   "workbench.colorTheme": "Gruvbox Dark (Hard)",
-  "editor.acceptSuggestionOnCommitCharacter": false
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "explorer.incrementalNaming": "smart",
+  "editor.cursorSurroundingLines": 5,
+  "git.branchSortOrder": "alphabetically",
+  "git.supportCancellation": true
 }

@@ -332,10 +332,6 @@
     "command": "workbench.action.files.save"
   },
   {
-    "key": "ctrl+k f",
-    "command": "actions.find"
-  },
-  {
     "key": "ctrl+f",
     "command": "-cursorRight",
     "when": "textInputFocus"
@@ -406,7 +402,7 @@
     "when": "textInputFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+k k",
+    "key": "ctrl+k ctrl+l",
     "command": "editor.action.clipboardCopyAction",
     "when": "textInputFocus"
   },
@@ -712,5 +708,37 @@
   {
     "key": "ctrl+b",
     "command": "-workbench.debug.viewlet.action.addFunctionBreakpointAction"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "actions.find"
+  },
+  {
+    "key": "shift+cmd+.",
+    "command": "cursorBottom"
+  },
+  {
+    "key": "shift+cmd+,",
+    "command": "-editor.action.inPlaceReplace.up",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+,",
+    "command": "cursorTop"
+  },
+  {
+    "key": "shift+cmd+.",
+    "command": "-editor.action.inPlaceReplace.down",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+.",
+    "command": "-breadcrumbs.toggleToOn",
+    "when": "!config.breadcrumbs.enabled"
+  },
+  {
+    "key": "shift+cmd+.",
+    "command": "-breadcrumbs.focusAndSelect",
+    "when": "breadcrumbsPossible"
   }
 ]
