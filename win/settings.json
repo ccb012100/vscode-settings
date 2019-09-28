@@ -51,7 +51,7 @@
   "git.defaultCloneDirectory": "C:/code",
   "git.enableSmartCommit": true,
   "git.fetchOnPull": true,
-  "git.promptToSaveFilesBeforeCommit": true,
+  "git.promptToSaveFilesBeforeCommit": "always",
   "git.rebaseWhenSync": true,
   "git.scanRepositories": ["C:/code, C:/temp, C:/GitHub"],
   // GitLens
@@ -79,11 +79,7 @@
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.enableBell": true,
-  "terminal.integrated.env.windows": {
-    "MSYSTEM": "MINGW64",
-    "MSYS2_PATH_TYPE": "inherit",
-    "CHERE_INVOKING": "1"
-  },
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
   // ts-lint
   "tslint.alwaysShowRuleFailuresAsWarnings": true,
   // TypeScript
@@ -104,9 +100,6 @@
   "workbench.colorTheme": "Spacemacs - dark",
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.showTabs": true,
-  // this should be released in November
-  //  "workbench.editor.highlightModifiedTabs": true,
-  "workbench.iconTheme": "material-icon-theme",
   // Zen Mode
   "zenMode.hideStatusBar": false,
   // YAML
@@ -152,5 +145,5 @@
   "macros": {
     "down-5-lines": ["cursorDown", "cursorDown", "cursorDown", "cursorDown", "cursorDown"],
     "up-5-lines": ["cursorUp", "cursorUp", "cursorUp", "cursorUp", "cursorUp"]
-  }
+  },
 }
