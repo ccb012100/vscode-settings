@@ -101,7 +101,7 @@
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "ctrl+'",
+    "key": "shift+cmd+'",
     "command": "editor.action.refactor",
     "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
   },
@@ -740,5 +740,288 @@
     "key": "shift+cmd+.",
     "command": "-breadcrumbs.focusAndSelect",
     "when": "breadcrumbsPossible"
+  },
+  {
+    "key": "alt+'",
+    "command": "-metaGo.bookmark.toggle",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+/",
+    "command": "-metaGo.bookmark.view",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+m",
+    "command": "-metaGo.currentLineToCenter",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+t",
+    "command": "-metaGo.currentLineToTop",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+backspace",
+    "command": "-metaGo.delete.softDelete",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+h k",
+    "command": "workbench.action.keybindingsReference"
+  },
+  {
+    "key": "cmd+k cmd+r",
+    "command": "-workbench.action.keybindingsReference"
+  },
+  {
+    "key": "backspace",
+    "command": "keybindings.editor.removeKeybinding",
+    "when": "inKeybindings && keybindingFocus"
+  },
+  {
+    "key": "cmd+k cmd+backspace",
+    "command": "-keybindings.editor.removeKeybinding",
+    "when": "inKeybindings && keybindingFocus"
+  },
+  {
+    "key": "ctrl+alt+;",
+    "command": "-metaGo.gotoBefore",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+;",
+    "command": "-metaGo.selection",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+i",
+    "command": "-metaGo.selectLineDown",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+i",
+    "command": "-metaGo.selectLineUp",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+end",
+    "command": "-metaGo.spaceBlockMoveDown",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+home",
+    "command": "-metaGo.spaceBlockMoveUp",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+end",
+    "command": "-metaGo.spaceBlockSelectDown",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+home",
+    "command": "-metaGo.spaceBlockSelectUp",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+b",
+    "command": "-metaGo.currentLineToBottom",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+\\",
+    "command": "-metaGo.jumpToBracket",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "metaGo.input.cancel",
+    "when": "editorTextFocus && metaGoInput"
+  },
+  {
+    "key": "ctrl+'",
+    "command": "metaGo.goto",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+;",
+    "command": "-metaGo.goto",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+;",
+    "command": "-metaGo.goto",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "-workbench.action.gotoLine"
+  },
+  {
+    "key": "cmd+g g",
+    "command": "workbench.action.gotoLine"
+  },
+  {
+    "key": "cmd+g",
+    "command": "-workbench.action.terminal.findNext",
+    "when": "terminalFindWidgetFocused"
+  },
+  {
+    "key": "cmd+g",
+    "command": "-editor.action.nextMatchFindAction",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+g",
+    "command": "-workbench.action.terminal.findNextTerminalFocus",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+g cmd+g",
+    "command": "metaGo.goto",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+c",
+    "command": "-editor.action.clipboardCopyAction",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+c",
+    "command": "-gitlens.views.compare.copy",
+    "when": "gitlens:enabled && focusedView =~ /^gitlens\\.views\\.compare/"
+  },
+  {
+    "key": "cmd+c",
+    "command": "-gitlens.views.fileHistory.copy",
+    "when": "gitlens:enabled && focusedView =~ /^gitlens\\.views\\.fileHistory/"
+  },
+  {
+    "key": "cmd+c",
+    "command": "-gitlens.views.lineHistory.copy",
+    "when": "gitlens:enabled && focusedView =~ /^gitlens\\.views\\.lineHistory/"
+  },
+  {
+    "key": "cmd+c",
+    "command": "-gitlens.views.repositories.copy",
+    "when": "gitlens:enabled && focusedView =~ /^gitlens\\.views\\.repositories/"
+  },
+  {
+    "key": "cmd+c",
+    "command": "-gitlens.views.search.copy",
+    "when": "gitlens:enabled && focusedView =~ /^gitlens\\.views\\.search/"
+  },
+  {
+    "key": "cmd+c",
+    "command": "-workbench.action.terminal.copySelection",
+    "when": "terminalFocus && terminalTextSelected"
+  },
+  {
+    "key": "cmd+c",
+    "command": "-editor.action.webvieweditor.copy",
+    "when": "!editorFocus && !inputFocus && activeEditor == 'WebviewEditor'"
+  },
+  {
+    "key": "cmd+c",
+    "command": "-filesExplorer.copy",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+  },
+  {
+    "key": "cmd+c",
+    "command": "-keybindings.editor.copyKeybindingEntry",
+    "when": "inKeybindings && keybindingFocus"
+  },
+  {
+    "key": "cmd+c",
+    "command": "-keybindings.editor.copyKeybindingEntry",
+    "when": "inKeybindings && keybindingFocus"
+  },
+  {
+    "key": "cmd+c",
+    "command": "-problems.action.copy",
+    "when": "problemFocus"
+  },
+  {
+    "key": "cmd+c",
+    "command": "-search.action.copyMatch",
+    "when": "fileMatchOrMatchFocus"
+  },
+  {
+    "key": "cmd+v",
+    "command": "-editor.action.clipboardPasteAction",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+v",
+    "command": "-editor.action.webvieweditor.paste",
+    "when": "!editorFocus && !inputFocus && activeEditor == 'WebviewEditor'"
+  },
+  {
+    "key": "cmd+v",
+    "command": "-filesExplorer.paste",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "cmd+v",
+    "command": "-markdown.extension.editing.paste",
+    "when": "editorHasSelection && editorTextFocus && editorLangId == 'markdown'"
+  },
+  {
+    "key": "cmd+n",
+    "command": "scrollLineDown",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+pagedown",
+    "command": "-scrollLineDown",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "scrollPageDown",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+pagedown",
+    "command": "-scrollPageDown",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+p",
+    "command": "scrollLineUp",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+pageup",
+    "command": "-scrollLineUp",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+v",
+    "command": "scrollPageUp",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+pageup",
+    "command": "-scrollPageUp",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+p",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "cmd+p",
+    "command": "-workbench.action.quickOpenNavigateNextInFilePicker",
+    "when": "inFilesPicker && inQuickOpen"
+  },
+  {
+    "key": "cmd+n",
+    "command": "-workbench.action.files.newUntitledFile"
+  },
+  {
+    "key": "ctrl+k c",
+    "command": "metaGo.currentLineToCenter"
   }
 ]
