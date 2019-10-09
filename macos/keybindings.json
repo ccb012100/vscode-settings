@@ -1023,5 +1023,9 @@
   {
     "key": "ctrl+k c",
     "command": "metaGo.currentLineToCenter"
+  },
+  {
+    "key": "ctrl+x h",
+    "command": "selectAll"
   }
 ]
