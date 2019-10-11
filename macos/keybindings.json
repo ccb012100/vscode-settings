@@ -11,7 +11,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+k ctrl+d",
+    "key": "ctrl+l ctrl+d",
     "command": "editor.action.formatDocument",
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -397,12 +397,12 @@
     "command": "-editor.action.copyLinesDownAction"
   },
   {
-    "key": "ctrl+k ctrl+k",
+    "key": "ctrl+l ctrl+k",
     "command": "editor.action.clipboardCutAction",
     "when": "textInputFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+k ctrl+l",
+    "key": "ctrl+l ctrl+l",
     "command": "editor.action.clipboardCopyAction",
     "when": "textInputFocus"
   },
@@ -585,7 +585,7 @@
     "when": "editorFocus"
   },
   {
-    "key": "ctrl+k t",
+    "key": "ctrl+l t",
     "command": "workbench.action.terminal.focus"
   },
   {
@@ -593,7 +593,7 @@
     "command": "workbench.action.showAllEditors"
   },
   {
-    "key": "ctrl+k p",
+    "key": "ctrl+l p",
     "command": "workbench.action.problems.focus"
   },
   {
@@ -601,11 +601,11 @@
     "command": "workbench.action.quickSwitchWindow"
   },
   {
-    "key": "ctrl+k w",
+    "key": "ctrl+l w",
     "command": "workbench.action.switchWindow"
   },
   {
-    "key": "ctrl+k r",
+    "key": "ctrl+l r",
     "command": "editor.action.rename",
     "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
   },
@@ -614,7 +614,7 @@
     "command": "workbench.action.showCommands"
   },
   {
-    "key": "ctrl+k ctrl+c",
+    "key": "ctrl+x ctrl+/",
     "command": "editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -1021,11 +1021,55 @@
     "command": "-workbench.action.files.newUntitledFile"
   },
   {
-    "key": "ctrl+k c",
+    "key": "ctrl+l c",
     "command": "metaGo.currentLineToCenter"
   },
   {
     "key": "ctrl+x h",
     "command": "selectAll"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "editor.action.deleteLines"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "-editor.action.clipboardCutAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "cancelSelection",
+    "when": "editorHasSelection && textInputFocus"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "closeParameterHints",
+    "when": "editorFocus && parameterHintsVisible"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "editor.cancelOperation",
+    "when": "cancellableOperation"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "gitlens.key.escape",
+    "when": "editorTextFocus && gitlens:key:escape && !findWidgetVisible && !isInEmbeddedEditor && !renameInputVisible && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "hideSuggestWidget",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "removeSecondaryCursors",
+    "when": "editorHasMultipleSelections && textInputFocus"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "search.action.cancel",
+    "when": "listFocus && searchViewletVisible && !inputFocus"
   }
 ]
