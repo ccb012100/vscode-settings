@@ -1071,5 +1071,47 @@
     "key": "ctrl+g",
     "command": "search.action.cancel",
     "when": "listFocus && searchViewletVisible && !inputFocus"
+  },
+  {
+    "key": "ctrl+x ctrl+c",
+    "command": "workbench.action.quit"
+  },
+  {
+    "key": "cmd+r",
+    "command": "-workbench.action.reloadWindow",
+    "when": "isDevelopment"
+  },
+  {
+    "key": "cmd+b",
+    "command": "-markdown.extension.editing.toggleBold",
+    "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+  },
+  {
+    "key": "cmd+b",
+    "command": "-workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "cmd+b",
+    "command": "cursorWordLeft"
+  },
+  {
+    "key": "cmd+r r",
+    "command": "-npm-script.rerun-last-script"
+  },
+  {
+    "key": "cmd+r shift+r",
+    "command": "-npm-script.run"
+  },
+  {
+    "key": "cmd+r t",
+    "command": "-npm-script.test"
+  },
+  {
+    "key": "cmd+r l",
+    "command": "-npm-script.showOutput"
+  },
+  {
+    "key": "cmd+r shift+x",
+    "command": "-npm-script.terminate-script"
   }
 ]
