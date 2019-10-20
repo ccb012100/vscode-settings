@@ -979,7 +979,7 @@
   },
   {
     "key": "ctrl+v",
-    "command": "scrollPageDown",
+    "command": "cursorPageDown",
     "when": "textInputFocus"
   },
   {
@@ -999,7 +999,7 @@
   },
   {
     "key": "cmd+v",
-    "command": "scrollPageUp",
+    "command": "cursorPageUp",
     "when": "textInputFocus"
   },
   {
@@ -1113,5 +1113,102 @@
   {
     "key": "cmd+r shift+x",
     "command": "-npm-script.terminate-script"
+  },
+  {
+    "key": "cmd+u",
+    "command": "editor.action.transformToTitlecase"
+  },
+  {
+    "key": "shift+cmd+l",
+    "command": "-editor.action.selectHighlights",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+cmd+l",
+    "command": "editor.action.transformToLowercase"
+  },
+  {
+    "key": "shift+cmd+l",
+    "command": "editor.action.transformToUppercase"
+  },
+  {
+    "key": "cmd+i",
+    "command": "-markdown.extension.editing.toggleItalic",
+    "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+  },
+  {
+    "key": "alt+s",
+    "command": "-markdown.extension.editing.toggleStrikethrough",
+    "when": "editorTextFocus && !editorReadonly && !isMac && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+x m",
+    "command": "workbench.action.openRecent"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "list.focusPageDown",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "notifications.focusLastToast",
+    "when": "notificationFocus && notificationToastsVisible"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "selectNextPageSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "workbench.action.interactivePlayground.pageDown",
+    "when": "interactivePlaygroundFocus && !editorTextFocus"
+  },
+  {
+    "key": "cmd+v",
+    "command": "list.focusPageUp",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "cmd+v",
+    "command": "notifications.focusFirstToast",
+    "when": "notificationFocus && notificationToastsVisible"
+  },
+  {
+    "key": "cmd+v",
+    "command": "selectPrevPageSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "cmd+v",
+    "command": "workbench.action.interactivePlayground.pageUp",
+    "when": "interactivePlaygroundFocus && !editorTextFocus"
+  },
+  {
+    "key": "cmd+v",
+    "command": "workbench.action.terminal.scrollUpPage",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+o",
+    "command": "-workbench.action.files.openFileFolder"
+  },
+  {
+    "key": "cmd+o",
+    "command": "-workbench.action.files.openLocalFileFolder",
+    "when": "remoteFileDialogVisible"
+  },
+  {
+    "key": "ctrl+x ctrl+f",
+    "command": "workbench.action.files.openFileFolder"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "-workbench.action.files.openFileFolder"
+  },
+  {
+    "key": "ctrl+x f",
+    "command": "explorer.newFile"
   }
 ]

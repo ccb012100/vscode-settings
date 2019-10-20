@@ -208,7 +208,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.autoStash": true,
-  "workbench.colorTheme": "Popping and Locking",
+  "workbench.colorTheme": "Pink Cat Boo",
   "editor.acceptSuggestionOnCommitCharacter": false,
   "explorer.incrementalNaming": "smart",
   "editor.cursorSurroundingLines": 5,
