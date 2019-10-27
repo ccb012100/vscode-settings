@@ -82,7 +82,7 @@
   },
   "terminal.external.windowsExec": "C:\\tools\\msys64\\msys2_shell.cmd",
   // "terminal.integrated.cwd": "${fileDirname}",
-  "terminal.integrated.fontFamily": "Hack Nerd Font",
+  "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Mono",
   "terminal.integrated.shell.windows": "C:\\tools\\msys64\\msys2_shell.cmd",
   "terminal.integrated.shellArgs.windows": [
     "-defterm",
@@ -209,7 +209,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.autoStash": true,
-  "workbench.colorTheme": "Pink Cat Boo",
+  "workbench.colorTheme": "Sublime Monokai",
   "editor.acceptSuggestionOnCommitCharacter": false,
   "explorer.incrementalNaming": "smart",
   "editor.cursorSurroundingLines": 5,
