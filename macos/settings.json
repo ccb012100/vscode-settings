@@ -219,5 +219,6 @@
   "metaGo.decoration.fontSize": 12,
   "mssql.resultsFontSize": 12,
   "workbench.fontAliasing": "auto",
-  "vsicons.dontShowNewVersionMessage": true
+  "vsicons.dontShowNewVersionMessage": true,
+  "angularConsole.useNVM": false
 }
