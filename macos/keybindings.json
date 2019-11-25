@@ -1318,5 +1318,13 @@
     "key": "alt+cmd+]",
     "command": "-editor.unfold",
     "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "execPaste"
+  },
+  {
+    "key": "cmd+v",
+    "command": "-execPaste"
   }
 ]
