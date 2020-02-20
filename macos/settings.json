@@ -11,14 +11,14 @@
   "omnisharp.autoStart": true,
   // editor
   "editor.codeLens": false,
-  "editor.fontFamily": "Fira Code, Hack, mononoki, Consolas, Ubuntu Mono, Inconsolata",
+  "editor.fontFamily": "Fira Code, Hack, mononoki, Consolas, IBM Plex Mono, Ubuntu Mono, Inconsolata",
   "editor.fontLigatures": true,
   "editor.fontSize": 12,
   "editor.letterSpacing": 1,
   "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 60,
   "editor.minimap.renderCharacters": false,
-  "editor.renderWhitespace": "none",
+  "editor.renderWhitespace": "all",
   "editor.suggest.localityBonus": true,
   "editor.tabCompletion": "on",
   "editor.wordWrap": "on",
@@ -67,8 +67,6 @@
   // prettier
   "prettier.printWidth": 140,
   "prettier.singleQuote": true,
-  // search
-  "search.location": "panel",
   "search.showLineNumbers": true,
   // terminal
   "terminal.integrated.cursorBlinking": true,
