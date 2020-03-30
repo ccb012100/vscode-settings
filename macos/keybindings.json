@@ -1326,5 +1326,15 @@
   {
     "key": "cmd+v",
     "command": "-execPaste"
+  },
+  {
+    "key": "ctrl+l e",
+    "command": "workbench.files.action.focusOpenEditorsView",
+    "when": "workbench.explorer.openEditorsView.active"
+  },
+  {
+    "key": "cmd+k e",
+    "command": "-workbench.files.action.focusOpenEditorsView",
+    "when": "workbench.explorer.openEditorsView.active"
   }
 ]

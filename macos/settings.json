@@ -207,7 +207,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.autoStash": true,
-  "workbench.colorTheme": "Sublime Monokai",
+  "workbench.colorTheme": "One Dark Pro",
   "editor.acceptSuggestionOnCommitCharacter": false,
   "explorer.incrementalNaming": "smart",
   "editor.cursorSurroundingLines": 5,
@@ -218,5 +218,7 @@
   "mssql.resultsFontSize": 12,
   "workbench.fontAliasing": "auto",
   "vsicons.dontShowNewVersionMessage": true,
-  "angularConsole.useNVM": false
+  "angularConsole.useNVM": false,
+  "editor.minimap.size": "fit",
+  "powershell.powerShellDefaultVersion": "PowerShell"
 }
