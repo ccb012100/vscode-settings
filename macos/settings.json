@@ -220,5 +220,7 @@
   "vsicons.dontShowNewVersionMessage": true,
   "angularConsole.useNVM": false,
   "editor.minimap.size": "fit",
-  "powershell.powerShellDefaultVersion": "PowerShell"
+  "powershell.powerShellDefaultVersion": "PowerShell",
+  "workbench.editor.scrollToSwitchTabs": true,
+  "window.titleSeparator": "‣"
 }

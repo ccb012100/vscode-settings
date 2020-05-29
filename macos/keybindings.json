@@ -967,11 +967,6 @@
     "when": "textInputFocus"
   },
   {
-    "key": "cmd+v",
-    "command": "cursorPageUp",
-    "when": "textInputFocus"
-  },
-  {
     "key": "cmd+pageup",
     "command": "-scrollPageUp",
     "when": "textInputFocus"
@@ -1135,31 +1130,6 @@
     "when": "interactivePlaygroundFocus && !editorTextFocus"
   },
   {
-    "key": "cmd+v",
-    "command": "list.focusPageUp",
-    "when": "listFocus && !inputFocus"
-  },
-  {
-    "key": "cmd+v",
-    "command": "notifications.focusFirstToast",
-    "when": "notificationFocus && notificationToastsVisible"
-  },
-  {
-    "key": "cmd+v",
-    "command": "selectPrevPageSuggestion",
-    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-  },
-  {
-    "key": "cmd+v",
-    "command": "workbench.action.interactivePlayground.pageUp",
-    "when": "interactivePlaygroundFocus && !editorTextFocus"
-  },
-  {
-    "key": "cmd+v",
-    "command": "workbench.action.terminal.scrollUpPage",
-    "when": "terminalFocus"
-  },
-  {
     "key": "cmd+o",
     "command": "-workbench.action.files.openFileFolder"
   },
@@ -1320,10 +1290,6 @@
     "when": "editorTextFocus && foldingEnabled"
   },
   {
-    "key": "ctrl+y",
-    "command": "execPaste"
-  },
-  {
     "key": "cmd+v",
     "command": "-execPaste"
   },
@@ -1336,5 +1302,15 @@
     "key": "cmd+k e",
     "command": "-workbench.files.action.focusOpenEditorsView",
     "when": "workbench.explorer.openEditorsView.active"
+  },
+  {
+    "key": "cmd+c",
+    "command": "editor.action.clipboardCopyAction",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+v",
+    "command": "editor.action.clipboardPasteAction",
+    "when": "textInputFocus && !editorReadonly"
   }
 ]
