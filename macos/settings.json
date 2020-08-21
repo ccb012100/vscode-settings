@@ -20,7 +20,6 @@
   "editor.minimap.renderCharacters": false,
   "editor.renderWhitespace": "all",
   "editor.suggest.localityBonus": true,
-  "editor.tabCompletion": "on",
   "editor.wordWrap": "on",
   // explorer
   "explorer.confirmDragAndDrop": false,
@@ -82,11 +81,7 @@
   // "terminal.integrated.cwd": "${fileDirname}",
   "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Mono",
   "terminal.integrated.shell.windows": "C:\\tools\\msys64\\msys2_shell.cmd",
-  "terminal.integrated.shellArgs.windows": [
-    "-defterm",
-    "-here",
-    "-no-start"
-  ],
+  "terminal.integrated.shellArgs.windows": ["-defterm", "-here", "-no-start"],
   // ts-lint
   "tslint.alwaysShowRuleFailuresAsWarnings": true,
   // TypeScript
@@ -222,5 +217,8 @@
   "editor.minimap.size": "fit",
   "powershell.powerShellDefaultVersion": "PowerShell",
   "workbench.editor.scrollToSwitchTabs": true,
-  "window.titleSeparator": "‣"
+  "window.titleSeparator": "‣",
+  "javascript.preferences.quoteStyle": "single",
+  "scm.alwaysShowActions": true,
+  "scm.alwaysShowRepositories": true
 }
