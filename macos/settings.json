@@ -51,9 +51,11 @@
   "git.defaultCloneDirectory": "/Users/cbocardo/tools",
   "git.enableSmartCommit": true,
   "git.fetchOnPull": true,
-  "git.promptToSaveFilesBeforeCommit": true,
+  "git.promptToSaveFilesBeforeCommit": "always",
   "git.rebaseWhenSync": true,
-  "git.scanRepositories": ["C:/code, C:/temp, C:/GitHub"],
+  "git.scanRepositories": [
+    "/Users/cbocardo/repos/"
+  ],
   // Markdown
   "markdown.extension.orderedList.autoRenumber": false,
   "markdown.preview.fontFamily": "mononoki",
@@ -187,8 +189,7 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.multiCursorModifier": "alt",
-  "python.jediEnabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
   "terminal.external.osxExec": "zsh",
   "terminal.integrated.shell.osx": "/bin/zsh",
   "window.nativeTabs": true,
@@ -206,19 +207,39 @@
   "editor.acceptSuggestionOnCommitCharacter": false,
   "explorer.incrementalNaming": "smart",
   "editor.cursorSurroundingLines": 5,
-  "git.branchSortOrder": "alphabetically",
   "git.supportCancellation": true,
   "markdown.preview.fontSize": 12,
   "metaGo.decoration.fontSize": 12,
   "mssql.resultsFontSize": 12,
   "workbench.fontAliasing": "auto",
   "vsicons.dontShowNewVersionMessage": true,
-  "angularConsole.useNVM": false,
   "editor.minimap.size": "fit",
   "powershell.powerShellDefaultVersion": "PowerShell",
   "workbench.editor.scrollToSwitchTabs": true,
   "window.titleSeparator": "‣",
   "javascript.preferences.quoteStyle": "single",
   "scm.alwaysShowActions": true,
-  "scm.alwaysShowRepositories": true
+  "scm.alwaysShowRepositories": true,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.suggest.shareSuggestSelections": true,
+  "editor.suggest.showWords": false,
+  "[yaml]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "full",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    }
+  },
+  "git.pruneOnFetch": true,
+  "mssql.connections": [
+    {
+      "server": "{{put-server-name-here}}",
+      "database": "{{put-database-name-here}}",
+      "user": "{{put-username-here}}",
+      "password": "{{put-password-here}}"
+    }
+  ]
 }
