@@ -97,7 +97,7 @@
     "command": "-editor.action.toggleTabFocusMode"
   },
   {
-    "key": "ctrl+x ctrl+b",
+    "key": "shift+cmd+j",
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
@@ -589,7 +589,7 @@
     "command": "workbench.action.showAllEditors"
   },
   {
-    "key": "ctrl+l p",
+    "key": "ctrl+, p",
     "command": "workbench.action.problems.focus"
   },
   {
@@ -1312,5 +1312,69 @@
     "key": "cmd+v",
     "command": "editor.action.clipboardPasteAction",
     "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+p",
+    "command": "-workbench.action.showCommands"
+  },
+  {
+    "key": "shift+cmd+p",
+    "command": "workbench.actions.view.problems",
+    "when": "workbench.panel.markers.view.active"
+  },
+  {
+    "key": "shift+cmd+m",
+    "command": "-workbench.actions.view.problems",
+    "when": "workbench.panel.markers.view.active"
+  },
+  {
+    "key": "ctrl+, ctrl+t",
+    "command": "workbench.action.toggleTabsVisibility"
+  },
+  {
+    "key": "ctrl+cmd+w",
+    "command": "-workbench.action.toggleTabsVisibility"
+  },
+  {
+    "key": "ctrl+, t",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+, e",
+    "command": "workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "shift+cmd+e",
+    "command": "-workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "ctrl+, o",
+    "command": "workbench.panel.output.focus"
+  },
+  {
+    "key": "shift+cmd+u",
+    "command": "-workbench.action.output.toggleOutput",
+    "when": "workbench.panel.output.active"
+  },
+  {
+    "key": "ctrl+alt+o",
+    "command": "-workbench.action.output.toggleOutput",
+    "when": "workbench.panel.output.active"
+  },
+  {
+    "key": "ctrl+, d",
+    "command": "workbench.debug.action.focusRepl"
+  },
+  {
+    "key": "ctrl+, s",
+    "command": "workbench.view.scm",
+    "when": "workbench.scm.active"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "-workbench.view.scm",
+    "when": "workbench.scm.active"
   }
 ]

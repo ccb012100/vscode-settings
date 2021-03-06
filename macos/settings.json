@@ -7,8 +7,6 @@
   "bracket-pair-colorizer-2.showBracketsInGutter": true,
   "bracket-pair-colorizer-2.showBracketsInRuler": true,
   "breadcrumbs.enabled": true,
-  "csharp.format.enable": true,
-  "omnisharp.autoStart": true,
   // editor
   "editor.codeLens": false,
   "editor.fontFamily": "Fira Code, Hack, mononoki, Consolas, IBM Plex Mono, Ubuntu Mono, Inconsolata",
@@ -18,7 +16,7 @@
   "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 60,
   "editor.minimap.renderCharacters": false,
-  "editor.renderWhitespace": "all",
+  "editor.renderWhitespace": "none",
   "editor.suggest.localityBonus": true,
   "editor.wordWrap": "on",
   // explorer
@@ -53,9 +51,7 @@
   "git.fetchOnPull": true,
   "git.promptToSaveFilesBeforeCommit": "always",
   "git.rebaseWhenSync": true,
-  "git.scanRepositories": [
-    "/Users/cbocardo/repos/"
-  ],
+  "git.scanRepositories": ["/Users/cbocardo/repos/"],
   // Markdown
   "markdown.extension.orderedList.autoRenumber": false,
   "markdown.preview.fontFamily": "mononoki",
@@ -102,7 +98,6 @@
   "window.zoomLevel": 0,
   // workbench
   "workbench.editor.highlightModifiedTabs": true,
-  "workbench.editor.showTabs": true,
   "workbench.iconTheme": "vscode-icons",
   // Zen Mode
   "zenMode.hideStatusBar": false,
@@ -193,28 +188,20 @@
   "terminal.external.osxExec": "zsh",
   "terminal.integrated.shell.osx": "/bin/zsh",
   "window.nativeTabs": true,
-  "vs-kubernetes": {
-    "vs-kubernetes.helm-path": "/Users/cbocardo/.vs-kubernetes/tools/helm/darwin-amd64/helm",
-    "vs-kubernetes.minikube-path": "/Users/cbocardo/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
-    "vs-kubernetes.kubectl-path": "/Users/cbocardo/.vs-kubernetes/tools/kubectl/kubectl",
-    "vs-kubernetes.draft-path": "/Users/cbocardo/.vs-kubernetes/tools/draft/darwin-amd64/draft"
-  },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.autoStash": true,
-  "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorTheme": "Noctis Lilac",
   "editor.acceptSuggestionOnCommitCharacter": false,
   "explorer.incrementalNaming": "smart",
   "editor.cursorSurroundingLines": 5,
   "git.supportCancellation": true,
   "markdown.preview.fontSize": 12,
   "metaGo.decoration.fontSize": 12,
-  "mssql.resultsFontSize": 12,
   "workbench.fontAliasing": "auto",
   "vsicons.dontShowNewVersionMessage": true,
   "editor.minimap.size": "fit",
-  "powershell.powerShellDefaultVersion": "PowerShell",
   "workbench.editor.scrollToSwitchTabs": true,
   "window.titleSeparator": "‣",
   "javascript.preferences.quoteStyle": "single",
@@ -234,12 +221,11 @@
     }
   },
   "git.pruneOnFetch": true,
-  "mssql.connections": [
+  "editor.semanticHighlighting.enabled": true,
+  "workbench.editorAssociations": [
     {
-      "server": "{{put-server-name-here}}",
-      "database": "{{put-database-name-here}}",
-      "user": "{{put-username-here}}",
-      "password": "{{put-password-here}}"
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
     }
   ]
 }
