@@ -1294,7 +1294,7 @@
     "command": "-execPaste"
   },
   {
-    "key": "ctrl+l e",
+    "key": "ctrl+, e",
     "command": "workbench.files.action.focusOpenEditorsView",
     "when": "workbench.explorer.openEditorsView.active"
   },
@@ -1340,11 +1340,6 @@
     "command": "workbench.action.terminal.toggleTerminal"
   },
   {
-    "key": "ctrl+, e",
-    "command": "workbench.view.explorer",
-    "when": "viewContainer.workbench.view.explorer.enabled"
-  },
-  {
     "key": "shift+cmd+e",
     "command": "-workbench.view.explorer",
     "when": "viewContainer.workbench.view.explorer.enabled"
@@ -1376,5 +1371,9 @@
     "key": "ctrl+shift+g",
     "command": "-workbench.view.scm",
     "when": "workbench.scm.active"
+  },
+  {
+    "key": "ctrl+, m",
+    "command": "workbench.action.focusActiveEditorGroup"
   }
 ]
