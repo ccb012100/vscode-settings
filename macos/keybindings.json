@@ -29,10 +29,6 @@
     "command": "cursorWordRight"
   },
   {
-    "key": "ctrl+h ctrl+s",
-    "command": "editor.action.insertSnippet"
-  },
-  {
     "key": "ctrl+q",
     "command": "-workbench.action.quickOpenView"
   },
@@ -195,16 +191,8 @@
     "command": "-workbench.action.terminal.toggleTerminal"
   },
   {
-    "key": "ctrl+h k",
-    "command": "workbench.action.openGlobalKeybindings"
-  },
-  {
     "key": "ctrl+h ctrl+s",
     "command": "-workbench.action.openGlobalKeybindings"
-  },
-  {
-    "key": "ctrl+h ctrl+;",
-    "command": "workbench.action.openGlobalSettings"
   },
   {
     "key": "alt+l alt+a",
@@ -220,10 +208,6 @@
     "when": "editorFocus"
   },
   {
-    "key": "ctrl+h q",
-    "command": "workbench.action.closeEditorsInOtherGroups"
-  },
-  {
     "key": "ctrl+b",
     "command": "-workbench.action.toggleSidebarVisibility"
   },
@@ -234,10 +218,6 @@
   {
     "key": "ctrl+j",
     "command": "-workbench.action.togglePanel"
-  },
-  {
-    "key": "ctrl+h t",
-    "command": "workbench.action.selectTheme"
   },
   {
     "key": "ctrl+h ctrl+t",
@@ -294,10 +274,6 @@
   {
     "key": "cmd+up",
     "command": "editor.action.moveLinesUpAction"
-  },
-  {
-    "key": "ctrl+h ctrl+t",
-    "command": "workbench.action.terminal.focusNext"
   },
   {
     "key": "ctrl+,",
@@ -809,11 +785,6 @@
     "when": "editorTextFocus && metaGoInput"
   },
   {
-    "key": "ctrl+'",
-    "command": "metaGo.goto",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "alt+;",
     "command": "-metaGo.goto",
     "when": "editorTextFocus"
@@ -845,11 +816,6 @@
     "key": "cmd+g",
     "command": "-workbench.action.terminal.findNextTerminalFocus",
     "when": "terminalFocus"
-  },
-  {
-    "key": "cmd+g cmd+g",
-    "command": "metaGo.goto",
-    "when": "editorTextFocus"
   },
   {
     "key": "cmd+c",
@@ -1171,10 +1137,6 @@
     "command": "-workbench.view.explorer"
   },
   {
-    "key": "ctrl+h ctrl+k",
-    "command": "workbench.action.openGlobalKeybindingsFile"
-  },
-  {
     "key": "ctrl+g",
     "command": "closeFindWidget",
     "when": "editorFocus && findWidgetVisible"
@@ -1375,5 +1337,38 @@
   {
     "key": "ctrl+, m",
     "command": "workbench.action.focusActiveEditorGroup"
+  },
+  {
+    "key": "cmd+backspace",
+    "command": "-deleteAllLeft",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+backspace",
+    "command": "deleteWordLeft",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+backspace",
+    "command": "-deleteWordLeft",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+h",
+    "command": "deleteWordLeft",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+'",
+    "command": "metaGo.gotoSmart"
+  },
+  {
+    "key": "alt+/",
+    "command": "-metaGo.gotoSmart"
+  },
+  {
+    "key": "ctrl+backspace",
+    "command": "-deleteLeft",
+    "when": "textInputFocus"
   }
 ]
