@@ -227,5 +227,6 @@
       "viewType": "jupyter.notebook.ipynb",
       "filenamePattern": "*.ipynb"
     }
-  ]
+  ],
+  "rust-analyzer.checkOnSave.command": "clippy"
 }
