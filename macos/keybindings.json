@@ -557,7 +557,7 @@
     "when": "editorFocus"
   },
   {
-    "key": "ctrl+l t",
+    "key": "ctrl+, t",
     "command": "workbench.action.terminal.focus"
   },
   {
@@ -651,7 +651,7 @@
     "command": "-workbench.action.closeActiveEditor"
   },
   {
-    "key" : "ctrl+x k",
+    "key": "ctrl+x k",
     "command": "workbench.action.closeActiveEditor"
   },
   {
@@ -951,10 +951,6 @@
     "command": "-workbench.action.files.newUntitledFile"
   },
   {
-    "key": "ctrl+l c",
-    "command": "metaGo.currentLineToCenter"
-  },
-  {
     "key": "ctrl+x h",
     "command": "selectAll"
   },
@@ -1220,10 +1216,6 @@
     "command": "workbench.action.previousEditor"
   },
   {
-    "key": "cmd+o",
-    "command": "workbench.action.focusNextGroup"
-  },
-  {
     "key": "ctrl+x 3",
     "command": "workbench.action.splitEditorRight"
   },
@@ -1290,16 +1282,12 @@
     "when": "workbench.panel.markers.view.active"
   },
   {
-    "key": "ctrl+, ctrl+t",
+    "key": "ctrl+l t",
     "command": "workbench.action.toggleTabsVisibility"
   },
   {
     "key": "ctrl+cmd+w",
     "command": "-workbench.action.toggleTabsVisibility"
-  },
-  {
-    "key": "ctrl+, t",
-    "command": "workbench.action.terminal.toggleTerminal"
   },
   {
     "key": "shift+cmd+e",
@@ -1325,7 +1313,7 @@
     "command": "workbench.debug.action.focusRepl"
   },
   {
-    "key": "ctrl+, s",
+    "key": "ctrl+, g",
     "command": "workbench.view.scm",
     "when": "workbench.scm.active"
   },
@@ -1370,5 +1358,39 @@
     "key": "ctrl+backspace",
     "command": "-deleteLeft",
     "when": "textInputFocus"
+  },
+  {
+    "key": "shift+cmd+w",
+    "command": "-workbench.action.closeWindow"
+  },
+  {
+    "key": "ctrl+x o",
+    "command": "workbench.action.showNextWindowTab"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "-metaGo.selectLineDown",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+o",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "alt+cmd+right",
+    "command": "-workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "-deleteLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+h k",
+    "command": "workbench.action.openGlobalKeybindings"
+  },
+  {
+    "key": "cmd+k cmd+s",
+    "command": "-workbench.action.openGlobalKeybindings"
   }
 ]
