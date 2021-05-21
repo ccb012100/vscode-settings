@@ -1323,7 +1323,7 @@
     "when": "workbench.scm.active"
   },
   {
-    "key": "ctrl+, m",
+    "key": "ctrl+, c",
     "command": "workbench.action.focusActiveEditorGroup"
   },
   {
