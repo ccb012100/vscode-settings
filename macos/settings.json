@@ -16,7 +16,7 @@
   "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 60,
   "editor.minimap.renderCharacters": false,
-  "editor.renderWhitespace": "none",
+  "editor.renderWhitespace": "all",
   "editor.suggest.localityBonus": true,
   "editor.wordWrap": "on",
   // explorer
@@ -191,7 +191,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.autoStash": true,
-  "workbench.colorTheme": "SynthWave '84",
+  "workbench.colorTheme": "Mariana Pro (Cool)",
   "editor.acceptSuggestionOnCommitCharacter": false,
   "explorer.incrementalNaming": "smart",
   "editor.cursorSurroundingLines": 5,
@@ -217,7 +217,8 @@
       "other": true,
       "comments": false,
       "strings": true
-    }
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   },
   "git.pruneOnFetch": true,
   "editor.semanticHighlighting.enabled": true,
@@ -238,5 +239,8 @@
   "hediet.vscode-drawio.codeLinkActivated": false,
   "editor.multiCursorModifier": "ctrlCmd",
   "extensions.autoUpdate": "onlyEnabledExtensions",
-  "angular.experimental-ivy": true
+  "angular.experimental-ivy": true,
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  }
 }

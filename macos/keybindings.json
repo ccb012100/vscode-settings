@@ -1068,7 +1068,7 @@
     "when": "editorTextFocus && !editorReadonly && !isMac && editorLangId == 'markdown'"
   },
   {
-    "key": "ctrl+x m",
+    "key": "ctrl+x ctrl+j",
     "command": "workbench.action.openRecent"
   },
   {
@@ -1377,5 +1377,30 @@
   {
     "key": "cmd+k cmd+s",
     "command": "-workbench.action.openGlobalKeybindings"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "-editor.action.transposeLetters",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "editor.action.showHover",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+k cmd+i",
+    "command": "-editor.action.showHover",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "editor.debug.action.showDebugHover",
+    "when": "editorTextFocus && inDebugMode"
+  },
+  {
+    "key": "cmd+k cmd+i",
+    "command": "-editor.debug.action.showDebugHover",
+    "when": "editorTextFocus && inDebugMode"
   }
 ]
