@@ -1402,5 +1402,32 @@
     "key": "cmd+k cmd+i",
     "command": "-editor.debug.action.showDebugHover",
     "when": "editorTextFocus && inDebugMode"
+  },
+  {
+    "key": "cmd+m",
+    "command": "editor.action.insertLineBefore",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+enter",
+    "command": "-editor.action.insertLineBefore",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+m",
+    "command": "-markdown.extension.editing.toggleMath",
+    "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+  },
+  {
+    "key": "cmd+t",
+    "command": "-workbench.action.showAllSymbols"
+  },
+  {
+    "key": "cmd+'",
+    "command": "metaGo.addCursorAfter"
+  },
+  {
+    "key": "ctrl+alt+.",
+    "command": "-metaGo.addCursorAfter"
   }
 ]
