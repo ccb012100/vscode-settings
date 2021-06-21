@@ -1468,5 +1468,15 @@
     "key": "alt+v",
     "command": "cursorPageUp",
     "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+v",
+    "command": "cursorPageUp",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+cmd+space",
+    "command": "-editor.action.triggerParameterHints",
+    "when": "editorHasSignatureHelpProvider && editorTextFocus"
   }
 ]

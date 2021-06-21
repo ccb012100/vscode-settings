@@ -235,5 +235,6 @@
   "extensions.autoUpdate": "onlyEnabledExtensions",
   "[vue]": {
     "editor.defaultFormatter": "octref.vetur"
-  }
+  },
+  "diffEditor.ignoreTrimWhitespace": false
 }
