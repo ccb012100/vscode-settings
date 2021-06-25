@@ -236,5 +236,6 @@
   "[vue]": {
     "editor.defaultFormatter": "octref.vetur"
   },
-  "diffEditor.ignoreTrimWhitespace": false
+  "diffEditor.ignoreTrimWhitespace": false,
+  "sqlite.recordsPerPage": 100
 }

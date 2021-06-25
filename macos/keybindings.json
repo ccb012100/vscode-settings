@@ -25,10 +25,6 @@
     "command": "cursorWordLeft"
   },
   {
-    "key": "ctrl+i",
-    "command": "cursorWordRight"
-  },
-  {
     "key": "ctrl+q",
     "command": "-workbench.action.quickOpenView"
   },
@@ -659,7 +655,7 @@
     "command": "-workbench.debug.viewlet.action.addFunctionBreakpointAction"
   },
   {
-    "key": "ctrl+s",
+    "key": "cmd+f",
     "command": "actions.find"
   },
   {
@@ -780,11 +776,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+g",
-    "command": "metaGo.input.cancel",
-    "when": "editorTextFocus && metaGoInput"
-  },
-  {
     "key": "alt+;",
     "command": "-metaGo.goto",
     "when": "editorTextFocus"
@@ -799,7 +790,7 @@
     "command": "-workbench.action.gotoLine"
   },
   {
-    "key": "cmd+g g",
+    "key": "ctrl+g",
     "command": "workbench.action.gotoLine"
   },
   {
@@ -964,41 +955,6 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+g",
-    "command": "cancelSelection",
-    "when": "editorHasSelection && textInputFocus"
-  },
-  {
-    "key": "ctrl+g",
-    "command": "closeParameterHints",
-    "when": "editorFocus && parameterHintsVisible"
-  },
-  {
-    "key": "ctrl+g",
-    "command": "editor.cancelOperation",
-    "when": "cancellableOperation"
-  },
-  {
-    "key": "ctrl+g",
-    "command": "gitlens.key.escape",
-    "when": "editorTextFocus && gitlens:key:escape && !findWidgetVisible && !isInEmbeddedEditor && !renameInputVisible && !suggestWidgetVisible"
-  },
-  {
-    "key": "ctrl+g",
-    "command": "hideSuggestWidget",
-    "when": "suggestWidgetVisible && textInputFocus"
-  },
-  {
-    "key": "ctrl+g",
-    "command": "removeSecondaryCursors",
-    "when": "editorHasMultipleSelections && textInputFocus"
-  },
-  {
-    "key": "ctrl+g",
-    "command": "search.action.cancel",
-    "when": "listFocus && searchViewletVisible && !inputFocus"
-  },
-  {
     "key": "ctrl+x ctrl+c",
     "command": "workbench.action.quit"
   },
@@ -1117,10 +1073,6 @@
     "command": "-actions.find"
   },
   {
-    "key": "cmd+f",
-    "command": "cursorWordRight"
-  },
-  {
     "key": "ctrl+l ctrl+w",
     "command": "editor.action.toggleWordWrap"
   },
@@ -1131,81 +1083,6 @@
   {
     "key": "ctrl+alt+l",
     "command": "-workbench.view.explorer"
-  },
-  {
-    "key": "ctrl+g",
-    "command": "closeFindWidget",
-    "when": "editorFocus && findWidgetVisible"
-  },
-  {
-    "key": "shift+escape",
-    "command": "-closeFindWidget",
-    "when": "editorFocus && findWidgetVisible"
-  },
-  {
-    "key": "ctrl+g",
-    "command": "closeMarkersNavigation",
-    "when": "editorFocus && markersNavigationVisible"
-  },
-  {
-    "key": "shift+escape",
-    "command": "-closeMarkersNavigation",
-    "when": "editorFocus && markersNavigationVisible"
-  },
-  {
-    "key": "shift+escape",
-    "command": "-closeParameterHints",
-    "when": "editorFocus && parameterHintsVisible"
-  },
-  {
-    "key": "ctrl+g",
-    "command": "closeReferenceSearch",
-    "when": "referenceSearchVisible && !config.editor.stablePeek"
-  },
-  {
-    "key": "shift+escape",
-    "command": "-closeReferenceSearch",
-    "when": "referenceSearchVisible && !config.editor.stablePeek"
-  },
-  {
-    "key": "ctrl+g",
-    "command": "closeReferenceSearchEditor",
-    "when": "inReferenceSearchEditor && !config.editor.stablePeek"
-  },
-  {
-    "key": "shift+escape",
-    "command": "-closeReferenceSearchEditor",
-    "when": "inReferenceSearchEditor && !config.editor.stablePeek"
-  },
-  {
-    "key": "ctrl+g",
-    "command": "closeDirtyDiff",
-    "when": "dirtyDiffVisible"
-  },
-  {
-    "key": "shift+escape",
-    "command": "-closeDirtyDiff",
-    "when": "dirtyDiffVisible"
-  },
-  {
-    "key": "ctrl+g",
-    "command": "closeBreakpointWidget",
-    "when": "breakpointWidgetVisible && textInputFocus"
-  },
-  {
-    "key": "shift+escape",
-    "command": "-closeBreakpointWidget",
-    "when": "breakpointWidgetVisible && textInputFocus"
-  },
-  {
-    "key": "ctrl+g",
-    "command": "closeAccessibilityHelp",
-    "when": "accessibilityHelpWidgetVisible && editorFocus"
-  },
-  {
-    "key": "shift+escape",
-    "command": "-closeAccessibilityHelp",
-    "when": "accessibilityHelpWidgetVisible && editorFocus"
   },
   {
     "key": "ctrl+l w",
