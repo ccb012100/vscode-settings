@@ -116,10 +116,6 @@
     "command": "-workbench.action.showCommands"
   },
   {
-    "key": "ctrl+Enter",
-    "command": "editor.action.quickFix"
-  },
-  {
     "key": "shift+alt+e",
     "command": "-PowerShell.ExpandAlias",
     "when": "editorTextFocus && editorLangId == 'powershell'"
@@ -1359,5 +1355,15 @@
   {
     "key": "ctrl+i",
     "command": "cursorWordRight"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "problems.action.showQuickFixes",
+    "when": "problemFocus"
   }
 ]
