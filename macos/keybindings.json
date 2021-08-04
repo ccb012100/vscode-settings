@@ -1365,5 +1365,14 @@
     "key": "ctrl+enter",
     "command": "problems.action.showQuickFixes",
     "when": "problemFocus"
+  },
+  {
+    "key": "ctrl+left",
+    "command": "cursorWordLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+right",
+    "command": "cursorWordRight"
   }
 ]
