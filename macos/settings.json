@@ -190,7 +190,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.autoStash": true,
-  "workbench.colorTheme": "Gruvbox Dark (Hard)",
+  "workbench.colorTheme": "Dracula",
   "editor.acceptSuggestionOnCommitCharacter": false,
   "explorer.incrementalNaming": "smart",
   "editor.cursorSurroundingLines": 5,
@@ -238,5 +238,6 @@
   },
   "diffEditor.ignoreTrimWhitespace": false,
   "sqlite.recordsPerPage": 100,
-  "go.toolsManagement.autoUpdate": true
+  "go.toolsManagement.autoUpdate": true,
+  "git.confirmSync": false
 }
