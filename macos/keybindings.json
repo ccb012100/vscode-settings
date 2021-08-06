@@ -1374,5 +1374,9 @@
   {
     "key": "ctrl+right",
     "command": "cursorWordRight"
+  },
+  {
+    "key": "ctrl+, ctrl+t",
+    "command": "workbench.action.createTerminalEditorSide"
   }
 ]
