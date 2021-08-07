@@ -1,6 +1,7 @@
 // run command `code --list-extensions`
 aaron-bond.better-comments
 ahmadawais.shades-of-purple
+alexcvzz.vscode-sqlite
 Angular.ng-template
 arcticicestudio.nord-visual-studio-code
 bbrakenhoff.solarized-light-custom
@@ -16,6 +17,7 @@ dracula-theme.theme-dracula
 dunstontc.vscode-docker-syntax
 dustypomerleau.yarra-valley
 eamodio.gitlens
+ecmel.vscode-html-css
 EditorConfig.EditorConfig
 eg2.vscode-npm-script
 EliverLara.andromeda
@@ -24,8 +26,11 @@ formulahendry.auto-close-tag
 ftsamoyed.theme-pink-cat-boo
 gerane.Theme-FlatlandMonokai
 GitHub.github-vscode-theme
+GitHub.remotehub
+golang.go
 hedinne.popping-and-locking-vscode
 Hiberbee.hiberbee-vscode-theme
+hollowtree.vue-snippets
 IBM.output-colorizer
 idleberg.hopscotch
 ionutvmi.reg
@@ -46,9 +51,11 @@ mechatroner.rainbow-csv
 metaseed.metago
 metaseed.MetaJump
 metaseed.MetaWord
+mikestead.dotenv
 mindaro-dev.file-downloader
 ms-dotnettools.csharp
 ms-python.python
+ms-python.vscode-pylance
 ms-toolsai.jupyter
 ms-vscode-remote.remote-containers
 ms-vscode.vscode-typescript-next
@@ -56,12 +63,15 @@ ms-vscode.vscode-typescript-tslint-plugin
 msjsdiag.debugger-for-chrome
 natewallace.angular2-inline
 nrwl.angular-console
+octref.vetur
 philsinatra.popping-and-locking-vscode-black
 pmneo.tsimporter
 pnp.polacode
 Poorchop.theme-darktooth
 quicktype.quicktype
+redhat.vscode-commons
 redhat.vscode-yaml
+rickynormandeau.mariana-pro
 RobbOwen.synthwave-vscode
 ryanolsonx.zenburn
 s3gf4ult.monokai-vibrant
@@ -76,5 +86,4 @@ vangware.dark-plus-material
 VisualStudioExptTeam.vscodeintellicode
 vscode-icons-team.vscode-icons
 whizkydee.material-palenight-theme
-yzhang.markdown-all-in-one
 zadvorny.theme-happy-hipster
