@@ -1085,10 +1085,6 @@
     "command": "editor.action.toggleRenderWhitespace"
   },
   {
-    "key": "cmd+w",
-    "command": "workbench.action.previousEditor"
-  },
-  {
     "key": "ctrl+x 3",
     "command": "workbench.action.splitEditorRight"
   },
@@ -1222,17 +1218,9 @@
     "command": "-workbench.action.closeWindow"
   },
   {
-    "key": "ctrl+x o",
-    "command": "workbench.action.showNextWindowTab"
-  },
-  {
     "key": "ctrl+l",
     "command": "-metaGo.selectLineDown",
     "when": "textInputFocus"
-  },
-  {
-    "key": "cmd+o",
-    "command": "workbench.action.nextEditor"
   },
   {
     "key": "alt+cmd+right",
@@ -1378,5 +1366,34 @@
   {
     "key": "ctrl+, ctrl+t",
     "command": "workbench.action.createTerminalEditorSide"
+  },
+  {
+    "key": "ctrl+x o",
+    "command": "workbench.action.focusNextGroup"
+  },
+  {
+    "key": "cmd+o",
+    "command": "workbench.action.nextEditorInGroup"
+  },
+  {
+    "key": "cmd+k alt+cmd+right",
+    "command": "-workbench.action.nextEditorInGroup"
+  },
+  {
+    "key": "cmd+w",
+    "command": "workbench.action.previousEditorInGroup"
+  },
+  {
+    "key": "cmd+k alt+cmd+left",
+    "command": "-workbench.action.previousEditorInGroup"
+  },
+  {
+    "key": "cmd+w",
+    "command": "-workbench.action.terminal.killEditor",
+    "when": "terminalFocus && terminalProcessSupported && resourceScheme == 'vscode-terminal'"
+  },
+  {
+    "key": "ctrl+x ctrl+o",
+    "command": "workbench.action.showNextWindowTab"
   }
 ]
