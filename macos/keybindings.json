@@ -993,20 +993,12 @@
     "command": "-npm-script.terminate-script"
   },
   {
-    "key": "cmd+u",
-    "command": "editor.action.transformToTitlecase"
-  },
-  {
     "key": "shift+cmd+l",
     "command": "-editor.action.selectHighlights",
     "when": "editorFocus"
   },
   {
-    "key": "ctrl+cmd+l",
-    "command": "editor.action.transformToLowercase"
-  },
-  {
-    "key": "shift+cmd+l",
+    "key": "ctrl+l ctrl+u",
     "command": "editor.action.transformToUppercase"
   },
   {
@@ -1395,5 +1387,19 @@
   {
     "key": "ctrl+x ctrl+o",
     "command": "workbench.action.showNextWindowTab"
+  },
+  {
+    "key": "ctrl+h d",
+    "command": "editor.action.peekDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+  },
+  {
+    "key": "alt+f12",
+    "command": "-editor.action.peekDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+  },
+  {
+    "key": "ctrl+l u",
+    "command": "editor.action.transformToLowercase"
   }
 ]

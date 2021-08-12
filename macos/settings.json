@@ -190,7 +190,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.autoStash": true,
-  "workbench.colorTheme": "GitHub Dark Default",
+  "workbench.colorTheme": "Gruvbox Dark (Hard)",
   "editor.acceptSuggestionOnCommitCharacter": false,
   "explorer.incrementalNaming": "smart",
   "editor.cursorSurroundingLines": 5,
