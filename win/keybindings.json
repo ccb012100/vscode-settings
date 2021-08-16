@@ -11,7 +11,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+k ctrl+d",
+    "key": "ctrl+l ctrl+d",
     "command": "editor.action.formatDocument",
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -97,11 +97,6 @@
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "ctrl+'",
-    "command": "editor.action.refactor",
-    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
-  },
-  {
     "key": "ctrl+shift+r",
     "command": "-editor.action.refactor",
     "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
@@ -120,8 +115,9 @@
     "command": "-workbench.action.showCommands"
   },
   {
-    "key": "ctrl+Enter",
-    "command": "editor.action.quickFix"
+    "key": "ctrl+enter",
+    "command": "editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
   },
   {
     "key": "shift+alt+e",
@@ -383,12 +379,12 @@
     "command": "-editor.action.copyLinesDownAction"
   },
   {
-    "key": "ctrl+k ctrl+k",
+    "key": "ctrl+l ctrl+k",
     "command": "editor.action.clipboardCutAction",
     "when": "textInputFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+k ctrl+l",
+    "key": "ctrl+l ctrl+l",
     "command": "editor.action.clipboardCopyAction",
     "when": "textInputFocus"
   },
@@ -676,7 +672,7 @@
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+,",
+    "key": "ctrl+enter",
     "command": "problems.action.showQuickFixes"
   },
   {
@@ -774,11 +770,6 @@
     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
   },
   {
-    "key": "ctrl+v",
-    "command": "scrollPageDown",
-    "when": "textInputFocus"
-  },
-  {
     "key": "alt+pagedown",
     "command": "-scrollPageDown",
     "when": "textInputFocus"
@@ -822,7 +813,7 @@
     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
   },
   {
-    "key": "ctrl+k w",
+    "key": "ctrl+, w",
     "command": "editor.action.toggleRenderWhitespace"
   },
   {
@@ -870,7 +861,7 @@
     "command": "-workbench.action.focusBelowGroup"
   },
   {
-    "key": "alt+o",
+    "key": "ctrl+x o",
     "command": "workbench.action.focusNextGroup"
   },
   {
@@ -894,7 +885,50 @@
     "when": "searchViewletFocus && searchViewletVisible"
 },
 {
-    "key": "alt+w",
-    "command": "workbench.action.previousEditorInGroup"
+  "key": "ctrl+k",
+  "command": "editor.action.clipboardCutAction",
+  "when": "editorTextFocus && !editorReadonly"
+},
+{
+  "key": "ctrl+l",
+  "command": "-editor.action.clipboardCutAction",
+  "when": "editorTextFocus && !editorReadonly"
+},
+{
+  "key": "ctrl+k ctrl+pagedown",
+  "command": "-workbench.action.nextEditorInGroup"
+},
+{
+  "key": "ctrl+k ctrl+pageup",
+  "command": "-workbench.action.previousEditorInGroup"
+},
+{
+  "key": "ctrl+d",
+  "command": "deleteRight",
+  "when": "textInputFocus"
+},
+{
+  "key": "ctrl+'",
+  "command": "metaGo.gotoSmart"
+},
+{
+  "key": "alt+/",
+  "command": "-metaGo.gotoSmart"
+},
+{
+  "key": "alt+o",
+  "command": "workbench.action.moveEditorToNextGroup"
+},
+{
+  "key": "ctrl+alt+right",
+  "command": "-workbench.action.moveEditorToNextGroup"
+},
+{
+  "key": "alt+w",
+  "command": "workbench.action.previousEditorInGroup"
+},
+{
+  "key": "ctrl+, t",
+  "command": "workbench.action.createTerminalEditorSide"
 }
 ]
