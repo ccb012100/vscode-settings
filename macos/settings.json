@@ -229,7 +229,7 @@
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
-  "python.languageServer": "Microsoft",
+  "python.languageServer": "Default",
   "rust-analyzer.inlayHints.enable": false,
   "editor.multiCursorModifier": "ctrlCmd",
   "extensions.autoUpdate": "onlyEnabledExtensions",
