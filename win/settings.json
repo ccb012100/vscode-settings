@@ -7,27 +7,25 @@
   "bracket-pair-colorizer-2.showBracketsInGutter": true,
   "bracket-pair-colorizer-2.showBracketsInRuler": true,
   "breadcrumbs.enabled": true,
-  "csharp.format.enable": true,
-  "omnisharp.autoStart": true,
   // editor
   "editor.codeLens": false,
-  "editor.fontFamily": "Consolas",
+  "editor.fontFamily": "Fira Code, Hack, mononoki, Consolas, IBM Plex Mono, Ubuntu Mono, Inconsolata",
   "editor.fontLigatures": true,
-  "editor.fontSize": 14,
+  "editor.fontSize": 12,
   "editor.letterSpacing": 1,
   "editor.minimap.enabled": false,
   "editor.minimap.maxColumn": 60,
   "editor.minimap.renderCharacters": false,
-  "editor.renderWhitespace": "all",
+  "editor.renderWhitespace": "none",
   "editor.suggest.localityBonus": true,
-  "editor.tabCompletion": "on",
   "editor.wordWrap": "on",
   // explorer
   "explorer.confirmDragAndDrop": false,
   // files
   "files.associations": {
     "*.vssettings": "xml",
-    "*.adoc": "asciidoc"
+    "*.adoc": "asciidoc",
+    "*.DotSettings": "xml"
   },
   "files.exclude": {
     "**/.git": true,
@@ -53,16 +51,9 @@
   "git.fetchOnPull": true,
   "git.promptToSaveFilesBeforeCommit": "always",
   "git.rebaseWhenSync": true,
-  "git.scanRepositories": ["C:/code, C:/temp, C:/GitHub"],
-  // GitLens
-  "gitlens.advanced.messages": {
-    "suppressShowKeyBindingsNotice": true
-  },
-  "gitlens.defaultGravatarsStyle": "retro",
   // Markdown
-  "markdown.extension.orderedList.autoRenumber": false,
-  "markdown.preview.fontFamily": "Ubuntu Mono",
-  // markdownlint
+  "markdown.preview.fontFamily": "IBM Plex Mono",
+  // markdownlints
   "markdownlint.config": {
     "MD013": false,
     "MD024": { "siblings_only": true },
@@ -72,12 +63,6 @@
   "prettier.printWidth": 140,
   "prettier.singleQuote": true,
   "search.showLineNumbers": true,
-  // terminal
-  "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.copyOnSelection": true,
-  "terminal.integrated.enableBell": true,
-  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
   // ts-lint
   "tslint.alwaysShowRuleFailuresAsWarnings": true,
   // TypeScript
@@ -95,27 +80,80 @@
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 0,
   // workbench
-  "workbench.colorTheme": "Solarized Light",
   "workbench.editor.highlightModifiedTabs": true,
-  "workbench.editor.showTabs": true,
+  "workbench.iconTheme": "vscode-icons",
   // Zen Mode
   "zenMode.hideStatusBar": false,
   // YAML
   "yaml.format.enable": true,
   // Markdown
   "[markdown]": {
-    "editor.fontFamily": "Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "Ubuntu Mono, 'Courier New', monospace",
     "editor.fontSize": 14,
     "editor.quickSuggestions": true,
     "files.trimTrailingWhitespace": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.colorCustomizations": {
-    "tab.activeModifiedBorder": "#FFC300"
+    "tab.activeModifiedBorder": "#FFC300",
+    "tab.activeBackground": "#1857a4"
   },
-  "gitlens.views.compare.files.layout": "list",
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "peacock.favoriteColors": [
+    {
+      "name": "Angular Red",
+      "value": "#b52e31"
+    },
+    {
+      "name": "Auth0 Orange",
+      "value": "#eb5424"
+    },
+    {
+      "name": "Azure Blue",
+      "value": "#007fff"
+    },
+    {
+      "name": "C# Purple",
+      "value": "#68217A"
+    },
+    {
+      "name": "Gatsby Purple",
+      "value": "#639"
+    },
+    {
+      "name": "Go Cyan",
+      "value": "#5dc9e2"
+    },
+    {
+      "name": "Java Blue-Gray",
+      "value": "#557c9b"
+    },
+    {
+      "name": "JavaScript Yellow",
+      "value": "#f9e64f"
+    },
+    {
+      "name": "Mandalorian Blue",
+      "value": "#1857a4"
+    },
+    {
+      "name": "Node Green",
+      "value": "#215732"
+    },
+    {
+      "name": "React Blue",
+      "value": "#00b3e6"
+    },
+    {
+      "name": "Something Different",
+      "value": "#832561"
+    },
+    {
+      "name": "Vue Green",
+      "value": "#42b883"
+    }
+  ],
   "workbench.sideBar.location": "right",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -129,19 +167,100 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.multiCursorModifier": "alt",
-  "python.jediEnabled": false,
   "terminal.external.osxExec": "zsh",
-  "terminal.integrated.shell.osx": "zsh",
-  "vs-kubernetes": {
-    "vs-kubernetes.helm-path": "/Users/cbocardo/.vs-kubernetes/tools/helm/darwin-amd64/helm",
-    "vs-kubernetes.minikube-path": "/Users/cbocardo/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
-    "vs-kubernetes.kubectl-path": "/Users/cbocardo/.vs-kubernetes/tools/kubectl/kubectl",
-    "vs-kubernetes.draft-path": "/Users/cbocardo/.vs-kubernetes/tools/draft/darwin-amd64/draft"
+  "window.nativeTabs": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "git.autoStash": true,
+  "workbench.colorTheme": "Dracula",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "explorer.incrementalNaming": "smart",
+  "editor.cursorSurroundingLines": 5,
+  "git.supportCancellation": true,
+  "markdown.preview.fontSize": 12,
+  "metaGo.decoration.fontSize": 12,
+  "workbench.fontAliasing": "auto",
   "vsicons.dontShowNewVersionMessage": true,
-  "macros": {
-    "down-5-lines": ["cursorDown", "cursorDown", "cursorDown", "cursorDown", "cursorDown"],
-    "up-5-lines": ["cursorUp", "cursorUp", "cursorUp", "cursorUp", "cursorUp"]
+  "editor.minimap.size": "fit",
+  "workbench.editor.scrollToSwitchTabs": true,
+  "window.titleSeparator": "‣",
+  "javascript.preferences.quoteStyle": "single",
+  "scm.alwaysShowActions": true,
+  "scm.alwaysShowRepositories": true,
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.suggest.shareSuggestSelections": true,
+  "editor.suggest.showWords": false,
+  "[yaml]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "full",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   },
+  "git.pruneOnFetch": true,
+  "editor.semanticHighlighting.enabled": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "rust-analyzer.checkOnSave.command": "clippy",
+  "editor.accessibilitySupport": "off",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "python.languageServer": "Default",
+  "rust-analyzer.inlayHints.enable": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "extensions.autoUpdate": "onlyEnabledExtensions",
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "sqlite.recordsPerPage": 100,
+  "go.toolsManagement.autoUpdate": true,
+  "git.confirmSync": false,
+  "markdown.extension.print.theme": "dark",
+  "git.scanRepositories": ["C:\\ccb012100"],
+  "problems.showCurrentInStatus": true,
+  "terminal.integrated.defaultLocation": "editor",
+  "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+  // terminal
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.enableBell": true,
+  "terminal.integrated.env.windows": {
+    "MSYSTEM": "MINGW64",
+    "MSYS2_PATH_TYPE": "inherit",
+    "CHERE_INVOKING": "1"
+  },
+  "terminal.external.windowsExec": "C:\\\\Windows\\\\System32\\\\wsl.exe",
+  // "terminal.integrated.cwd": "${fileDirname}",
+  "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Mono",
+  "terminal.integrated.profiles.windows": {
+    "Ubuntu (WSL)": {
+      "path": "C:\\\\Windows\\\\System32\\\\wsl.exe",
+      "icon": "terminal-ubuntu"
+    },
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": ["${env:windir}\\Sysnative\\cmd.exe", "${env:windir}\\System32\\cmd.exe"],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    }
+  },
+  "markdown.preview.typographer": true,
+  "remote.WSL.debug": true,
+  "redhat.telemetry.enabled": true,
+  "markdown.preview.scrollEditorWithPreview": false
 }
