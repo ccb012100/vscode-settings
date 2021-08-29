@@ -78,7 +78,6 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   // window
   "window.titleBarStyle": "custom",
-  "window.zoomLevel": 0,
   // workbench
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.iconTheme": "vscode-icons",
@@ -88,7 +87,7 @@
   "yaml.format.enable": true,
   // Markdown
   "[markdown]": {
-    "editor.fontFamily": "Ubuntu Mono, 'Courier New', monospace",
+    "editor.fontFamily": "IBM Plex Mono, 'Consolas', 'Hack', 'Courier New', monospace",
     "editor.fontSize": 14,
     "editor.quickSuggestions": true,
     "files.trimTrailingWhitespace": false,
@@ -224,11 +223,9 @@
   "go.toolsManagement.autoUpdate": true,
   "git.confirmSync": false,
   "markdown.extension.print.theme": "dark",
-  "git.scanRepositories": ["C:\\ccb012100"],
   "problems.showCurrentInStatus": true,
   "terminal.integrated.defaultLocation": "editor",
-  "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
-  // terminal
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.copyOnSelection": true,
@@ -238,8 +235,7 @@
     "MSYS2_PATH_TYPE": "inherit",
     "CHERE_INVOKING": "1"
   },
-  "terminal.external.windowsExec": "C:\\\\Windows\\\\System32\\\\wsl.exe",
-  // "terminal.integrated.cwd": "${fileDirname}",
+  "terminal.external.windowsExec": "C:\\\\Program Files\\\\Git\\\\git-bash.exe",
   "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Mono",
   "terminal.integrated.profiles.windows": {
     "Ubuntu (WSL)": {
@@ -256,7 +252,8 @@
       "icon": "terminal-cmd"
     },
     "Git Bash": {
-      "source": "Git Bash"
+      "source": "Git Bash",
+      "path": "C:\\\\Program Files\\\\Git\\\\git-bash.exe"
     }
   },
   "markdown.preview.typographer": true,

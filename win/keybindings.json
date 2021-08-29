@@ -342,11 +342,6 @@
     "when": "!editorIsOpen && !multipleEditorGroups"
   },
   {
-    "key": "ctrl+y",
-    "command": "editor.action.clipboardPasteAction",
-    "when": "textInputFocus && !editorReadonly"
-  },
-  {
     "key": "ctrl+x ctrl+;",
     "command": "editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
@@ -867,23 +862,8 @@
   },
   {
     "key": "cmd+v",
-    "command": "-editor.action.clipboardPasteAction",
-    "when": "textInputFocus && !editorReadonly"
-  },
-  {
-    "key": "cmd+v",
     "command": "-editor.action.webvieweditor.paste",
     "when": "!editorFocus && !inputFocus && activeEditor == 'WebviewEditor'"
-  },
-  {
-    "key": "cmd+v",
-    "command": "-filesExplorer.paste",
-    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
-  },
-  {
-    "key": "cmd+v",
-    "command": "-markdown.extension.editing.paste",
-    "when": "editorHasSelection && editorTextFocus && editorLangId == 'markdown'"
   },
   {
     "key": "cmd+n",
@@ -896,7 +876,7 @@
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+v",
+    "key": "shift+alt+v",
     "command": "cursorPageDown",
     "when": "textInputFocus"
   },
@@ -1012,26 +992,6 @@
     "command": "workbench.action.openRecent"
   },
   {
-    "key": "ctrl+v",
-    "command": "list.focusPageDown",
-    "when": "listFocus && !inputFocus"
-  },
-  {
-    "key": "ctrl+v",
-    "command": "notifications.focusLastToast",
-    "when": "notificationFocus && notificationToastsVisible"
-  },
-  {
-    "key": "ctrl+v",
-    "command": "selectNextPageSuggestion",
-    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-  },
-  {
-    "key": "ctrl+v",
-    "command": "workbench.action.interactivePlayground.pageDown",
-    "when": "interactivePlaygroundFocus && !editorTextFocus"
-  },
-  {
     "key": "cmd+o",
     "command": "-workbench.action.files.openFileFolder"
   },
@@ -1118,11 +1078,6 @@
     "key": "cmd+c",
     "command": "editor.action.clipboardCopyAction",
     "when": "textInputFocus"
-  },
-  {
-    "key": "cmd+v",
-    "command": "editor.action.clipboardPasteAction",
-    "when": "textInputFocus && !editorReadonly"
   },
   {
     "key": "shift+cmd+p",
@@ -1563,5 +1518,18 @@
     "key": "ctrl+shift+]",
     "command": "-markdown.extension.editing.toggleHeadingUp",
     "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+alt+m n",
+    "command": "memo.openDailyNote"
+  },
+  {
+    "key": "ctrl+l ctrl+s",
+    "command": "editor.action.insertSnippet"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "editor.action.clipboardPasteAction",
+    "when": "textInputFocus && !editorReadonly"
   }
 ]
