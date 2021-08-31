@@ -236,7 +236,6 @@
     "CHERE_INVOKING": "1"
   },
   "terminal.external.windowsExec": "C:\\\\Program Files\\\\Git\\\\git-bash.exe",
-  "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Mono",
   "terminal.integrated.profiles.windows": {
     "Ubuntu (WSL)": {
       "path": "C:\\\\Windows\\\\System32\\\\wsl.exe",
@@ -259,5 +258,6 @@
   "markdown.preview.typographer": true,
   "remote.WSL.debug": true,
   "redhat.telemetry.enabled": true,
-  "markdown.preview.scrollEditorWithPreview": false
+  "markdown.preview.scrollEditorWithPreview": false,
+  "terminal.integrated.fontFamily": "Consolas"
 }

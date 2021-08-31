@@ -187,11 +187,11 @@
     "command": "-workbench.action.openGlobalKeybindings"
   },
   {
-    "key": "alt+l alt+a",
+    "key": "ctrl+l ctrl+s",
     "command": "editor.action.sortLinesAscending"
   },
   {
-    "key": "alt+l alt+d",
+    "key": "ctrl+l s",
     "command": "editor.action.sortLinesDescending"
   },
   {
@@ -1524,12 +1524,12 @@
     "command": "memo.openDailyNote"
   },
   {
-    "key": "ctrl+l ctrl+s",
-    "command": "editor.action.insertSnippet"
-  },
-  {
     "key": "ctrl+y",
     "command": "editor.action.clipboardPasteAction",
     "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+l i",
+    "command": "editor.action.insertSnippet"
   }
 ]
