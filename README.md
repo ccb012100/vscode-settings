@@ -1,2 +1,3 @@
 # vscode-settings
-settings for VS Code
+
+Personal settings, keybindings, snippets for VS Code
