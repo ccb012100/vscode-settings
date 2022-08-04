@@ -361,10 +361,6 @@
     "command": "-editor.action.toggleRenderWhitespace"
   },
   {
-    "key": "ctrl+x ctrl+b",
-    "command": "workbench.action.showAllEditors"
-  },
-  {
     "key": "ctrl+l r",
     "command": "editor.action.rename",
     "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
@@ -643,11 +639,6 @@
     "command": "-workbench.action.showCommands"
   },
   {
-    "key": "shift+cmd+m",
-    "command": "-workbench.actions.view.problems",
-    "when": "workbench.panel.markers.view.active"
-  },
-  {
     "key": "ctrl+cmd+w",
     "command": "-workbench.action.toggleTabsVisibility"
   },
@@ -896,11 +887,6 @@
     "when": "editorTextFocus && editorLangId == 'rust'"
   },
   {
-    "key": "ctrl+shift+m",
-    "command": "-workbench.actions.view.problems",
-    "when": "workbench.panel.markers.view.active"
-  },
-  {
     "key": "ctrl+shift+\\",
     "command": "-editor.action.jumpToBracket",
     "when": "editorTextFocus"
@@ -919,7 +905,7 @@
     "command": "editor.action.referenceSearch.trigger"
   },
   {
-    "key": "ctrl+h x",
+    "key": "ctrl+g x",
     "command": "workbench.view.extensions",
     "when": "viewContainer.workbench.view.extensions.enabled"
   },
@@ -2139,34 +2125,6 @@
     "command": "-workbench.action.focusFirstEditorGroup"
   },
   {
-    "key": "cmd+2",
-    "command": "-workbench.action.focusSecondEditorGroup"
-  },
-  {
-    "key": "cmd+3",
-    "command": "-workbench.action.focusThirdEditorGroup"
-  },
-  {
-    "key": "cmd+4",
-    "command": "-workbench.action.focusFourthEditorGroup"
-  },
-  {
-    "key": "cmd+8",
-    "command": "-workbench.action.focusEighthEditorGroup"
-  },
-  {
-    "key": "cmd+5",
-    "command": "-workbench.action.focusFifthEditorGroup"
-  },
-  {
-    "key": "cmd+7",
-    "command": "-workbench.action.focusSeventhEditorGroup"
-  },
-  {
-    "key": "cmd+6",
-    "command": "-workbench.action.focusSixthEditorGroup"
-  },
-  {
     "key": "cmd+o",
     "command": "-workbench.action.files.openFile",
     "when": "false"
@@ -2232,11 +2190,6 @@
     "key": "shift+alt+p",
     "command": "cursorColumnSelectUp",
     "when": "textInputFocus"
-  },
-  {
-    "key": "alt+9",
-    "command": "workbench.action.terminal.toggleTerminal",
-    "when": "terminalHasBeenCreated"
   },
   {
     "key": "shift+cmd+\\",
@@ -2529,10 +2482,6 @@
     "command": "-workbench.action.togglePanel"
   },
   {
-    "key": "ctrl+0",
-    "command": "workbench.action.focusActiveEditorGroup"
-  },
-  {
     "key": "shift+cmd+c",
     "command": "-workbench.action.terminal.openNativeConsole",
     "when": "!terminalFocus"
@@ -2746,46 +2695,12 @@
     "command": "-workbench.action.focusSideBar"
   },
   {
-    "key": "ctrl+0",
-    "command": "workbench.action.focusActiveEditorGroup"
-  },
-  {
-    "key": "alt+6",
-    "command": "workbench.actions.view.problems",
-    "when": "workbench.panel.markers.view.active"
-  },
-  {
-    "key": "alt+3",
-    "command": "workbench.view.scm"
-  },
-  {
-    "key": "alt+1",
-    "command": "workbench.view.explorer",
-    "when": "viewContainer.workbench.view.explorer.enabled"
-  },
-  {
-    "key": "alt+7",
-    "command": "workbench.view.extension.test"
-  },
-  {
     "key": "alt+8",
     "command": "nugetpackagemanagergui.view"
   },
   {
-    "key": "alt+5",
+    "key": "ctrl+g ctrl+t",
     "command": "todo-tree-view.focus"
-  },
-  {
-    "key": "alt+0",
-    "command": "workbench.files.action.focusOpenEditorsView"
-  },
-  {
-    "key": "alt+4",
-    "command": "outline.focus"
-  },
-  {
-    "key": "alt+2",
-    "command": "bookmarks.listFromAllFiles"
   },
   {
     "key": "ctrl+c j",
@@ -2798,7 +2713,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+c ",
+    "key": "ctrl+c l",
     "command": "workbench.action.focusRightGroup",
     "when": "editorTextFocus"
   },
@@ -2930,7 +2845,7 @@
     "command": "-workbench.action.toggleEditorGroupLayout"
   },
   {
-    "key": "alt+meta+.",
+    "key": "ctrl+x ,",
     "command": "workbench.action.toggleEditorGroupLayout"
   },
   {
@@ -2967,40 +2882,8 @@
     "command": "-auto-close-tag.closeTag"
   },
   {
-    "key": "ctrl+g c",
-    "command": "git.commitStaged"
-  },
-  {
-    "key": "ctrl+g shift+c",
-    "command": "git.commitAll"
-  },
-  {
     "key": "ctrl+g h",
     "command": "workbench.view.extension.github-pull-requests"
-  },
-  {
-    "key": "ctrl+g s",
-    "command": "git.sync"
-  },
-  {
-    "key": "ctrl+g p",
-    "command": "git.pull"
-  },
-  {
-    "key": "ctrl+g shift+p",
-    "command": "git.push"
-  },
-  {
-    "key": "ctrl+g shift+f",
-    "command": "git.fetchPrune"
-  },
-  {
-    "key": "ctrl+g f",
-    "command": "git.fetch"
-  },
-  {
-    "key": "ctrl+g g",
-    "command": "gitlens.views.commits.focus"
   },
   {
     "key": "ctrl+shift+g g",
@@ -3012,36 +2895,14 @@
     "command": "workbench.scm.focus"
   },
   {
-    "key": "ctrl+g ctrl+s",
-    "command": "gitlens.showQuickRepoStatus",
-    "when": "!gitlens:disabled"
-  },
-  {
     "key": "alt+s",
     "command": "-gitlens.showQuickRepoStatus",
     "when": "!gitlens:disabled && config.gitlens.keymap == 'alternate'"
   },
   {
-    "key": "ctrl+g l",
-    "command": "git-graph.view"
-  },
-  {
-    "key": "ctrl+g ctrl+c",
-    "command": "git.checkout"
-  },
-  {
-    "key": "ctrl+g b",
-    "command": "gitlens.toggleFileBlame",
-    "when": "editorTextFocus && gitlens:activeFileStatus =~ /blameable/"
-  },
-  {
     "key": "alt+b",
     "command": "-gitlens.toggleFileBlame",
     "when": "editorTextFocus && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /blameable/"
-  },
-  {
-    "key": "ctrl+g n",
-    "command": "git.branchFrom"
   },
   {
     "key": "ctrl+c p",
@@ -3074,11 +2935,6 @@
     "when": "editorTextFocus && editorLangId != 'rust'"
   },
   {
-    "key": "ctrl+g ,",
-    "command": "gitlens.gitCommands",
-    "when": "!gitlens:disabled"
-  },
-  {
     "key": "ctrl+shift+g /",
     "command": "-gitlens.gitCommands",
     "when": "!gitlens:disabled && config.gitlens.keymap == 'chorded'"
@@ -3107,7 +2963,7 @@
     "when": "breadcrumbsPossible"
   },
   {
-    "key": "ctrl+l b",
+    "key": "ctrl+x b",
     "command": "workbench.view.extension.bookmarks"
   },
   {
@@ -3154,7 +3010,7 @@
     "command": "workbench.action.files.saveAll"
   },
   {
-    "key": "ctrl+l ctrl+u",
+    "key": "ctrl+l u",
     "command": "editor.action.transformToUppercase"
   },
   {
@@ -3272,7 +3128,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+x b",
+    "key": "ctrl+x ctrl+b",
     "command": "workbench.action.showAllEditors"
   },
   {
@@ -3480,7 +3336,7 @@
     "command": "-workbench.action.moveEditorRightInGroup"
   },
   {
-    "key": "ctrl+x t",
+    "key": "ctrl+g t",
     "command": "workbench.action.terminal.toggleTerminal",
     "when": "terminalHasBeenCreated"
   },
@@ -3500,11 +3356,6 @@
   {
     "key": "meta+v",
     "command": "editor.action.clipboardPasteAction"
-  },
-  {
-    "key": "ctrl+shift+d",
-    "command": "-workbench.view.debug",
-    "when": "viewContainer.workbench.view.debug.enabled"
   },
   {
     "key": "ctrl+shift+k",
@@ -3557,35 +3408,7 @@
     "command": "editor.action.fixAll"
   },
   {
-    "key": "ctrl+8",
-    "command": "-workbench.action.focusEighthEditorGroup"
-  },
-  {
-    "key": "ctrl+5",
-    "command": "-workbench.action.focusFifthEditorGroup"
-  },
-  {
-    "key": "ctrl+4",
-    "command": "-workbench.action.focusFourthEditorGroup"
-  },
-  {
-    "key": "ctrl+2",
-    "command": "-workbench.action.focusSecondEditorGroup"
-  },
-  {
-    "key": "ctrl+7",
-    "command": "-workbench.action.focusSeventhEditorGroup"
-  },
-  {
-    "key": "ctrl+6",
-    "command": "-workbench.action.focusSixthEditorGroup"
-  },
-  {
-    "key": "ctrl+3",
-    "command": "-workbench.action.focusThirdEditorGroup"
-  },
-  {
-    "key": "ctrl+x e",
+    "key": "ctrl+g e",
     "command": "workbench.action.focusActiveEditorGroup"
   },
   {
@@ -3656,7 +3479,7 @@
     "when": "editorTextFocus && foldingEnabled"
   },
   {
-    "key": "ctrl+l shift+u",
+    "key": "ctrl+l ctrl+u",
     "command": "editor.action.transformToTitlecase"
   },
   {
@@ -3678,5 +3501,89 @@
     "key": "ctrl+.",
     "command": "-editor.action.quickFix",
     "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+g d",
+    "command": "workbench.view.debug",
+    "when": "viewContainer.workbench.view.debug.enabled"
+  },
+  {
+    "key": "ctrl+shift+d",
+    "command": "-workbench.view.debug",
+    "when": "viewContainer.workbench.view.debug.enabled"
+  },
+  {
+    "key": "ctrl+q",
+    "command": "-workbench.action.quit"
+  },
+  {
+    "key": "ctrl+g l",
+    "command": "workbench.action.gotoLine"
+  },
+  {
+    "key": "ctrl+g shift+o",
+    "command": "outline.focus"
+  },
+  {
+    "key": "ctrl+g f",
+    "command": "workbench.files.action.focusFilesExplorer"
+  },
+  {
+    "key": "ctrl+g ctrl+h",
+    "command": "pr:github.focus"
+  },
+  {
+    "key": "ctrl+g j",
+    "command": "workbench.view.extension.json-views"
+  },
+  {
+    "key": "ctrl+g p",
+    "command": "workbench.actions.view.problems",
+    "when": "workbench.panel.markers.view.active"
+  },
+  {
+    "key": "ctrl+shift+m",
+    "command": "-workbench.actions.view.problems",
+    "when": "workbench.panel.markers.view.active"
+  },
+  {
+    "key": "ctrl+g o",
+    "command": "workbench.action.output.toggleOutput",
+    "when": "workbench.panel.output.active"
+  },
+  {
+    "key": "ctrl+k ctrl+h",
+    "command": "-workbench.action.output.toggleOutput",
+    "when": "workbench.panel.output.active"
+  },
+  {
+    "key": "ctrl+g c",
+    "command": "workbench.panel.comments"
+  },
+  {
+    "key": "ctrl+g ctrl+d",
+    "command": "workbench.action.toggleDevTools",
+    "when": "isDevelopment"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "-workbench.action.toggleDevTools",
+    "when": "isDevelopment"
+  },
+  {
+    "key": "ctrl+g b",
+    "command": "bookmarks.list"
+  },
+  {
+    "key": "ctrl+l b",
+    "command": "bookmarks.jumpToNext"
+  },
+  {
+    "key": "ctrl+l shift+b",
+    "command": "bookmarks.jumpToPrevious"
+  },
+  {
+    "key": "ctrl+g ctrl+b",
+    "command": "bookmarks.listFromAllFiles"
   }
 ]

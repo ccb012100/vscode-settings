@@ -247,8 +247,6 @@
 		"rewrap.wrappingColumn": 72,
 		"workbench.editor.restoreViewState": false
 	},
-	"editor.minimap.renderCharacters": false,
-	"editor.minimap.showSlider": "always",
 	"todo-tree.general.statusBar": "tags",
 	"todo-tree.general.tags": [
 		"BUG:",
@@ -365,7 +363,6 @@
 		"findThenJump.textDecorationBackground": "#FFFF00",
 		"findThenJump.textDecorationForeground": "#000"
 	},
-	"debug.openExplorerOnEnd": true,
 	"debug.showBreakpointsInOverviewRuler": true,
 	"debug.toolBarLocation": "docked",
 	"terminal.integrated.tabs.enabled": false,
@@ -419,7 +416,7 @@
 	"git-graph.repository.sign.tags": true,
 	"git-graph.repository.commits.mute.commitsThatAreNotAncestorsOfHead": true,
 	"terminal.integrated.shellIntegration.enabled": true,
-	"workbench.colorTheme": "Gruvbox Dark Hard",
+	"workbench.colorTheme": "Codesong",
 	"githubIssues.queries": [
 		{
 			"label": "My Issues",
@@ -437,5 +434,7 @@
 	"openInGitHub.remote.name": "main",
 	"githubPullRequests.assignCreated": "${user}",
 	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
-	"mocha-snippets.glob": "**/*.spec.ts",
+	"editor.minimap.showSlider": "always",
+	"editor.minimap.renderCharacters": false,
+	"editor.minimap.enabled": false,
 }
