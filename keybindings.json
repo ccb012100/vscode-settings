@@ -2963,10 +2963,6 @@
     "when": "breadcrumbsPossible"
   },
   {
-    "key": "ctrl+x b",
-    "command": "workbench.view.extension.bookmarks"
-  },
-  {
     "key": "alt+n",
     "command": "scrollLineDown",
     "when": "textInputFocus"
@@ -3128,7 +3124,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+x ctrl+b",
+    "key": "ctrl+x b",
     "command": "workbench.action.showAllEditors"
   },
   {
@@ -3585,5 +3581,34 @@
   {
     "key": "ctrl+g ctrl+b",
     "command": "bookmarks.listFromAllFiles"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "list.find",
+    "when": "listFocus && listSupportsFind"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "-list.find",
+    "when": "listFocus && listSupportsFind"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "focusNextCodeAction",
+    "when": "CodeActionMenuVisible"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "focusPreviousCodeAction",
+    "when": "CodeActionMenuVisible"
+  },
+  {
+    "key": "ctrl+x ctrl+b",
+    "command": "workbench.action.showAllEditors"
+  },
+  {
+    "key": "ctrl+right",
+    "command": "cursorWordRight",
+    "when": "textInputFocus"
   }
 ]
