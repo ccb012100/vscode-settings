@@ -2197,7 +2197,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+x ctrl+t",
+    "key": "ctrl+x t",
     "command": "workbench.action.terminal.moveToEditor",
     "when": "terminalFocus && terminalHasBeenCreated"
   },
@@ -2699,10 +2699,6 @@
     "command": "nugetpackagemanagergui.view"
   },
   {
-    "key": "ctrl+g ctrl+t",
-    "command": "todo-tree-view.focus"
-  },
-  {
     "key": "ctrl+c j",
     "command": "workbench.action.focusBelowGroup",
     "when": "editorTextFocus"
@@ -2760,7 +2756,7 @@
     "when": "inlineSuggestionVisible && !editorReadonly"
   },
   {
-    "key": "ctrl+l ctrl+l",
+    "key": "ctrl+l ctrl+;",
     "command": "editor.action.selectFromAnchorToCursor",
     "when": "editorTextFocus && selectionAnchorSet"
   },
@@ -2770,7 +2766,7 @@
     "when": "editorTextFocus && selectionAnchorSet"
   },
   {
-    "key": "ctrl+l ctrl+l",
+    "key": "ctrl+l ctrl+;",
     "command": "editor.action.setSelectionAnchor",
     "when": "editorTextFocus && !selectionAnchorSet"
   },
@@ -3138,7 +3134,7 @@
     "when": "canNavigateForward"
   },
   {
-    "key": "ctrl+shift+z",
+    "key": "alt+z",
     "command": "redo",
     "when": "textInputFocus && !editorReadonly"
   },
@@ -3264,7 +3260,7 @@
     "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
   },
   {
-    "key": "ctrl+r",
+    "key": "ctrl+shift+r",
     "command": "workbench.action.terminal.findPrevious",
     "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
   },
@@ -3332,12 +3328,7 @@
     "command": "-workbench.action.moveEditorRightInGroup"
   },
   {
-    "key": "ctrl+g t",
-    "command": "workbench.action.terminal.toggleTerminal",
-    "when": "terminalHasBeenCreated"
-  },
-  {
-    "key": "ctrl+x ctrl+t",
+    "key": "ctrl+x t",
     "command": "workbench.action.terminal.moveToTerminalPanel",
     "when": "terminalEditorFocus"
   },
@@ -3372,11 +3363,6 @@
     "key": "ctrl+shift+j",
     "command": "-workbench.action.search.toggleQueryDetails",
     "when": "inSearchEditor || searchViewletFocus"
-  },
-  {
-    "key": "ctrl+shift+enter",
-    "command": "workbench.action.terminal.new",
-    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
   },
   {
     "key": "ctrl+shift+`",
@@ -3432,11 +3418,11 @@
     "command": "deleteAllRight"
   },
   {
-    "key": "ctrl+x shift+enter",
+    "key": "ctrl+x alt+enter",
     "command": "workbench.action.createTerminalEditorSide"
   },
   {
-    "key": "ctrl+x enter",
+    "key": "ctrl+x shift+enter",
     "command": "workbench.action.createTerminalEditor"
   },
   {
@@ -3610,5 +3596,55 @@
     "key": "ctrl+right",
     "command": "cursorWordRight",
     "when": "textInputFocus"
+  },
+  {
+    "key": "tab",
+    "command": "-editor.emmet.action.expandAbbreviation",
+    "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "workbench.action.findInFiles"
+  },
+  {
+    "key": "ctrl+l t",
+    "command": "typescript.reloadProjects"
+  },
+  {
+    "key": "ctrl+g ctrl+t",
+    "command": "terminal.focus"
+  },
+  {
+    "key": "ctrl+g t",
+    "command": "workbench.action.terminal.focus"
+  },
+  {
+    "key": "ctrl+shift+enter",
+    "command": "-memo.openReferenceBeside",
+    "when": "editorTextFocus && memo:refFocusedOrHovered && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+shift+enter",
+    "command": "-notebook.cell.insertCodeCellAbove",
+    "when": "notebookCellListFocused && !inputFocus"
+  },
+  {
+    "key": "ctrl+shift+enter",
+    "command": "-search.action.replaceAllInFolder",
+    "when": "folderMatchFocus && replaceActive && searchViewletVisible"
+  },
+  {
+    "key": "ctrl+shift+enter",
+    "command": "-search.action.replaceAllInFile",
+    "when": "fileMatchFocus && replaceActive && searchViewletVisible"
+  },
+  {
+    "key": "ctrl+shift+enter",
+    "command": "-list.toggleSelection",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+x enter",
+    "command": "workbench.action.terminal.new"
   }
 ]

@@ -143,7 +143,6 @@
 	"git.confirmSync": false,
 	"markdown.extension.print.theme": "dark",
 	"problems.showCurrentInStatus": true,
-	"terminal.integrated.defaultLocation": "editor",
 	"terminal.integrated.defaultProfile.windows": "Git Bash",
 	"terminal.integrated.cursorBlinking": true,
 	"terminal.integrated.cursorStyle": "line",
@@ -309,15 +308,13 @@
 	"typescript.inlayHints.variableTypes.enabled": true,
 	"rewrap.autoWrap.enabled": true,
 	"rust-analyzer.imports.granularity.enforce": true,
-	"rust-analyzer.inlayHints.closureReturnTypeHints.enable": true,
-	"rust-analyzer.inlayHints.reborrowHints.enable": true,
+	"rust-analyzer.inlayHints.closureReturnTypeHints.enable": "with_block",
+	"rust-analyzer.inlayHints.reborrowHints.enable": "mutable",
 	"scm.inputFontSize": 11,
 	"github.gitProtocol": "ssh",
-	"problems.defaultViewMode": "table",
 	"debug.console.fontSize": 12,
 	"terminal.integrated.fontSize": 12,
 	"terminal.integrated.fontFamily": "Hack Nerd Font",
-	"terminal.integrated.customGlyphs": false,
 	"workbench.sideBar.location": "right",
 	"terminal.integrated.tabs.focusMode": "singleClick",
 	"search.exclude": {
@@ -416,7 +413,7 @@
 	"git-graph.repository.sign.tags": true,
 	"git-graph.repository.commits.mute.commitsThatAreNotAncestorsOfHead": true,
 	"terminal.integrated.shellIntegration.enabled": true,
-	"workbench.colorTheme": "GitHub Dark",
+	"workbench.colorTheme": "Dracula",
 	"githubIssues.queries": [
 		{
 			"label": "My Issues",
@@ -439,4 +436,8 @@
 	"editor.minimap.enabled": false,
 	"editor.experimental.stickyScroll.enabled": true,
 	"githubPullRequests.pullBranch": "never",
+	"eslint.lintTask.enable": true,
+	"eslint.packageManager": "pnpm",
+	"githd.blameView.enabled": false,
+	"terminal.integrated.defaultProfile.linux": "zsh",
 }
