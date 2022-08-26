@@ -78,7 +78,7 @@
 		"files.trimTrailingWhitespace": false,
 		"editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
 	},
-	"editor.suggestSelection": "first",
+	"editor.suggestSelection": "recentlyUsedByPrefix",
 	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 	"[typescript]": {
 		"editor.defaultFormatter": "ms-vscode.vscode-typescript-tslint-plugin",
@@ -188,8 +188,7 @@
 	"explorer.openEditors.sortOrder": "alphabetical",
 	"editor.quickSuggestions": {
 		"comments": "on",
-		"strings": "on",
-		"other": "on"
+		"strings": "on"
 	},
 	"window.title": "${dirty}${separator}${rootName}",
 	"csv-preview.formatValues": "unquoted",
@@ -203,7 +202,7 @@
 	"scm.inputFontFamily": "Hack",
 	"workbench.editor.tabSizing": "shrink",
 	"C_Cpp.autocompleteAddParentheses": true,
-	"editor.fontSize": 13,
+	"editor.fontSize": 12,
 	"javascript.updateImportsOnFileMove.enabled": "always",
 	"emmet.showSuggestionsAsSnippets": true,
 	"editor.guides.bracketPairs": true,

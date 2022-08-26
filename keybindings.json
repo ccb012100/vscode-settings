@@ -1791,10 +1791,6 @@
     "when": "viewContainer.workbench.view.explorer.enabled"
   },
   {
-    "key": "alt+enter",
-    "command": "editor.action.inlineSuggest.trigger"
-  },
-  {
     "key": "alt+down",
     "command": "-showNextParameterHint",
     "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
@@ -2274,7 +2270,7 @@
     "when": "focusedView == 'workbench.panel.markers.view'"
   },
   {
-    "key": "ctrl+,",
+    "key": "ctrl+space",
     "command": "workbench.action.showCommands"
   },
   {
@@ -2756,7 +2752,7 @@
     "when": "inlineSuggestionVisible && !editorReadonly"
   },
   {
-    "key": "ctrl+l ctrl+;",
+    "key": "ctrl+,",
     "command": "editor.action.selectFromAnchorToCursor",
     "when": "editorTextFocus && selectionAnchorSet"
   },
@@ -2766,7 +2762,7 @@
     "when": "editorTextFocus && selectionAnchorSet"
   },
   {
-    "key": "ctrl+l ctrl+;",
+    "key": "ctrl+,",
     "command": "editor.action.setSelectionAnchor",
     "when": "editorTextFocus && !selectionAnchorSet"
   },
@@ -3646,5 +3642,25 @@
   {
     "key": "ctrl+x enter",
     "command": "workbench.action.terminal.new"
+  },
+  {
+    "key": "alt+;",
+    "command": "editor.action.insertCursorBelow",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+;",
+    "command": "editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+=",
+    "command": "editor.unfold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "alt+space",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
   }
 ]
