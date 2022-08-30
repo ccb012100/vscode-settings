@@ -574,11 +574,6 @@
     "command": "-npm-script.terminate-script"
   },
   {
-    "key": "shift+cmd+l",
-    "command": "-editor.action.selectHighlights",
-    "when": "editorFocus"
-  },
-  {
     "key": "cmd+i",
     "command": "-markdown.extension.editing.toggleItalic",
     "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
@@ -1537,11 +1532,6 @@
     "key": "alt+enter",
     "command": "-testing.editFocusedTest",
     "when": "focusedView == 'workbench.view.testing'"
-  },
-  {
-    "key": "alt+enter",
-    "command": "-editor.action.selectAllMatches",
-    "when": "editorFocus && findWidgetVisible"
   },
   {
     "key": "alt+enter",
@@ -3662,5 +3652,15 @@
     "key": "alt+space",
     "command": "editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "editor.action.selectAllMatches",
+    "when": "editorFocus && findWidgetVisible"
+  },
+  {
+    "key": "alt+enter",
+    "command": "-editor.action.selectAllMatches",
+    "when": "editorFocus && findWidgetVisible"
   }
 ]
