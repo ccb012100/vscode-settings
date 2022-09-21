@@ -314,11 +314,6 @@
     "when": "textInputFocus"
   },
   {
-    "key": "shift+space",
-    "command": "editor.action.triggerSuggest",
-    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
-  },
-  {
     "key": "ctrl+space",
     "command": "-editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
@@ -380,11 +375,6 @@
     "key": "ctrl+b",
     "command": "-cursorLeft",
     "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+x /",
-    "command": "editor.action.blockComment",
-    "when": "editorTextFocus && !editorReadonly"
   },
   {
     "key": "shift+alt+a",
@@ -750,11 +740,6 @@
     "key": "shift+alt+.",
     "command": "cursorBottom",
     "when": "textInputFocus"
-  },
-  {
-    "key": "shift+alt+.",
-    "command": "-editor.action.autoFix",
-    "when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)quickfix\\b/"
   },
   {
     "key": "ctrl+s",
@@ -1399,7 +1384,7 @@
     "when": "inKeybindings"
   },
   {
-    "key": "ctrl+; ctrl+r",
+    "key": "ctrl+h r",
     "command": "references-view.findReferences",
     "when": "editorHasReferenceProvider"
   },
@@ -1836,10 +1821,6 @@
     "when": "terminalFocus && terminalHasBeenCreated && terminalTextSelected || terminalFocus && terminalProcessSupported && terminalTextSelected"
   },
   {
-    "key": "ctrl+alt+c ctrl+alt+c",
-    "command": "-comment-ts.commentThis"
-  },
-  {
     "key": "alt+up",
     "command": "-scm.forceViewPreviousCommit",
     "when": "scmRepository"
@@ -1973,11 +1954,6 @@
     "key": "cmd+enter",
     "command": "-notebook.cell.insertCodeCellBelow",
     "when": "notebookCellListFocused && !inputFocus"
-  },
-  {
-    "key": "cmd+enter",
-    "command": "-editor.action.openLink",
-    "when": "editorTextFocus && editorLangId == 'markdown'"
   },
   {
     "key": "cmd+enter",
@@ -2519,7 +2495,7 @@
     "when": "searchViewletFocus"
   },
   {
-    "key": "alt+w",
+    "key": "meta+c",
     "command": "editor.action.clipboardCopyAction"
   },
   {
@@ -2718,7 +2694,7 @@
     "when": "!config.breadcrumbs.enabled"
   },
   {
-    "key": "ctrl+shift+.",
+    "key": "ctrl+shift+'",
     "command": "editor.action.smartSelect.shrink",
     "when": "editorTextFocus"
   },
@@ -2798,7 +2774,7 @@
     "command": "workbench.action.toggleAuxiliaryBar"
   },
   {
-    "key": "ctrl+.",
+    "key": "ctrl+'",
     "command": "editor.action.smartSelect.expand",
     "when": "editorTextFocus"
   },
@@ -2989,11 +2965,6 @@
     "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
   },
   {
-    "key": "ctrl+h r",
-    "command": "editor.action.goToReferences",
-    "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
-  },
-  {
     "key": "ctrl+h t",
     "command": "editor.action.goToTypeDefinition"
   },
@@ -3035,7 +3006,7 @@
     "when": "breakpointsFocused"
   },
   {
-    "key": "ctrl+'",
+    "key": "alt+space",
     "command": "editor.action.showHover",
     "when": "editorTextFocus"
   },
@@ -3344,7 +3315,7 @@
     "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
   },
   {
-    "key": "ctrl+w",
+    "key": "meta+x",
     "command": "editor.action.clipboardCutAction"
   },
   {
@@ -3354,14 +3325,6 @@
   {
     "key": "shift+delete",
     "command": "editor.action.clipboardCutAction"
-  },
-  {
-    "key": "ctrl+l a",
-    "command": "editor.action.autoFix"
-  },
-  {
-    "key": "ctrl+l shift+a",
-    "command": "editor.action.fixAll"
   },
   {
     "key": "ctrl+g e",
@@ -3439,26 +3402,6 @@
     "command": "editor.action.transformToTitlecase"
   },
   {
-    "key": "ctrl+enter",
-    "command": "problems.action.showQuickFixes",
-    "when": "problemFocus"
-  },
-  {
-    "key": "ctrl+.",
-    "command": "-problems.action.showQuickFixes",
-    "when": "problemFocus"
-  },
-  {
-    "key": "ctrl+enter",
-    "command": "editor.action.quickFix",
-    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+.",
-    "command": "-editor.action.quickFix",
-    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
-  },
-  {
     "key": "ctrl+g d",
     "command": "workbench.view.debug",
     "when": "viewContainer.workbench.view.debug.enabled"
@@ -3513,7 +3456,7 @@
     "when": "workbench.panel.output.active"
   },
   {
-    "key": "ctrl+g c",
+    "key": "ctrl+g ctrl+c",
     "command": "workbench.panel.comments"
   },
   {
@@ -3622,22 +3565,12 @@
     "command": "workbench.action.terminal.new"
   },
   {
-    "key": "alt+;",
-    "command": "editor.action.insertCursorBelow",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "shift+alt+;",
-    "command": "editor.action.insertCursorAbove",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "ctrl+shift+=",
     "command": "editor.unfold",
     "when": "editorTextFocus && foldingEnabled"
   },
   {
-    "key": "alt+space",
+    "key": "alt+.",
     "command": "editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
   },
@@ -3735,5 +3668,137 @@
     "key": "alt+p",
     "command": "-keybindings.editor.toggleSortByPrecedence",
     "when": "inKeybindings"
+  },
+  {
+    "key": "ctrl+g c",
+    "command": "workbench.action.focusCommentsPanel"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "-problems.action.openToSide",
+    "when": "problemFocus"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "-workbench.action.submitComment",
+    "when": "commentEditorFocused"
+  },
+  {
+    "key": "enter",
+    "command": "-editor.action.nextMatchFindAction",
+    "when": "editorFocus && findInputFocussed"
+  },
+  {
+    "key": "enter",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "editorFocus && findInputFocussed"
+  },
+  {
+    "key": "ctrl+g ctrl+s",
+    "command": "workbench.view.search.focus"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "search.action.focusSearchList",
+    "when": "searchInputBoxFocus"
+  },
+  {
+    "key": "ctrl+g s",
+    "command": "workbench.view.search.focus"
+  },
+  {
+    "key": "alt+/",
+    "command": "redo",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+space",
+    "command": "editor.debug.action.showDebugHover",
+    "when": "editorTextFocus && inDebugMode"
+  },
+  {
+    "key": "ctrl+k ctrl+i",
+    "command": "-editor.debug.action.showDebugHover",
+    "when": "editorTextFocus && inDebugMode"
+  },
+  {
+    "key": "shift+alt+[IntlBackslash]",
+    "command": "-editor.action.autoFix",
+    "when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)quickfix\\b/"
+  },
+  {
+    "key": "shift+alt+.",
+    "command": "-editor.action.autoFix",
+    "when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)quickfix\\b/"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "selectPrevCodeAction",
+    "when": "codeActionMenuVisible"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "selectNextCodeAction",
+    "when": "codeActionMenuVisible"
+  },
+  {
+    "key": "j",
+    "command": "selectNextCodeAction",
+    "when": "codeActionMenuVisible"
+  },
+  {
+    "key": "k",
+    "command": "selectPrevCodeAction",
+    "when": "codeActionMenuVisible"
+  },
+  {
+    "key": "j",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "k",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "j",
+    "command": "list.focusDown",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "k",
+    "command": "list.focusUp",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+x ctrl+/",
+    "command": "editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+x /",
+    "command": "editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+alt+c ctrl+alt+c",
+    "command": "-comment-ts.commentThis"
+  },
+  {
+    "key": "ctrl+c",
+    "command": "-editor.action.clipboardCopyAction"
+  },
+  {
+    "key": "ctrl+x",
+    "command": "-editor.action.clipboardCutAction"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "editor.action.clipboardCutAction"
+  },
+  {
+    "key": "alt+w",
+    "command": "editor.action.clipboardCopyAction"
   }
 ]
