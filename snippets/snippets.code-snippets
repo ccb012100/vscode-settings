@@ -17,22 +17,38 @@
   // }
   "paste current DateTime": {
     "scope": "plaintext,markdown",
-    "prefix": "datetime_stamp",
-    "body": [
-      "$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND"
-    ],
-    "description": "Paste the current date + time in the format `YYY-MM-DD HH:MM:SS`"
+    "prefix": "dtstamp",
+    "body": "$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND",
+    "description": "Paste the current DateTime in the format `YYY-MM-DD HH:MM:SS`"
   },
   "paste current Date": {
     "scope": "plaintext,markdown",
-    "prefix": "date_stamp",
+    "prefix": "dstamp",
     "body": "$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
     "description": "Paste the current date in YYYY-MM-DD format"
   },
   "log object to console": {
     "scope": "javascript,typescript",
-    "prefix": "log-object",
+    "prefix": "conslog-obj",
     "body": "console.log({$1})",
     "description": "Log an object to the JavaScript console"
+  },
+  "log stringified JSON object to console": {
+    "scope": "javascript,typescript",
+    "prefix": "conslog-jsonstring",
+    "body": "console.log('$1: ' + JSON.stringify($1, null, 2));",
+    "description": "Log a stringified JSON object to the Javascript console"
+  },
+  "Date header": {
+    "scope": "plaintext,markdown",
+    "body": "==> $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE\n\n$0",
+    "prefix": "dheader",
+    "description": "Insert a date header"
+  },
+  "Section separator": {
+    "scope": "plaintext,markdown",
+    "body": "\n---\n\n",
+    "prefix": "section-sep",
+    "description": "Insert a section separator"
   }
 }

@@ -13,7 +13,7 @@
 	// 	"description": "Log output to console"
 	// }
 	"new Mocha test-case": {
-		"prefix": "mocha_it",
+		"prefix": "mocha-it",
 		"body": [
 			"it('should $1', async function () {",
 			"\tassert.fail('WIP: not implemented');$0",
@@ -22,25 +22,25 @@
 		"description": "stub for a new Mocha test-case"
 	},
 	"new Mocha suite context": {
-		"prefix": "mocha_context",
+		"prefix": "mocha-context",
 		"body": [
-			"context('${1}', function () {",
+			"context('$1', function () {",
 			"$0",
 			"});"
 		],
 		"description": "stub for a new Mocha test suite context"
 	},
 	"describe new Mocha suite": {
-		"prefix": "mocha_describe",
+		"prefix": "mocha-describe",
 		"body": [
-			"describe({$1:function}.name, function () {",
+			"describe($1.name, function () {",
 			"$0",
 			"});"
 		],
 		"description": "stub for description of a new Mocha test suite"
 	},
 	"Mocha beforeEach function": {
-		"prefix": "mocha_before",
+		"prefix": "mocha-before",
 		"body": [
 			"beforeEach(async function () {",
 			"$0",
@@ -49,11 +49,12 @@
 		"description": "stub for a Mocha beforeEach function"
 	},
 	"parameterized Mocha test": {
-		"prefix": "mocha_parameterized-test",
+		"prefix": "mocha-parameterized",
 		"body": [
 			"[$1].forEach(($2) => {",
 			"$0",
 			"});"
-		]
+		],
+		"description": "stub for a parameterized Mocha test"
 	}
 }
