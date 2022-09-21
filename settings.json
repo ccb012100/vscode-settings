@@ -81,7 +81,7 @@
 	"editor.suggestSelection": "recentlyUsedByPrefix",
 	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 	"[typescript]": {
-		"editor.defaultFormatter": "ms-vscode.vscode-typescript-tslint-plugin",
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"editor.codeActionsOnSave": {
 			"source.fixAll": true
 		},
@@ -228,14 +228,8 @@
 	},
 	"rewrap.wrappingColumn": 120,
 	"editor.rulers": [
-		80,
 		120
 	],
-	"[csharp][markdown][javascript][json][html][rust]": {
-		"editor.rulers": [
-			120
-		]
-	},
 	"[git-commit]": {
 		"editor.rulers": [
 			50,
@@ -245,29 +239,6 @@
 		"rewrap.wrappingColumn": 72,
 		"workbench.editor.restoreViewState": false
 	},
-	"todo-tree.general.statusBar": "tags",
-	"todo-tree.general.tags": [
-		"BUG:",
-		"HACK:",
-		"FIXME:",
-		"TODO:",
-		"XXX",
-		"[ ]",
-		"[x]",
-		"REVIEW:"
-	],
-	"todo-tree.filtering.excludeGlobs": [
-		"**/node_modules",
-		"**/.git",
-		"**/package-lock.yaml",
-		"**/pnpm-lock.yaml"
-	],
-	"todo-tree.filtering.ignoreGitSubmodules": true,
-	"todo-tree.filtering.includeHiddenFiles": true,
-	"todo-tree.general.enableFileWatcher": true,
-	"todo-tree.general.showIconsInsteadOfTagsInStatusBar": true,
-	"todo-tree.tree.hideIconsWhenGroupedByTag": true,
-	"todo-tree.tree.showCountsInTree": true,
 	"[csv][tsv]": {
 		"editor.insertSpaces": false,
 		"editor.rulers": [
@@ -275,7 +246,8 @@
 		]
 	},
 	"[plaintext]": {
-		"editor.insertSpaces": false
+		"editor.insertSpaces": false,
+		"rewrap.autoWrap.enabled": false
 	},
 	"csharp.inlayHints.parameters.enabled": true,
 	"csharp.inlayHints.parameters.forIndexerParameters": true,
@@ -376,27 +348,6 @@
 		"editor.defaultFormatter": "foxundermoon.shell-format"
 	},
 	"editor.find.autoFindInSelection": "multiline",
-	"todo-tree.highlights.foregroundColourScheme": [
-		"white"
-	],
-	"todo-tree.highlights.backgroundColourScheme": [
-		"darkblue"
-	],
-	"todo-tree.highlights.customHighlight": {
-		"BUG": {
-			"background": "red"
-		},
-		"HACK": {
-			"background": "purple"
-		},
-		"FIXME": {
-			"background": "red"
-		},
-		"XXX": {
-			"background": "purple"
-		}
-	},
-	"todo-tree.highlights.useColourScheme": true,
 	"material-icon-theme.saturation": 1,
 	"material-icon-theme.activeIconPack": "nest",
 	"material-icon-theme.hidesExplorerArrows": true,
@@ -408,11 +359,8 @@
 	"merge-conflict.autoNavigateNextConflict.enabled": true,
 	"merge-conflict.diffViewPosition": "Below",
 	"git.enableCommitSigning": true,
-	"git-graph.repository.sign.commits": true,
-	"git-graph.repository.sign.tags": true,
-	"git-graph.repository.commits.mute.commitsThatAreNotAncestorsOfHead": true,
 	"terminal.integrated.shellIntegration.enabled": true,
-	"workbench.colorTheme": "Material Theme Darker High Contrast",
+	"workbench.colorTheme": "GitHub Dark Default",
 	"githubIssues.queries": [
 		{
 			"label": "My Issues",
@@ -439,4 +387,5 @@
 	"terminal.integrated.defaultProfile.linux": "zsh",
 	"editor.stickyScroll.enabled": true,
 	"editor.suggest.matchOnWordStartOnly": false,
+	"workbench.editor.enablePreview": false,
 }
