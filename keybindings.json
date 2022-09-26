@@ -1841,11 +1841,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+t",
-    "command": "editor.action.transpose",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "ctrl+k g",
     "command": "-textPowerTools.filterLinesIncludingString",
     "when": "editorTextFocus"
@@ -2495,7 +2490,7 @@
     "when": "searchViewletFocus"
   },
   {
-    "key": "meta+c",
+    "key": "alt+w",
     "command": "editor.action.clipboardCopyAction"
   },
   {
@@ -2924,23 +2919,8 @@
   },
   {
     "key": "alt+r",
-    "command": "-toggleFindRegex",
-    "when": "editorFocus"
-  },
-  {
-    "key": "alt+r",
-    "command": "-toggleSearchRegex",
-    "when": "searchViewletFocus"
-  },
-  {
-    "key": "alt+r",
     "command": "-workbench.action.terminal.toggleFindRegex",
     "when": "terminalFindFocused && terminalHasBeenCreated || terminalFindFocused && terminalProcessSupported || terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
-  },
-  {
-    "key": "alt+r",
-    "command": "-toggleSearchEditorRegex",
-    "when": "inSearchEditor && searchInputBoxFocus"
   },
   {
     "key": "ctrl+s",
@@ -3006,7 +2986,7 @@
     "when": "breakpointsFocused"
   },
   {
-    "key": "alt+space",
+    "key": "alt+.",
     "command": "editor.action.showHover",
     "when": "editorTextFocus"
   },
@@ -3315,7 +3295,7 @@
     "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
   },
   {
-    "key": "meta+x",
+    "key": "ctrl+w",
     "command": "editor.action.clipboardCutAction"
   },
   {
@@ -3327,8 +3307,9 @@
     "command": "editor.action.clipboardCutAction"
   },
   {
-    "key": "ctrl+g e",
-    "command": "workbench.action.focusActiveEditorGroup"
+    "key": "alt+enter",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "findInputFocussed"
   },
   {
     "key": "ctrl+a",
@@ -3570,7 +3551,7 @@
     "when": "editorTextFocus && foldingEnabled"
   },
   {
-    "key": "alt+.",
+    "key": "alt+space",
     "command": "editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
   },
@@ -3685,12 +3666,7 @@
   },
   {
     "key": "enter",
-    "command": "-editor.action.nextMatchFindAction",
-    "when": "editorFocus && findInputFocussed"
-  },
-  {
-    "key": "enter",
-    "command": "workbench.action.focusActiveEditorGroup",
+    "command": "editor.action.nextMatchFindAction",
     "when": "editorFocus && findInputFocussed"
   },
   {
@@ -3698,7 +3674,7 @@
     "command": "workbench.view.search.focus"
   },
   {
-    "key": "ctrl+s",
+    "key": "alt+enter",
     "command": "search.action.focusSearchList",
     "when": "searchInputBoxFocus"
   },
@@ -3712,7 +3688,7 @@
     "when": "textInputFocus && !editorReadonly"
   },
   {
-    "key": "alt+space",
+    "key": "alt+.",
     "command": "editor.debug.action.showDebugHover",
     "when": "editorTextFocus && inDebugMode"
   },
@@ -3786,19 +3762,66 @@
     "command": "-comment-ts.commentThis"
   },
   {
+    "key": "ctrl+g e",
+    "command": "workbench.action.focusActiveEditorGroup"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "editor.action.transposeLetters",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+t",
+    "command": "toggleSearchEditorRegex",
+    "when": "inSearchEditor && searchInputBoxFocus"
+  },
+  {
+    "key": "alt+r",
+    "command": "-toggleSearchEditorRegex",
+    "when": "inSearchEditor && searchInputBoxFocus"
+  },
+  {
+    "key": "alt+t",
+    "command": "toggleFindRegex",
+    "when": "editorFocus"
+  },
+  {
+    "key": "alt+r",
+    "command": "-toggleFindRegex",
+    "when": "editorFocus"
+  },
+  {
+    "key": "alt+t",
+    "command": "toggleSearchRegex",
+    "when": "searchViewletFocus"
+  },
+  {
+    "key": "alt+r",
+    "command": "-toggleSearchRegex",
+    "when": "searchViewletFocus"
+  },
+  {
+    "key": "ctrl+x ctrl+e",
+    "command": "workbench.action.focusActiveEditorGroup"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "problems.action.showQuickFixes",
+    "when": "problemFocus"
+  },
+  {
     "key": "ctrl+c",
-    "command": "-editor.action.clipboardCopyAction"
+    "command": "problems.action.copyMessage",
+    "when": "problemsVisibility && !relatedInformationFocus && focusedView == 'workbench.panel.markers.view'"
   },
   {
-    "key": "ctrl+x",
-    "command": "-editor.action.clipboardCutAction"
-  },
-  {
-    "key": "ctrl+w",
-    "command": "editor.action.clipboardCutAction"
-  },
-  {
-    "key": "alt+w",
-    "command": "editor.action.clipboardCopyAction"
+    "key": "ctrl+c",
+    "command": "-problems.action.copy",
+    "when": "problemsVisibility && !relatedInformationFocus && focusedView == 'workbench.panel.markers.view'"
   }
 ]
