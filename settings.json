@@ -42,7 +42,6 @@
 	"git.autofetch": true,
 	"git.fetchOnPull": true,
 	"git.promptToSaveFilesBeforeCommit": "always",
-	"git.rebaseWhenSync": true,
 	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
 	"markdown.preview.fontFamily": "Hack, Roboto Mono, JetBrains Mono, Ubuntu Mono, Monospace",
 	"markdownlint.config": {

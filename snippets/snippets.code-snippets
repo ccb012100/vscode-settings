@@ -47,7 +47,7 @@
   },
   "Section separator": {
     "scope": "plaintext,markdown",
-    "body": "\n---\n\n",
+    "body": "---\n\n",
     "prefix": "section-sep",
     "description": "Insert a section separator"
   }

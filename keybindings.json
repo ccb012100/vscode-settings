@@ -3138,14 +3138,6 @@
     "command": "-workbench.action.nextEditorInGroup"
   },
   {
-    "key": "ctrl+x n",
-    "command": "workbench.action.nextEditor"
-  },
-  {
-    "key": "ctrl+x p",
-    "command": "workbench.action.previousEditor"
-  },
-  {
     "key": "ctrl+left",
     "command": "cursorWordLeft",
     "when": "textInputFocus"
@@ -3349,36 +3341,6 @@
     "when": "canNavigateForward"
   },
   {
-    "key": "ctrl+shift+-",
-    "command": "editor.unfold",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  {
-    "key": "ctrl+-",
-    "command": "editor.fold",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  {
-    "key": "alt+-",
-    "command": "editor.foldAll",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  {
-    "key": "shift+alt+-",
-    "command": "editor.unfoldAll",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  {
-    "key": "ctrl+k ctrl+j",
-    "command": "-editor.unfoldAll",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  {
-    "key": "ctrl+k ctrl+0",
-    "command": "-editor.foldAll",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  {
     "key": "ctrl+l ctrl+u",
     "command": "editor.action.transformToTitlecase"
   },
@@ -3544,11 +3506,6 @@
   {
     "key": "ctrl+x enter",
     "command": "workbench.action.terminal.new"
-  },
-  {
-    "key": "ctrl+shift+=",
-    "command": "editor.unfold",
-    "when": "editorTextFocus && foldingEnabled"
   },
   {
     "key": "alt+space",
@@ -3823,5 +3780,67 @@
     "key": "ctrl+c",
     "command": "-problems.action.copy",
     "when": "problemsVisibility && !relatedInformationFocus && focusedView == 'workbench.panel.markers.view'"
+  },
+  {
+    "key": "ctrl+pageup",
+    "command": "-workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+pagedown",
+    "command": "-workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+shift+.",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+shift+,",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+x p",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+x n",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+l shift+t",
+    "command": "typescript.selectTypeScriptVersion"
+  },
+  {
+    "key": "ctrl+c ctrl+f",
+    "command": "editor.fold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+c f",
+    "command": "editor.foldRecursively",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+c ctrl+u",
+    "command": "editor.unfold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+c u",
+    "command": "editor.unfoldRecursively",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+c shift+u",
+    "command": "editor.unfoldAll",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+c shift+f",
+    "command": "editor.foldAll",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+x shift+k",
+    "command": "workbench.action.closeOtherEditors"
   }
 ]
