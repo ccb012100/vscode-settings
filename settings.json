@@ -354,7 +354,6 @@
 	"workbench.preferredLightColorTheme": "GitHub Light Default",
 	"window.enableMenuBarMnemonics": false,
 	"window.commandCenter": true,
-	"git.mergeEditor": true,
 	"merge-conflict.autoNavigateNextConflict.enabled": true,
 	"merge-conflict.diffViewPosition": "Below",
 	"git.enableCommitSigning": true,
@@ -387,4 +386,5 @@
 	"editor.stickyScroll.enabled": true,
 	"editor.suggest.matchOnWordStartOnly": false,
 	"workbench.editor.enablePreview": false,
+	"git.pullBeforeCheckout": true,
 }

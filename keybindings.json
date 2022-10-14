@@ -367,11 +367,6 @@
     "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
   },
   {
-    "key": "cmd+u",
-    "command": "-cursorUndo",
-    "when": "textInputFocus"
-  },
-  {
     "key": "ctrl+b",
     "command": "-cursorLeft",
     "when": "textInputFocus"
@@ -1777,11 +1772,6 @@
     "when": "editorHasSignatureHelpProvider && editorTextFocus"
   },
   {
-    "key": "ctrl+u",
-    "command": "-cursorUndo",
-    "when": "textInputFocus"
-  },
-  {
     "key": "ctrl+shift+n",
     "command": "-workbench.action.newWindow"
   },
@@ -2427,7 +2417,7 @@
     "command": "workbench.action.openSettingsJson"
   },
   {
-    "key": "ctrl+shift+j",
+    "key": "ctrl+alt+j",
     "command": "workbench.action.togglePanel"
   },
   {
@@ -2642,10 +2632,6 @@
     "key": "alt+v",
     "command": "cursorPageUp",
     "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+0",
-    "command": "-workbench.action.focusSideBar"
   },
   {
     "key": "alt+8",
@@ -3299,9 +3285,8 @@
     "command": "editor.action.clipboardCutAction"
   },
   {
-    "key": "alt+enter",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "findInputFocussed"
+    "key": "ctrl+1",
+    "command": "workbench.action.focusActiveEditorGroup"
   },
   {
     "key": "ctrl+a",
@@ -3719,10 +3704,6 @@
     "command": "-comment-ts.commentThis"
   },
   {
-    "key": "ctrl+g e",
-    "command": "workbench.action.focusActiveEditorGroup"
-  },
-  {
     "key": "ctrl+t",
     "command": "editor.action.transposeLetters",
     "when": "editorTextFocus"
@@ -3756,20 +3737,6 @@
     "key": "alt+r",
     "command": "-toggleSearchRegex",
     "when": "searchViewletFocus"
-  },
-  {
-    "key": "ctrl+x ctrl+e",
-    "command": "workbench.action.focusActiveEditorGroup"
-  },
-  {
-    "key": "ctrl+enter",
-    "command": "editor.action.quickFix",
-    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+enter",
-    "command": "problems.action.showQuickFixes",
-    "when": "problemFocus"
   },
   {
     "key": "ctrl+c",
@@ -3810,37 +3777,86 @@
     "command": "typescript.selectTypeScriptVersion"
   },
   {
-    "key": "ctrl+c ctrl+f",
-    "command": "editor.fold",
-    "when": "editorTextFocus && foldingEnabled"
+    "key": "ctrl+x shift+k",
+    "command": "workbench.action.closeOtherEditors"
+  },
+  {
+    "key": "alt+enter",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "findInputFocussed"
+  },
+  {
+    "key": "ctrl+1",
+    "command": "-workbench.action.focusFirstEditorGroup"
+  },
+  {
+    "key": "ctrl+8",
+    "command": "workbench.action.focusAuxiliaryBar"
+  },
+  {
+    "key": "ctrl+9",
+    "command": "-workbench.action.lastEditorInGroup"
+  },
+  {
+    "key": "ctrl+8",
+    "command": "-workbench.action.focusEighthEditorGroup"
+  },
+  {
+    "key": "ctrl+9",
+    "command": "workbench.action.focusPanel"
   },
   {
     "key": "ctrl+c f",
-    "command": "editor.foldRecursively",
+    "command": "editor.toggleFold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+c ctrl+f",
+    "command": "editor.foldAllExcept",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+k ctrl+-",
+    "command": "-editor.foldAllExcept",
     "when": "editorTextFocus && foldingEnabled"
   },
   {
     "key": "ctrl+c ctrl+u",
-    "command": "editor.unfold",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  {
-    "key": "ctrl+c u",
-    "command": "editor.unfoldRecursively",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  {
-    "key": "ctrl+c shift+u",
     "command": "editor.unfoldAll",
     "when": "editorTextFocus && foldingEnabled"
   },
   {
-    "key": "ctrl+c shift+f",
-    "command": "editor.foldAll",
+    "key": "ctrl+k ctrl+j",
+    "command": "-editor.unfoldAll",
     "when": "editorTextFocus && foldingEnabled"
   },
   {
-    "key": "ctrl+x shift+k",
-    "command": "workbench.action.closeOtherEditors"
+    "key": "alt+;",
+    "command": "cursorUndo",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+u",
+    "command": "-cursorUndo",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+x ctrl+q",
+    "command": "workbench.action.closeAllEditors"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "problems.action.showQuickFixes",
+    "when": "problemFocus"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+c u",
+    "command": "editor.unfold",
+    "when": "editorTextFocus && foldingEnabled"
   }
 ]
