@@ -29,13 +29,13 @@
   },
   "log object to console": {
     "scope": "javascript,typescript",
-    "prefix": "conslog-obj",
+    "prefix": "console-log-object",
     "body": "console.log({$1})",
     "description": "Log an object to the JavaScript console"
   },
   "log stringified JSON object to console": {
     "scope": "javascript,typescript",
-    "prefix": "conslog-jsonstring",
+    "prefix": "console-log-json-string",
     "body": "console.log('$1: ' + JSON.stringify($1, null, 2));",
     "description": "Log a stringified JSON object to the Javascript console"
   },
