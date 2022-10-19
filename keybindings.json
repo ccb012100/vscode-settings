@@ -92,11 +92,6 @@
     "command": "-workbench.action.quickOpen"
   },
   {
-    "key": "ctrl+p",
-    "command": "selectPrevSuggestion",
-    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-  },
-  {
     "key": "ctrl+shift+k",
     "command": "-editor.action.deleteLines",
     "when": "textInputFocus && !editorReadonly"
@@ -365,6 +360,11 @@
     "key": "enter",
     "command": "acceptSelectedSuggestionOnEnter",
     "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
+  },
+  {
+    "key": "cmd+u",
+    "command": "-cursorUndo",
+    "when": "textInputFocus"
   },
   {
     "key": "ctrl+b",
@@ -1395,11 +1395,6 @@
   },
   {
     "key": "ctrl+n",
-    "command": "selectNextSuggestion",
-    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-  },
-  {
-    "key": "ctrl+n",
     "command": "list.focusDown",
     "when": "listFocus && !inputFocus"
   },
@@ -2417,7 +2412,7 @@
     "command": "workbench.action.openSettingsJson"
   },
   {
-    "key": "ctrl+alt+j",
+    "key": "ctrl+shift+j",
     "command": "workbench.action.togglePanel"
   },
   {
@@ -3670,12 +3665,12 @@
     "when": "codeActionMenuVisible"
   },
   {
-    "key": "j",
+    "key": "ctrl+n",
     "command": "selectNextSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
   {
-    "key": "k",
+    "key": "ctrl+p",
     "command": "selectPrevSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
@@ -3739,6 +3734,11 @@
     "when": "searchViewletFocus"
   },
   {
+    "key": "ctrl+enter",
+    "command": "problems.action.showQuickFixes",
+    "when": "problemFocus"
+  },
+  {
     "key": "ctrl+c",
     "command": "problems.action.copyMessage",
     "when": "problemsVisibility && !relatedInformationFocus && focusedView == 'workbench.panel.markers.view'"
@@ -3790,7 +3790,7 @@
     "command": "-workbench.action.focusFirstEditorGroup"
   },
   {
-    "key": "ctrl+8",
+    "key": "ctrl+9",
     "command": "workbench.action.focusAuxiliaryBar"
   },
   {
@@ -3802,16 +3802,16 @@
     "command": "-workbench.action.focusEighthEditorGroup"
   },
   {
-    "key": "ctrl+9",
+    "key": "ctrl+8",
     "command": "workbench.action.focusPanel"
   },
   {
-    "key": "ctrl+c f",
+    "key": "ctrl+c ctrl+f",
     "command": "editor.toggleFold",
     "when": "editorTextFocus && foldingEnabled"
   },
   {
-    "key": "ctrl+c ctrl+f",
+    "key": "ctrl+c f",
     "command": "editor.foldAllExcept",
     "when": "editorTextFocus && foldingEnabled"
   },
@@ -3821,7 +3821,7 @@
     "when": "editorTextFocus && foldingEnabled"
   },
   {
-    "key": "ctrl+c ctrl+u",
+    "key": "ctrl+c u",
     "command": "editor.unfoldAll",
     "when": "editorTextFocus && foldingEnabled"
   },
@@ -3831,32 +3831,8 @@
     "when": "editorTextFocus && foldingEnabled"
   },
   {
-    "key": "alt+;",
-    "command": "cursorUndo",
-    "when": "textInputFocus"
-  },
-  {
     "key": "ctrl+u",
     "command": "-cursorUndo",
     "when": "textInputFocus"
   },
-  {
-    "key": "ctrl+x ctrl+q",
-    "command": "workbench.action.closeAllEditors"
-  },
-  {
-    "key": "ctrl+enter",
-    "command": "problems.action.showQuickFixes",
-    "when": "problemFocus"
-  },
-  {
-    "key": "ctrl+enter",
-    "command": "editor.action.quickFix",
-    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+c u",
-    "command": "editor.unfold",
-    "when": "editorTextFocus && foldingEnabled"
-  }
 ]
