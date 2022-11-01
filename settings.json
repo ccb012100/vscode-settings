@@ -385,5 +385,5 @@
 	"terminal.integrated.defaultProfile.linux": "zsh",
 	"editor.stickyScroll.enabled": true,
 	"editor.suggest.matchOnWordStartOnly": false,
-	"git.pullBeforeCheckout": true,
+	"git.pullBeforeCheckout": true
 }
