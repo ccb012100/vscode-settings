@@ -72,7 +72,7 @@
 		"editor.quickSuggestions": {
 			"comments": "off",
 			"strings": "off",
-			"other": "off"
+			"other": "on"
 		},
 		"files.trimTrailingWhitespace": false,
 		"editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
@@ -353,12 +353,11 @@
 	"workbench.preferredDarkColorTheme": "Gruvbox Dark Hard",
 	"workbench.preferredLightColorTheme": "GitHub Light Default",
 	"window.enableMenuBarMnemonics": false,
-	"window.commandCenter": true,
 	"merge-conflict.autoNavigateNextConflict.enabled": true,
 	"merge-conflict.diffViewPosition": "Below",
 	"git.enableCommitSigning": true,
 	"terminal.integrated.shellIntegration.enabled": true,
-	"workbench.colorTheme": "GitHub Dark Default",
+	"workbench.colorTheme": "Jellybeans Theme",
 	"githubIssues.queries": [
 		{
 			"label": "My Issues",
@@ -385,5 +384,6 @@
 	"terminal.integrated.defaultProfile.linux": "zsh",
 	"editor.stickyScroll.enabled": true,
 	"editor.suggest.matchOnWordStartOnly": false,
-	"git.pullBeforeCheckout": true
+	"git.pullBeforeCheckout": true,
+	"window.commandCenter": true
 }

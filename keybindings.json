@@ -2670,7 +2670,7 @@
     "when": "!config.breadcrumbs.enabled"
   },
   {
-    "key": "ctrl+shift+'",
+    "key": "ctrl+shift+;",
     "command": "editor.action.smartSelect.shrink",
     "when": "editorTextFocus"
   },
@@ -2750,7 +2750,7 @@
     "command": "workbench.action.toggleAuxiliaryBar"
   },
   {
-    "key": "ctrl+'",
+    "key": "ctrl+;",
     "command": "editor.action.smartSelect.expand",
     "when": "editorTextFocus"
   },
@@ -2867,16 +2867,11 @@
     "when": "textInputFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+shift+/",
-    "command": "redo",
-    "when": "textInputFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+shift+;",
+    "key": "ctrl+shift+'",
     "command": "findThenJump.initiateWithSelection"
   },
   {
-    "key": "ctrl+;",
+    "key": "ctrl+'",
     "command": "findThenJump.initiate"
   },
   {
@@ -3040,7 +3035,7 @@
     "when": "canNavigateForward"
   },
   {
-    "key": "alt+z",
+    "key": "ctrl+shift+z",
     "command": "redo",
     "when": "textInputFocus && !editorReadonly"
   },
@@ -3834,5 +3829,27 @@
     "key": "ctrl+u",
     "command": "-cursorUndo",
     "when": "textInputFocus"
+  },
+  {
+    "key": "alt+s",
+    "command": "workbench.action.gotoSymbol"
+  },
+  {
+    "key": "meta+c",
+    "command": "editor.action.clipboardCopyAction"
+  },
+  {
+    "key": "meta+x",
+    "command": "editor.action.clipboardCutAction"
+  },
+  {
+    "key": "meta+z",
+    "command": "undo",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+/",
+    "command": "redo",
+    "when": "textInputFocus && !editorReadonly"
   },
 ]
