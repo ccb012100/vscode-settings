@@ -56,5 +56,10 @@
 			"});"
 		],
 		"description": "stub for a parameterized Mocha test"
+	},
+	"UUID": {
+		"prefix": "uuid",
+		"body": "'${UUID}'",
+		"description": "Generate a new UUID"
 	}
 }
