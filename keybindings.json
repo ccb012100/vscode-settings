@@ -2670,11 +2670,6 @@
     "when": "!config.breadcrumbs.enabled"
   },
   {
-    "key": "ctrl+shift+;",
-    "command": "editor.action.smartSelect.shrink",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "ctrl+/",
     "command": "-toggleExplainMode",
     "when": "suggestWidgetVisible"
@@ -2690,7 +2685,7 @@
     "when": "inlineSuggestionVisible && !editorReadonly"
   },
   {
-    "key": "ctrl+,",
+    "key": "alt+;",
     "command": "editor.action.selectFromAnchorToCursor",
     "when": "editorTextFocus && selectionAnchorSet"
   },
@@ -2700,7 +2695,7 @@
     "when": "editorTextFocus && selectionAnchorSet"
   },
   {
-    "key": "ctrl+,",
+    "key": "alt+;",
     "command": "editor.action.setSelectionAnchor",
     "when": "editorTextFocus && !selectionAnchorSet"
   },
@@ -2748,11 +2743,6 @@
   {
     "key": "shift+alt+j",
     "command": "workbench.action.toggleAuxiliaryBar"
-  },
-  {
-    "key": "ctrl+;",
-    "command": "editor.action.smartSelect.expand",
-    "when": "editorTextFocus"
   },
   {
     "key": "ctrl+x o",
@@ -2867,11 +2857,11 @@
     "when": "textInputFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+shift+'",
+    "key": "ctrl+shift+;",
     "command": "findThenJump.initiateWithSelection"
   },
   {
-    "key": "ctrl+'",
+    "key": "ctrl+;",
     "command": "findThenJump.initiate"
   },
   {
@@ -3831,7 +3821,7 @@
     "when": "textInputFocus"
   },
   {
-    "key": "alt+s",
+    "key": "ctrl+'",
     "command": "workbench.action.gotoSymbol"
   },
   {
@@ -3851,5 +3841,19 @@
     "key": "ctrl+shift+/",
     "command": "redo",
     "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+'",
+    "command": "workbench.action.showAllSymbols"
+  },
+  {
+    "key": "ctrl+,",
+    "command": "editor.action.smartSelect.expand",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+,",
+    "command": "editor.action.smartSelect.shrink",
+    "when": "editorTextFocus"
   },
 ]

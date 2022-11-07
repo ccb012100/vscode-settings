@@ -357,7 +357,7 @@
 	"merge-conflict.diffViewPosition": "Below",
 	"git.enableCommitSigning": true,
 	"terminal.integrated.shellIntegration.enabled": true,
-	"workbench.colorTheme": "Jellybeans Theme",
+	"workbench.colorTheme": "Community Material Theme Ocean High Contrast",
 	"githubIssues.queries": [
 		{
 			"label": "My Issues",
