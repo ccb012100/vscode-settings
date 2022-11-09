@@ -2685,7 +2685,7 @@
     "when": "inlineSuggestionVisible && !editorReadonly"
   },
   {
-    "key": "alt+;",
+    "key": "alt+,",
     "command": "editor.action.selectFromAnchorToCursor",
     "when": "editorTextFocus && selectionAnchorSet"
   },
@@ -2695,7 +2695,7 @@
     "when": "editorTextFocus && selectionAnchorSet"
   },
   {
-    "key": "alt+;",
+    "key": "alt+,",
     "command": "editor.action.setSelectionAnchor",
     "when": "editorTextFocus && !selectionAnchorSet"
   },
@@ -2718,7 +2718,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+l c",
+    "key": "ctrl+l a",
     "command": "editor.action.goToSelectionAnchor"
   },
   {
@@ -3523,22 +3523,22 @@
     "when": "editorTextFocus && !isInDiffEditor && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /revision/"
   },
   {
-    "key": "alt+,",
+    "key": "alt+'",
     "command": "addCursorsAtSearchResults",
     "when": "fileMatchOrMatchFocus && searchViewletVisible"
   },
   {
-    "key": "alt+,",
+    "key": "alt+'",
     "command": "selectAllSearchEditorMatches",
     "when": "inSearchEditor"
   },
   {
-    "key": "alt+,",
+    "key": "alt+'",
     "command": "editor.action.selectHighlights",
     "when": "editorFocus"
   },
   {
-    "key": "alt+,",
+    "key": "alt+'",
     "command": "editor.action.selectAllMatches",
     "when": "editorFocus && findWidgetVisible"
   },
