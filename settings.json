@@ -357,7 +357,7 @@
 	"merge-conflict.diffViewPosition": "Below",
 	"git.enableCommitSigning": true,
 	"terminal.integrated.shellIntegration.enabled": true,
-	"workbench.colorTheme": "Community Material Theme Ocean High Contrast",
+	"workbench.colorTheme": "Gruvbox Dark Hard",
 	"githubIssues.queries": [
 		{
 			"label": "My Issues",
@@ -385,5 +385,6 @@
 	"editor.stickyScroll.enabled": true,
 	"editor.suggest.matchOnWordStartOnly": false,
 	"git.pullBeforeCheckout": true,
-	"window.commandCenter": true
+	"window.commandCenter": true,
+	"editor.mouseWheelZoom": true
 }

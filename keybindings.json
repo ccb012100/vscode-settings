@@ -3856,4 +3856,18 @@
     "command": "editor.action.smartSelect.shrink",
     "when": "editorTextFocus"
   },
+  {
+    "key": "ctrl+g e",
+    "command": "workbench.action.focusActiveEditorGroup"
+  },
+  {
+    "key": "ctrl+c b",
+    "command": "workbench.action.tasks.build",
+    "when": "taskCommandsRegistered"
+  },
+  {
+    "key": "ctrl+shift+b",
+    "command": "-workbench.action.tasks.build",
+    "when": "taskCommandsRegistered"
+  },
 ]
