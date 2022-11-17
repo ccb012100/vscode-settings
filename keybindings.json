@@ -2685,7 +2685,7 @@
     "when": "inlineSuggestionVisible && !editorReadonly"
   },
   {
-    "key": "alt+,",
+    "key": "alt+;",
     "command": "editor.action.selectFromAnchorToCursor",
     "when": "editorTextFocus && selectionAnchorSet"
   },
@@ -2695,7 +2695,7 @@
     "when": "editorTextFocus && selectionAnchorSet"
   },
   {
-    "key": "alt+,",
+    "key": "alt+;",
     "command": "editor.action.setSelectionAnchor",
     "when": "editorTextFocus && !selectionAnchorSet"
   },
@@ -3742,14 +3742,6 @@
     "command": "-workbench.action.nextEditor"
   },
   {
-    "key": "ctrl+shift+.",
-    "command": "workbench.action.nextEditor"
-  },
-  {
-    "key": "ctrl+shift+,",
-    "command": "workbench.action.previousEditor"
-  },
-  {
     "key": "ctrl+x p",
     "command": "workbench.action.previousEditor"
   },
@@ -3852,7 +3844,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+shift+,",
+    "key": "alt+,",
     "command": "editor.action.smartSelect.shrink",
     "when": "editorTextFocus"
   },
@@ -3869,5 +3861,13 @@
     "key": "ctrl+shift+b",
     "command": "-workbench.action.tasks.build",
     "when": "taskCommandsRegistered"
+  },
+  {
+    "key": "ctrl+shift+,",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+shift+.",
+    "command": "workbench.action.nextEditor"
   },
 ]

@@ -357,7 +357,7 @@
 	"merge-conflict.diffViewPosition": "Below",
 	"git.enableCommitSigning": true,
 	"terminal.integrated.shellIntegration.enabled": true,
-	"workbench.colorTheme": "Gruvbox Dark Hard",
+	"workbench.colorTheme": "Panda Syntax",
 	"githubIssues.queries": [
 		{
 			"label": "My Issues",
@@ -386,5 +386,53 @@
 	"editor.suggest.matchOnWordStartOnly": false,
 	"git.pullBeforeCheckout": true,
 	"window.commandCenter": true,
-	"editor.mouseWheelZoom": true
+	"editor.mouseWheelZoom": true,
+	"better-comments.highlightPlainText": true,
+	"better-comments.tags": [
+		{
+			"tag": "fixme",
+			"color": "#FF2D00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "todo",
+			"color": "#3498DB",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "//",
+			"color": "#FFFF00",
+			"strikethrough": true,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "wip",
+			"color": "#FF8C00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "review",
+			"color": "#98C379",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		}
+	]
 }
