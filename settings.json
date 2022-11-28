@@ -201,7 +201,6 @@
 	"scm.inputFontFamily": "Hack",
 	"workbench.editor.tabSizing": "shrink",
 	"C_Cpp.autocompleteAddParentheses": true,
-	"editor.fontSize": 12,
 	"javascript.updateImportsOnFileMove.enabled": "always",
 	"emmet.showSuggestionsAsSnippets": true,
 	"editor.guides.bracketPairs": true,

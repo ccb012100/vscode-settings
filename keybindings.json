@@ -191,10 +191,6 @@
     "when": "textInputFocus"
   },
   {
-    "key": "alt+space",
-    "command": "-undo"
-  },
-  {
     "key": "ctrl+k ctrl+d",
     "command": "-editor.action.formatDocument"
   },
@@ -213,17 +209,8 @@
     "when": "textInputFocus && !editorReadonly"
   },
   {
-    "key": "cmd+/",
-    "command": "-editor.action.commentLine",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
     "key": "ctrl+d",
     "command": "-editor.action.copyLinesDownAction"
-  },
-  {
-    "key": "ctrl+y",
-    "command": "-redo"
   },
   {
     "key": "cmd+k v",
@@ -352,11 +339,6 @@
     "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+x ctrl+;",
-    "command": "editor.action.commentLine",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
     "key": "enter",
     "command": "acceptSelectedSuggestionOnEnter",
     "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
@@ -370,11 +352,6 @@
     "key": "ctrl+b",
     "command": "-cursorLeft",
     "when": "textInputFocus"
-  },
-  {
-    "key": "shift+alt+a",
-    "command": "-editor.action.blockComment",
-    "when": "editorTextFocus && !editorReadonly"
   },
   {
     "key": "ctrl+f4",
@@ -1582,11 +1559,6 @@
     "command": "explorer.newFile"
   },
   {
-    "key": "ctrl+/",
-    "command": "-editor.action.commentLine",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
     "key": "shift+escape",
     "command": "-closeParameterHints",
     "when": "editorFocus && parameterHintsVisible"
@@ -2648,14 +2620,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+z",
-    "command": "-undo"
-  },
-  {
-    "key": "ctrl+shift+z",
-    "command": "-redo"
-  },
-  {
     "key": "ctrl+`",
     "command": "markdown.extension.editing.toggleCodeBlock"
   },
@@ -2703,10 +2667,6 @@
     "key": "ctrl+k ctrl+b",
     "command": "-editor.action.setSelectionAnchor",
     "when": "editorTextFocus"
-  },
-  {
-    "key": "shift+alt+q",
-    "command": "rewrap.rewrapCommentAt"
   },
   {
     "key": "ctrl+l w",
@@ -2850,11 +2810,6 @@
     "key": "ctrl+shift+g /",
     "command": "-gitlens.gitCommands",
     "when": "!gitlens:disabled && config.gitlens.keymap == 'chorded'"
-  },
-  {
-    "key": "ctrl+/",
-    "command": "undo",
-    "when": "textInputFocus && !editorReadonly"
   },
   {
     "key": "ctrl+shift+;",
@@ -3023,16 +2978,6 @@
     "key": "alt+right",
     "command": "workbench.action.navigateForward",
     "when": "canNavigateForward"
-  },
-  {
-    "key": "ctrl+shift+z",
-    "command": "redo",
-    "when": "textInputFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+z",
-    "command": "undo",
-    "when": "textInputFocus && !editorReadonly"
   },
   {
     "key": "ctrl+right",
@@ -3228,7 +3173,7 @@
     "command": "editor.action.clipboardPasteAction"
   },
   {
-    "key": "ctrl+shift+k",
+    "key": "shift+alt+d",
     "command": "deleteInsideWord",
     "when": "textInputFocus && !editorReadonly"
   },
@@ -3279,17 +3224,7 @@
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+shift+a",
-    "command": "-editor.action.blockComment",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+x ;",
-    "command": "editor.action.commentLine",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "alt+k",
+    "key": "ctrl+shift+k",
     "command": "deleteAllRight"
   },
   {
@@ -3605,11 +3540,6 @@
     "command": "workbench.view.search.focus"
   },
   {
-    "key": "alt+/",
-    "command": "redo",
-    "when": "textInputFocus && !editorReadonly"
-  },
-  {
     "key": "alt+.",
     "command": "editor.debug.action.showDebugHover",
     "when": "editorTextFocus && inDebugMode"
@@ -3668,16 +3598,6 @@
     "key": "k",
     "command": "list.focusUp",
     "when": "listFocus && !inputFocus"
-  },
-  {
-    "key": "ctrl+x ctrl+/",
-    "command": "editor.action.blockComment",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+x /",
-    "command": "editor.action.blockComment",
-    "when": "editorTextFocus && !editorReadonly"
   },
   {
     "key": "ctrl+alt+c ctrl+alt+c",
@@ -3826,13 +3746,7 @@
   },
   {
     "key": "meta+z",
-    "command": "undo",
-    "when": "textInputFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+shift+/",
-    "command": "redo",
-    "when": "textInputFocus && !editorReadonly"
+    "command": "undo"
   },
   {
     "key": "ctrl+shift+'",
@@ -3869,5 +3783,43 @@
   {
     "key": "ctrl+shift+.",
     "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "-redo"
+  },
+  {
+    "key": "shift+meta+z",
+    "command": "redo"
+  },
+  {
+    "key": "ctrl+l ctrl+;",
+    "command": "rewrap.rewrapComment",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+q",
+    "command": "-rewrap.rewrapComment",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+/",
+    "command": "editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+a",
+    "command": "-editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+d",
+    "command": "-editor.detectLanguage",
+    "when": "editorTextFocus && !notebookEditable"
+  },
+  {
+    "key": "shift+alt+d",
+    "command": "-notebook.cell.detectLanguage",
+    "when": "notebookCellEditable && notebookEditable"
   },
 ]
