@@ -2835,7 +2835,7 @@
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+x f",
+    "key": "meta+o",
     "command": "workbench.action.files.openFile"
   },
   {
@@ -2849,7 +2849,7 @@
     "when": "editorFocus && findInputFocussed"
   },
   {
-    "key": "ctrl+x s",
+    "key": "ctrl+x shift+s",
     "command": "workbench.action.files.saveAll"
   },
   {
@@ -3803,7 +3803,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+shift+/",
+    "key": "ctrl+x ctrl+/",
     "command": "editor.action.blockComment",
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -3821,5 +3821,61 @@
     "key": "shift+alt+d",
     "command": "-notebook.cell.detectLanguage",
     "when": "notebookCellEditable && notebookEditable"
+  },
+  {
+    "key": "meta+a",
+    "command": "editor.action.selectAll",
+    "when": "!listFocusalias"
+  },
+  {
+    "key": "meta+a",
+    "command": "list.selectAll",
+    "when": "listFocus && listSupportsMultiselect && !inputFocus"
+  },
+  {
+    "key": "meta+f",
+    "command": "actions.find",
+    "when": "editorFocus || editorIsOpen"
+  },
+  {
+    "key": "meta+g",
+    "command": "editor.action.nextMatchFindAction",
+    "when": "editorFocus"
+  },
+  {
+    "key": "f3",
+    "command": "-editor.action.nextMatchFindAction",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+k s",
+    "command": "-workbench.action.files.saveWithoutFormatting"
+  },
+  {
+    "key": "meta+s",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "key": "ctrl+/",
+    "command": "undo"
+  },
+  {
+    "key": "ctrl+shift+/",
+    "command": "redo"
+  },
+  {
+    "key": "ctrl+x ctrl+;",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+/",
+    "command": "-editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+c ctrl+c",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
   },
 ]
