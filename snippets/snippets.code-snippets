@@ -36,18 +36,29 @@
   "log stringified JSON object to console": {
     "scope": "javascript,typescript",
     "prefix": "console-log-json-string",
-    "body": "console.log('$1: ' + JSON.stringify($1, null, 2));",
+    "body": [
+      "// eslint-disable-next-line no-console",
+      "console.log('$1: ' + JSON.stringify($1, null, 2));"
+    ],
     "description": "Log a stringified JSON object to the Javascript console"
   },
   "Date header": {
     "scope": "plaintext,markdown",
-    "body": "==> $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE\n\n$0",
+    "body": [
+      "==> $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+      "",
+      "$0"
+    ],
     "prefix": "dheader",
     "description": "Insert a date header"
   },
   "Section separator": {
     "scope": "plaintext,markdown",
-    "body": "---\n\n",
+    "body": [
+      "---",
+      "",
+      "$0"
+    ],
     "prefix": "section-sep",
     "description": "Insert a section separator"
   }
