@@ -79,10 +79,6 @@
     "command": "workbench.action.maximizeEditor"
   },
   {
-    "key": "ctrl+n",
-    "command": "-workbench.action.files.newUntitledFile"
-  },
-  {
     "key": "ctrl+p",
     "command": "cursorUp",
     "when": "textInputFocus"
@@ -492,10 +488,6 @@
     "key": "cmd+p",
     "command": "-workbench.action.quickOpenNavigateNextInFilePicker",
     "when": "inFilesPicker && inQuickOpen"
-  },
-  {
-    "key": "cmd+n",
-    "command": "-workbench.action.files.newUntitledFile"
   },
   {
     "key": "cmd+r",
@@ -1549,14 +1541,6 @@
   {
     "key": "ctrl+shift+s",
     "command": "-workbench.action.files.saveAs"
-  },
-  {
-    "key": "ctrl+alt+win+n",
-    "command": "-welcome.showNewFileEntries"
-  },
-  {
-    "key": "ctrl+x ctrl+n",
-    "command": "explorer.newFile"
   },
   {
     "key": "shift+escape",
@@ -3877,5 +3861,52 @@
     "key": "ctrl+c ctrl+c",
     "command": "editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+x ctrl+a",
+    "command": "workbench.files.action.showActiveFileInExplorer"
+  },
+  {
+    "key": "shift+alt+r",
+    "command": "revealFileInOS"
+  },
+  {
+    "key": "ctrl+alt+r",
+    "command": "-revealFileInOS",
+    "when": "!editorFocus"
+  },
+  {
+    "key": "ctrl+shift+r",
+    "command": "remote-wsl.revealInExplorer",
+    "when": "false"
+  },
+  {
+    "key": "shift+alt+r",
+    "command": "-remote-wsl.revealInExplorer",
+    "when": "false"
+  },
+  {
+    "key": "alt+k",
+    "command": "deleteAllRight"
+  },
+  {
+    "key": "shift+alt+k",
+    "command": "deleteAllLeft"
+  },
+  {
+    "key": "meta+n",
+    "command": "welcome.showNewFileEntries"
+  },
+  {
+    "key": "ctrl+alt+meta+n",
+    "command": "-welcome.showNewFileEntries"
+  },
+  {
+    "key": "shift+meta+n",
+    "command": "workbench.action.files.newUntitledFile"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "-workbench.action.files.newUntitledFile"
   },
 ]
