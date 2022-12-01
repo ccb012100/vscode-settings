@@ -25,7 +25,7 @@
 		"prefix": "mocha-context",
 		"body": [
 			"context('$1', function () {",
-			"$0",
+			"\t$0",
 			"});"
 		],
 		"description": "stub for a new Mocha test suite context"
@@ -34,7 +34,7 @@
 		"prefix": "mocha-describe",
 		"body": [
 			"describe($1.name, function () {",
-			"$0",
+			"\t$0",
 			"});"
 		],
 		"description": "stub for description of a new Mocha test suite"
@@ -43,7 +43,7 @@
 		"prefix": "mocha-before",
 		"body": [
 			"beforeEach(async function () {",
-			"$0",
+			"\t$0",
 			"});"
 		],
 		"description": "stub for a Mocha beforeEach function"
@@ -52,7 +52,7 @@
 		"prefix": "mocha-parameterized",
 		"body": [
 			"[$1].forEach(($2) => {",
-			"$0",
+			"\t$0",
 			"});"
 		],
 		"description": "stub for a parameterized Mocha test"
