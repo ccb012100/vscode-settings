@@ -15,7 +15,8 @@
 	"shebang": {
 		"prefix": "shebang",
 		"body": [
-			"#!/usr/bin/env ${1:shell_name}"
+			"#!/usr/bin/env bash",
+			"$0"
 		],
 		"description": "Add shebang to shell script"
 	}

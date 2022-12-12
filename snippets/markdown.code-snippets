@@ -8,5 +8,25 @@
 			"```"
 		],
 		"description": "Create a fenced code block for Bash shell language"
+	},
+	"Date header": {
+		"scope": "markdown",
+		"body": [
+			"## ==> $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"",
+			"$0"
+		],
+		"prefix": "dheader",
+		"description": "Insert an H2 date header"
+	},
+	"Section separator": {
+		"scope": "markdown",
+		"body": [
+			"---",
+			"",
+			"$0"
+		],
+		"prefix": "section-separator",
+		"description": "Insert a section separator"
 	}
 }

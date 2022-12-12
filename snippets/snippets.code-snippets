@@ -29,13 +29,16 @@
   },
   "log object to console": {
     "scope": "javascript,typescript",
-    "prefix": "console-log-object",
-    "body": "console.log({$1})",
+    "prefix": "conlog-object",
+    "body": [
+      "// eslint-disable-next-line no-console",
+      "console.log({$1})"
+    ],
     "description": "Log an object to the JavaScript console"
   },
   "log stringified JSON object to console": {
     "scope": "javascript,typescript",
-    "prefix": "console-log-json-string",
+    "prefix": "conlog-json",
     "body": [
       "// eslint-disable-next-line no-console",
       "console.log('$1: ' + JSON.stringify($1, null, 2));"
@@ -43,7 +46,7 @@
     "description": "Log a stringified JSON object to the Javascript console"
   },
   "Date header": {
-    "scope": "plaintext,markdown",
+    "scope": "plaintext",
     "body": [
       "==> $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
       "",
@@ -53,13 +56,18 @@
     "description": "Insert a date header"
   },
   "Section separator": {
-    "scope": "plaintext,markdown",
+    "scope": "plaintext",
     "body": [
       "---",
       "",
       "$0"
     ],
-    "prefix": "section-sep",
+    "prefix": "section-separator",
     "description": "Insert a section separator"
+  },
+  "UUID": {
+    "prefix": "uuid",
+    "body": "'${UUID}'",
+    "description": "Generate a new UUID"
   }
 }
