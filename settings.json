@@ -9,7 +9,7 @@
 	"editor.fontLigatures": true,
 	"editor.letterSpacing": 1,
 	"editor.minimap.maxColumn": 60,
-	"editor.renderWhitespace": "none",
+	"editor.renderWhitespace": "all",
 	"editor.suggest.localityBonus": true,
 	"editor.wordWrap": "on",
 	"files.associations": {
@@ -18,7 +18,8 @@
 		"*.DotSettings": "xml",
 		".gitignore_global": "txt",
 		"attributes": "properties",
-		"*.conf": "editorconfig"
+		"*.conf": "editorconfig",
+		"LICENSE": "plaintext"
 	},
 	"files.exclude": {
 		"**/.DS_Store": true,
@@ -356,7 +357,7 @@
 	"merge-conflict.diffViewPosition": "Below",
 	"git.enableCommitSigning": true,
 	"terminal.integrated.shellIntegration.enabled": true,
-	"workbench.colorTheme": "Panda Syntax",
+	"workbench.colorTheme": "Gruvbox Material Dark",
 	"githubIssues.queries": [
 		{
 			"label": "My Issues",

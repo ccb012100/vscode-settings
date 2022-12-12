@@ -2111,7 +2111,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+x w",
+    "key": "ctrl+l space",
     "command": "editor.action.toggleRenderWhitespace"
   },
   {
@@ -2607,16 +2607,6 @@
     "key": "ctrl+/",
     "command": "-toggleExplainMode",
     "when": "suggestWidgetVisible"
-  },
-  {
-    "key": "alt+[",
-    "command": "-editor.action.inlineSuggest.showPrevious",
-    "when": "inlineSuggestionVisible && !editorReadonly"
-  },
-  {
-    "key": "alt+]",
-    "command": "-editor.action.inlineSuggest.showNext",
-    "when": "inlineSuggestionVisible && !editorReadonly"
   },
   {
     "key": "alt+;",
@@ -3605,11 +3595,6 @@
     "when": "searchViewletFocus"
   },
   {
-    "key": "ctrl+enter",
-    "command": "problems.action.showQuickFixes",
-    "when": "problemFocus"
-  },
-  {
     "key": "ctrl+c",
     "command": "problems.action.copyMessage",
     "when": "problemsVisibility && !relatedInformationFocus && focusedView == 'workbench.panel.markers.view'"
@@ -3695,7 +3680,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "shift+alt+,",
+    "key": "ctrl+shift+,",
     "command": "editor.action.smartSelect.shrink",
     "when": "editorTextFocus"
   },
@@ -3910,5 +3895,25 @@
     "key": "alt+enter",
     "command": "workbench.action.focusActiveEditorGroup",
     "when": "findInputFocussed"
+  },
+  {
+    "key": "ctrl+l ctrl+s",
+    "command": "editor.action.sortLinesAscending",
+    "when": "editorHasSelection && editorTextFocus"
+  },
+  {
+    "key": "ctrl+x ctrl+e",
+    "command": "sqlite.runDocumentQuery",
+    "when": "editorLangId =~ /(sql|sqlite)/"
+  },
+  {
+    "key": "ctrl+shift+q",
+    "command": "-sqlite.runDocumentQuery",
+    "when": "editorLangId =~ /(sql|sqlite)/"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "acceptSelectedSuggestionOnEnter",
+    "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
   }
 ]
