@@ -2354,7 +2354,7 @@
     "command": "workbench.action.openSettingsJson"
   },
   {
-    "key": "ctrl+shift+j",
+    "key": "ctrl+g m",
     "command": "workbench.action.togglePanel"
   },
   {
@@ -2657,11 +2657,11 @@
     "when": "textInputFocus && !editorReadonly"
   },
   {
-    "key": "alt+j",
+    "key": "ctrl+g ;",
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "shift+alt+j",
+    "key": "ctrl+g ctrl+a",
     "command": "workbench.action.toggleAuxiliaryBar"
   },
   {
@@ -2721,10 +2721,6 @@
     "key": "ctrl+shift+g g",
     "command": "-workbench.view.scm",
     "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
-  },
-  {
-    "key": "ctrl+g ctrl+g",
-    "command": "workbench.scm.focus"
   },
   {
     "key": "alt+s",
@@ -3915,5 +3911,14 @@
     "key": "ctrl+f",
     "command": "acceptSelectedSuggestionOnEnter",
     "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
+  },
+  {
+    "key": "ctrl+g ctrl+g",
+    "command": "workbench.scm.focus"
+  },
+  {
+    "key": "alt+,",
+    "command": "editor.action.triggerParameterHints",
+    "when": "editorHasSignatureHelpProvider && editorTextFocus"
   }
 ]

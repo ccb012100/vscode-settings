@@ -357,7 +357,7 @@
 	"merge-conflict.diffViewPosition": "Below",
 	"git.enableCommitSigning": true,
 	"terminal.integrated.shellIntegration.enabled": true,
-	"workbench.colorTheme": "Gruvbox Material Dark",
+	"workbench.colorTheme": "Pastel Pro",
 	"githubIssues.queries": [
 		{
 			"label": "My Issues",
@@ -434,5 +434,9 @@
 			"bold": false,
 			"italic": false
 		}
-	]
+	],
+	"overtype.paste": true,
+	"overtype.perEditor": true,
+	"overtype.labelOvertypeMode": "OVR",
+	"overtype.labelInsertMode": "INS"
 }
