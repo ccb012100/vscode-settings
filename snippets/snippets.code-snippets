@@ -31,7 +31,7 @@
     "scope": "javascript,typescript",
     "prefix": "conlog-object",
     "body": [
-      "// eslint-disable-next-line no-console",
+      "$LINE_COMMENT eslint-disable-next-line no-console",
       "console.log({$1})"
     ],
     "description": "Log an object to the JavaScript console"
@@ -40,7 +40,7 @@
     "scope": "javascript,typescript",
     "prefix": "conlog-json",
     "body": [
-      "// eslint-disable-next-line no-console",
+      "$LINE_COMMENT eslint-disable-next-line no-console",
       "console.log('$1: ' + JSON.stringify($1, null, 2));"
     ],
     "description": "Log a stringified JSON object to the Javascript console"
@@ -67,7 +67,7 @@
   },
   "UUID": {
     "prefix": "uuid",
-    "body": "'${UUID}'",
+    "body": "${UUID}",
     "description": "Generate a new UUID"
   }
 }
