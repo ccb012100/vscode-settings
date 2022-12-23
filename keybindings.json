@@ -1836,11 +1836,6 @@
     "when": "suggestWidgetVisible && textInputFocus"
   },
   {
-    "key": "shift+enter",
-    "command": "-acceptRenameInputWithPreview",
-    "when": "config.editor.rename.enablePreview && editorFocus && renameInputVisible"
-  },
-  {
     "key": "alt+q alt+q",
     "command": "-jump-extension.jump-to-the-start-of-a-word",
     "when": "editorTextFocus"
@@ -2952,11 +2947,6 @@
     "when": "textInputFocus"
   },
   {
-    "key": "alt+b",
-    "command": "cursorWordLeft",
-    "when": "textInputFocus"
-  },
-  {
     "key": "ctrl+f",
     "command": "-editor.action.extensioneditor.showfind",
     "when": "!editorFocus && activeEditor == 'workbench.editor.extension'"
@@ -3858,6 +3848,14 @@
     "command": "workbench.action.nextEditor"
   },
   {
+    "key": "ctrl+x p",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+x n",
+    "command": "workbench.action.nextEditor"
+  },
+  {
     "key": "ctrl+[",
     "command": "workbench.action.previousEditor"
   },
@@ -3865,14 +3863,6 @@
     "key": "ctrl+[",
     "command": "-markdown.extension.onOutdentLines",
     "when": "editorTextFocus && !suggestWidgetVisible && editorLangId =~ /^markdown$|^rmd$|^qmd$/"
-  },
-  {
-    "key": "ctrl+x n",
-    "command": "workbench.action.nextEditor"
-  },
-  {
-    "key": "ctrl+x p",
-    "command": "workbench.action.previousEditor"
   },
   {
     "key": "shift+alt+,",
@@ -3949,5 +3939,24 @@
     "key": "ctrl+x /",
     "command": "editor.action.blockComment",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+x e",
+    "command": "sqlite.runSelectedQuery",
+    "when": "editorLangId =~ /(sql|sqlite)/"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "-insertDateString.insertDateTime",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+i",
+    "command": "-insertDateString.insertOwnFormatDateTime",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+x i",
+    "command": "insertDateString.insertDateTime"
   },
 ]

@@ -5,7 +5,7 @@
   "editor.fontLigatures": true,
   "editor.letterSpacing": 1,
   "editor.minimap.maxColumn": 60,
-  "editor.renderWhitespace": "all",
+  "editor.renderWhitespace": "none",
   "editor.suggest.localityBonus": true,
   "editor.wordWrap": "on",
   "files.associations": {
@@ -82,7 +82,9 @@
     "editor.codeActionsOnSave": {
       "source.fixAll": true
     },
-    "editor.rulers": [120]
+    "editor.rulers": [
+      120
+    ]
   },
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
@@ -159,7 +161,10 @@
       "icon": "terminal-powershell"
     },
     "Command Prompt": {
-      "path": ["${env:windir}\\Sysnative\\cmd.exe", "${env:windir}\\System32\\cmd.exe"],
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
       "args": [],
       "icon": "terminal-cmd"
     },
@@ -203,22 +208,34 @@
   "workbench.settings.useSplitJSON": true,
   "audioCues.lineHasBreakpoint": "on",
   "audioCues.onDebugBreak": "on",
-  "rainbowTags.colors": ["#F92672", "#AE81FF", "#A6E22E", "#66D9EF"], // using colors from Monokai pallette for RainbowTags
+  "rainbowTags.colors": [
+    "#F92672",
+    "#AE81FF",
+    "#A6E22E",
+    "#66D9EF"
+  ], // using colors from Monokai pallette for RainbowTags
   "workbench.editor.splitInGroupLayout": "vertical",
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "rewrap.wrappingColumn": 120,
-  "editor.rulers": [120],
+  "editor.rulers": [
+    120
+  ],
   "[git-commit]": {
-    "editor.rulers": [50, 72],
+    "editor.rulers": [
+      50,
+      72
+    ],
     "rewrap.autoWrap.enabled": true,
     "rewrap.wrappingColumn": 72,
     "workbench.editor.restoreViewState": false
   },
   "[csv][tsv]": {
     "editor.insertSpaces": false,
-    "editor.rulers": [0]
+    "editor.rulers": [
+      0
+    ]
   },
   "[plaintext]": {
     "editor.insertSpaces": false,
@@ -267,9 +284,13 @@
     "**/*.svg": true,
     "**/pnpm-lock.yaml": true
   },
-  "settingsSync.ignoredSettings": ["editor.fontSize"],
+  "settingsSync.ignoredSettings": [
+    "editor.fontSize"
+  ],
   "[editorconfig]": {
-    "editor.rulers": [80]
+    "editor.rulers": [
+      80
+    ]
   },
   "explorer.confirmDelete": false,
   "debug.console.fontFamily": "Hack",
@@ -307,11 +328,15 @@
   "terminal.integrated.tabs.enabled": false,
   "[go]": {
     "editor.defaultFormatter": "golang.go",
-    "editor.rulers": [120]
+    "editor.rulers": [
+      120
+    ]
   },
   "[shellscript]": {
     "files.eol": "\n",
-    "editor.rulers": [80],
+    "editor.rulers": [
+      80
+    ],
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
   "editor.find.autoFindInSelection": "multiline",
@@ -325,7 +350,6 @@
   "merge-conflict.diffViewPosition": "Below",
   "git.enableCommitSigning": true,
   "terminal.integrated.shellIntegration.enabled": true,
-  "workbench.colorTheme": "Pastel Pro",
   "githubIssues.queries": [
     {
       "label": "My Issues",
@@ -411,5 +435,12 @@
   "python.analysis.completeFunctionParens": true,
   "python.analysis.inlayHints.variableTypes": true,
   "python.analysis.inlayHints.functionReturnTypes": true,
-  "python.analysis.typeCheckingMode": "basic"
+  "python.analysis.typeCheckingMode": "basic",
+  "insertDateString.format": "iso",
+  "insertDateString.formatDate": "YYYYMMDD",
+  "peacock.affectStatusAndTitleBorders": true,
+  "peacock.affectSideBarBorder": true,
+  "workbench.colorTheme": "GitHub Dark",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.autoImportUserSymbols": true
 }
