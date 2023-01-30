@@ -2345,7 +2345,7 @@
     "command": "workbench.action.openSettingsJson"
   },
   {
-    "key": "ctrl+g m",
+    "key": "ctrl+g down",
     "command": "workbench.action.togglePanel"
   },
   {
@@ -2648,11 +2648,11 @@
     "when": "textInputFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+g ;",
+    "key": "ctrl+g right",
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "ctrl+g ctrl+a",
+    "key": "ctrl+g left",
     "command": "workbench.action.toggleAuxiliaryBar"
   },
   {

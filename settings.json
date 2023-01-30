@@ -73,7 +73,7 @@
     },
     "files.trimTrailingWhitespace": false,
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
-    "rewrap.autoWrap.enabled": true
+    "rewrap.autoWrap.enabled": false
   },
   "editor.suggestSelection": "recentlyUsedByPrefix",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -438,9 +438,8 @@
   "python.analysis.typeCheckingMode": "basic",
   "insertDateString.format": "iso",
   "insertDateString.formatDate": "YYYYMMDD",
-  "peacock.affectStatusAndTitleBorders": true,
-  "peacock.affectSideBarBorder": true,
-  "workbench.colorTheme": "GitHub Dark",
   "python.analysis.autoImportCompletions": true,
-  "python.analysis.autoImportUserSymbols": true
+  "python.analysis.autoImportUserSymbols": true,
+  "workbench.colorTheme": "1337",
+  "diffEditor.renderSideBySide": false,
 }
