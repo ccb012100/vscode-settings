@@ -1,5 +1,5 @@
 {
-	"Bash code block": {
+	/* "Bash code block": {
 		"scope": "markdown",
 		"prefix": "bash-code-block",
 		"body": [
@@ -8,7 +8,7 @@
 			"```"
 		],
 		"description": "Create a fenced code block for Bash shell language"
-	},
+	}, */
 	"Date header": {
 		"scope": "markdown",
 		"body": [
