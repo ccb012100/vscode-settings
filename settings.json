@@ -35,7 +35,6 @@
   "files.trimTrailingWhitespace": true,
   "git.allowForcePush": true,
   "git.confirmForcePush": true,
-  "git.alwaysShowStagedChangesResourceGroup": true,
   "git.autofetch": true,
   "git.fetchOnPull": true,
   "git.promptToSaveFilesBeforeCommit": "always",
@@ -196,10 +195,8 @@
   "scm.inputFontFamily": "Hack",
   "workbench.editor.tabSizing": "shrink",
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "emmet.showSuggestionsAsSnippets": true,
   "editor.guides.bracketPairs": true,
   "path-intellisense.showHiddenFiles": true,
-  "git.suggestSmartCommit": false,
   "editor.hover.above": false,
   "json.schemas": [],
   "js/ts.implicitProjectConfig.experimentalDecorators": true,
@@ -348,7 +345,6 @@
   "window.enableMenuBarMnemonics": false,
   "merge-conflict.autoNavigateNextConflict.enabled": true,
   "merge-conflict.diffViewPosition": "Below",
-  "git.enableCommitSigning": true,
   "terminal.integrated.shellIntegration.enabled": true,
   "githubIssues.queries": [
     {
@@ -442,4 +438,19 @@
   "python.analysis.autoImportUserSymbols": true,
   "workbench.colorTheme": "1337",
   "diffEditor.renderSideBySide": false,
+  "errorLens.followCursor": "activeLine",
+  "errorLens.removeLinebreaks": false,
+  "emmet.showAbbreviationSuggestions": false,
+  "emmet.showExpandedAbbreviation": "never",
+  "git.allowNoVerifyCommit": true,
+  "git.closeDiffOnOperation": true,
+  "git.mergeEditor": true,
+  "git.smartCommitChanges": "tracked",
+  "git.alwaysShowStagedChangesResourceGroup": true,
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[python]": {
+    "editor.formatOnType": true
+  },
 }
