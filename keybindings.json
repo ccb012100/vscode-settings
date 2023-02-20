@@ -2855,12 +2855,12 @@
     "when": "remoteFileDialogVisible"
   },
   {
-    "key": "ctrl+s",
+    "key": "ctrl+shift+s",
     "command": "search.action.focusNextSearchResult",
     "when": "hasSearchResult || inSearchEditor"
   },
   {
-    "key": "ctrl+r",
+    "key": "ctrl+shift+r",
     "command": "search.action.focusPreviousSearchResult",
     "when": "hasSearchResult || inSearchEditor"
   },
@@ -3773,16 +3773,6 @@
     "key": "ctrl+alt+r",
     "command": "-revealFileInOS",
     "when": "!editorFocus"
-  },
-  {
-    "key": "ctrl+shift+r",
-    "command": "remote-wsl.revealInExplorer",
-    "when": "false"
-  },
-  {
-    "key": "shift+alt+r",
-    "command": "-remote-wsl.revealInExplorer",
-    "when": "false"
   },
   {
     "key": "alt+k",
