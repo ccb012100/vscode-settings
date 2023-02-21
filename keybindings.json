@@ -3950,5 +3950,9 @@
   {
     "key": "ctrl+x up",
     "command": "workbench.action.toggleEditorVisibility"
+  },
+  {
+    "key": "ctrl+l ctrl+t",
+    "command": "typescript.restartTsServer"
   }
 ]

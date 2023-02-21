@@ -253,7 +253,6 @@
   "debug.console.acceptSuggestionOnEnter": "on",
   "editor.inlayHints.enabled": "offUnlessPressed",
   "editor.tabCompletion": "on",
-  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
   "javascript.inlayHints.parameterNames.enabled": "all",
   "javascript.inlayHints.parameterTypes.enabled": true,
   "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
@@ -261,9 +260,7 @@
   "rust-analyzer.inlayHints.lifetimeElisionHints.enable": "skip_trivial",
   "rust-analyzer.inlayHints.lifetimeElisionHints.useParameterNames": true,
   "rust-analyzer.lens.enable": true,
-  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
   "typescript.inlayHints.parameterNames.enabled": "all",
-  "typescript.inlayHints.parameterTypes.enabled": true,
   "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
   "typescript.inlayHints.variableTypes.enabled": true,
   "rewrap.autoWrap.enabled": true,
@@ -432,11 +429,9 @@
   "python.analysis.inlayHints.variableTypes": true,
   "python.analysis.inlayHints.functionReturnTypes": true,
   "python.analysis.typeCheckingMode": "basic",
-  "insertDateString.format": "iso",
-  "insertDateString.formatDate": "YYYYMMDD",
   "python.analysis.autoImportCompletions": true,
   "python.analysis.autoImportUserSymbols": true,
-  "workbench.colorTheme": "1337",
+  "workbench.colorTheme": "GitHub Dark Default",
   "diffEditor.renderSideBySide": false,
   "errorLens.followCursor": "activeLine",
   "errorLens.removeLinebreaks": false,
@@ -453,4 +448,5 @@
   "[python]": {
     "editor.formatOnType": true
   },
-}
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.preferences.useAliasesForRenames": false,
