@@ -125,7 +125,6 @@
   },
   "git.pruneOnFetch": true,
   "editor.semanticHighlighting.enabled": true,
-  "rust-analyzer.checkOnSave.command": "clippy",
   "editor.accessibilitySupport": "off",
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
@@ -450,3 +449,4 @@
   },
   "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
   "typescript.preferences.useAliasesForRenames": false,
+}
