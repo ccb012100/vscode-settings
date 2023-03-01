@@ -98,14 +98,6 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+numpad_subtract",
-    "command": "-workbench.action.zoomOut"
-  },
-  {
-    "key": "ctrl+numpad_add",
-    "command": "-workbench.action.zoomIn"
-  },
-  {
     "key": "ctrl+h ctrl+s",
     "command": "-workbench.action.openGlobalKeybindings"
   },
@@ -1488,22 +1480,6 @@
     "key": "alt+-",
     "command": "-decreaseSearchEditorContextLines",
     "when": "inSearchEditor"
-  },
-  {
-    "key": "ctrl+shift+=",
-    "command": "-workbench.action.zoomIn"
-  },
-  {
-    "key": "ctrl+=",
-    "command": "-workbench.action.zoomIn"
-  },
-  {
-    "key": "ctrl+shift+-",
-    "command": "-workbench.action.zoomOut"
-  },
-  {
-    "key": "ctrl+-",
-    "command": "-workbench.action.zoomOut"
   },
   {
     "key": "alt+=",
@@ -2908,11 +2884,6 @@
     "command": "workbench.action.showAllEditors"
   },
   {
-    "key": "alt+left",
-    "command": "workbench.action.navigateBack",
-    "when": "canNavigateBack"
-  },
-  {
     "key": "alt+right",
     "command": "workbench.action.navigateForward",
     "when": "canNavigateForward"
@@ -3603,17 +3574,7 @@
     "when": "editorTextFocus && foldingEnabled"
   },
   {
-    "key": "ctrl+c f",
-    "command": "editor.foldAllExcept",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  {
-    "key": "ctrl+k ctrl+-",
-    "command": "-editor.foldAllExcept",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  {
-    "key": "ctrl+c u",
+    "key": "ctrl+c shift+u",
     "command": "editor.unfoldAll",
     "when": "editorTextFocus && foldingEnabled"
   },
@@ -3803,19 +3764,19 @@
     "command": "welcome.showNewFileEntries"
   },
   {
-    "key": "ctrl+numpad_add",
+    "key": "ctrl+=",
     "command": "editor.action.fontZoomIn"
   },
   {
-    "key": "ctrl+numpad_subtract",
+    "key": "ctrl+-",
     "command": "editor.action.fontZoomOut"
   },
   {
-    "key": "ctrl+shift+numpad_add",
+    "key": "ctrl+shift+=",
     "command": "editor.action.fontZoomReset"
   },
   {
-    "key": "meta+[",
+    "key": "alt+[",
     "command": "workbench.action.navigateBack",
     "when": "canNavigateBack"
   },
@@ -3954,5 +3915,75 @@
   {
     "key": "ctrl+l ctrl+t",
     "command": "typescript.restartTsServer"
+  },
+  {
+    "key": "ctrl+]",
+    "command": "markdown.extension.editing.toggleHeadingUp",
+    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^qmd$/"
+  },
+  {
+    "key": "ctrl+shift+]",
+    "command": "-markdown.extension.editing.toggleHeadingUp",
+    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^qmd$/"
+  },
+  {
+    "key": "ctrl+[",
+    "command": "markdown.extension.editing.toggleHeadingDown",
+    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^qmd$/"
+  },
+  {
+    "key": "ctrl+shift+[",
+    "command": "-markdown.extension.editing.toggleHeadingDown",
+    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^qmd$/"
+  },
+  {
+    "key": "ctrl+[",
+    "command": "editor.fold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+shift+[",
+    "command": "-editor.fold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+]",
+    "command": "editor.unfold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+shift+]",
+    "command": "-editor.unfold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+shift+[",
+    "command": "editor.foldRecursively",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+k ctrl+[",
+    "command": "-editor.foldRecursively",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+shift+]",
+    "command": "editor.unfoldRecursively",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+k ctrl+]",
+    "command": "-editor.unfoldRecursively",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+c shift+f",
+    "command": "editor.foldAll",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+k ctrl+0",
+    "command": "-editor.foldAll",
+    "when": "editorTextFocus && foldingEnabled"
   }
 ]
