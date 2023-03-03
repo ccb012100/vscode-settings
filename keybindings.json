@@ -717,16 +717,6 @@
     "when": "editorTextFocus && !editorReadonly && !inCompositeEditor"
   },
   {
-    "key": "ctrl+shift+[",
-    "command": "-markdown.extension.editing.toggleHeadingDown",
-    "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
-  },
-  {
-    "key": "ctrl+shift+]",
-    "command": "-markdown.extension.editing.toggleHeadingUp",
-    "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
-  },
-  {
     "key": "ctrl+c ctrl+s",
     "command": "editor.action.insertSnippet",
     "when": "editorTextFocus"
@@ -929,11 +919,6 @@
     "key": "ctrl+b",
     "command": "-markdown.extension.editing.toggleBold",
     "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
-  },
-  {
-    "key": "ctrl+]",
-    "command": "-markdown.extension.onIndentLines",
-    "when": "editorTextFocus && !suggestWidgetVisible && editorLangId == 'markdown'"
   },
   {
     "key": "ctrl+[",
@@ -3124,10 +3109,6 @@
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+shift+k",
-    "command": "deleteAllRight"
-  },
-  {
     "key": "ctrl+x alt+enter",
     "command": "workbench.action.createTerminalEditorSide"
   },
@@ -3917,26 +3898,6 @@
     "command": "typescript.restartTsServer"
   },
   {
-    "key": "ctrl+]",
-    "command": "markdown.extension.editing.toggleHeadingUp",
-    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^qmd$/"
-  },
-  {
-    "key": "ctrl+shift+]",
-    "command": "-markdown.extension.editing.toggleHeadingUp",
-    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^qmd$/"
-  },
-  {
-    "key": "ctrl+[",
-    "command": "markdown.extension.editing.toggleHeadingDown",
-    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^qmd$/"
-  },
-  {
-    "key": "ctrl+shift+[",
-    "command": "-markdown.extension.editing.toggleHeadingDown",
-    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^qmd$/"
-  },
-  {
     "key": "ctrl+[",
     "command": "editor.fold",
     "when": "editorTextFocus && foldingEnabled"
@@ -3985,5 +3946,131 @@
     "key": "ctrl+k ctrl+0",
     "command": "-editor.foldAll",
     "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+shift+0",
+    "command": "markdown.extension.editing.toggleHeadingUp",
+    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^qmd$/"
+  },
+  {
+    "key": "ctrl+shift+]",
+    "command": "-markdown.extension.editing.toggleHeadingUp",
+    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^qmd$/"
+  },
+  {
+    "key": "ctrl+shift+9",
+    "command": "markdown.extension.editing.toggleHeadingDown",
+    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^qmd$/"
+  },
+  {
+    "key": "ctrl+shift+[",
+    "command": "-markdown.extension.editing.toggleHeadingDown",
+    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^qmd$/"
+  },
+  {
+    "key": "ctrl+l m",
+    "command": "markdown.extension.toc.update"
+  },
+  {
+    "key": "ctrl+]",
+    "command": "-markdown.extension.onIndentLines",
+    "when": "editorTextFocus && !suggestWidgetVisible && editorLangId =~ /^markdown$|^rmd$|^qmd$/"
+  },
+  {
+    "key": "ctrl+k ctrl+,",
+    "command": "-editor.createFoldingRangeFromSelection",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+k ctrl+alt+c",
+    "command": "-copyFilePath",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+shift+alt+c",
+    "command": "-copyRelativeFilePath",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+-",
+    "command": "-editor.foldAllExcept",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+k ctrl+r",
+    "command": "-git.revertSelectedRanges",
+    "when": "isInDiffEditor && !operationInProgress"
+  },
+  {
+    "key": "ctrl+k ctrl+alt+s",
+    "command": "-git.stageSelectedRanges",
+    "when": "isInDiffEditor && !operationInProgress"
+  },
+  {
+    "key": "ctrl+k ctrl+n",
+    "command": "-git.unstageSelectedRanges",
+    "when": "isInDiffEditor && !operationInProgress"
+  },
+  {
+    "key": "ctrl+k ctrl+c",
+    "command": "-notebook.cell.collapseCellInput",
+    "when": "notebookCellListFocused && !inputFocus && !notebookCellInputIsCollapsed"
+  },
+  {
+    "key": "ctrl+k t",
+    "command": "-notebook.cell.collapseCellOutput",
+    "when": "notebookCellHasOutputs && notebookCellListFocused && !inputFocus && !notebookCellOutputIsCollapsed"
+  },
+  {
+    "key": "ctrl+k ctrl+c",
+    "command": "-notebook.cell.expandCellInput",
+    "when": "notebookCellInputIsCollapsed && notebookCellListFocused"
+  },
+  {
+    "key": "ctrl+k t",
+    "command": "-notebook.cell.expandCellOutput",
+    "when": "notebookCellListFocused && notebookCellOutputIsCollapsed"
+  },
+  {
+    "key": "ctrl+k ctrl+shift+\\",
+    "command": "-notebook.cell.split",
+    "when": "editorTextFocus && notebookCellEditable && notebookEditable && notebookEditorFocused"
+  },
+  {
+    "key": "ctrl+k ctrl+.",
+    "command": "-editor.removeManualFoldingRanges",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+k ctrl+9",
+    "command": "-editor.unfoldAllMarkerRegions",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+k ctrl+=",
+    "command": "-editor.unfoldAllExcept",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+k ctrl+shift+w",
+    "command": "-workbench.action.closeAllGroups"
+  },
+  {
+    "key": "ctrl+k w",
+    "command": "-workbench.action.closeEditorsInGroup"
+  },
+  {
+    "key": "ctrl+k u",
+    "command": "-workbench.action.closeUnmodifiedEditors"
+  },
+  {
+    "key": "ctrl+k ctrl+shift+\\",
+    "command": "-workbench.action.splitEditorInGroup",
+    "when": "activeEditorCanSplitInGroup"
+  },
+  {
+    "key": "ctrl+k shift+o",
+    "command": "-workbench.action.compareEditor.openSide",
+    "when": "inDiffEditor"
   }
 ]
