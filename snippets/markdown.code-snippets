@@ -28,5 +28,21 @@
 		],
 		"prefix": "section-separator",
 		"description": "Insert a section separator"
-	}
+	},
+	"Checked checkbox": {
+		"scope": "markdown",
+		"prefix": "checked-box",
+		"description": "an unchecked checkbox",
+		"body": [
+			"[x] $0",
+		]
+	},
+	"Unchecked checkbox": {
+		"scope": "markdown",
+		"prefix": "unchecked-box",
+		"description": "an unchecked checkbox",
+		"body": [
+			"[ ] $0",
+		]
+	},
 }
