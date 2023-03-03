@@ -362,7 +362,6 @@
   "editor.minimap.showSlider": "always",
   "editor.minimap.renderCharacters": false,
   "editor.minimap.enabled": false,
-  "githubPullRequests.pullBranch": "never",
   "eslint.lintTask.enable": true,
   "eslint.packageManager": "pnpm",
   "terminal.integrated.defaultProfile.linux": "zsh",
@@ -430,7 +429,7 @@
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoImportCompletions": true,
   "python.analysis.autoImportUserSymbols": true,
-  "workbench.colorTheme": "GitHub Dark Default",
+  "workbench.colorTheme": "Eva Dark Bold",
   "diffEditor.renderSideBySide": false,
   "errorLens.followCursor": "activeLine",
   "errorLens.removeLinebreaks": false,
@@ -453,4 +452,14 @@
     "editor.defaultFormatter": "csharpier.csharpier-vscode",
     "editor.formatOnSave": true,
   },
+  "window.newWindowDimensions": "offset",
+  "workbench.colorCustomizations":{
+    "editor.foreground": "#FFB000"
+  },
+  "githubPullRequests.notifications": "pullRequests",
+  "githubIssues.createIssueTriggers": [
+    "ISSUE"
+  ],
+  "githubPullRequests.createDraft": true,
+  "githubPullRequests.focusedMode": "overview"
 }
