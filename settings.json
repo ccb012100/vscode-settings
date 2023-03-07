@@ -1,7 +1,7 @@
 {
   "breadcrumbs.enabled": true,
   "editor.codeLens": false,
-  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontFamily": "Victor Mono",
   "editor.fontLigatures": true,
   "editor.letterSpacing": 1,
   "editor.minimap.maxColumn": 60,
@@ -429,7 +429,7 @@
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoImportCompletions": true,
   "python.analysis.autoImportUserSymbols": true,
-  "workbench.colorTheme": "Eva Dark Bold",
+  "workbench.colorTheme": "GitHub Dark",
   "diffEditor.renderSideBySide": false,
   "errorLens.followCursor": "activeLine",
   "errorLens.removeLinebreaks": false,
@@ -453,8 +453,11 @@
     "editor.formatOnSave": true,
   },
   "window.newWindowDimensions": "offset",
-  "workbench.colorCustomizations":{
-    "editor.foreground": "#FFB000"
+  "workbench.colorCustomizations": {
+    "editor.foreground": "#FFB000",
+    "[Mcedit]": {
+      "editor.lineHighlightBackground": "#000000"
+    }
   },
   "githubPullRequests.notifications": "pullRequests",
   "githubIssues.createIssueTriggers": [
