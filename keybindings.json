@@ -2604,7 +2604,7 @@
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "ctrl+x left",
+    "key": "ctrl+g ctrl+g",
     "command": "workbench.action.toggleAuxiliaryBar"
   },
   {
@@ -3628,16 +3628,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+x ctrl+/",
-    "command": "editor.action.blockComment",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+shift+a",
-    "command": "-editor.action.blockComment",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
     "key": "shift+alt+d",
     "command": "-editor.detectLanguage",
     "when": "editorTextFocus && !notebookEditable"
@@ -3689,18 +3679,8 @@
     "command": "redo"
   },
   {
-    "key": "ctrl+x ctrl+;",
-    "command": "editor.action.commentLine",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
     "key": "ctrl+/",
     "command": "-editor.action.commentLine",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+c ctrl+c",
-    "command": "editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
@@ -3806,7 +3786,7 @@
     "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
   },
   {
-    "key": "ctrl+g ctrl+g",
+    "key": "ctrl+g g",
     "command": "workbench.scm.focus"
   },
   {
@@ -3836,16 +3816,6 @@
   {
     "key": "ctrl+h k",
     "command": "workbench.action.openGlobalKeybindings"
-  },
-  {
-    "key": "ctrl+x ;",
-    "command": "editor.action.commentLine",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+x /",
-    "command": "editor.action.blockComment",
-    "when": "editorTextFocus && !editorReadonly"
   },
   {
     "key": "ctrl+x e",
@@ -4072,5 +4042,39 @@
     "key": "ctrl+k shift+o",
     "command": "-workbench.action.compareEditor.openSide",
     "when": "inDiffEditor"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+  },
+  {
+    "key": "alt+j",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+a",
+    "command": "-editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+left",
+    "command": "workbench.action.navigateBack",
+    "when": "canNavigateBack"
+  },
+  {
+    "key": "ctrl+alt+b",
+    "command": "-workbench.action.toggleAuxiliaryBar"
   }
 ]
