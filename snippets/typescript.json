@@ -13,7 +13,12 @@
 	// 	"description": "Log output to console"
 	// }
 	"new Mocha test-case": {
-		"prefix": "mocha-it",
+		"prefix": [
+			"mocha-it",
+			"mocha-test",
+			"test",
+			"it"
+		],
 		"body": [
 			"it('should $1', async function () {",
 			"\tassert.fail('WIP: not implemented');$0",
@@ -22,7 +27,10 @@
 		"description": "stub for a new Mocha test-case"
 	},
 	"new Mocha suite context": {
-		"prefix": "mocha-context",
+		"prefix": [
+			"mocha-context",
+			"context"
+		],
 		"body": [
 			"context('$1', function () {",
 			"\t$0",
@@ -31,7 +39,10 @@
 		"description": "stub for a new Mocha test suite context"
 	},
 	"describe new Mocha suite": {
-		"prefix": "mocha-describe",
+		"prefix": [
+			"mocha-describe",
+			"describe"
+		],
 		"body": [
 			"describe($1.name, function () {",
 			"\t$0",
@@ -40,7 +51,10 @@
 		"description": "stub for description of a new Mocha test suite"
 	},
 	"Mocha beforeEach function": {
-		"prefix": "mocha-before",
+		"prefix": [
+			"mocha-before",
+			"before"
+		],
 		"body": [
 			"beforeEach(async function () {",
 			"\t$0",
@@ -49,7 +63,10 @@
 		"description": "stub for a Mocha beforeEach function"
 	},
 	"parameterized Mocha test": {
-		"prefix": "mocha-parameterized",
+		"prefix": [
+			"mocha-parameterized",
+			"parameterized"
+		],
 		"body": [
 			"[$1].forEach(($2) => {",
 			"\t$0",
@@ -57,4 +74,15 @@
 		],
 		"description": "stub for a parameterized Mocha test"
 	},
+	"Resolve<T> type": {
+		"prefix": [
+			"resolve",
+			"Resolve<T>"
+		],
+		"body": [
+			"type Resolve<T> = T extends Function ? T : {[K in keyof T] : T[K]};",
+			"$0"
+		],
+		"description": "define the Resolve<T> type"
+	}
 }

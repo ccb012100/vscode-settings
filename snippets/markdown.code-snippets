@@ -34,7 +34,7 @@
 		"prefix": "checked-box",
 		"description": "an unchecked checkbox",
 		"body": [
-			"[x] $0",
+			"- [x] $0",
 		]
 	},
 	"Unchecked checkbox": {
@@ -42,7 +42,7 @@
 		"prefix": "unchecked-box",
 		"description": "an unchecked checkbox",
 		"body": [
-			"[ ] $0",
+			"- [ ] $0",
 		]
 	},
 }
