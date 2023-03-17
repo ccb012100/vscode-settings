@@ -134,7 +134,6 @@
   "sqlite.recordsPerPage": 100,
   "go.toolsManagement.autoUpdate": true,
   "git.confirmSync": false,
-  "markdown.extension.print.theme": "dark",
   "problems.showCurrentInStatus": true,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.cursorBlinking": true,
@@ -424,7 +423,7 @@
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoImportCompletions": true,
   "python.analysis.autoImportUserSymbols": true,
-  "workbench.colorTheme": "1337",
+  "workbench.colorTheme": "Yoncé",
   "diffEditor.renderSideBySide": false,
   "errorLens.followCursor": "activeLine",
   "errorLens.removeLinebreaks": false,
@@ -449,9 +448,9 @@
   },
   "window.newWindowDimensions": "offset",
   "workbench.colorCustomizations": {
-    "editor.foreground": "#FFB000",
+    "editor.foreground": "#fffff8",
     "[Mcedit]": {
-      "editor.lineHighlightBackground": "#000000"
+      "editor.lineHighlightBackground": "#111111"
     }
   },
   "githubPullRequests.notifications": "pullRequests",
@@ -469,10 +468,11 @@
   "gitlens.hovers.avatarSize": 16,
   "markdown.preview.fontFamily": "Cascadia Mono, Hack, VIctor Mono, Inconsolata",
   "markdown.preview.fontSize": 11,
-  "markdown-preview-github-styles.colorTheme": "light",
   "githubIssues.ignoreUserCompletionTrigger": [
     "python",
     "typescript",
     "javascript"
-  ]
+  ],
+  "githubPullRequests.pullBranch": "never",
+  "markdown.preview.fontSize": 14,
 }
