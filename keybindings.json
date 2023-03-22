@@ -1380,7 +1380,7 @@
   {
     "key": "down",
     "command": "cursorDown",
-    "when": "textInputFocus"
+    "when": "textInputFocus && !codeActionMenuVisible && !inQuickOpen && listFocus"
   },
   {
     "key": "down",
@@ -1784,10 +1784,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+;",
-    "command": "-findJump.activate"
-  },
-  {
     "key": "shift+enter",
     "command": "-acceptAlternativeSelectedSuggestion",
     "when": "suggestWidgetVisible && textInputFocus"
@@ -2043,11 +2039,6 @@
     "key": "cmd+a",
     "command": "-workbench.action.terminal.selectAll",
     "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
-  },
-  {
-    "key": "ctrl+c k",
-    "command": "workbench.action.focusAboveGroup",
-    "when": "editorTextFocus"
   },
   {
     "key": "ctrl+l ctrl+w",
@@ -2509,21 +2500,6 @@
     "command": "nugetpackagemanagergui.view"
   },
   {
-    "key": "ctrl+c j",
-    "command": "workbench.action.focusBelowGroup",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+c h",
-    "command": "workbench.action.focusLeftGroup",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+c l",
-    "command": "workbench.action.focusRightGroup",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "ctrl+shift+.",
     "command": "-breadcrumbs.focusAndSelect",
     "when": "breadcrumbsPossible && breadcrumbsVisible"
@@ -2618,21 +2594,6 @@
   {
     "key": "ctrl+alt+right",
     "command": "-workbench.action.moveEditorToNextGroup"
-  },
-  {
-    "key": "ctrl+c up",
-    "command": "workbench.action.moveEditorToAboveGroup",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+c down",
-    "command": "workbench.action.moveEditorToBelowGroup",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+c right",
-    "command": "workbench.action.moveEditorToRightGroup",
-    "when": "editorTextFocus"
   },
   {
     "key": "alt+/",
@@ -2852,10 +2813,6 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+x b",
-    "command": "workbench.action.showAllEditors"
-  },
-  {
     "key": "alt+right",
     "command": "workbench.action.navigateForward",
     "when": "canNavigateForward"
@@ -3017,11 +2974,6 @@
   {
     "key": "shift+alt+9",
     "command": "-workbench.action.moveEditorToLastGroup"
-  },
-  {
-    "key": "ctrl+c left",
-    "command": "workbench.action.moveEditorToLeftGroup",
-    "when": "editorTextFocus"
   },
   {
     "key": "ctrl+shift+pageup",
@@ -4176,5 +4128,62 @@
   {
     "key": "ctrl+x left",
     "command": "workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "down",
+    "command": "workbench.action.quickOpenSelectNext",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "up",
+    "command": "workbench.action.quickOpenSelectPrevious",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "down",
+    "command": "focusNextCodeAction",
+    "when": "CodeActionMenuVisible"
+  },
+  {
+    "key": "up",
+    "command": "focusPreviousCodeAction",
+    "when": "CodeActionMenuVisible"
+  },
+  {
+    "key": "ctrl+c right",
+    "command": "workbench.action.moveEditorToRightGroup"
+  },
+  {
+    "key": "ctrl+c up",
+    "command": "workbench.action.moveEditorToAboveGroup"
+  },
+  {
+    "key": "ctrl+c left",
+    "command": "workbench.action.moveEditorToLeftGroup"
+  },
+  {
+    "key": "ctrl+c down",
+    "command": "workbench.action.moveEditorToBelowGroup"
+  },
+  {
+    "key": "up",
+    "command": "cursorUp",
+    "when": "textInputFocus && !codeActionMenuVisible && !inQuickOpen && listFocus"
+  },
+  {
+    "key": "ctrl+alt+'",
+    "command": "editor.action.wordHighlight.trigger"
+  },
+  {
+    "key": "alt+o",
+    "command": "workbench.action.showAllEditorsByMostRecentlyUsed"
+  },
+  {
+    "key": "shift+alt+o",
+    "command": "workbench.action.showAllEditors"
+  },
+  {
+    "key": "ctrl+x b",
+    "command": "workbench.action.showAllEditorsByMostRecentlyUsed"
   }
 ]

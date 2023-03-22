@@ -275,7 +275,8 @@
     "**/pnpm-lock.yaml": true
   },
   "settingsSync.ignoredSettings": [
-    "editor.fontSize"
+    "editor.fontSize",
+    "workbench.colorTheme"
   ],
   "[editorconfig]": {
     "editor.rulers": [
@@ -423,7 +424,7 @@
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoImportCompletions": true,
   "python.analysis.autoImportUserSymbols": true,
-  "workbench.colorTheme": "Yoncé",
+  "workbench.colorTheme": "Dark Candy",
   "diffEditor.renderSideBySide": false,
   "errorLens.followCursor": "activeLine",
   "errorLens.removeLinebreaks": false,
@@ -448,9 +449,8 @@
   },
   "window.newWindowDimensions": "offset",
   "workbench.colorCustomizations": {
-    "editor.foreground": "#fffff8",
     "[Mcedit]": {
-      "editor.lineHighlightBackground": "#111111"
+      "editor.lineHighlightBackground": "#000000"
     }
   },
   "githubPullRequests.notifications": "pullRequests",
@@ -462,12 +462,10 @@
   "editor.minimap.renderCharacters": false,
   "editor.minimap.showSlider": "always",
   "editor.minimap.enabled": false,
-  "window.zoomLevel": 1,
-  "editor.fontSize": 12,
   "markdown.preview.lineHeight": 1,
   "gitlens.hovers.avatarSize": 16,
   "markdown.preview.fontFamily": "Cascadia Mono, Hack, VIctor Mono, Inconsolata",
-  "markdown.preview.fontSize": 11,
+  "markdown.preview.fontSize": 12,
   "githubIssues.ignoreUserCompletionTrigger": [
     "python",
     "typescript",
@@ -475,4 +473,5 @@
   ],
   "githubPullRequests.pullBranch": "never",
   "markdown.preview.fontSize": 14,
+  "window.zoomLevel": -0.2,
 }
