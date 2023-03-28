@@ -78,7 +78,7 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {
-      "source.fixAll": true
+      "source.fixAll": true,
     },
     "editor.rulers": [
       120
@@ -423,8 +423,7 @@
   "python.analysis.inlayHints.functionReturnTypes": true,
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoImportCompletions": true,
-  "python.analysis.autoImportUserSymbols": true,
-  "workbench.colorTheme": "Dark Candy",
+  "workbench.colorTheme": "Gruvbox Dark Hard",
   "diffEditor.renderSideBySide": false,
   "errorLens.followCursor": "activeLine",
   "errorLens.removeLinebreaks": false,
@@ -465,13 +464,26 @@
   "markdown.preview.lineHeight": 1,
   "gitlens.hovers.avatarSize": 16,
   "markdown.preview.fontFamily": "Cascadia Mono, Hack, VIctor Mono, Inconsolata",
-  "markdown.preview.fontSize": 12,
   "githubIssues.ignoreUserCompletionTrigger": [
     "python",
     "typescript",
     "javascript"
   ],
   "githubPullRequests.pullBranch": "never",
-  "markdown.preview.fontSize": 14,
   "window.zoomLevel": -0.2,
+  "editor.tokenColorCustomizations": {
+    "[Dark Candy]": {
+      "comments": "#adff2f",
+      "textMateRules": [
+        {
+          // Also use `nord9` as comma foreground color for Go syntax.
+          "scope": "punctuation",
+          "settings": {
+            "foreground": "#ffe599"
+          }
+        }
+      ]
+    }
+  },
+  "markdown.preview.fontSize": 16,
 }
