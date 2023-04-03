@@ -1,7 +1,58 @@
 {
+  "workbench.colorCustomizations": {
+    "[Mcedit]": {
+      "editor.lineHighlightBackground": "#000000"
+    },
+    // "editor.lineHighlightBorder": "#ffd700",
+    // "editor.selectionBackground": "#877E22",
+    // active tab
+    "tab.activeModifiedBorder": "#FFC300",
+    "tab.activeBackground": "#1857a4",
+    // Pico theme: https://glitchbone.github.io/vscode-base16-term/#/pico
+    // bg changed to black
+    "terminal.background": "#000000",
+    "terminal.foreground": "#5F574F",
+    "terminalCursor.background": "#5F574F",
+    "terminalCursor.foreground": "#5F574F",
+    "terminal.ansiBlack": "#000000",
+    "terminal.ansiBlue": "#83769C",
+    "terminal.ansiBrightBlack": "#008751",
+    "terminal.ansiBrightBlue": "#83769C",
+    "terminal.ansiBrightCyan": "#29ADFF",
+    "terminal.ansiBrightGreen": "#00E756",
+    "terminal.ansiBrightMagenta": "#FF77A8",
+    "terminal.ansiBrightRed": "#FF004D",
+    "terminal.ansiBrightWhite": "#FFF1E8",
+    "terminal.ansiBrightYellow": "#FFF024",
+    "terminal.ansiCyan": "#29ADFF",
+    "terminal.ansiGreen": "#00E756",
+    "terminal.ansiMagenta": "#FF77A8",
+    "terminal.ansiRed": "#FF004D",
+    "terminal.ansiWhite": "#5F574F",
+    // FindThenJump
+    "findThenJump.textDecorationBackground": "#FFFF00",
+    "findThenJump.textDecorationForeground": "#000"
+  },
+  "editor.tokenColorCustomizations": {
+    "[Dark Candy]": {
+      "comments": "#adff2f",
+      "textMateRules": [
+        {
+          // Also use `nord9` as comma foreground color for Go syntax.
+          "scope": "punctuation",
+          "settings": {
+            "foreground": "#ffe599"
+          }
+        }
+      ]
+    },
+    "[GitHub Dark]": {
+      "comments": "#32CD32",
+    }
+  },
   "breadcrumbs.enabled": true,
   "editor.codeLens": false,
-  "editor.fontFamily": "Victor Mono",
+  "editor.fontFamily": "Victor Mono; Jetbrains Mono; Fira Code; Cascadia Code; IBM Plex Mono; Hack",
   "editor.fontLigatures": true,
   "editor.letterSpacing": 1,
   "editor.minimap.maxColumn": 60,
@@ -78,7 +129,7 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {
-      "source.fixAll": true,
+      "source.fixAll": true
     },
     "editor.rulers": [
       120
@@ -215,7 +266,7 @@
   "editor.rulers": [
     120
   ],
-  "[git-commit]": {
+  "[scminput][git-commit]": {
     "editor.rulers": [
       50,
       72
@@ -247,7 +298,7 @@
   "csharp.inlayHints.types.forImplicitVariableTypes": true,
   "csharp.inlayHints.types.forLambdaParameterTypes": true,
   "debug.console.acceptSuggestionOnEnter": "on",
-  "editor.inlayHints.enabled": "offUnlessPressed",
+  "editor.inlayHints.enabled": "off",
   "editor.tabCompletion": "on",
   "javascript.inlayHints.parameterNames.enabled": "all",
   "javascript.inlayHints.parameterTypes.enabled": true,
@@ -285,35 +336,6 @@
   },
   "explorer.confirmDelete": false,
   "debug.console.fontFamily": "Hack",
-  "workbench.colorCustomizations": {
-    // active tab
-    "tab.activeModifiedBorder": "#FFC300",
-    "tab.activeBackground": "#1857a4",
-    // Pico theme: https://glitchbone.github.io/vscode-base16-term/#/pico
-    // bg changed to black
-    "terminal.background": "#000000",
-    "terminal.foreground": "#5F574F",
-    "terminalCursor.background": "#5F574F",
-    "terminalCursor.foreground": "#5F574F",
-    "terminal.ansiBlack": "#000000",
-    "terminal.ansiBlue": "#83769C",
-    "terminal.ansiBrightBlack": "#008751",
-    "terminal.ansiBrightBlue": "#83769C",
-    "terminal.ansiBrightCyan": "#29ADFF",
-    "terminal.ansiBrightGreen": "#00E756",
-    "terminal.ansiBrightMagenta": "#FF77A8",
-    "terminal.ansiBrightRed": "#FF004D",
-    "terminal.ansiBrightWhite": "#FFF1E8",
-    "terminal.ansiBrightYellow": "#FFF024",
-    "terminal.ansiCyan": "#29ADFF",
-    "terminal.ansiGreen": "#00E756",
-    "terminal.ansiMagenta": "#FF77A8",
-    "terminal.ansiRed": "#FF004D",
-    "terminal.ansiWhite": "#5F574F",
-    // FindThenJump
-    "findThenJump.textDecorationBackground": "#FFFF00",
-    "findThenJump.textDecorationForeground": "#000"
-  },
   "debug.showBreakpointsInOverviewRuler": true,
   "debug.toolBarLocation": "docked",
   "terminal.integrated.tabs.enabled": false,
@@ -417,13 +439,12 @@
   "overtype.perEditor": true,
   "overtype.labelOvertypeMode": "OVR",
   "overtype.labelInsertMode": "INS",
-  "bookmarks.experimental.enableNewStickyEngine": false,
   "python.analysis.completeFunctionParens": true,
   "python.analysis.inlayHints.variableTypes": true,
   "python.analysis.inlayHints.functionReturnTypes": true,
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoImportCompletions": true,
-  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "workbench.colorTheme": "Pink Candy Dark Warm",
   "diffEditor.renderSideBySide": false,
   "errorLens.followCursor": "activeLine",
   "errorLens.removeLinebreaks": false,
@@ -444,14 +465,9 @@
   "typescript.preferences.useAliasesForRenames": false,
   "[csharp]": {
     "editor.defaultFormatter": "csharpier.csharpier-vscode",
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": true
   },
   "window.newWindowDimensions": "offset",
-  "workbench.colorCustomizations": {
-    "[Mcedit]": {
-      "editor.lineHighlightBackground": "#000000"
-    }
-  },
   "githubPullRequests.notifications": "pullRequests",
   "githubIssues.createIssueTriggers": [
     "ISSUE"
@@ -461,29 +477,17 @@
   "editor.minimap.renderCharacters": false,
   "editor.minimap.showSlider": "always",
   "editor.minimap.enabled": false,
-  "markdown.preview.lineHeight": 1,
   "gitlens.hovers.avatarSize": 16,
-  "markdown.preview.fontFamily": "Cascadia Mono, Hack, VIctor Mono, Inconsolata",
+  "markdown.preview.fontFamily": "IBM Plex Serif, Cascadia Mono, Hack, Victor Mono, Inconsolata",
   "githubIssues.ignoreUserCompletionTrigger": [
     "python",
     "typescript",
     "javascript"
   ],
   "githubPullRequests.pullBranch": "never",
-  "window.zoomLevel": -0.2,
-  "editor.tokenColorCustomizations": {
-    "[Dark Candy]": {
-      "comments": "#adff2f",
-      "textMateRules": [
-        {
-          // Also use `nord9` as comma foreground color for Go syntax.
-          "scope": "punctuation",
-          "settings": {
-            "foreground": "#ffe599"
-          }
-        }
-      ]
-    }
-  },
-  "markdown.preview.fontSize": 16,
+  "theme-pink-candy.alternateCurrentLineStyle": true,
+  "window.menuBarVisibility": "compact",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.stickyTabStops": true,
 }
