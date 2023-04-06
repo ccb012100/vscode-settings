@@ -602,11 +602,6 @@
     "when": "editorHasSignatureHelpProvider && editorTextFocus"
   },
   {
-    "key": "cmd+w",
-    "command": "-workbench.action.terminal.killEditor",
-    "when": "terminalFocus && terminalProcessSupported && resourceScheme == 'vscode-terminal'"
-  },
-  {
     "key": "ctrl+h shift+d",
     "command": "editor.action.peekDefinition",
     "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
@@ -855,16 +850,6 @@
     "when": "explorerResourceIsFolder && explorerViewletVisible && filesExplorerFocus && !inputFocus"
   },
   {
-    "key": "ctrl+q",
-    "command": "workbench.action.terminal.killEditor",
-    "when": "terminalEditorFocus && terminalFocus && terminalProcessSupported && resourceScheme == 'vscode-terminal'"
-  },
-  {
-    "key": "ctrl+w",
-    "command": "-workbench.action.terminal.killEditor",
-    "when": "terminalEditorFocus && terminalFocus && terminalProcessSupported && resourceScheme == 'vscode-terminal'"
-  },
-  {
     "key": "ctrl+w",
     "command": "-workbench.action.closeGroup",
     "when": "activeEditorGroupEmpty && multipleEditorGroups"
@@ -1109,10 +1094,6 @@
     "key": "ctrl+k ctrl+x",
     "command": "-editor.action.trimTrailingWhitespace",
     "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+k ctrl+w",
-    "command": "-workbench.action.closeAllEditors"
   },
   {
     "key": "ctrl+k enter",
@@ -1589,11 +1570,6 @@
     "when": "customTreeView && listFocus && !inputFocus"
   },
   {
-    "key": "ctrl+w",
-    "command": "-workbench.action.terminal.killEditor",
-    "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated && resourceScheme == 'vscode-terminal' || terminalEditorFocus && terminalFocus && terminalProcessSupported && resourceScheme == 'vscode-terminal'"
-  },
-  {
     "key": "ctrl+o",
     "command": "-workbench.action.files.openFolderViaWorkspace",
     "when": "!openFolderWorkspaceSupport && workbenchState == 'workspace'"
@@ -1644,7 +1620,7 @@
     "when": "markdownPreviewFocus"
   },
   {
-    "key": "ctrl+l i",
+    "key": "ctrl+l ctrl+i",
     "command": "rust-analyzer.toggleInlayHints"
   },
   {
@@ -1911,7 +1887,7 @@
     "command": "editor.action.toggleRenderWhitespace"
   },
   {
-    "key": "ctrl+l k",
+    "key": "ctrl+l ctrl+k",
     "command": "editor.action.duplicateSelection"
   },
   {
@@ -2238,10 +2214,6 @@
     "when": "editorLangId == 'excel'"
   },
   {
-    "key": "ctrl+shift+v",
-    "command": "editor.action.clipboardPasteAction"
-  },
-  {
     "key": "ctrl+shift+[IntlBackslash]",
     "command": "-editor.action.inPlaceReplace.down",
     "when": "editorTextFocus && !editorReadonly"
@@ -2543,7 +2515,7 @@
     "command": "editor.action.transformToUppercase"
   },
   {
-    "key": "ctrl+l l",
+    "key": "ctrl+l ctrl+l",
     "command": "editor.action.transformToLowercase"
   },
   {
@@ -2861,7 +2833,7 @@
     "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
   },
   {
-    "key": "ctrl+shift+x",
+    "key": "ctrl+w",
     "command": "editor.action.clipboardCutAction"
   },
   {
@@ -3721,11 +3693,6 @@
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
   },
   {
-    "key": "ctrl+/",
-    "command": "editor.action.commentLine",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
     "key": "alt+left",
     "command": "workbench.action.navigateBack",
     "when": "canNavigateBack"
@@ -3970,19 +3937,19 @@
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
   {
-    "key": "ctrl+l ctrl+i",
+    "key": "ctrl+l i",
     "command": "workbench.action.focusAboveGroup"
   },
   {
-    "key": "ctrl+l ctrl+k",
+    "key": "ctrl+l k",
     "command": "workbench.action.focusBelowGroup"
   },
   {
-    "key": "ctrl+l ctrl+l",
+    "key": "ctrl+l l",
     "command": "workbench.action.focusRightGroup"
   },
   {
-    "key": "ctrl+l ctrl+j",
+    "key": "ctrl+l j",
     "command": "workbench.action.focusLeftGroup"
   },
   {
@@ -4007,11 +3974,6 @@
   {
     "key": "ctrl+k ctrl+s",
     "command": "-workbench.action.openGlobalKeybindings"
-  },
-  {
-    "key": "ctrl+shift+a",
-    "command": "-editor.action.blockComment",
-    "when": "editorTextFocus && !editorReadonly"
   },
   {
     "key": "ctrl+x 9",
@@ -4110,22 +4072,93 @@
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+shift+/",
-    "command": "editor.action.blockComment"
-  },
-  {
     "key": "ctrl+alt+y",
     "command": "-better-kill-ring.history",
     "when": "textInputFocus && !editorHasMultipleSelections && !editorReadonly"
   },
   {
-    "key": "alt+y",
-    "command": "kill-ring.history",
-    "when": "textInputFocus && !editorReadonly"
-  },
-  {
     "key": "ctrl+meta+y",
     "command": "-kill-ring.history",
     "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "cursorPageDown",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "alt+v",
+    "command": "cursorPageUp",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+x",
+    "command": "-editor.action.clipboardCutAction"
+  },
+  {
+    "key": "alt+w",
+    "command": "editor.action.clipboardCopyAction"
+  },
+  {
+    "key": "alt+w",
+    "command": "-toggleSearchEditorWholeWord",
+    "when": "inSearchEditor && searchInputBoxFocus"
+  },
+  {
+    "key": "ctrl+/",
+    "command": "undo"
+  },
+  {
+    "key": "alt+/",
+    "command": "redo"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "-editor.action.clipboardPasteAction"
+  },
+  {
+    "key": "ctrl+shift+v",
+    "command": "editor.action.clipboardPasteAction"
+  },
+  {
+    "key": "ctrl+shift+v",
+    "command": "markdown.extension.editing.paste",
+    "when": "editorHasSelection && editorTextFocus && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "-markdown.extension.editing.paste",
+    "when": "editorHasSelection && editorTextFocus && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+  },
+  {
+    "key": "ctrl+shift+v",
+    "command": "filesExplorer.paste",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "-filesExplorer.paste",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "editor.action.clipboardPasteAction"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-workbench.action.terminal.killEditor",
+    "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated && resourceScheme == 'vscode-terminal' || terminalEditorFocus && terminalFocus && terminalProcessSupported && resourceScheme == 'vscode-terminal'"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "deleteAllRight"
+  },
+  {
+    "key": "ctrl+x shift+k",
+    "command": "workbench.action.closeAllEditors"
+  },
+  {
+    "key": "ctrl+k ctrl+w",
+    "command": "-workbench.action.closeAllEditors"
   }
 ]
