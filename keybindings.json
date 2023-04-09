@@ -1139,18 +1139,8 @@
     "when": "emptyWorkspaceSupport && workbenchState != 'empty'"
   },
   {
-    "key": "ctrl+k ctrl+k",
-    "command": "-editor.action.defineKeybinding",
-    "when": "editorTextFocus && !editorReadonly && editorLangId == 'jsonc'"
-  },
-  {
     "key": "ctrl+k ctrl+a",
     "command": "-keybindings.editor.addKeybinding",
-    "when": "inKeybindings && keybindingFocus"
-  },
-  {
-    "key": "ctrl+k ctrl+e",
-    "command": "-keybindings.editor.defineWhenExpression",
     "when": "inKeybindings && keybindingFocus"
   },
   {
@@ -1271,11 +1261,6 @@
     "key": "ctrl+n",
     "command": "notifications.focusNextToast",
     "when": "notificationFocus && notificationToastsVisible"
-  },
-  {
-    "key": "ctrl+j",
-    "command": "cursorDown",
-    "when": "textInputFocus && !suggestWidgetVisible"
   },
   {
     "key": "ctrl+a",
@@ -1885,10 +1870,6 @@
   {
     "key": "ctrl+l ctrl+w",
     "command": "editor.action.toggleRenderWhitespace"
-  },
-  {
-    "key": "ctrl+l ctrl+k",
-    "command": "editor.action.duplicateSelection"
   },
   {
     "key": "cmd+f",
@@ -2532,11 +2513,6 @@
     "command": "editor.action.peekTypeDefinition"
   },
   {
-    "key": "ctrl+h ctrl+p",
-    "command": "editor.action.triggerParameterHints",
-    "when": "editorHasSignatureHelpProvider && editorTextFocus"
-  },
-  {
     "key": "ctrl+h ctrl+i",
     "command": "editor.action.goToImplementation",
     "when": "editorHasImplementationProvider && editorTextFocus && !isInEmbeddedEditor"
@@ -3057,22 +3033,22 @@
     "when": "editorTextFocus && !isInDiffEditor && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /revision/"
   },
   {
-    "key": "alt+;",
+    "key": "alt+'",
     "command": "addCursorsAtSearchResults",
     "when": "fileMatchOrMatchFocus && searchViewletVisible"
   },
   {
-    "key": "alt+;",
+    "key": "alt+'",
     "command": "selectAllSearchEditorMatches",
     "when": "inSearchEditor"
   },
   {
-    "key": "alt+;",
+    "key": "alt+'",
     "command": "editor.action.selectHighlights",
     "when": "editorFocus"
   },
   {
-    "key": "alt+;",
+    "key": "alt+'",
     "command": "editor.action.selectAllMatches",
     "when": "editorFocus && findWidgetVisible"
   },
@@ -3280,13 +3256,8 @@
     "command": "workbench.action.showAllSymbols"
   },
   {
-    "key": "alt+/",
+    "key": "alt+s",
     "command": "editor.action.smartSelect.expand",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "shift+alt+/",
-    "command": "editor.action.smartSelect.shrink",
     "when": "editorTextFocus"
   },
   {
@@ -3451,7 +3422,7 @@
     "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
   },
   {
-    "key": "alt+,",
+    "key": "ctrl+h p",
     "command": "editor.action.triggerParameterHints",
     "when": "editorHasSignatureHelpProvider && editorTextFocus"
   },
@@ -3799,11 +3770,6 @@
     "when": "editorTextFocus && !gitlens:disabled && !gitlens:disabledToggleCodeLens && config.gitlens.keymap == 'chorded'"
   },
   {
-    "key": "ctrl+x ;",
-    "command": "editor.action.commentLine",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
     "key": "ctrl+x ctrl+;",
     "command": "editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
@@ -4040,11 +4006,6 @@
     "when": "inQuickOpen"
   },
   {
-    "key": "ctrl+k",
-    "command": "workbench.action.quickOpenSelectPrevious",
-    "when": "inQuickOpen"
-  },
-  {
     "key": "meta+f12",
     "command": "workbench.action.toggleDevTools"
   },
@@ -4150,7 +4111,7 @@
     "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated && resourceScheme == 'vscode-terminal' || terminalEditorFocus && terminalFocus && terminalProcessSupported && resourceScheme == 'vscode-terminal'"
   },
   {
-    "key": "ctrl+k",
+    "key": "ctrl+shift+k",
     "command": "deleteAllRight"
   },
   {
@@ -4160,5 +4121,108 @@
   {
     "key": "ctrl+k ctrl+w",
     "command": "-workbench.action.closeAllEditors"
+  },
+  {
+    "key": "alt+;",
+    "command": "editor.action.showContextMenu",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+f10",
+    "command": "-editor.action.showContextMenu",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "-editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "keybindings.editor.defineWhenExpression",
+    "when": "inKeybindings && keybindingFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+e",
+    "command": "-keybindings.editor.defineWhenExpression",
+    "when": "inKeybindings && keybindingFocus"
+  },
+  {
+    "key": "ctrl+l ctrl+k",
+    "command": "editor.action.defineKeybinding",
+    "when": "resource == 'vscode-userdata:/home/cbocardo/.config/Code/User/keybindings.json'"
+  },
+  {
+    "key": "ctrl+k ctrl+k",
+    "command": "-editor.action.defineKeybinding",
+    "when": "resource == 'vscode-userdata:/home/cbocardo/.config/Code/User/keybindings.json'"
+  },
+  {
+    "key": "alt+l",
+    "command": "-toggleSearchEditorContextLines",
+    "when": "inSearchEditor"
+  },
+  {
+    "key": "ctrl+h ctrl+p",
+    "command": "editor.action.triggerParameterHints",
+    "when": "editorHasSignatureHelpProvider && editorTextFocus"
+  },
+  {
+    "key": "ctrl+; ctrl+m",
+    "command": "-testing.openOutputPeek"
+  },
+  {
+    "key": "ctrl+; ctrl+r",
+    "command": "-testing.refreshTests",
+    "when": "testing.canRefresh"
+  },
+  {
+    "key": "alt+,",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+x ;",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+s",
+    "command": "editor.action.smartSelect.shrink",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+enter",
+    "command": "keybindings.editor.addKeybinding",
+    "when": "inKeybindings && keybindingFocus"
+  },
+  {
+    "key": "ctrl+l shift+m",
+    "command": "markdown.extension.toc.create"
+  },
+  {
+    "key": "ctrl+k i",
+    "command": "-interactiveEditor.start",
+    "when": "interactiveEditorHasProvider && !editorReadonly"
+  },
+  {
+    "key": "ctrl+k ctrl+i",
+    "command": "-workbench.action.terminal.focusHover",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalIsOpen || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalTabsFocus || terminalIsOpen && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.quickOpenSelectPrevious",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "list.focusUp",
+    "when": "listFocus && !inputFocus"
   }
 ]
