@@ -45,4 +45,13 @@
 			"- [ ] $0",
 		]
 	},
+	"Source url": {
+		"scope": "markdown",
+		"prefix": "source-url",
+		"description": "add source URL for notes",
+		"body": [
+			"_source_: <$0>",
+			""
+		]
+	}
 }
