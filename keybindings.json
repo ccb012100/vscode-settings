@@ -855,11 +855,6 @@
     "when": "activeEditorGroupEmpty && multipleEditorGroups"
   },
   {
-    "key": "alt+k",
-    "command": "-keybindings.editor.recordSearchKeys",
-    "when": "inKeybindings && inKeybindingsSearch"
-  },
-  {
     "key": "ctrl+c",
     "command": "-problems.action.copy",
     "when": "problemFocus"
@@ -1127,11 +1122,6 @@
   {
     "key": "ctrl+k z",
     "command": "-workbench.action.toggleZenMode"
-  },
-  {
-    "key": "ctrl+k shift+enter",
-    "command": "-workbench.action.unpinEditor",
-    "when": "activeEditorIsPinned"
   },
   {
     "key": "ctrl+k f",
@@ -1607,16 +1597,6 @@
   {
     "key": "ctrl+l ctrl+i",
     "command": "rust-analyzer.toggleInlayHints"
-  },
-  {
-    "key": "ctrl+x m",
-    "command": "bookmarks.toggle",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+alt+k",
-    "command": "-bookmarks.toggle",
-    "when": "editorTextFocus"
   },
   {
     "key": "shift+alt+l",
@@ -2107,10 +2087,6 @@
     "command": "workbench.action.openSettingsJson"
   },
   {
-    "key": "ctrl+x down",
-    "command": "workbench.action.togglePanel"
-  },
-  {
     "key": "cmd+j",
     "command": "-workbench.action.togglePanel"
   },
@@ -2369,7 +2345,7 @@
     "when": "textInputFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+x ctrl+x",
+    "key": "ctrl+x j",
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
@@ -3861,7 +3837,7 @@
     "command": "explorer.newFile"
   },
   {
-    "key": "ctrl+x x",
+    "key": "ctrl+x m",
     "command": "workbench.action.togglePanel"
   },
   {
@@ -3965,16 +3941,8 @@
     "when": "sideBySideEditorActive"
   },
   {
-    "key": "ctrl+x n",
-    "command": "workbench.action.nextEditor"
-  },
-  {
     "key": "ctrl+shift+.",
     "command": "workbench.action.nextEditor"
-  },
-  {
-    "key": "ctrl+x p",
-    "command": "workbench.action.previousEditor"
   },
   {
     "key": "ctrl+shift+,",
@@ -4224,5 +4192,81 @@
     "key": "ctrl+k",
     "command": "list.focusUp",
     "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+q",
+    "command": "keybindings.editor.recordSearchKeys",
+    "when": "inKeybindings && inKeybindingsSearch"
+  },
+  {
+    "key": "alt+k",
+    "command": "-keybindings.editor.recordSearchKeys",
+    "when": "inKeybindings && inKeybindingsSearch"
+  },
+  {
+    "key": "ctrl+x ctrl+z",
+    "command": "workbench.action.pinEditor"
+  },
+  {
+    "key": "ctrl+k shift+enter",
+    "command": "-workbench.action.unpinEditor",
+    "when": "activeEditorIsPinned"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "-markdown.extension.editing.toggleBold",
+    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+  },
+  {
+    "key": "alt+b",
+    "command": "cursorWordLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+b",
+    "command": "cursorWordLeftSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "cursorWordRightSelect"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "cursorWordRightSelect"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "-editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "-editor.action.formatDocument.none",
+    "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "-notebook.formatCell",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && inCompositeEditor && notebookEditable && !editorReadonly && activeEditor == 'workbench.editor.notebook'"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "-notebook.format",
+    "when": "notebookEditable && !editorTextFocus && activeEditor == 'workbench.editor.notebook'"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "-filesExplorer.findInFolder",
+    "when": "explorerResourceIsFolder && filesExplorerFocus && foldersViewVisible && !inputFocus"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "-search.action.restrictSearchToFolder",
+    "when": "folderMatchWithResourceFocus && searchViewletVisible"
+  },
+  {
+    "key": "ctrl+x ctrl+x",
+    "command": "editor.action.clipboardCutAction"
   }
 ]
