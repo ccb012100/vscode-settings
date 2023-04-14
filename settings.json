@@ -444,7 +444,7 @@
   "python.analysis.inlayHints.functionReturnTypes": true,
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoImportCompletions": true,
-  "workbench.colorTheme": "Pink Candy Dark Warm",
+  "workbench.colorTheme": "1337",
   "diffEditor.renderSideBySide": false,
   "errorLens.followCursor": "activeLine",
   "errorLens.removeLinebreaks": false,
@@ -491,4 +491,17 @@
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.stickyTabStops": true,
   "editor.quickSuggestionsDelay": 200,
+  "markdown.updateLinksOnFileMove.enabled": "prompt",
+  "markdown.extension.theming.decoration.renderLink": true,
+  "reader-mode.commentStyle.backgroundColor": "",
+  "reader-mode.commentStyle.fontSize": "",
+  "reader-mode.commentStyle.fontStyle": "",
+  "reader-mode.commentStyle.opacity": "1.0",
+  "reader-mode.auto.outOfWorkspace": false,
+  "reader-mode.auto.glob": [
+    "**/node_modules/**"
+  ],
+  "shellcheck.exclude": [
+    "1091"
+  ],
 }
