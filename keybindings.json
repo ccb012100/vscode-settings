@@ -2345,12 +2345,8 @@
     "when": "textInputFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+x j",
+    "key": "ctrl+x l",
     "command": "workbench.action.toggleSidebarVisibility"
-  },
-  {
-    "key": "ctrl+g ctrl+g",
-    "command": "workbench.action.toggleAuxiliaryBar"
   },
   {
     "key": "ctrl+x o",
@@ -2542,7 +2538,7 @@
     "command": "editor.action.jumpToBracket"
   },
   {
-    "key": "shift+alt+m",
+    "key": "ctrl+g shift+m",
     "command": "gotoNextPreviousMember.previousMember"
   },
   {
@@ -2550,7 +2546,7 @@
     "command": "-gotoNextPreviousMember.previousMember"
   },
   {
-    "key": "alt+m",
+    "key": "ctrl+g m",
     "command": "gotoNextPreviousMember.nextMember"
   },
   {
@@ -2780,11 +2776,6 @@
     "when": "inSearchEditor || searchViewletFocus"
   },
   {
-    "key": "ctrl+shift+`",
-    "command": "-workbench.action.terminal.new",
-    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
-  },
-  {
     "key": "ctrl+w",
     "command": "editor.action.clipboardCutAction"
   },
@@ -2801,14 +2792,6 @@
     "key": "ctrl+shift+a",
     "command": "cursorHomeSelect",
     "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+x alt+enter",
-    "command": "workbench.action.createTerminalEditorSide"
-  },
-  {
-    "key": "ctrl+x shift+enter",
-    "command": "workbench.action.createTerminalEditor"
   },
   {
     "key": "ctrl+shift+-",
@@ -2955,10 +2938,6 @@
     "when": "listFocus && !inputFocus"
   },
   {
-    "key": "ctrl+x enter",
-    "command": "workbench.action.terminal.new"
-  },
-  {
     "key": "alt+space",
     "command": "editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
@@ -3082,7 +3061,7 @@
     "command": "workbench.view.search.focus"
   },
   {
-    "key": "alt+enter",
+    "key": "ctrl+shift+enter",
     "command": "search.action.focusSearchList",
     "when": "searchInputBoxFocus"
   },
@@ -3232,7 +3211,7 @@
     "command": "workbench.action.showAllSymbols"
   },
   {
-    "key": "alt+s",
+    "key": "ctrl+m",
     "command": "editor.action.smartSelect.expand",
     "when": "editorTextFocus"
   },
@@ -3373,7 +3352,7 @@
     "command": "workbench.action.focusActiveEditorGroup"
   },
   {
-    "key": "alt+enter",
+    "key": "ctrl+enter",
     "command": "workbench.action.focusActiveEditorGroup",
     "when": "findInputFocussed"
   },
@@ -3746,7 +3725,7 @@
     "when": "editorTextFocus && !gitlens:disabled && !gitlens:disabledToggleCodeLens && config.gitlens.keymap == 'chorded'"
   },
   {
-    "key": "ctrl+x ctrl+;",
+    "key": "ctrl+l ctrl+j",
     "command": "editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -3941,12 +3920,14 @@
     "when": "sideBySideEditorActive"
   },
   {
-    "key": "ctrl+shift+.",
-    "command": "workbench.action.nextEditor"
+    "key": "ctrl+shift+right",
+    "command": "workbench.action.nextEditor",
+    "when": "!terminalFocus"
   },
   {
-    "key": "ctrl+shift+,",
-    "command": "workbench.action.previousEditor"
+    "key": "ctrl+shift+left",
+    "command": "workbench.action.previousEditor",
+    "when": "!terminalFocus"
   },
   {
     "key": "alt+g c",
@@ -4111,7 +4092,7 @@
     "when": "textInputFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+enter",
+    "key": "alt+enter",
     "command": "keybindings.editor.defineWhenExpression",
     "when": "inKeybindings && keybindingFocus"
   },
@@ -4160,12 +4141,12 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "shift+alt+s",
+    "key": "ctrl+shift+m",
     "command": "editor.action.smartSelect.shrink",
     "when": "editorTextFocus"
   },
   {
-    "key": "shift+enter",
+    "key": "ctrl+enter",
     "command": "keybindings.editor.addKeybinding",
     "when": "inKeybindings && keybindingFocus"
   },
@@ -4268,5 +4249,97 @@
   {
     "key": "ctrl+x ctrl+x",
     "command": "editor.action.clipboardCutAction"
-  }
+  },
+  {
+    "key": "ctrl+x n",
+    "command": "workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "ctrl+g ctrl+g",
+    "command": "workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "ctrl+x space",
+    "command": "workbench.action.terminal.new",
+    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+  },
+  {
+    "key": "ctrl+shift+`",
+    "command": "-workbench.action.terminal.new",
+    "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+  },
+  {
+    "key": "ctrl+x enter",
+    "command": "workbench.action.createTerminalEditor"
+  },
+  {
+    "key": "ctrl+x ctrl+enter",
+    "command": "workbench.action.createTerminalEditorSide"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "search.action.focusSearchList",
+    "when": "searchInputBoxFocus"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "-markdown.extension.editing.toggleMath",
+    "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+  },
+  {
+    "key": "ctrl+shift+left",
+    "command": "workbench.action.previousEditor",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+pagedown",
+    "command": "workbench.action.nextEditor",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+pagedown",
+    "command": "-workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+pageup",
+    "command": "workbench.action.previousEditor",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+pageup",
+    "command": "-workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+shift+,",
+    "command": "workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+shift+.",
+    "command": "workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+shift+.",
+    "command": "workbench.action.nextEditor",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+,",
+    "command": "workbench.action.previousEditor",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+x ctrl+r",
+    "command": "reader-mode.toggleFile"
+  },
+  {
+    "key": "ctrl+x shift+r",
+    "command": "reader-mode.toggleWorkspace"
+  },
+  {
+    "key": "ctrl+x ctrl+;",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
 ]
