@@ -50,10 +50,22 @@
 		],
 		"description": "stub for description of a new Mocha test suite"
 	},
-	"Mocha beforeEach function": {
+	"Mocha before function": {
 		"prefix": [
 			"mocha-before",
 			"before"
+		],
+		"body": [
+			"before(async function () {",
+			"\t$0",
+			"});"
+		],
+		"description": "stub for a Mocha before function"
+	},
+	"Mocha beforeEach function": {
+		"prefix": [
+			"mocha-before-each",
+			"before-each"
 		],
 		"body": [
 			"beforeEach(async function () {",

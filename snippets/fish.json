@@ -12,12 +12,26 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"shebang":{
+	"shebang": {
 		"prefix": "shebang",
-		"body":[
+		"body": [
 			"#!/usr/bin/env fish",
 			"$0"
 		],
 		"description": "insert shebang line for fish script"
+	},
+	"add abbr": {
+		"prefix": "abbr-add",
+		"body": "abbr --add ${1:name} ${2:command}",
+		"description": "add new abbr"
+	},
+	"function": {
+		"prefix": "func",
+		"body": [
+			"function ${1:name} --description '${2:description}'",
+			"\t$0",
+			"end"
+		],
+		"description": "add new function definition"
 	}
 }

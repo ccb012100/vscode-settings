@@ -31,6 +31,7 @@
     "scope": "javascript,typescript",
     "prefix": "conlog-object",
     "body": [
+      "// FIXME: remove console log below",
       "$LINE_COMMENT eslint-disable-next-line no-console",
       "console.log({$1})"
     ],
@@ -40,6 +41,7 @@
     "scope": "javascript,typescript",
     "prefix": "conlog-json",
     "body": [
+      "// FIXME: remove console log below",
       "$LINE_COMMENT eslint-disable-next-line no-console",
       "console.log('$1: ' + JSON.stringify($1, null, 2));"
     ],
