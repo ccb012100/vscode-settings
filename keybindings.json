@@ -3751,10 +3751,6 @@
     "when": "workbench.panel.markers.view.active"
   },
   {
-    "key": "ctrl+x left",
-    "command": "workbench.action.toggleAuxiliaryBar"
-  },
-  {
     "key": "down",
     "command": "workbench.action.quickOpenSelectNext",
     "when": "inQuickOpen"
@@ -4131,11 +4127,6 @@
     "when": "testing.canRefresh"
   },
   {
-    "key": "alt+,",
-    "command": "editor.action.commentLine",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
     "key": "ctrl+x ;",
     "command": "editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
@@ -4251,11 +4242,7 @@
     "command": "editor.action.clipboardCutAction"
   },
   {
-    "key": "ctrl+x n",
-    "command": "workbench.action.toggleAuxiliaryBar"
-  },
-  {
-    "key": "ctrl+g ctrl+g",
+    "key": "ctrl+x j",
     "command": "workbench.action.toggleAuxiliaryBar"
   },
   {
@@ -4277,7 +4264,7 @@
     "command": "workbench.action.createTerminalEditorSide"
   },
   {
-    "key": "ctrl+enter",
+    "key": "enter",
     "command": "search.action.focusSearchList",
     "when": "searchInputBoxFocus"
   },
@@ -4341,5 +4328,9 @@
     "key": "ctrl+x ctrl+;",
     "command": "editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+g ctrl+g",
+    "command": "workbench.view.scm"
   },
 ]
