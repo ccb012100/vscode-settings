@@ -2789,11 +2789,6 @@
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+shift+a",
-    "command": "cursorHomeSelect",
-    "when": "textInputFocus"
-  },
-  {
     "key": "ctrl+shift+-",
     "command": "-workbench.action.navigateForward",
     "when": "canNavigateForward"
@@ -3725,11 +3720,6 @@
     "when": "editorTextFocus && !gitlens:disabled && !gitlens:disabledToggleCodeLens && config.gitlens.keymap == 'chorded'"
   },
   {
-    "key": "ctrl+l ctrl+j",
-    "command": "editor.action.commentLine",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
     "key": "ctrl+x 5",
     "command": "workbench.action.newWindow"
   },
@@ -4127,11 +4117,6 @@
     "when": "testing.canRefresh"
   },
   {
-    "key": "ctrl+x ;",
-    "command": "editor.action.commentLine",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
     "key": "ctrl+shift+m",
     "command": "editor.action.smartSelect.shrink",
     "when": "editorTextFocus"
@@ -4325,12 +4310,17 @@
     "command": "reader-mode.toggleWorkspace"
   },
   {
-    "key": "ctrl+x ctrl+;",
+    "key": "ctrl+g ctrl+g",
+    "command": "workbench.view.scm"
+  },
+  {
+    "key": "shift+alt+a",
     "command": "editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+g ctrl+g",
-    "command": "workbench.view.scm"
+    "key": "ctrl+l ctrl+j",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
   },
 ]
