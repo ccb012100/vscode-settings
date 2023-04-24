@@ -235,7 +235,7 @@
   },
   "window.title": "${dirty}${separator}${rootName}",
   "debug.onTaskErrors": "showErrors",
-  "workbench.startupEditor": "readme",
+  "workbench.startupEditor": "newUntitledFile",
   "editor.parameterHints.enabled": false,
   "omnisharp.enableRoslynAnalyzers": true,
   "scm.defaultViewMode": "tree",
@@ -251,7 +251,6 @@
   "JSON-zain.json.autorefresh": true,
   "workbench.settings.useSplitJSON": true,
   "audioCues.lineHasBreakpoint": "on",
-  "audioCues.onDebugBreak": "on",
   "rainbowTags.colors": [
     "#F92672",
     "#AE81FF",
@@ -335,7 +334,7 @@
     ]
   },
   "explorer.confirmDelete": false,
-  "debug.console.fontFamily": "Hack",
+  "debug.console.fontFamily": "IBM Plex Mono",
   "debug.showBreakpointsInOverviewRuler": true,
   "debug.toolBarLocation": "docked",
   "terminal.integrated.tabs.enabled": false,
@@ -381,7 +380,7 @@
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
   "eslint.lintTask.enable": true,
   "eslint.packageManager": "pnpm",
-  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.defaultProfile.linux": "fish",
   "editor.stickyScroll.enabled": true,
   "editor.suggest.matchOnWordStartOnly": false,
   "git.pullBeforeCheckout": true,
@@ -444,7 +443,7 @@
   "python.analysis.inlayHints.functionReturnTypes": true,
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoImportCompletions": true,
-  "workbench.colorTheme": "1337",
+  "workbench.colorTheme": "Dark Candy",
   "diffEditor.renderSideBySide": false,
   "errorLens.followCursor": "activeLine",
   "errorLens.removeLinebreaks": false,
@@ -502,6 +501,15 @@
     "**/node_modules/**"
   ],
   "shellcheck.exclude": [
+    "1090",
     "1091"
   ],
+  "shellcheck.customArgs": [
+    "--external-sources"
+  ],
+  "debug.openExplorerOnEnd": true,
+  "eslint.debug": true,
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.format.semicolons": "insert",
+  "typescript.implementationsCodeLens.enabled": true,
 }

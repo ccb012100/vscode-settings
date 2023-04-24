@@ -544,11 +544,6 @@
     "when": "workbench.panel.output.active"
   },
   {
-    "key": "ctrl+shift+g",
-    "command": "-workbench.view.scm",
-    "when": "workbench.scm.active"
-  },
-  {
     "key": "ctrl+backspace",
     "command": "-deleteLeft",
     "when": "textInputFocus"
@@ -2383,11 +2378,6 @@
     "command": "workbench.view.extension.github-pull-requests"
   },
   {
-    "key": "ctrl+shift+g g",
-    "command": "-workbench.view.scm",
-    "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
-  },
-  {
     "key": "alt+s",
     "command": "-gitlens.showQuickRepoStatus",
     "when": "!gitlens:disabled && config.gitlens.keymap == 'alternate'"
@@ -2896,10 +2886,6 @@
     "command": "workbench.action.findInFiles"
   },
   {
-    "key": "ctrl+l t",
-    "command": "typescript.reloadProjects"
-  },
-  {
     "key": "ctrl+g ctrl+t",
     "command": "terminal.focus"
   },
@@ -3169,10 +3155,6 @@
     "when": "problemsVisibility && !relatedInformationFocus && focusedView == 'workbench.panel.markers.view'"
   },
   {
-    "key": "ctrl+l shift+t",
-    "command": "typescript.selectTypeScriptVersion"
-  },
-  {
     "key": "ctrl+x shift+0",
     "command": "workbench.action.closeOtherEditors"
   },
@@ -3295,7 +3277,7 @@
     "when": "!editorFocus"
   },
   {
-    "key": "alt+k",
+    "key": "shift+alt+k",
     "command": "deleteAllLeft"
   },
   {
@@ -3427,10 +3409,6 @@
   {
     "key": "ctrl+x up",
     "command": "workbench.action.toggleEditorVisibility"
-  },
-  {
-    "key": "ctrl+l ctrl+t",
-    "command": "typescript.restartTsServer"
   },
   {
     "key": "ctrl+[",
@@ -4310,10 +4288,6 @@
     "command": "reader-mode.toggleWorkspace"
   },
   {
-    "key": "ctrl+g ctrl+g",
-    "command": "workbench.view.scm"
-  },
-  {
     "key": "shift+alt+a",
     "command": "editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
@@ -4322,5 +4296,23 @@
     "key": "ctrl+l ctrl+j",
     "command": "editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+g ctrl+g",
+    "command": "workbench.scm.focus"
+  },
+  {
+    "key": "ctrl+shift+g g",
+    "command": "-workbench.view.scm",
+    "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+  },
+  {
+    "key": "ctrl+x .",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    "key": "ctrl+x ctrl+e",
+    "command": "workbench.action.debug.start",
+    "when": "debuggersAvailable && debugState == 'inactive' && editorLangId != 'sql' && editorLangId != 'sqlite'"
   },
 ]
