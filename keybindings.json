@@ -2344,11 +2344,6 @@
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "ctrl+x o",
-    "command": "workbench.action.focusNextGroup",
-    "when": "!sideBySideEditorActive"
-  },
-  {
     "key": "ctrl+x shift+o",
     "command": "workbench.action.focusPreviousGroup"
   },
@@ -3325,8 +3320,9 @@
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+9",
-    "command": "workbench.action.focusActiveEditorGroup"
+    "key": "ctrl+x o",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "!editorFocus"
   },
   {
     "key": "ctrl+enter",
@@ -3608,10 +3604,6 @@
     "key": "ctrl+enter",
     "command": "-markdown.extension.onCtrlEnterKey",
     "when": "editorTextFocus && !editorHasMultipleSelections && !editorReadonly && !markdown.extension.editor.cursor.inFencedCodeBlock && !markdown.extension.editor.cursor.inMathEnv && !suggestWidgetVisible && editorLangId =~ /^markdown$|^rmd$|^qmd$/"
-  },
-  {
-    "key": "ctrl+g e",
-    "command": "workbench.action.focusActiveEditorGroup"
   },
   {
     "key": "ctrl+x right",
@@ -4315,4 +4307,23 @@
     "command": "workbench.action.debug.start",
     "when": "debuggersAvailable && debugState == 'inactive' && editorLangId != 'sql' && editorLangId != 'sqlite'"
   },
+  {
+    "key": "ctrl+g e",
+    "command": "workbench.action.focusActiveEditorGroup"
+  },
+  {
+    "key": "ctrl+x o",
+    "command": "workbench.action.focusNextGroup",
+    "when": "editorFocus && !sideBySideEditorActive"
+  },
+  {
+    "key": "f8",
+    "command": "bookmarks.toggle",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+k",
+    "command": "-bookmarks.toggle",
+    "when": "editorTextFocus"
+  }
 ]
