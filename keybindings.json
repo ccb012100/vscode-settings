@@ -2823,10 +2823,6 @@
     "when": "workbench.panel.output.active"
   },
   {
-    "key": "ctrl+g ctrl+c",
-    "command": "workbench.panel.comments"
-  },
-  {
     "key": "ctrl+g b",
     "command": "bookmarks.list"
   },
@@ -3012,10 +3008,6 @@
     "key": "alt+p",
     "command": "-keybindings.editor.toggleSortByPrecedence",
     "when": "inKeybindings"
-  },
-  {
-    "key": "ctrl+g c",
-    "command": "workbench.action.focusCommentsPanel"
   },
   {
     "key": "ctrl+enter",
@@ -4325,5 +4317,13 @@
     "key": "ctrl+alt+k",
     "command": "-bookmarks.toggle",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+g c",
+    "command": "workflowExplorer.focus"
+  },
+  {
+    "key": "ctrl+g ctrl+c",
+    "command": "circleciStatus.selectCommand"
   }
 ]
