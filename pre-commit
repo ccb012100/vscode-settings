@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
+# shellcheck disable=SC2312
+
 # run the command `ln pre-commit .git/hooks/` from repo directory
-echo "> vscode-settings pre-commit hook"
+
+echo "=> vscode-settings repository: pre-commit hook"
 
 if git-diff-index -pM --cached HEAD |
 	# new additions only
