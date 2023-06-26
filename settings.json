@@ -56,7 +56,7 @@
   "editor.fontLigatures": true,
   "editor.letterSpacing": 1,
   "editor.minimap.maxColumn": 60,
-  "editor.renderWhitespace": "none",
+  "editor.renderWhitespace": "all",
   "editor.suggest.localityBonus": true,
   "editor.wordWrap": "on",
   "files.associations": {
@@ -274,11 +274,12 @@
     "rewrap.wrappingColumn": 72,
     "workbench.editor.restoreViewState": false
   },
-  "[csv][tsv]": {
+  "[csv][tsv][dynamic csv][csv (semicolon)]": {
     "editor.insertSpaces": false,
     "editor.rulers": [
       0
-    ]
+    ],
+    "editor.stickyScroll.enabled": true
   },
   "[plaintext]": {
     "editor.insertSpaces": false,
@@ -443,7 +444,7 @@
   "python.analysis.inlayHints.functionReturnTypes": true,
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoImportCompletions": true,
-  "workbench.colorTheme": "Dark Candy",
+  "workbench.colorTheme": "Cobalt2",
   "diffEditor.renderSideBySide": false,
   "errorLens.followCursor": "activeLine",
   "errorLens.removeLinebreaks": false,
@@ -486,7 +487,6 @@
   "githubPullRequests.pullBranch": "never",
   "theme-pink-candy.alternateCurrentLineStyle": true,
   "window.menuBarVisibility": "compact",
-  "editor.multiCursorModifier": "ctrlCmd",
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.stickyTabStops": true,
   "editor.quickSuggestionsDelay": 200,
@@ -512,4 +512,7 @@
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "typescript.format.semicolons": "insert",
   "typescript.implementationsCodeLens.enabled": true,
+  "lldb.suppressUpdateNotifications": true,
+  "terminal.integrated.rightClickBehavior": "paste",
+  "diffEditor.ignoreTrimWhitespace": false,
 }

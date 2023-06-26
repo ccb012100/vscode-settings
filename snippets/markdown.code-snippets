@@ -53,5 +53,11 @@
 			"_source_: <$0>",
 			""
 		]
+	},
+	"link":{
+		"scope": "markdown",
+		"prefix": "link",
+		"description": "markdown link",
+		"body": "[${2:display text}](${1:URL})"
 	}
 }
