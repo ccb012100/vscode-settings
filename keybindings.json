@@ -70,7 +70,7 @@
     "when": "editorTextFocus && editorLangId == 'powershell'"
   },
   {
-    "key": "shift+alt+e",
+    "key": "ctrl+x .",
     "command": "workbench.action.maximizeEditor"
   },
   {
@@ -4201,7 +4201,7 @@
     "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
   },
   {
-    "key": "ctrl+x .",
+    "key": "ctrl+x shift+.",
     "command": "workbench.action.toggleMaximizedPanel"
   },
   {

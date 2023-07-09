@@ -514,4 +514,7 @@
   "security.allowedUNCHosts": [
     "wsl.localhost"
   ],
+  "search.useGlobalIgnoreFiles": true,
+  "search.useParentIgnoreFiles": true,
+  "markdown.editor.pasteUrlAsFormattedLink.enabled": true,
 }
