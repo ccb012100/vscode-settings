@@ -1,14 +1,4 @@
 {
-	/* "Bash code block": {
-		"scope": "markdown",
-		"prefix": "bash-code-block",
-		"body": [
-			"```bash",
-			"$1",
-			"```"
-		],
-		"description": "Create a fenced code block for Bash shell language"
-	}, */
 	"Date header": {
 		"scope": "markdown",
 		"body": [
@@ -54,7 +44,7 @@
 			""
 		]
 	},
-	"link":{
+	"link": {
 		"scope": "markdown",
 		"prefix": "link",
 		"description": "markdown link",
