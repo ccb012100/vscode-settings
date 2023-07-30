@@ -3833,5 +3833,9 @@
   {
     "key": "shift+f8",
     "command": "editor.action.marker.prev"
+  },
+  {
+    "key": "shift+space",
+    "command": "workbench.action.showCommands"
   }
 ]
