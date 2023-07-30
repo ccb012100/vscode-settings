@@ -56,7 +56,7 @@
   "editor.fontLigatures": true,
   "editor.letterSpacing": 1,
   "editor.minimap.maxColumn": 60,
-  "editor.renderWhitespace": "all",
+  "editor.renderWhitespace": "none",
   "editor.suggest.localityBonus": true,
   "editor.wordWrap": "on",
   "files.associations": {
@@ -113,7 +113,6 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.titleBarStyle": "custom",
   "workbench.editor.highlightModifiedTabs": true,
-  "workbench.iconTheme": "catppuccin-mocha",
   "zenMode.hideStatusBar": false,
   "yaml.format.enable": true,
   "[markdown]": {
@@ -225,7 +224,6 @@
   "markdown.preview.typographer": true,
   "remote.WSL.debug": true,
   "redhat.telemetry.enabled": true,
-  "markdown.preview.scrollEditorWithPreview": false,
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
@@ -432,7 +430,6 @@
   "python.analysis.inlayHints.functionReturnTypes": true,
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoImportCompletions": true,
-  "workbench.colorTheme": "Electron",
   "diffEditor.renderSideBySide": false,
   "errorLens.followCursor": "activeLine",
   "errorLens.removeLinebreaks": false,
@@ -467,8 +464,7 @@
   "githubPullRequests.focusedMode": "overview",
   "editor.minimap.renderCharacters": false,
   "editor.minimap.showSlider": "always",
-  "editor.minimap.enabled": false,
-  "markdown.preview.fontFamily": "IBM Plex Serif, Cascadia Mono, Hack, Victor Mono, Inconsolata",
+  "markdown.preview.fontFamily": "IBM Plex Serif, Cascadia Mono, Hack, Victor Mono, Inconsolata, Consolas",
   "githubIssues.ignoreUserCompletionTrigger": [
     "python",
     "typescript",
@@ -494,7 +490,6 @@
   "typescript.format.semicolons": "insert",
   "typescript.implementationsCodeLens.enabled": true,
   "lldb.suppressUpdateNotifications": true,
-  "terminal.integrated.rightClickBehavior": "paste",
   "diffEditor.ignoreTrimWhitespace": false,
   "terminal.integrated.tabStopWidth": 4,
   "dotnet.inlayHints.enableInlayHintsForParameters": true,
@@ -514,6 +509,18 @@
   ],
   "search.useGlobalIgnoreFiles": true,
   "search.useParentIgnoreFiles": true,
-  "markdown.editor.pasteUrlAsFormattedLink.enabled": true,
   "editor.stickyScroll.enabled": true,
+  "git.suggestSmartCommit": false,
+  "markdown.preview.fontSize": 12,
+  "diffEditor.experimental.useVersion2": true,
+  "diffEditor.experimental.collapseUnchangedRegions": true,
+  "diffEditor.experimental.showEmptyDecorations": true,
+  "diffEditor.experimental.showMoves": false,
+  "githubIssues.userCompletions.enabled": false,
+  "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "extensions.experimental.affinity": {
+    "wenfangdu.jump": 1
+  },
+  "editor.inlineSuggest.showToolbar": "always"
 }
