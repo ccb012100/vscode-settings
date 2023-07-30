@@ -1,16 +1,5 @@
 {
-	/* "Bash code block": {
-		"scope": "markdown",
-		"prefix": "bash-code-block",
-		"body": [
-			"```bash",
-			"$1",
-			"```"
-		],
-		"description": "Create a fenced code block for Bash shell language"
-	}, */
 	"Date header": {
-		"scope": "markdown",
 		"body": [
 			"## ==> $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
 			"",
@@ -20,7 +9,6 @@
 		"description": "Insert an H2 date header"
 	},
 	"Section separator": {
-		"scope": "markdown",
 		"body": [
 			"---",
 			"",
@@ -30,7 +18,6 @@
 		"description": "Insert a section separator"
 	},
 	"Checked checkbox": {
-		"scope": "markdown",
 		"prefix": "checked-box",
 		"description": "an unchecked checkbox",
 		"body": [
@@ -38,7 +25,6 @@
 		]
 	},
 	"Unchecked checkbox": {
-		"scope": "markdown",
 		"prefix": "unchecked-box",
 		"description": "an unchecked checkbox",
 		"body": [
@@ -46,7 +32,6 @@
 		]
 	},
 	"Source url": {
-		"scope": "markdown",
 		"prefix": "source-url",
 		"description": "add source URL for notes",
 		"body": [
@@ -54,10 +39,18 @@
 			""
 		]
 	},
-	"link":{
-		"scope": "markdown",
+	"link": {
 		"prefix": "link",
-		"description": "markdown link",
+		"description": "formatted markdown link",
 		"body": "[${2:display text}](${1:URL})"
+	},
+	"table": {
+		"prefix": "table",
+		"description": "new table template",
+		"body": [
+			"| $1 | $2 |",
+			"| - | - |",
+			"| $0 | |"
+		]
 	}
 }

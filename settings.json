@@ -52,11 +52,11 @@
   },
   "breadcrumbs.enabled": true,
   "editor.codeLens": false,
-  "editor.fontFamily": "Victor Mono; Jetbrains Mono; Fira Code; Cascadia Code; IBM Plex Mono; Hack",
+  "editor.fontFamily": "JetBrains Mono, Cascadia Code, IBM Plex Mono, Hack, Consolas",
   "editor.fontLigatures": true,
   "editor.letterSpacing": 1,
   "editor.minimap.maxColumn": 60,
-  "editor.renderWhitespace": "all",
+  "editor.renderWhitespace": "none",
   "editor.suggest.localityBonus": true,
   "editor.wordWrap": "on",
   "files.associations": {
@@ -95,7 +95,9 @@
     "MD024": {
       "siblings_only": true
     },
-    "MD026": false
+    "MD026": false,
+    "MD030": false,
+    "MD046": false
   },
   "prettier.printWidth": 140,
   "prettier.singleQuote": true,
@@ -111,7 +113,6 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.titleBarStyle": "custom",
   "workbench.editor.highlightModifiedTabs": true,
-  "workbench.iconTheme": "material-icon-theme",
   "zenMode.hideStatusBar": false,
   "yaml.format.enable": true,
   "[markdown]": {
@@ -151,7 +152,7 @@
   },
   "git.autoStash": true,
   "explorer.incrementalNaming": "smart",
-  "editor.cursorSurroundingLines": 5,
+  "editor.cursorSurroundingLines": 10,
   "git.supportCancellation": true,
   "workbench.editor.scrollToSwitchTabs": true,
   "window.titleSeparator": "‣",
@@ -196,7 +197,7 @@
     "MSYS2_PATH_TYPE": "inherit",
     "CHERE_INVOKING": "1"
   },
-  "terminal.external.windowsExec": "C:\\\\Program Files\\\\Git\\\\git-bash.exe",
+  "terminal.external.windowsExec": "C:\\Program Files\\Git\\bin\\bash.exe",
   "terminal.integrated.profiles.windows": {
     "Ubuntu (WSL)": {
       "path": "C:\\\\Windows\\\\System32\\\\wsl.exe",
@@ -215,14 +216,14 @@
       "icon": "terminal-cmd"
     },
     "Git Bash": {
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+      "icon": "terminal-bash",
       "source": "Git Bash",
-      "path": "C:\\\\Program Files\\\\Git\\\\git-bash.exe"
     }
   },
   "markdown.preview.typographer": true,
   "remote.WSL.debug": true,
   "redhat.telemetry.enabled": true,
-  "markdown.preview.scrollEditorWithPreview": false,
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
@@ -285,18 +286,6 @@
     "editor.insertSpaces": false,
     "rewrap.autoWrap.enabled": false
   },
-  "csharp.inlayHints.parameters.enabled": true,
-  "csharp.inlayHints.parameters.forIndexerParameters": true,
-  "csharp.inlayHints.parameters.forLiteralParameters": true,
-  "csharp.inlayHints.parameters.forObjectCreationParameters": true,
-  "csharp.inlayHints.parameters.forOtherParameters": true,
-  "csharp.inlayHints.parameters.suppressForParametersThatDifferOnlyBySuffix": true,
-  "csharp.inlayHints.parameters.suppressForParametersThatMatchArgumentName": true,
-  "csharp.inlayHints.parameters.suppressForParametersThatMatchMethodIntent": true,
-  "csharp.inlayHints.types.enabled": true,
-  "csharp.inlayHints.types.forImplicitObjectCreation": true,
-  "csharp.inlayHints.types.forImplicitVariableTypes": true,
-  "csharp.inlayHints.types.forLambdaParameterTypes": true,
   "debug.console.acceptSuggestionOnEnter": "on",
   "editor.inlayHints.enabled": "off",
   "editor.tabCompletion": "on",
@@ -317,7 +306,6 @@
   "scm.inputFontSize": 12,
   "github.gitProtocol": "ssh",
   "debug.console.fontSize": 12,
-  "terminal.integrated.fontSize": 12,
   "terminal.integrated.fontFamily": "Hack Nerd Font",
   "workbench.sideBar.location": "right",
   "terminal.integrated.tabs.focusMode": "singleClick",
@@ -338,7 +326,6 @@
   "debug.console.fontFamily": "IBM Plex Mono",
   "debug.showBreakpointsInOverviewRuler": true,
   "debug.toolBarLocation": "docked",
-  "terminal.integrated.tabs.enabled": false,
   "[go]": {
     "editor.defaultFormatter": "golang.go",
     "editor.rulers": [
@@ -382,7 +369,6 @@
   "eslint.lintTask.enable": true,
   "eslint.packageManager": "pnpm",
   "terminal.integrated.defaultProfile.linux": "fish",
-  "editor.stickyScroll.enabled": true,
   "editor.suggest.matchOnWordStartOnly": false,
   "git.pullBeforeCheckout": true,
   "window.commandCenter": true,
@@ -444,7 +430,6 @@
   "python.analysis.inlayHints.functionReturnTypes": true,
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoImportCompletions": true,
-  "workbench.colorTheme": "Cobalt2",
   "diffEditor.renderSideBySide": false,
   "errorLens.followCursor": "activeLine",
   "errorLens.removeLinebreaks": false,
@@ -467,6 +452,9 @@
     "editor.defaultFormatter": "ms-dotnettools.csharp",
     "editor.formatOnSave": false
   },
+  "[xml]": {
+    "editor.defaultFormatter": "PrateekMahendrakar.prettyxml",
+  },
   "window.newWindowDimensions": "offset",
   "githubPullRequests.notifications": "pullRequests",
   "githubIssues.createIssueTriggers": [
@@ -476,30 +464,19 @@
   "githubPullRequests.focusedMode": "overview",
   "editor.minimap.renderCharacters": false,
   "editor.minimap.showSlider": "always",
-  "editor.minimap.enabled": false,
-  "gitlens.hovers.avatarSize": 16,
-  "markdown.preview.fontFamily": "IBM Plex Serif, Cascadia Mono, Hack, Victor Mono, Inconsolata",
+  "markdown.preview.fontFamily": "IBM Plex Serif, Cascadia Mono, Hack, Victor Mono, Inconsolata, Consolas",
   "githubIssues.ignoreUserCompletionTrigger": [
     "python",
     "typescript",
     "javascript"
   ],
   "githubPullRequests.pullBranch": "never",
-  "theme-pink-candy.alternateCurrentLineStyle": true,
   "window.menuBarVisibility": "compact",
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.stickyTabStops": true,
   "editor.quickSuggestionsDelay": 200,
   "markdown.updateLinksOnFileMove.enabled": "prompt",
   "markdown.extension.theming.decoration.renderLink": true,
-  "reader-mode.commentStyle.backgroundColor": "",
-  "reader-mode.commentStyle.fontSize": "",
-  "reader-mode.commentStyle.fontStyle": "",
-  "reader-mode.commentStyle.opacity": "1.0",
-  "reader-mode.auto.outOfWorkspace": false,
-  "reader-mode.auto.glob": [
-    "**/node_modules/**"
-  ],
   "shellcheck.exclude": [
     "1090",
     "1091"
@@ -513,6 +490,37 @@
   "typescript.format.semicolons": "insert",
   "typescript.implementationsCodeLens.enabled": true,
   "lldb.suppressUpdateNotifications": true,
-  "terminal.integrated.rightClickBehavior": "paste",
   "diffEditor.ignoreTrimWhitespace": false,
+  "terminal.integrated.tabStopWidth": 4,
+  "dotnet.inlayHints.enableInlayHintsForParameters": true,
+  "dotnet.inlayHints.enableInlayHintsForLiteralParameters": true,
+  "dotnet.inlayHints.enableInlayHintsForIndexerParameters": true,
+  "dotnet.inlayHints.enableInlayHintsForObjectCreationParameters": true,
+  "dotnet.inlayHints.enableInlayHintsForOtherParameters": true,
+  "dotnet.inlayHints.suppressInlayHintsForParametersThatDifferOnlyBySuffix": true,
+  "dotnet.inlayHints.suppressInlayHintsForParametersThatMatchMethodIntent": true,
+  "dotnet.inlayHints.suppressInlayHintsForParametersThatMatchArgumentName": true,
+  "csharp.inlayHints.enableInlayHintsForTypes": true,
+  "csharp.inlayHints.enableInlayHintsForImplicitVariableTypes": true,
+  "csharp.inlayHints.enableInlayHintsForLambdaParameterTypes": true,
+  "csharp.inlayHints.enableInlayHintsForImplicitObjectCreation": true,
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
+  "search.useGlobalIgnoreFiles": true,
+  "search.useParentIgnoreFiles": true,
+  "editor.stickyScroll.enabled": true,
+  "git.suggestSmartCommit": false,
+  "markdown.preview.fontSize": 12,
+  "diffEditor.experimental.useVersion2": true,
+  "diffEditor.experimental.collapseUnchangedRegions": true,
+  "diffEditor.experimental.showEmptyDecorations": true,
+  "diffEditor.experimental.showMoves": false,
+  "githubIssues.userCompletions.enabled": false,
+  "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "extensions.experimental.affinity": {
+    "wenfangdu.jump": 1
+  },
+  "editor.inlineSuggest.showToolbar": "always"
 }

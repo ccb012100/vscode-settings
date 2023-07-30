@@ -47,28 +47,11 @@
     ],
     "description": "Log a stringified JSON object to the Javascript console"
   },
-  "Date header": {
-    "scope": "plaintext",
-    "body": [
-      "==> $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
-      "",
-      "$0"
-    ],
-    "prefix": "dheader",
-    "description": "Insert a date header"
-  },
-  "Section separator": {
-    "scope": "plaintext",
-    "body": [
-      "---",
-      "",
-      "$0"
-    ],
-    "prefix": "section-separator",
-    "description": "Insert a section separator"
-  },
   "UUID": {
-    "prefix": "uuid",
+    "prefix": [
+      "uuid",
+      "guid"
+    ],
     "body": "${UUID}",
     "description": "Generate a new UUID"
   }
