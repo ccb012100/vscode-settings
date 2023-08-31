@@ -302,7 +302,6 @@
   "JSON-zain.json.autorefresh": true,
   "json.schemas": [],
   "lldb.suppressUpdateNotifications": true,
-  "markdown.editor.pasteUrlAsFormattedLink.enabled": "smart",
   "markdown.extension.theming.decoration.renderLink": true,
   "markdown.preview.fontFamily": "IBM Plex Serif, Cascadia Mono, Hack, Victor Mono, Inconsolata, Consolas",
   "markdown.preview.fontSize": 12,
@@ -347,7 +346,7 @@
   ],
   "redhat.telemetry.enabled": true,
   "remote.WSL.debug": true,
-  "rewrap.autoWrap.enabled": true,
+  "rewrap.autoWrap.enabled": false,
   "rewrap.wrappingColumn": 120,
   "rust-analyzer.imports.granularity.enforce": true,
   "rust-analyzer.inlayHints.closureReturnTypeHints.enable": "with_block",
@@ -482,5 +481,7 @@
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
   "yaml.format.enable": true,
-  "zenMode.hideStatusBar": false
+  "zenMode.hideStatusBar": false,
+  "workbench.colorTheme": "Catppuccin Macchiato",
+  "workbench.iconTheme": "catppuccin-macchiato"
 }
