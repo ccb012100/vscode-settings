@@ -3837,5 +3837,9 @@
   {
     "key": "ctrl+alt+]",
     "command": "editor.unfoldAll"
+  },
+  {
+    "key": "ctrl+x ctrl+z",
+    "command": "workbench.action.toggleZenMode"
   }
 ]
