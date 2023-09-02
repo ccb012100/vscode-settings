@@ -1058,16 +1058,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+k v",
-    "command": "-markdown.extension.closePreview",
-    "when": "markdownPreviewFocus"
-  },
-  {
-    "key": "ctrl+shift+v",
-    "command": "-markdown.extension.closePreview",
-    "when": "markdownPreviewFocus"
-  },
-  {
     "key": "ctrl+l ctrl+i",
     "command": "rust-analyzer.toggleInlayHints"
   },
@@ -1098,7 +1088,8 @@
   },
   {
     "key": "ctrl+l ctrl+m",
-    "command": "markdown.showPreviewToSide"
+    "command": "markdown.showPreviewToSide",
+    "when": "editorLangId =~ /^markdown$|^rmd$|^qmd$/"
   },
   {
     "key": "ctrl+o",
@@ -2176,11 +2167,6 @@
     "when": "editorTextFocus && foldingEnabled"
   },
   {
-    "key": "ctrl+k ctrl+0",
-    "command": "-editor.foldAll",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  {
     "key": "ctrl+]",
     "command": "markdown.extension.editing.toggleHeadingUp",
     "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^qmd$/"
@@ -2700,7 +2686,7 @@
     "when": "inSearchEditor"
   },
   {
-    "key": "shift+h p",
+    "key": "ctrl+h p",
     "command": "editor.action.triggerParameterHints",
     "when": "editorHasSignatureHelpProvider && editorTextFocus"
   },
@@ -3506,11 +3492,6 @@
     "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^qmd$/"
   },
   {
-    "key": "ctrl+l ctrl+m",
-    "command": "markdown.extension.closePreview",
-    "when": "editorLangId =~ /^markdown$|^rmd$|^qmd$/"
-  },
-  {
     "key": "ctrl+v",
     "command": "-editor.action.clipboardPasteAction"
   },
@@ -3837,5 +3818,28 @@
   {
     "key": "shift+space",
     "command": "workbench.action.showCommands"
+  },
+  {
+    "key": "ctrl+shift+v",
+    "command": "-markdown.extension.closePreview",
+    "when": "markdownPreviewFocus"
+  },
+  {
+    "key": "ctrl+alt+[",
+    "command": "editor.foldAll",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+k ctrl+0",
+    "command": "-editor.foldAll",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+alt+]",
+    "command": "editor.unfoldAll"
+  },
+  {
+    "key": "ctrl+x ctrl+z",
+    "command": "workbench.action.toggleZenMode"
   }
 ]
