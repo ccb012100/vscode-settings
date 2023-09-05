@@ -121,10 +121,6 @@
     "dotenv",
     "env",
     "git-rebase",
-    "gitconfig",
-    "gitignore",
-    "ignore",
-    "kmonad",
     "lisp",
     "powershell",
     "shellcheck-output",
@@ -137,6 +133,7 @@
     "Autohotkey",
     "Bocardo",
     "CLSID",
+    "devcontainer",
     "Gruvbox",
     "pwsh",
     "Quux"
@@ -235,7 +232,8 @@
     "*.DotSettings": "xml",
     "*.vssettings": "xml",
     "attributes": "properties",
-    "LICENSE": "plaintext"
+    "LICENSE": "plaintext",
+    "*.snippet": "xml"
   },
   "files.exclude": {
     "**/.DS_Store": true,
