@@ -239,11 +239,6 @@
     "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+n",
-    "command": "workbench.action.quickOpenSelectNext",
-    "when": "inQuickOpen"
-  },
-  {
     "key": "ctrl+d",
     "command": "deleteRight",
     "when": "textInputFocus"
@@ -739,23 +734,8 @@
   },
   {
     "key": "ctrl+n",
-    "command": "showNextParameterHint",
-    "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
-  },
-  {
-    "key": "ctrl+j",
     "command": "list.focusDown",
     "when": "listFocus && !inputFocus"
-  },
-  {
-    "key": "ctrl+n",
-    "command": "list.focusDown",
-    "when": "listFocus && !inputFocus"
-  },
-  {
-    "key": "ctrl+k",
-    "command": "list.focusUp",
-    "when": "inQuickOpen"
   },
   {
     "key": "ctrl+p",
@@ -783,11 +763,6 @@
     "key": "ctrl+n",
     "command": "cursorDown",
     "when": "textInputFocus && !suggestWidgetVisible"
-  },
-  {
-    "key": "ctrl+p",
-    "command": "workbench.action.quickOpenSelectPrevious",
-    "when": "inQuickOpen"
   },
   {
     "key": "ctrl+n",
@@ -986,16 +961,6 @@
     "key": "ctrl+shift+e",
     "command": "-workbench.view.explorer",
     "when": "viewContainer.workbench.view.explorer.enabled"
-  },
-  {
-    "key": "alt+down",
-    "command": "-showNextParameterHint",
-    "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
-  },
-  {
-    "key": "alt+up",
-    "command": "-showPrevParameterHint",
-    "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
   },
   {
     "key": "ctrl+shift+space",
@@ -1901,39 +1866,14 @@
     "when": "editorTextFocus && inDebugMode"
   },
   {
-    "key": "ctrl+p",
-    "command": "selectPrevCodeAction",
-    "when": "codeActionMenuVisible"
-  },
-  {
-    "key": "ctrl+n",
-    "command": "selectNextCodeAction",
-    "when": "codeActionMenuVisible"
-  },
-  {
-    "key": "ctrl+j",
-    "command": "selectNextCodeAction",
-    "when": "codeActionMenuVisible"
-  },
-  {
     "key": "ctrl+k",
     "command": "selectPrevCodeAction",
     "when": "codeActionMenuVisible"
   },
   {
-    "key": "ctrl+n",
-    "command": "selectNextSuggestion",
-    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-  },
-  {
     "key": "ctrl+p",
     "command": "selectPrevSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
-  },
-  {
-    "key": "ctrl+p",
-    "command": "list.focusUp",
-    "when": "listFocus && !inputFocus"
   },
   {
     "key": "ctrl+alt+c ctrl+alt+c",
@@ -2423,16 +2363,6 @@
   },
   {
     "key": "down",
-    "command": "workbench.action.quickOpenSelectNext",
-    "when": "inQuickOpen"
-  },
-  {
-    "key": "up",
-    "command": "workbench.action.quickOpenSelectPrevious",
-    "when": "inQuickOpen"
-  },
-  {
-    "key": "down",
     "command": "focusNextCodeAction",
     "when": "CodeActionMenuVisible"
   },
@@ -2489,19 +2419,9 @@
     "when": "CodeActionMenuVisible"
   },
   {
-    "key": "ctrl+j",
-    "command": "showNextParameterHint",
-    "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
-  },
-  {
     "key": "ctrl+k",
     "command": "showPrevParameterHint",
     "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
-  },
-  {
-    "key": "ctrl+j",
-    "command": "selectNextSuggestion",
-    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
   {
     "key": "ctrl+k",
@@ -2585,11 +2505,6 @@
   {
     "key": "ctrl+k ctrl+\\",
     "command": "-workbench.action.splitEditorUp"
-  },
-  {
-    "key": "ctrl+j",
-    "command": "workbench.action.quickOpenSelectNext",
-    "when": "inQuickOpen"
   },
   {
     "key": "ctrl+shift+i",
@@ -2715,12 +2630,7 @@
     "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalIsOpen || terminalFocus && terminalProcessSupported || terminalHasBeenCreated && terminalTabsFocus || terminalIsOpen && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
   },
   {
-    "key": "ctrl+k",
-    "command": "workbench.action.quickOpenSelectPrevious",
-    "when": "inQuickOpen"
-  },
-  {
-    "key": "ctrl+k",
+    "key": "ctrl+p",
     "command": "list.focusUp",
     "when": "listFocus && !inputFocus"
   },
@@ -3550,11 +3460,6 @@
     "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
   },
   {
-    "key": "ctrl+v",
-    "command": "editor.action.clipboardPasteAction",
-    "when": "!editorTextFocus"
-  },
-  {
     "key": "ctrl+y",
     "command": "editor.action.clipboardPasteAction"
   },
@@ -3622,8 +3527,9 @@
     "command": "workbench.action.showCommands"
   },
   {
-    "key": "alt+w",
-    "command": "editor.action.clipboardCopyAction"
+    "key": "ctrl+shift+c",
+    "command": "editor.action.clipboardCopyAction",
+    "when": "!terminalFocus"
   },
   {
     "key": "shift+alt+w",
@@ -3841,5 +3747,54 @@
   {
     "key": "ctrl+x ctrl+z",
     "command": "workbench.action.toggleZenMode"
-  }
+  },
+  {
+    "key": "alt+w",
+    "command": "editor.action.clipboardCopyAction"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "selectNextCodeAction",
+    "when": "codeActionMenuVisible"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "workbench.action.quickOpenSelectNext",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "showNextParameterHint",
+    "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpenSelectPrevious",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "showNextParameterHint",
+    "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+  },
+    {
+    "key": "ctrl+n",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+    {
+      "key": "ctrl+p",
+      "command": "list.focusUp",
+      "when": "listFocus && !inputFocus"
+    },
+      {
+        "key": "down",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen"
+      },
+      {
+        "key": "up",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen"
+      },
 ]
