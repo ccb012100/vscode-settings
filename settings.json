@@ -145,10 +145,10 @@
   "debug.openExplorerOnEnd": true,
   "debug.showBreakpointsInOverviewRuler": true,
   "debug.toolBarLocation": "docked",
-  "diffEditor.experimental.collapseUnchangedRegions": true,
   "diffEditor.experimental.showEmptyDecorations": true,
   "diffEditor.experimental.showMoves": true,
   "diffEditor.experimental.useVersion2": true,
+  "diffEditor.hideUnchangedRegions.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.acceptSuggestionOnEnter": "smart",
   "editor.accessibilitySupport": "off",
@@ -400,6 +400,7 @@
     "MSYSTEM": "MINGW64"
   },
   "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font Mono,Hack Nerd Font,Hack",
+  "terminal.integrated.hideOnStartup": "whenEmpty",
   "terminal.integrated.profiles.windows": {
     "Ubuntu (WSL)": {
       "path": "C:\\\\Windows\\\\System32\\\\wsl.exe",
@@ -446,7 +447,6 @@
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "window.commandCenter": true,
   "window.enableMenuBarMnemonics": false,
-  "window.menuBarVisibility": "compact",
   "window.newWindowDimensions": "offset",
   "window.title": "${dirty}${separator}${rootName}",
   "window.titleBarStyle": "custom",
@@ -459,8 +459,9 @@
     "tab.activeModifiedBorder": "#FFC300",
     "terminal.background": "#000000"
   },
-  "workbench.colorTheme": "SynthWave '84",
+  "workbench.colorTheme": "Tomorrow Night Blue",
   "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.preventPinnedEditorClose": "never",
   "workbench.editor.scrollToSwitchTabs": true,
   "workbench.editor.splitInGroupLayout": "vertical",
   "workbench.editor.tabSizing": "shrink",
