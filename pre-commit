@@ -9,7 +9,7 @@ if git-diff-index -pM --cached HEAD |
 	# new additions only
 	rg '^+' |
 	# grep for blocked strings
-	rg -i 'apitoken'; then
+	rg -i 'apitoken' || rg --fixed-string 'mssql.connections'; then
 	echo -e "\033[0;31m\nBlocking commit: a disallowed setting was found!\033[0m" >&2
 	exit 1
 fi
