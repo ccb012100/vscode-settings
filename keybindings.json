@@ -1473,11 +1473,6 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "alt+right",
-        "command": "workbench.action.navigateForward",
-        "when": "canNavigateForward"
-    },
-    {
         "key": "ctrl+right",
         "command": "-cursorWordEndRight",
         "when": "textInputFocus"
@@ -1969,11 +1964,6 @@
         "command": "editor.action.fontZoomReset"
     },
     {
-        "key": "alt+[",
-        "command": "workbench.action.navigateBack",
-        "when": "canNavigateBack"
-    },
-    {
         "key": "alt+]",
         "command": "workbench.action.navigateForward",
         "when": "canNavigateForward"
@@ -2006,7 +1996,7 @@
     {
         "key": "ctrl+x ctrl+e",
         "command": "sqlite.runDocumentQuery",
-        "when": "editorLangId =~ /(sql|sqlite)/"
+        "when": "editorLangId == 'sqlite'"
     },
     {
         "key": "ctrl+shift+q",
@@ -2035,7 +2025,7 @@
     {
         "key": "ctrl+x e",
         "command": "sqlite.runSelectedQuery",
-        "when": "editorLangId =~ /(sql|sqlite)/"
+        "when": "editorLangId == 'sqlite'"
     },
     {
         "key": "ctrl+shift+i",
@@ -2237,11 +2227,6 @@
         "key": "ctrl+space",
         "command": "-editor.action.triggerSuggest",
         "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
-    },
-    {
-        "key": "alt+left",
-        "command": "workbench.action.navigateBack",
-        "when": "canNavigateBack"
     },
     {
         "key": "ctrl+alt+b",
@@ -3797,4 +3782,43 @@
         "command": "workbench.action.quickOpenSelectPrevious",
         "when": "inQuickOpen"
     },
+    {
+        "key": "ctrl+shift+c",
+        "command": "-mssql.connect",
+        "when": "editorTextFocus && editorLangId == 'sql'"
+    },
+    {
+        "key": "ctrl+alt+d",
+        "command": "-workbench.view.extension.objectExplorer"
+    },
+    {
+        "key": "ctrl+x ctrl+e",
+        "command": "mssql.runQuery",
+        "when": "editorTextFocus && editorLangId == 'sql'"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "-mssql.runQuery",
+        "when": "editorTextFocus && editorLangId == 'sql'"
+    },
+    {
+        "key": "alt+left",
+        "command": "-workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "alt+left",
+        "command": "extension.chevronBackBtn",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "alt+right",
+        "command": "-workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    {
+        "key": "alt+right",
+        "command": "extension.arrowForwardBtn",
+        "when": "canNavigateForward"
+    }
 ]
