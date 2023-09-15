@@ -11,3 +11,5 @@ sync_from_home() {
 sync_from_home "keybindings.json"
 sync_from_home "settings.json"
 sync_from_home "snippets"
+
+./format-files.sh
