@@ -9,3 +9,4 @@ sync_from_home() {
 sync_from_home ".config/Code/User/keybindings.json"
 sync_from_home ".config/Code/User/settings.json"
 sync_from_home ".config/Code/User/snippets"
+sync_from_home "win/work/work-notes/vscode-profiles"
