@@ -45,7 +45,7 @@
     },
     "files.trimTrailingWhitespace": false,
     "rewrap.autoWrap.enabled": false,
-    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
   },
   "[plaintext]": {
     "editor.insertSpaces": false,
@@ -134,11 +134,15 @@
   "cSpell.userWords": [
     "Autohotkey",
     "Bocardo",
+    "CICD",
     "CLSID",
     "devcontainer",
+    "globbing",
     "Gruvbox",
+    "Postconditions",
     "pwsh",
-    "Quux"
+    "Quux",
+    "taskmgr"
   ],
   "debug.console.acceptSuggestionOnEnter": "on",
   "debug.console.fontFamily": "IBM Plex Mono",
@@ -180,7 +184,7 @@
     "strings": "on"
   },
   "editor.quickSuggestionsDelay": 200,
-  "editor.renderWhitespace": "all",
+  "editor.renderWhitespace": "none",
   "editor.rulers": [
     120
   ],
@@ -461,6 +465,7 @@
     "tab.activeModifiedBorder": "#FFC300",
     "terminal.background": "#000000"
   },
+  "workbench.colorTheme": "Gruvbox Dark (Hard)",
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.preventPinnedEditorClose": "never",
   "workbench.editor.scrollToSwitchTabs": true,
