@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
-# add -n,--dry-run flag if testing
+repo="$HOME"/src/vscode-settings
+win="$HOME"/win
 
 sync_from_home() {
-    rsync --recursive --times --progress --protect-args "$HOME/win/$1" .
+    # add -n,--dry-run flag if testing
+    rsync --recursive --times --progress --protect-args "$win/$1" "$repo"
 }
 
 sync_from_home "AppData/Roaming/Code/User/keybindings.json"
