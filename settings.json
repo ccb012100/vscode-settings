@@ -135,14 +135,12 @@
     "Autohotkey",
     "Bocardo",
     "CICD",
-    "CLSID",
-    "devcontainer",
     "globbing",
     "Gruvbox",
+    "POSIX",
     "Postconditions",
-    "pwsh",
     "Quux",
-    "taskmgr"
+    "Ripgrep"
   ],
   "debug.console.acceptSuggestionOnEnter": "on",
   "debug.console.fontFamily": "IBM Plex Mono",
@@ -158,6 +156,8 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.acceptSuggestionOnEnter": "smart",
   "editor.accessibilitySupport": "off",
+  "editor.autoClosingBrackets": "beforeWhitespace",
+  "editor.autoClosingQuotes": "beforeWhitespace",
   "editor.bracketPairColorization.enabled": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.codeLens": false,
@@ -465,7 +465,7 @@
     "tab.activeModifiedBorder": "#FFC300",
     "terminal.background": "#000000"
   },
-  "workbench.colorTheme": "Gruvbox Dark (Hard)",
+  "workbench.colorTheme": "Kimbie Dark",
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.preventPinnedEditorClose": "never",
   "workbench.editor.scrollToSwitchTabs": true,
@@ -478,5 +478,5 @@
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
   "yaml.format.enable": true,
-  "zenMode.hideStatusBar": false,
+  "zenMode.hideStatusBar": false
 }
