@@ -54,5 +54,24 @@
     ],
     "body": "${UUID}",
     "description": "Generate a new UUID"
+  },
+  "cspell-disable":{
+    "prefix": "cspell-disable",
+    "body":[
+      "$LINE_COMMENT cspell:disable",
+      "$LINE_COMMENT cspell:enable"
+    ]
+  },
+  "cspell-ignore":{
+    "prefix":"cspell-ignore",
+    "body": "$LINE_COMMENT cspell:ignore"
+  },
+  "cspell-ignore":{
+    "prefix":"cspell-ignore",
+    "body": "$LINE_COMMENT cspell:ignore $1"
+  },
+  "cspell-disable-line":{
+    "prefix": "cspell-disable-next-line",
+    "body": "$LINE_COMMENT cspell:disable-next-line"
   }
 }
