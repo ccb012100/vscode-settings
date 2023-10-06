@@ -15,6 +15,7 @@
   // 	],
   // 	"description": "Log output to console"
   // }
+  // cspell:ignore dtstamp dstamp conlog dheader
   "paste current DateTime": {
     "scope": "plaintext,markdown",
     "prefix": "dtstamp",
@@ -29,49 +30,41 @@
   },
   "log object to console": {
     "scope": "javascript,typescript",
-    "prefix": "conlog-object",
-    "body": [
-      "// FIXME: remove console log below",
-      "$LINE_COMMENT eslint-disable-next-line no-console",
-      "console.log({$1})"
-    ],
+    "prefix": "LogObj",
+    "body": ["$LINE_COMMENT FIXME: remove console log below", "$LINE_COMMENT eslint-disable-next-line no-console", "console.log({$1})"],
     "description": "Log an object to the JavaScript console"
   },
   "log stringified JSON object to console": {
     "scope": "javascript,typescript",
-    "prefix": "conlog-json",
+    "prefix": "LogJson",
     "body": [
-      "// FIXME: remove console log below",
+      "$LINE_COMMENT FIXME: remove console log below",
       "$LINE_COMMENT eslint-disable-next-line no-console",
       "console.log('$1: ' + JSON.stringify($1, null, 2));"
     ],
     "description": "Log a stringified JSON object to the Javascript console"
   },
   "UUID": {
-    "prefix": [
-      "uuid",
-      "guid"
-    ],
+    "prefix": ["uuid", "guid"],
     "body": "${UUID}",
     "description": "Generate a new UUID"
   },
-  "cspell-disable":{
-    "prefix": "cspell-disable",
-    "body":[
-      "$LINE_COMMENT cspell:disable",
-      "$LINE_COMMENT cspell:enable"
-    ]
+  "cspell-disable": {
+    "scope": "!markdown",
+    "description": "add comments to disable and re-enable the spellchecker",
+    "prefix": "DisSpell",
+    "body": ["$LINE_COMMENT cspell:disable", "$LINE_COMMENT cspell:enable"]
   },
-  "cspell-ignore":{
-    "prefix":"cspell-ignore",
-    "body": "$LINE_COMMENT cspell:ignore"
-  },
-  "cspell-ignore":{
-    "prefix":"cspell-ignore",
+  "cspell-ignore": {
+    "scope": "!markdown",
+    "description": "add comment to have the spellchecker ignore specific words",
+    "prefix": "IgSpell",
     "body": "$LINE_COMMENT cspell:ignore $1"
   },
-  "cspell-disable-line":{
-    "prefix": "cspell-disable-next-line",
+  "cspell-disable-line": {
+    "scope": "!markdown",
+    "description": "add comment to have the spellchecker ignore the next line",
+    "prefix": "DisLnSpell",
     "body": "$LINE_COMMENT cspell:disable-next-line"
   }
 }

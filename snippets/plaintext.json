@@ -26,7 +26,7 @@
 			"---",
 			"$0"
 		],
-		"prefix": "section-separator",
+		"prefix": "SecSep",
 		"description": "Insert a section separator"
 	},
 }

@@ -1,56 +1,53 @@
+ // cspell:ignore dheader
 {
-	"Date header": {
-		"body": [
-			"## ==> $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
-			"",
-			"$0"
-		],
-		"prefix": "dheader",
-		"description": "Insert an H2 date header"
-	},
-	"Section separator": {
-		"body": [
-			"---",
-			"",
-			"$0"
-		],
-		"prefix": "section-separator",
-		"description": "Insert a section separator"
-	},
-	"Checked checkbox": {
-		"prefix": "checked-box",
-		"description": "an unchecked checkbox",
-		"body": [
-			"- [x] $0",
-		]
-	},
-	"Unchecked checkbox": {
-		"prefix": "unchecked-box",
-		"description": "an unchecked checkbox",
-		"body": [
-			"- [ ] $0",
-		]
-	},
-	"Source url": {
-		"prefix": "source-url",
-		"description": "add source URL for notes",
-		"body": [
-			"_source_: <$0>",
-			""
-		]
-	},
-	"link": {
-		"prefix": "link",
-		"description": "formatted markdown link",
-		"body": "[${2:display text}](${1:URL})"
-	},
-	"table": {
-		"prefix": "table",
-		"description": "new table template",
-		"body": [
-			"| $1 | $2 |",
-			"| - | - |",
-			"| $0 | |",
-		]
-	}
+  "Date header": {
+    "body": ["## ==> $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE", "", "$0"],
+    "prefix": "dheader",
+    "description": "Insert an H2 date header"
+  },
+  "Section separator": {
+    "body": ["---", "", "$0"],
+    "prefix": "secsep",
+    "description": "Insert a section separator"
+  },
+  "Checked checkbox": {
+    "prefix": "ChBox",
+    "description": "an unchecked checkbox",
+    "body": ["- [x] $0"]
+  },
+  "Unchecked checkbox": {
+    "prefix": "UnChBox",
+    "description": "an unchecked checkbox",
+    "body": ["- [ ] $0"]
+  },
+  "Source url": {
+    "prefix": "source",
+    "description": "add source URL for notes",
+    "body": ["_source_: <$0>", ""]
+  },
+  "link": {
+    "prefix": "link",
+    "description": "formatted markdown link",
+    "body": "[${2:display text}](${1:URL})"
+  },
+  "table": {
+    "prefix": "table",
+    "description": "new table template",
+    "body": ["| $1 | $2 |", "| - | - |", "| $0 | |"]
+  },
+  "cspell-disable": {
+	"description": "add comments to disable and re-enable the spellchecker",
+    "prefix": "DisSpell",
+    "body": ["$BLOCK_COMMENT_START cspell:disable $BLOCK_COMMENT_END", "$BLOCK_COMMENT_START cspell:enable $BLOCK_COMMENT_END"]
+  },
+  "cspell-ignore": {
+	"description": "add comment to have spellchecker ignore specific words in the current file",
+    "prefix": "IgSpell",
+    "body": "$BLOCK_COMMENT_START cspell:ignore ${1:words} $BLOCK_COMMENT_END"
+  },
+  "cspell-disable-line": {
+	"description": "add comment to have spellchecker ignore the next line",
+    "prefix": "DisLnSpell",
+    "body": "$BLOCK_COMMENT_START cspell:disable-next-line $BLOCK_COMMENT_END"
+  }
 }

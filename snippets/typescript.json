@@ -14,8 +14,8 @@
 	// }
 	"new Mocha test-case": {
 		"prefix": [
-			"mocha-it",
-			"mocha-test",
+			"MochIt",
+			"MochTest",
 			"test",
 			"it"
 		],
@@ -28,7 +28,7 @@
 	},
 	"new Mocha suite context": {
 		"prefix": [
-			"mocha-context",
+			"MochContext",
 			"context"
 		],
 		"body": [
@@ -40,7 +40,7 @@
 	},
 	"describe new Mocha suite": {
 		"prefix": [
-			"mocha-describe",
+			"MochDesc",
 			"describe"
 		],
 		"body": [
@@ -52,7 +52,7 @@
 	},
 	"Mocha before function": {
 		"prefix": [
-			"mocha-before",
+			"MochBef",
 			"before"
 		],
 		"body": [
@@ -64,7 +64,7 @@
 	},
 	"Mocha beforeEach function": {
 		"prefix": [
-			"mocha-before-each",
+			"MochBefEa",
 			"before-each"
 		],
 		"body": [
@@ -76,7 +76,7 @@
 	},
 	"parameterized Mocha test": {
 		"prefix": [
-			"mocha-parameterized",
+			"MochParam",
 			"parameterized"
 		],
 		"body": [
