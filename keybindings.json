@@ -3820,5 +3820,9 @@
         "key": "alt+right",
         "command": "extension.arrowForwardBtn",
         "when": "canNavigateForward"
+    },
+    {
+        "key": "ctrl+l shift+d",
+        "command": "prettier.forceFormatDocument"
     }
 ]

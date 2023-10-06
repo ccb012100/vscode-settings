@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
 
-CODE_DIR="$HOME/win/AppData/Roaming/Code/User"
-
-# add -n,--dry-run flag if testing
+CODE_DIR=$(dirname -- "$(readlink -f -- "$0")")
 
 sync_from_home() {
+    # add -n,--dry-run flag if testing
     rsync --recursive --times --progress --protect-args "$CODE_DIR/$1" .
 }
 
