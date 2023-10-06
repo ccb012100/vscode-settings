@@ -68,6 +68,7 @@ mishkinf.goto-next-previous-member
 ms-dotnettools.vscode-dotnet-runtime
 ms-vscode-remote.remote-containers
 ms-vscode-remote.remote-wsl
+ms-vscode.azure-repos
 ms-vscode.powershell
 ms-vscode.remote-repositories
 ms-vscode.Theme-1337
