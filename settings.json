@@ -38,14 +38,14 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[markdown]": {
-    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
     "editor.quickSuggestions": {
       "comments": "off",
       "other": "on",
       "strings": "off"
     },
     "files.trimTrailingWhitespace": false,
-    "rewrap.autoWrap.enabled": false
+    "rewrap.autoWrap.enabled": false,
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
   },
   "[plaintext]": {
     "editor.insertSpaces": false,
@@ -99,6 +99,8 @@
     },
     "editor.tabSize": 2
   },
+  "accessibility.dimUnfocused.enabled": true,
+  "accessibility.dimUnfocused.opacity": 0.9,
   "audioCues.lineHasBreakpoint": "on",
   "breadcrumbs.enabled": true,
   "cSpell.enableFiletypes": [
@@ -121,25 +123,30 @@
     "dotenv",
     "env",
     "git-rebase",
-    "gitconfig",
-    "gitignore",
-    "ignore",
-    "kmonad",
     "lisp",
     "powershell",
     "shellcheck-output",
     "shellcheckrc",
     "shellscript",
+    "snippets",
     "sql",
     "tsv"
   ],
   "cSpell.userWords": [
     "Autohotkey",
     "Bocardo",
+    "CICD",
     "CLSID",
+    "devcontainer",
+    "globbing",
     "Gruvbox",
+    "POSIX",
+    "Postconditions",
     "pwsh",
-    "Quux"
+    "Quux",
+    "Ripgrep",
+    "taskmgr",
+    "zoxide"
   ],
   "debug.console.acceptSuggestionOnEnter": "on",
   "debug.console.fontFamily": "IBM Plex Mono",
@@ -148,13 +155,15 @@
   "debug.openExplorerOnEnd": true,
   "debug.showBreakpointsInOverviewRuler": true,
   "debug.toolBarLocation": "docked",
-  "diffEditor.experimental.collapseUnchangedRegions": true,
   "diffEditor.experimental.showEmptyDecorations": true,
   "diffEditor.experimental.showMoves": true,
   "diffEditor.experimental.useVersion2": true,
+  "diffEditor.hideUnchangedRegions.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.acceptSuggestionOnEnter": "smart",
   "editor.accessibilitySupport": "off",
+  "editor.autoClosingBrackets": "beforeWhitespace",
+  "editor.autoClosingQuotes": "beforeWhitespace",
   "editor.bracketPairColorization.enabled": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.codeLens": false,
@@ -181,7 +190,7 @@
     "strings": "on"
   },
   "editor.quickSuggestionsDelay": 200,
-  "editor.renderWhitespace": "all",
+  "editor.renderWhitespace": "none",
   "editor.rulers": [
     120
   ],
@@ -235,7 +244,8 @@
     "*.DotSettings": "xml",
     "*.vssettings": "xml",
     "attributes": "properties",
-    "LICENSE": "plaintext"
+    "LICENSE": "plaintext",
+    "*.snippet": "xml"
   },
   "files.exclude": {
     "**/.DS_Store": true,
@@ -402,6 +412,7 @@
     "MSYSTEM": "MINGW64"
   },
   "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font Mono,Hack Nerd Font,Hack",
+  "terminal.integrated.hideOnStartup": "whenEmpty",
   "terminal.integrated.profiles.windows": {
     "Ubuntu (WSL)": {
       "path": "C:\\\\Windows\\\\System32\\\\wsl.exe",
@@ -448,7 +459,6 @@
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "window.commandCenter": true,
   "window.enableMenuBarMnemonics": false,
-  "window.menuBarVisibility": "compact",
   "window.newWindowDimensions": "offset",
   "window.title": "${dirty}${separator}${rootName}",
   "window.titleBarStyle": "custom",
@@ -461,8 +471,9 @@
     "tab.activeModifiedBorder": "#FFC300",
     "terminal.background": "#000000"
   },
-  "workbench.colorTheme": "SynthWave '84",
+  "workbench.colorTheme": "Kimbie Dark",
   "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.preventPinnedEditorClose": "never",
   "workbench.editor.scrollToSwitchTabs": true,
   "workbench.editor.splitInGroupLayout": "vertical",
   "workbench.editor.tabSizing": "shrink",
@@ -473,5 +484,5 @@
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
   "yaml.format.enable": true,
-  "zenMode.hideStatusBar": false,
+  "zenMode.hideStatusBar": false
 }

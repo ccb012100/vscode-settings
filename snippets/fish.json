@@ -21,7 +21,7 @@
 		"description": "insert shebang line for fish script"
 	},
 	"add abbr": {
-		"prefix": "abbr-add",
+		"prefix": "AbbAdd",
 		"body": "abbr --add ${1:name} ${2:command}",
 		"description": "add new abbr"
 	},
