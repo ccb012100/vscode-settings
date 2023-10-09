@@ -16,7 +16,6 @@ Catppuccin.catppuccin-vsc-icons
 catppuccin.catppuccin-vsc-pack
 christian-kohler.path-intellisense
 codezombiech.gitignore
-connor4312.codesong
 DaltonMenezes.aura-theme
 darkriszty.markdown-table-prettify
 DavidAnson.vscode-markdownlint
@@ -31,6 +30,7 @@ emilast.LogFileHighlighter
 Equinusocio.vsc-community-material-theme
 Equinusocio.vsc-material-theme
 equinusocio.vsc-material-theme-icons
+EricCheng.codesongClear
 EricsonWillians.oldschool-theme
 erik-rosengren.dark-candy
 esbenp.prettier-vscode
@@ -57,6 +57,7 @@ Kalk.borland
 krueger71.crt-themes
 kuscamara.electron
 louisyoung.pastel-pro
+mark-wiemer.vscode-autohotkey-plus-plus
 mattn.Lisp
 mechatroner.rainbow-csv
 mikestead.dotenv
