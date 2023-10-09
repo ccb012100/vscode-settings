@@ -14,7 +14,13 @@
   // }
   "shebang": {
     "prefix": "shebang",
-    "body": ["#!/usr/bin/env bash", "set -eou pipefail", "$0"],
+    "body": [
+		"#!/usr/bin/env bash",
+		"set -Eeou pipefail",
+		"repo=$(dirname -- \"$(readlink -f -- \"\\$0\")\")",
+    "",
+		"$0"
+	],
     "description": "Add bash shebang to shell script"
   },
   "script-dir": {
