@@ -245,7 +245,8 @@
     "*.vssettings": "xml",
     "attributes": "properties",
     "LICENSE": "plaintext",
-    "*.snippet": "xml"
+    "*.snippet": "xml",
+    "*.sqlite": "sql"
   },
   "files.exclude": {
     "**/.DS_Store": true,
