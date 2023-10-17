@@ -5,11 +5,6 @@
     "prefix": "dheader",
     "description": "Insert an H2 date header"
   },
-  "Section separator": {
-    "body": ["---", "", "$0"],
-    "prefix": "secsep",
-    "description": "Insert a section separator"
-  },
   "Checked checkbox": {
     "prefix": "ChBox",
     "description": "an unchecked checkbox",

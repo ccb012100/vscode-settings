@@ -20,13 +20,5 @@
 		],
 		"prefix": "dheader",
 		"description": "Insert a date header"
-	},
-	"Section separator": {
-		"body": [
-			"---",
-			"$0"
-		],
-		"prefix": "SecSep",
-		"description": "Insert a section separator"
-	},
+	}
 }
