@@ -145,7 +145,6 @@
     "strings": "on"
   },
   "editor.quickSuggestionsDelay": 200,
-  "editor.renderWhitespace": "none",
   "editor.rulers": [
     120
   ],
@@ -174,7 +173,6 @@
       "comments": "#32CD32"
     }
   },
-  "editor.wordWrap": "on",
   "editor.wrappingIndent": "indent",
   "emmet.showAbbreviationSuggestions": false,
   "emmet.showExpandedAbbreviation": "never",
@@ -320,6 +318,7 @@
   "remote.WSL.debug": true,
   "rewrap.autoWrap.enabled": false,
   "rewrap.wrappingColumn": 120,
+  "rust-analyzer.check.command": "clippy",
   "rust-analyzer.imports.granularity.enforce": true,
   "rust-analyzer.inlayHints.closureReturnTypeHints.enable": "with_block",
   "rust-analyzer.inlayHints.lifetimeElisionHints.enable": "skip_trivial",
@@ -435,7 +434,6 @@
   "workbench.editor.scrollToSwitchTabs": true,
   "workbench.editor.splitInGroupLayout": "vertical",
   "workbench.editor.tabSizing": "shrink",
-  "workbench.iconTheme": "catppuccin-frappe",
   "workbench.preferredDarkColorTheme": "Gruvbox Dark Hard",
   "workbench.preferredLightColorTheme": "GitHub Light Default",
   "workbench.settings.useSplitJSON": true,
