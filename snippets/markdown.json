@@ -1,4 +1,4 @@
- // cspell:ignore dheader
+// cspell:ignore dheader
 {
   "Date header": {
     "body": ["## ==> $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE", "", "$0"],
@@ -30,19 +30,9 @@
     "description": "new table template",
     "body": ["| $1 | $2 |", "| - | - |", "| $0 | |"]
   },
-  "cspell-disable": {
-	"description": "add comments to disable and re-enable the spellchecker",
-    "prefix": "DisSpell",
-    "body": ["$BLOCK_COMMENT_START cspell:disable $BLOCK_COMMENT_END", "$BLOCK_COMMENT_START cspell:enable $BLOCK_COMMENT_END"]
-  },
-  "cspell-ignore": {
-	"description": "add comment to have spellchecker ignore specific words in the current file",
-    "prefix": "IgSpell",
-    "body": "$BLOCK_COMMENT_START cspell:ignore ${1:words} $BLOCK_COMMENT_END"
-  },
-  "cspell-disable-line": {
-	"description": "add comment to have spellchecker ignore the next line",
-    "prefix": "DisLnSpell",
-    "body": "$BLOCK_COMMENT_START cspell:disable-next-line $BLOCK_COMMENT_END"
+  "bash-code-block": {
+    "description": "add a Bash shell code block",
+    "prefix": "bash",
+    "body": ["```bash", "$0", "```"]
   }
 }
