@@ -669,10 +669,6 @@
     "when": "!activeEditorIsPinned"
   },
   {
-    "key": "ctrl+k ctrl+p",
-    "command": "-workbench.action.showAllEditors"
-  },
-  {
     "key": "ctrl+k ctrl+\\",
     "command": "-workbench.action.splitEditorOrthogonal"
   },
@@ -1039,11 +1035,6 @@
   {
     "key": "shift+alt+k",
     "command": "-bookmarks.shrinkSelection",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+alt+j",
-    "command": "-bookmarks.jumpToPrevious",
     "when": "editorTextFocus"
   },
   {
@@ -1692,18 +1683,6 @@
     "when": "workbench.panel.output.active"
   },
   {
-    "key": "ctrl+g b",
-    "command": "bookmarks.list"
-  },
-  {
-    "key": "ctrl+j shift+b",
-    "command": "bookmarks.jumpToPrevious"
-  },
-  {
-    "key": "ctrl+g ctrl+b",
-    "command": "bookmarks.listFromAllFiles"
-  },
-  {
     "key": "ctrl+s",
     "command": "list.find",
     "when": "listFocus && listSupportsFind"
@@ -1722,10 +1701,6 @@
     "key": "ctrl+p",
     "command": "focusPreviousCodeAction",
     "when": "CodeActionMenuVisible"
-  },
-  {
-    "key": "ctrl+x b",
-    "command": "workbench.action.showAllEditors"
   },
   {
     "key": "ctrl+right",
@@ -2378,11 +2353,7 @@
     "when": "textInputFocus && !codeActionMenuVisible && !inQuickOpen && listFocus"
   },
   {
-    "key": "shift+alt+o",
-    "command": "workbench.action.showAllEditors"
-  },
-  {
-    "key": "alt+o",
+    "key": "ctrl+x ctrl+b",
     "command": "workbench.action.showAllEditorsByMostRecentlyUsed"
   },
   {
@@ -2541,14 +2512,6 @@
   {
     "key": "ctrl+shift+k",
     "command": "deleteAllRight"
-  },
-  {
-    "key": "ctrl+x shift+k",
-    "command": "workbench.action.closeAllEditors"
-  },
-  {
-    "key": "ctrl+k ctrl+w",
-    "command": "-workbench.action.closeAllEditors"
   },
   {
     "key": "ctrl+k",
@@ -2741,16 +2704,6 @@
     "key": "ctrl+x o",
     "command": "workbench.action.focusNextGroup",
     "when": "editorFocus && !sideBySideEditorActive"
-  },
-  {
-    "key": "ctrl+l b",
-    "command": "bookmarks.toggle",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+alt+k",
-    "command": "-bookmarks.toggle",
-    "when": "editorTextFocus"
   },
   {
     "key": "ctrl+alt+up",
@@ -3297,16 +3250,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+j b",
-    "command": "bookmarks.jumpToNext",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+alt+l",
-    "command": "-bookmarks.jumpToNext",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "ctrl+shift+;",
     "command": "-breadcrumbs.focus",
     "when": "breadcrumbsPossible && breadcrumbsVisible"
@@ -3824,5 +3767,29 @@
   {
     "key": "ctrl+l shift+d",
     "command": "prettier.forceFormatDocument"
-  }
+  },
+  {
+    "key": "ctrl+x b",
+    "command": "workbench.action.showAllEditors"
+  },
+  {
+    "key": "ctrl+k ctrl+p",
+    "command": "-workbench.action.showAllEditors"
+  },
+  {
+    "key": "ctrl+k ctrl+w",
+    "command": "-workbench.action.closeAllEditors"
+  },
+  {
+    "key": "ctrl+j ctrl+j",
+    "command": "workbench.action.showAllEditors"
+  },
+  {
+    "key": "ctrl+j f",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+j d",
+    "command": "file-browser.open"
+  },
 ]
