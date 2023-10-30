@@ -647,11 +647,6 @@
     "when": "editorTextFocus && foldingEnabled"
   },
   {
-    "key": "ctrl+k ctrl+x",
-    "command": "-editor.action.trimTrailingWhitespace",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
     "key": "ctrl+k enter",
     "command": "-workbench.action.keepEditor"
   },
@@ -709,9 +704,8 @@
     "command": "-workbench.action.files.revealActiveFileInWindows"
   },
   {
-    "key": "ctrl+x k",
-    "command": "workbench.action.closeActiveEditor",
-    "when": "!activeEditorIsPinned"
+    "key": "ctrl+shift+w",
+    "command": "workbench.action.closeActiveEditor"
   },
   {
     "key": "ctrl+s",
@@ -2720,10 +2714,6 @@
     "command": "workbench.action.files.toggleActiveEditorReadonlyInSession"
   },
   {
-    "key": "ctrl+shift+w",
-    "command": "editor.action.trimTrailingWhitespace"
-  },
-  {
     "key": "shift+alt+a",
     "command": "-editor.action.blockComment",
     "when": "editorTextFocus && !editorReadonly"
@@ -3520,7 +3510,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+shift+9",
+    "key": "ctrl+j shift+tab",
     "command": "workbench.action.moveEditorLeftInGroup"
   },
   {
@@ -3769,7 +3759,7 @@
     "command": "prettier.forceFormatDocument"
   },
   {
-    "key": "ctrl+x b",
+    "key": "ctrl+j j",
     "command": "workbench.action.showAllEditors"
   },
   {
@@ -3781,15 +3771,34 @@
     "command": "-workbench.action.closeAllEditors"
   },
   {
-    "key": "ctrl+j ctrl+j",
-    "command": "workbench.action.showAllEditors"
-  },
-  {
     "key": "ctrl+j f",
     "command": "workbench.action.quickOpen"
   },
   {
     "key": "ctrl+j d",
     "command": "file-browser.open"
+  },
+  {
+    "key": "ctrl+k ctrl+x",
+    "command": "-editor.action.trimTrailingWhitespace",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+x k",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "!activeEditorIsPinned"
+  },
+  {
+    "key": "ctrl+shift+q",
+    "command": "workbench.action.closeWindow"
+  },
+  {
+    "key": "ctrl+j ctrl+j",
+    "command": "workbench.action.focusNextGroup",
+    "when": "editorFocus && !sideBySideEditorActive"
+  },
+  {
+    "key": "ctrl+j tab",
+    "command": "workbench.action.moveEditorRightInGroup"
   },
 ]
