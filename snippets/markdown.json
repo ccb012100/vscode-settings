@@ -1,29 +1,29 @@
 // cspell:ignore dheader
 {
   "Date header": {
-    "body": ["## ==> $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE", "", "$0"],
+    "body": ["##$0 ==> $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE", ""],
     "prefix": "dheader",
     "description": "Insert an H2 date header"
   },
   "Checked checkbox": {
     "prefix": "ChBox",
     "description": "an unchecked checkbox",
-    "body": ["- [x] $0"]
+    "body": ["- [x] "]
   },
   "Unchecked checkbox": {
     "prefix": "UnChBox",
     "description": "an unchecked checkbox",
-    "body": ["- [ ] $0"]
+    "body": ["- [ ] "]
   },
   "Source url": {
     "prefix": "source",
     "description": "add source URL for notes",
-    "body": ["_source_: <$0>", ""]
+    "body": "_source_: <$1>$0"
   },
   "link": {
     "prefix": "link",
     "description": "formatted markdown link",
-    "body": "[${2:display text}](${1:URL})"
+    "body": "[${2:display text}](${1:URL})$0"
   },
   "table": {
     "prefix": "table",
@@ -34,5 +34,15 @@
     "description": "add a Bash shell code block",
     "prefix": "bash",
     "body": ["```bash", "$0", "```"]
+  },
+  "see": {
+    "prefix": "see",
+    "description": "reference to link for more information",
+    "body": "see: [${2:display text}](${1:URL})$0"
+  },
+  "image": {
+    "prefix": "img",
+    "description": "add an image tag",
+    "body": "![${2:alt text}](/${1:path to image})$0"
   }
 }

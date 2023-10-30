@@ -21,12 +21,12 @@
 		"description": "insert shebang line for fish script"
 	},
 	"add abbr": {
-		"prefix": "AbbAdd",
+		"prefix": "abbr",
 		"body": "abbr --add ${1:name} ${2:command}",
 		"description": "add new abbr"
 	},
 	"function": {
-		"prefix": "func",
+		"prefix": "fn",
 		"body": [
 			"function ${1:name} --description '${2:description}'",
 			"\t$0",

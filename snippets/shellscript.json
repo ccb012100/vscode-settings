@@ -19,13 +19,12 @@
 		"set -Eeou pipefail",
     "",
 		"scriptdir=$(dirname -- \"$(readlink -f -- \"\\$0\")\")",
-		"$0"
 	],
     "description": "Add bash shebang to shell script"
   },
   "script-dir": {
     "description": "Add the script's directory as a variable in the script",
     "prefix": "ScriptDir",
-    "body": ["scriptdir=$(dirname -- \"$(readlink -f -- \"\\$0\")\")", "$0"]
+    "body": "scriptdir=$(dirname -- \"$(readlink -f -- \"\\$0\")\")"
   }
 }
