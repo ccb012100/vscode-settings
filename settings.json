@@ -100,7 +100,6 @@
     "editor.tabSize": 2
   },
   "accessibility.dimUnfocused.enabled": true,
-  "accessibility.dimUnfocused.opacity": 0.9,
   "audioCues.lineHasBreakpoint": "on",
   "breadcrumbs.enabled": true,
   "debug.console.acceptSuggestionOnEnter": "on",
@@ -120,7 +119,7 @@
   "editor.autoClosingQuotes": "beforeWhitespace",
   "editor.bracketPairColorization.enabled": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-  "editor.codeActionWidget.includeNearbyQuickfixes": true,
+  "editor.codeActionWidget.includeNearbyQuickFixes": true,
   "editor.codeLens": false,
   "editor.cursorSurroundingLines": 5,
   "editor.find.autoFindInSelection": "multiline",
@@ -139,6 +138,7 @@
   "editor.minimap.showSlider": "always",
   "editor.mouseWheelZoom": true,
   "editor.multiCursorModifier": "ctrlCmd",
+  "editor.multiDocumentOccurrencesHighlight": true,
   "editor.parameterHints.enabled": false,
   "editor.quickSuggestions": {
     "comments": "on",
@@ -226,6 +226,8 @@
   "git.confirmForcePush": true,
   "git.confirmSync": false,
   "git.fetchOnPull": true,
+  "git.useForcePushWithLease": true,
+  "git.useForcePushIfIncludes": true,
   "git.defaultCloneDirectory": "~/src/",
   "git.mergeEditor": true,
   "git.promptToSaveFilesBeforeCommit": "always",
@@ -428,6 +430,7 @@
     "tab.activeModifiedBorder": "#FFC300",
     "terminal.background": "#000000"
   },
+  "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.pinnedTabsOnSeparateRow": true,
   "workbench.editor.preventPinnedEditorClose": "never",
