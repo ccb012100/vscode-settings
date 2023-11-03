@@ -2422,11 +2422,6 @@
     "when": "sideBySideEditorActive"
   },
   {
-    "key": "ctrl+x o",
-    "command": "workbench.action.focusOtherSideEditor",
-    "when": "sideBySideEditorActive"
-  },
-  {
     "key": "alt+g c",
     "command": "git.commitStaged"
   },
@@ -2687,7 +2682,7 @@
   {
     "key": "ctrl+x o",
     "command": "workbench.action.focusNextGroup",
-    "when": "editorFocus && !sideBySideEditorActive"
+    "when": "editorFocus"
   },
   {
     "key": "ctrl+alt+up",
@@ -3767,7 +3762,7 @@
   {
     "key": "ctrl+j ctrl+j",
     "command": "workbench.action.focusNextGroup",
-    "when": "editorFocus && !sideBySideEditorActive"
+    "when": "editorFocus"
   },
   {
     "key": "ctrl+j tab",
@@ -3779,12 +3774,7 @@
     "when": "!editorFocus"
   },
   {
-    "key": "ctrl+j ctrl+j",
-    "command": "workbench.action.focusNextGroup",
-    "when": "editorFocus && !sideBySideEditorActive"
-  },
-  {
-    "key": "ctrl+j ctrl+j",
+    "key": "ctrl+x o",
     "command": "workbench.action.focusOtherSideEditor",
     "when": "sideBySideEditorActive"
   },
@@ -3806,5 +3796,15 @@
     "key": "ctrl+k ctrl+m",
     "command": "-workbench.action.toggleMaximizeEditorGroup",
     "when": "maximizedEditorGroup || multipleEditorGroups"
+  },
+  {
+    "key": "ctrl+j ctrl+j",
+    "command": "workbench.action.focusNextGroup",
+    "when": "activeWebviewPanelId == 'markdown.preview'"
+  },
+  {
+    "key": "ctrl+x o",
+    "command": "workbench.action.focusNextGroup",
+    "when": "activeWebviewPanelId == 'markdown.preview'"
   }
 ]
