@@ -1091,16 +1091,6 @@
     "command": "editor.action.toggleRenderWhitespace"
   },
   {
-    "key": "alt+f8",
-    "command": "-editor.action.marker.next",
-    "when": "editorFocus"
-  },
-  {
-    "key": "shift+alt+f8",
-    "command": "-editor.action.marker.prev",
-    "when": "editorFocus"
-  },
-  {
     "key": "ctrl+/",
     "command": "-workbench.action.terminal.sendSequence",
     "when": "terminalFocus"
@@ -1296,7 +1286,7 @@
     "when": "textInputFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+x shift+o",
+    "key": "ctrl+j ctrl+shift+j",
     "command": "workbench.action.focusPreviousGroup"
   },
   {
@@ -1439,7 +1429,7 @@
     "when": "inSearchEditor"
   },
   {
-    "key": "ctrl+j p",
+    "key": "ctrl+j b",
     "command": "editor.action.jumpToBracket",
     "when": "editorTextFocus"
   },
@@ -2326,19 +2316,19 @@
     "when": "CodeActionMenuVisible"
   },
   {
-    "key": "ctrl+m l",
+    "key": "ctrl+j right",
     "command": "workbench.action.moveEditorToRightGroup"
   },
   {
-    "key": "ctrl+m i",
+    "key": "ctrl+j up",
     "command": "workbench.action.moveEditorToAboveGroup"
   },
   {
-    "key": "ctrl+m j",
+    "key": "ctrl+j left",
     "command": "workbench.action.moveEditorToLeftGroup"
   },
   {
-    "key": "ctrl+m k",
+    "key": "ctrl+j down",
     "command": "workbench.action.moveEditorToBelowGroup"
   },
   {
@@ -2941,7 +2931,7 @@
     "when": "editorFocus"
   },
   {
-    "key": "alt+m",
+    "key": "ctrl+j b",
     "command": "rust-analyzer.matchingBrace",
     "when": "editorTextFocus && editorLangId == 'rust'"
   },
@@ -3622,24 +3612,6 @@
     "when": "editorTextFocus && editorLangId == 'azcli'"
   },
   {
-    "key": "f8",
-    "command": "editor.action.marker.next"
-  },
-  {
-    "key": "f8",
-    "command": "-editor.action.marker.nextInFiles",
-    "when": "editorFocus"
-  },
-  {
-    "key": "shift+f8",
-    "command": "-editor.action.marker.prevInFiles",
-    "when": "editorFocus"
-  },
-  {
-    "key": "shift+f8",
-    "command": "editor.action.marker.prev"
-  },
-  {
     "key": "shift+space",
     "command": "workbench.action.showCommands"
   },
@@ -3801,4 +3773,38 @@
     "key": "ctrl+j tab",
     "command": "workbench.action.moveEditorRightInGroup"
   },
+  {
+    "key": "ctrl+j ctrl+j",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "!editorFocus"
+  },
+  {
+    "key": "ctrl+j ctrl+j",
+    "command": "workbench.action.focusNextGroup",
+    "when": "editorFocus && !sideBySideEditorActive"
+  },
+  {
+    "key": "ctrl+j ctrl+j",
+    "command": "workbench.action.focusOtherSideEditor",
+    "when": "sideBySideEditorActive"
+  },
+  {
+    "key": "ctrl+j ctrl+j",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "!editorFocus"
+  },
+  {
+    "key": "ctrl+x b",
+    "command": "workbench.action.showAllEditors"
+  },
+  {
+    "key": "ctrl+j z",
+    "command": "workbench.action.toggleMaximizeEditorGroup",
+    "when": "maximizedEditorGroup || multipleEditorGroups"
+  },
+  {
+    "key": "ctrl+k ctrl+m",
+    "command": "-workbench.action.toggleMaximizeEditorGroup",
+    "when": "maximizedEditorGroup || multipleEditorGroups"
+  }
 ]
