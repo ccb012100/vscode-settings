@@ -1,5 +1,5 @@
-alefragnani.Bookmarks
 ankitcode.firefly
+antfu.open-in-github-button
 bceskavich.theme-dracula-at-night
 bierner.github-markdown-preview
 bierner.markdown-checkbox
@@ -7,7 +7,6 @@ bierner.markdown-emoji
 bierner.markdown-footnotes
 bierner.markdown-mermaid
 bierner.markdown-preview-github-styles
-bierner.markdown-yaml-preamble
 bmalehorn.vscode-fish
 bodil.file-browser
 canadaduane.vscode-kmonad
@@ -41,10 +40,11 @@ gerane.Theme-EggplantParm
 gerane.Theme-GooeyPastel
 gerane.Theme-Mcedit
 GitHub.github-vscode-theme
-GitHub.remotehub
+github.vscode-github-actions
 GitHub.vscode-pull-request-github
 huacat.pink-theme
 IBM.output-colorizer
+idleberg.hopscotch
 ionutvmi.reg
 IronGeek.vscode-env
 iwyvi.chinolor
@@ -73,6 +73,7 @@ ms-vscode.powershell
 ms-vscode.remote-repositories
 ms-vscode.Theme-1337
 ms-vscode.Theme-TomorrowKit
+MurlocCra4ler.leap
 mvllow.rose-pine
 nick-rudenko.back-n-forth
 pawelgrzybek.gatito-theme
@@ -87,7 +88,6 @@ sdras.fortnite-vscode-theme
 selbh.keyboard-scroll
 sidneys1.gitconfig
 stkb.rewrap
-streetsidesoftware.code-spell-checker
 SumitNalavade.tinkswave-22
 SumitSaha.learn-with-sumit-theme
 svsool.markdown-memo

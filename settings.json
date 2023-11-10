@@ -11,12 +11,14 @@
   },
   "[csv][tsv][dynamic csv][csv (semicolon)]": {
     "editor.insertSpaces": false,
+    "editor.fontLigatures": false,
     "editor.rulers": [
       0
     ],
     "editor.stickyScroll.enabled": true
   },
   "[editorconfig]": {
+    "editor.fontLigatures": false,
     "editor.rulers": [
       80
     ]
@@ -35,9 +37,11 @@
     "editor.formatOnSave": false
   },
   "[json][jsonc]": {
+    "editor.fontLigatures": false,
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[markdown]": {
+    "editor.fontLigatures": false,
     "editor.quickSuggestions": {
       "comments": "off",
       "other": "on",
@@ -48,6 +52,7 @@
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
   },
   "[plaintext]": {
+    "editor.fontLigatures": false,
     "editor.insertSpaces": false,
     "rewrap.autoWrap.enabled": false
   },
@@ -55,6 +60,7 @@
     "editor.formatOnType": true
   },
   "[scminput][git-commit]": {
+    "editor.fontLigatures": false,
     "editor.rulers": [
       50,
       72
@@ -64,6 +70,7 @@
     "workbench.editor.restoreViewState": false
   },
   "[shellscript]": {
+    "editor.fontLigatures": false,
     "editor.rulers": [
       80
     ],
@@ -86,9 +93,11 @@
     "editor.defaultFormatter": "octref.vetur"
   },
   "[xml]": {
+    "editor.fontLigatures": false,
     "editor.defaultFormatter": "PrateekMahendrakar.prettyxml"
   },
   "[yaml]": {
+    "editor.fontLigatures": false,
     "editor.autoIndent": "full",
     "editor.defaultFormatter": "redhat.vscode-yaml",
     "editor.insertSpaces": true,
@@ -276,10 +285,18 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "js/ts.implicitProjectConfig.experimentalDecorators": true,
   "json.schemas": [],
+  "jump.display.backgroundColor": "#0000FF",
+  "jump.display.color": "#FFFFFF",
+  "jump.primaryCharset": "jklfdsavcxzmweruionbghtypqz7892341056",
   "lldb.suppressUpdateNotifications": true,
-  "markdown.extension.theming.decoration.renderLink": true,
+  "lldb.suppressUpdateNotifications": true,
+  "markdown.extension.list.indentationSize": "inherit",
+  "markdown.extension.theming.decoration.renderHardLineBreak": true,
+  "markdown.extension.theming.decoration.renderParagraph": true,
+  "markdown.extension.theming.decoration.renderTrailingSpace": true,
   "markdown.preview.fontFamily": "IBM Plex Serif, Cascadia Mono, Hack, Victor Mono, Inconsolata, Consolas",
   "markdown.preview.fontSize": 12,
+  "markdown.preview.scrollEditorWithPreview": false,
   "markdown.preview.typographer": true,
   "markdown.updateLinksOnFileMove.enabled": "prompt",
   "markdownlint.config": {
@@ -299,6 +316,7 @@
   "merge-conflict.diffViewPosition": "Below",
   "omnisharp.enableRoslynAnalyzers": true,
   "openInGitHub.remote.name": "main",
+  "openInGitHub.useLocalLine": true,
   "path-intellisense.autoSlashAfterDirectory": true,
   "path-intellisense.showHiddenFiles": true,
   "prettier.printWidth": 140,
@@ -437,11 +455,12 @@
   "workbench.editor.scrollToSwitchTabs": true,
   "workbench.editor.splitInGroupLayout": "vertical",
   "workbench.editor.tabSizing": "shrink",
-  "workbench.preferredDarkColorTheme": "Gruvbox Dark Hard",
-  "workbench.preferredLightColorTheme": "GitHub Light Default",
+  "workbench.preferredDarkColorTheme": "Gruvbox Material Dark",
+  "workbench.preferredLightColorTheme": "Gruvbox Light (Hard)",
   "workbench.settings.useSplitJSON": true,
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
   "yaml.format.enable": true,
+  "zenMode.hideStatusBar": false,
   "zenMode.hideStatusBar": false
 }
