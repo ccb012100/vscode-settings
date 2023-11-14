@@ -15,7 +15,6 @@
   // 	],
   // 	"description": "Log output to console"
   // }
-  // cspell:ignore dtstamp dstamp conlog dheader
   "paste current DateTime": {
     "scope": "plaintext,markdown",
     "prefix": "dtstamp",

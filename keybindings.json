@@ -1426,7 +1426,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "j shift+b",
+    "key": "ctrl+j shift+b",
     "command": "editor.action.selectToBracket"
   },
   {
@@ -3190,12 +3190,7 @@
     "when": "breadcrumbsPossible && breadcrumbsVisible"
   },
   {
-    "key": "alt+q alt+q",
-    "command": "-jump-extension.jump-to-the-start-of-a-word",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+j e",
+    "key": "ctrl+;",
     "command": "jump-extension.jump-to-the-end-of-a-word",
     "when": "editorTextFocus"
   },
@@ -3205,7 +3200,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+j shift+e",
+    "key": "ctrl+shift+;",
     "command": "jump-extension.select-to-the-end-of-a-word",
     "when": "editorTextFocus"
   },
@@ -3339,11 +3334,6 @@
     "command": "editor.action.clipboardCutAction"
   },
   {
-    "key": "alt+q alt+e",
-    "command": "-jump-extension.select-to-the-start-of-a-word",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "ctrl+up",
     "command": "-gotoNextPreviousMember.previousMember"
   },
@@ -3358,10 +3348,6 @@
   {
     "key": "ctrl+space",
     "command": "workbench.action.showCommands"
-  },
-  {
-    "key": "ctrl+shift+;",
-    "command": "jump-extension.select-to-the-start-of-a-word"
   },
   {
     "key": "ctrl+w",
@@ -3526,11 +3512,6 @@
     "key": "ctrl+x e",
     "command": "csdevkit.debug.noDebugProjectLaunch",
     "when": "resourceLangId == 'csharp'"
-  },
-  {
-    "key": "ctrl+;",
-    "command": "jump-extension.jump-to-the-start-of-a-word",
-    "when": "editorTextFocus"
   },
   {
     "key": "ctrl+;",
@@ -3800,15 +3781,13 @@
     "when": "accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal'"
   },
   {
-    "key": "alt+c",
-    "command": "-leap.match-case"
+    "key": "alt+q alt+e",
+    "command": "-jump-extension.select-to-the-start-of-a-word",
+    "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+;",
-    "command": "leap.find"
+    "key": "alt+q alt+q",
+    "command": "-jump-extension.jump-to-the-start-of-a-word",
+    "when": "editorTextFocus"
   },
-  {
-    "key": "ctrl+alt+f",
-    "command": "-leap.find"
-  }
 ]

@@ -1,5 +1,4 @@
 ankitcode.firefly
-antfu.open-in-github-button
 bceskavich.theme-dracula-at-night
 bierner.github-markdown-preview
 bierner.markdown-checkbox
@@ -33,7 +32,6 @@ equinusocio.vsc-material-theme-icons
 EricsonWillians.oldschool-theme
 erik-rosengren.dark-candy
 esbenp.prettier-vscode
-fabiospampinato.vscode-open-in-github
 faceair.ayu-one-dark
 foxundermoon.shell-format
 gerane.Theme-EggplantParm
@@ -73,7 +71,6 @@ ms-vscode.powershell
 ms-vscode.remote-repositories
 ms-vscode.Theme-1337
 ms-vscode.Theme-TomorrowKit
-MurlocCra4ler.leap
 mvllow.rose-pine
 nick-rudenko.back-n-forth
 pawelgrzybek.gatito-theme
