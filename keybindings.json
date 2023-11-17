@@ -1426,7 +1426,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+j shift+b",
+    "key": "ctrl+l b",
     "command": "editor.action.selectToBracket"
   },
   {
@@ -2305,11 +2305,7 @@
     "command": "workbench.action.showAllEditorsByMostRecentlyUsed"
   },
   {
-    "key": "ctrl+x ctrl+n",
-    "command": "explorer.newFile"
-  },
-  {
-    "key": "ctrl+j .",
+    "key": "ctrl+j ;",
     "command": "workbench.action.togglePanel"
   },
   {
@@ -2627,7 +2623,7 @@
     "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
   },
   {
-    "key": "ctrl+j shift+.",
+    "key": "ctrl+j shift+;",
     "command": "workbench.action.toggleMaximizedPanel"
   },
   {
@@ -3190,18 +3186,8 @@
     "when": "breadcrumbsPossible && breadcrumbsVisible"
   },
   {
-    "key": "ctrl+;",
-    "command": "jump-extension.jump-to-the-end-of-a-word",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "alt+q alt+w",
     "command": "-jump-extension.jump-to-the-end-of-a-word",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+shift+;",
-    "command": "jump-extension.select-to-the-end-of-a-word",
     "when": "editorTextFocus"
   },
   {
@@ -3742,7 +3728,7 @@
     "when": "!activeEditorIsPinned"
   },
   {
-    "key": "ctrl+j ;",
+    "key": "ctrl+j '",
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
@@ -3758,11 +3744,11 @@
     "command": "-workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "ctrl+j n",
+    "key": "ctrl+l n",
     "command": "explorer.newFile"
   },
   {
-    "key": "ctrl+j shift+n",
+    "key": "ctrl+l shift+n",
     "command": "explorer.newFolder"
   },
   {
@@ -3790,4 +3776,28 @@
     "command": "-jump-extension.jump-to-the-start-of-a-word",
     "when": "editorTextFocus"
   },
+  {
+    "key": "ctrl+j shift+z",
+    "command": "workbench.action.maximizeEditorHideSidebar"
+  },
+  {
+    "key": "ctrl+;",
+    "command": "vscode-easymotion.jumpToWord",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+/",
+    "command": "-vscode-easymotion.jumpToWord",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+;",
+    "command": "vscode-easymotion.jumpToEndOfWord",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+/",
+    "command": "-vscode-easymotion.jumpToEndOfWord",
+    "when": "editorTextFocus"
+  }
 ]
