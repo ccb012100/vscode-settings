@@ -17,6 +17,9 @@
     ],
     "editor.stickyScroll.enabled": true
   },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
   "[editorconfig]": {
     "editor.fontLigatures": false,
     "editor.rulers": [
@@ -58,6 +61,11 @@
   },
   "[python]": {
     "editor.formatOnType": true
+  },
+  "[rust]": {
+    "editor.formatOnSave": false,
+    "editor.formatOnType": true,
+    "editor.rulers": [],
   },
   "[scminput][git-commit]": {
     "editor.fontLigatures": false,
