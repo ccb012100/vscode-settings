@@ -3799,5 +3799,9 @@
     "key": "shift+alt+/",
     "command": "-vscode-easymotion.jumpToEndOfWord",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+j a",
+    "command": "editor.action.selectAll"
   }
 ]
