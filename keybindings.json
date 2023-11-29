@@ -3718,12 +3718,12 @@
     "command": "workbench.action.files.save"
   },
   {
-    "key": "ctrl+j k",
+    "key": "ctrl+j w",
     "command": "workbench.action.closeActivePinnedEditor",
     "when": "activeEditorIsPinned"
   },
   {
-    "key": "ctrl+j k",
+    "key": "ctrl+j w",
     "command": "workbench.action.closeActiveEditor",
     "when": "!activeEditorIsPinned"
   },
