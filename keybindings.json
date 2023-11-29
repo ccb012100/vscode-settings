@@ -2532,7 +2532,7 @@
     "when": "inKeybindings && inKeybindingsSearch"
   },
   {
-    "key": "ctrl+x p",
+    "key": "ctrl+l p",
     "command": "workbench.action.pinEditor",
     "when": "!activeEditorIsPinned"
   },
@@ -2722,7 +2722,7 @@
     "when": "editorHasSelection && editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+x p",
+    "key": "ctrl+l p",
     "command": "workbench.action.unpinEditor",
     "when": "activeEditorIsPinned"
   },

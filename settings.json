@@ -117,6 +117,7 @@
     "editor.tabSize": 2
   },
   "accessibility.dimUnfocused.enabled": true,
+  "accessibility.dimUnfocused.opacity": 0.9,
   "audioCues.lineHasBreakpoint": "on",
   "breadcrumbs.enabled": true,
   "debug.console.acceptSuggestionOnEnter": "on",
