@@ -746,10 +746,6 @@
     "command": "-workbench.action.closeWindow"
   },
   {
-    "key": "ctrl+x d",
-    "command": "file-browser.open"
-  },
-  {
     "key": "ctrl+n",
     "command": "cursorDown",
     "when": "textInputFocus && !suggestWidgetVisible"
@@ -1006,7 +1002,8 @@
   },
   {
     "key": "ctrl+l ctrl+i",
-    "command": "rust-analyzer.toggleInlayHints"
+    "command": "rust-analyzer.toggleInlayHints",
+    "when": "editorTextFocus && editorLangId == 'rust'  "
   },
   {
     "key": "shift+alt+l",
@@ -1674,10 +1671,6 @@
     "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
   },
   {
-    "key": "ctrl+g t",
-    "command": "workbench.action.terminal.focus"
-  },
-  {
     "key": "ctrl+shift+enter",
     "command": "-memo.openReferenceBeside",
     "when": "editorTextFocus && memo:refFocusedOrHovered && editorLangId == 'markdown'"
@@ -2329,23 +2322,7 @@
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
   {
-    "key": "ctrl+l i",
-    "command": "workbench.action.focusAboveGroup"
-  },
-  {
-    "key": "ctrl+l k",
-    "command": "workbench.action.focusBelowGroup"
-  },
-  {
-    "key": "ctrl+l l",
-    "command": "workbench.action.focusRightGroup"
-  },
-  {
-    "key": "ctrl+l j",
-    "command": "workbench.action.focusLeftGroup"
-  },
-  {
-    "key": "shift+f2",
+    "key": "f2",
     "command": "file-browser.rename"
   },
   {
@@ -2660,8 +2637,9 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+l ctrl+shift+j",
-    "command": "editor.action.blockComment"
+    "key": "ctrl+l j",
+    "command": "editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
   },
   {
     "key": "ctrl+shift+g",
@@ -2916,11 +2894,6 @@
     "when": "editorFocus || editorIsOpen"
   },
   {
-    "key": "shift+alt+h",
-    "command": "rust-analyzer.ssr",
-    "when": "editorFocus && editorLangId == 'rust'"
-  },
-  {
     "key": "ctrl+shift+.",
     "command": "-editor.action.inPlaceReplace.down",
     "when": "editorTextFocus && !editorReadonly"
@@ -3006,18 +2979,6 @@
     "key": "ctrl+shift+tab",
     "command": "-workbench.action.quickOpenLeastRecentlyUsedEditorInGroup",
     "when": "!activeEditorGroupEmpty"
-  },
-  {
-    "key": "ctrl+e",
-    "command": "-workbench.action.quickOpen"
-  },
-  {
-    "key": "ctrl+x ctrl+f",
-    "command": "workbench.action.quickOpen"
-  },
-  {
-    "key": "ctrl+p",
-    "command": "-workbench.action.quickOpen"
   },
   {
     "key": "shift+delete",
@@ -3632,14 +3593,6 @@
     "command": "-workbench.action.closeAllEditors"
   },
   {
-    "key": "ctrl+j f",
-    "command": "workbench.action.quickOpen"
-  },
-  {
-    "key": "ctrl+j d",
-    "command": "file-browser.open"
-  },
-  {
     "key": "ctrl+k ctrl+x",
     "command": "-editor.action.trimTrailingWhitespace",
     "when": "editorTextFocus && !editorReadonly"
@@ -3803,5 +3756,74 @@
   {
     "key": "ctrl+j a",
     "command": "editor.action.selectAll"
+  },
+  {
+    "key": "ctrl+l ctrl+d",
+    "command": "prettyxml.prettifyxml",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor && editorLangId == 'xml' "
+  },
+  {
+    "key": "ctrl+k l",
+    "command": "-prettyxml.prettifyxml",
+    "when": "true"
+  },
+  {
+    "key": "f5",
+    "command": "rust-analyzer.debug",
+    "when": "editorLangId == 'rust'"
+  },
+  {
+    "key": "enter",
+    "command": "rust-analyzer.onEnter",
+    "when":"editorTextfocus && editorLangId == 'rust'"
+  },
+  {
+    "key": "ctrl+h p",
+    "command": "rust-analyzer.triggerParameterHints",
+    "when": "editorTextFocus && editorLangId == 'rust'"
+  },
+  {
+    "key": "ctrl+j ctrl+shift+j",
+    "command": "workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+j ctrl+j",
+    "command": "workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+g t",
+    "command": "terminal.focus",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+q",
+    "command": "workbench.action.terminal.killEditor",
+    "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated && resourceScheme == 'vscode-terminal' || terminalEditorFocus && terminalFocus && terminalProcessSupported && resourceScheme == 'vscode-terminal'"
+  },
+  {
+    "key": "ctrl+j d",
+    "command": "workbench.action.moveEditorToNewWindow"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+j f",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+x ctrl+f",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+j shift+d",
+    "command": "workbench.action.moveEditorGroupToNewWindow"
   }
 ]
