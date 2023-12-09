@@ -52,7 +52,8 @@
     },
     "files.trimTrailingWhitespace": false,
     "rewrap.autoWrap.enabled": false,
-    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    "editor.tabSize": 2
   },
   "[plaintext]": {
     "editor.fontLigatures": false,
@@ -90,7 +91,7 @@
   },
   "[typescript]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll": true
+      "source.fixAll": "explicit"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.rulers": [
@@ -156,7 +157,7 @@
   "editor.minimap.showSlider": "always",
   "editor.mouseWheelZoom": true,
   "editor.multiCursorModifier": "ctrlCmd",
-  "editor.multiDocumentOccurrencesHighlight": true,
+  "editor.occurrencesHighlight": "multiFile",
   "editor.parameterHints.enabled": false,
   "editor.quickSuggestions": {
     "comments": "on",
@@ -323,6 +324,7 @@
   "material-icon-theme.saturation": 1,
   "merge-conflict.autoNavigateNextConflict.enabled": true,
   "merge-conflict.diffViewPosition": "Below",
+  "multiDiffEditor.experimental.enabled": true,
   "omnisharp.enableRoslynAnalyzers": true,
   "openInGitHub.remote.name": "main",
   "openInGitHub.useLocalLine": true,
@@ -360,6 +362,7 @@
   "scm.experimental.showSyncView": true,
   "scm.inputFontFamily": "editor",
   "scm.inputFontSize": 12,
+  "scm.inputMaxLines": 25,
   "search.exclude": {
     "**/*.svg": true,
     "**/pnpm-lock.yaml": true
@@ -422,6 +425,8 @@
     }
   },
   "terminal.integrated.shellIntegration.enabled": true,
+  "terminal.integrated.stickyScroll.enabled": true,
+  "terminal.integrated.stickyScroll.maxLineCount": 3,
   "terminal.integrated.tabs.focusMode": "singleClick",
   "terminal.integrated.tabStopWidth": 4,
   "typescript.enablePromptUseWorkspaceTsdk": true,
@@ -469,7 +474,8 @@
   "workbench.settings.useSplitJSON": true,
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
+  "workbench.tree.enableStickyScroll": true,
   "yaml.format.enable": true,
-  "zenMode.hideStatusBar": false,
+  "yaml.format.singleQuote": true,
   "zenMode.hideStatusBar": false
 }
