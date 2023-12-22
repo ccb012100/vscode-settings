@@ -26,7 +26,6 @@ DimitarNonov.jellybeans-theme
 donjayamanne.githistory
 dracula-theme.theme-dracula
 emilast.LogFileHighlighter
-Equinusocio.vsc-community-material-theme
 Equinusocio.vsc-material-theme
 equinusocio.vsc-material-theme-icons
 EricsonWillians.oldschool-theme
@@ -63,6 +62,7 @@ millsp.material-candy
 minamarkham.yonce-theme
 mindaro-dev.file-downloader
 mishkinf.goto-next-previous-member
+ms-azuretools.vscode-docker
 ms-dotnettools.vscode-dotnet-runtime
 ms-vscode-remote.remote-containers
 ms-vscode-remote.remote-wsl
@@ -83,6 +83,7 @@ s3gf4ult.monokai-vibrant
 sainnhe.gruvbox-material
 sdras.fortnite-vscode-theme
 selbh.keyboard-scroll
+shadowndacorner.vscode-easymotion
 sidneys1.gitconfig
 stkb.rewrap
 SumitNalavade.tinkswave-22
