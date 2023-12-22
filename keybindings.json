@@ -3825,5 +3825,27 @@
   {
     "key": "ctrl+j shift+d",
     "command": "workbench.action.moveEditorGroupToNewWindow"
+  },
+  {
+    "key": "ctrl+x d",
+    "command": "file-browser.open"
+  },
+  {
+    "key": "ctrl+j p",
+    "command": "editor.action.marker.nextInFiles"
+  },
+  {
+    "key": "ctrl+j shift+p",
+    "command": "editor.action.marker.prevInFiles"
+  },
+  {
+    "key": "ctrl+j k",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "!activeEditorIsPinned"
+  },
+  {
+    "key": "ctrl+j k",
+    "command": "workbench.action.closeActivePinnedEditor",
+    "when": "activeEditorIsPinned"
   }
 ]
