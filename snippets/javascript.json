@@ -4,18 +4,18 @@
 	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
 	// same ids are connected.
 	"Print to console": {
-		"prefix": "log",
+		"prefix": ["log", "con-log"],
 		"body": "console.log('$1');",
 		"description": "Log output to console"
 	},
-	"Log object to console":{
-		"prefix": "logobj",
+	"Log object to console": {
+		"prefix": "log-obj",
 		"body": "console.log({$1});",
 		"description": "log a variable to the console as an object"
 	},
-	"Log object to console as JSON":{
-		"prefix": "logjson",
-		"body": "console.log("$1: " + JSON.stringify($1, null, 2));",
+	"Log object to console as JSON": {
+		"prefix": "log-json",
+		"body": "console.log('$1: ' + JSON.stringify($1, null, 2));",
 		"description": "log a variable to the console as a pretty-printed JSON string"
 	}
 }

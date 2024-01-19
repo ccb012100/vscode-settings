@@ -27,22 +27,6 @@
     "body": "$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
     "description": "Paste the current date in YYYY-MM-DD format"
   },
-  "log object to console": {
-    "scope": "javascript,typescript",
-    "prefix": "LogObj",
-    "body": ["$LINE_COMMENT FIXME: remove console log below", "$LINE_COMMENT eslint-disable-next-line no-console", "console.log({$1})"],
-    "description": "Log an object to the JavaScript console"
-  },
-  "log stringified JSON object to console": {
-    "scope": "javascript,typescript",
-    "prefix": "LogJson",
-    "body": [
-      "$LINE_COMMENT FIXME: remove console log below",
-      "$LINE_COMMENT eslint-disable-next-line no-console",
-      "console.log('$1: ' + JSON.stringify($1, null, 2));"
-    ],
-    "description": "Log a stringified JSON object to the Javascript console"
-  },
   "UUID": {
     "prefix": ["uuid", "guid"],
     "body": "${UUID}",
