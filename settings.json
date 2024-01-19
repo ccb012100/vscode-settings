@@ -121,6 +121,7 @@
   "accessibility.dimUnfocused.opacity": 0.9,
   "audioCues.lineHasBreakpoint": "on",
   "breadcrumbs.enabled": true,
+  "cmake.showOptionsMovedNotification": false,
   "debug.console.acceptSuggestionOnEnter": "on",
   "debug.console.fontFamily": "IBM Plex Mono",
   "debug.console.fontSize": 12,
