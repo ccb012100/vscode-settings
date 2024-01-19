@@ -3697,7 +3697,7 @@
     "command": "-workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "ctrl+l n",
+    "key": "ctrl+j n",
     "command": "explorer.newFile"
   },
   {
