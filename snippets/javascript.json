@@ -17,5 +17,50 @@
 		"prefix": "log-json",
 		"body": "console.log('$1: ' + JSON.stringify($1, null, 2));",
 		"description": "log a variable to the console as a pretty-printed JSON string"
+	},
+	"new test file": {
+		"prefix": "test-file",
+		"description": "set up new test file",
+		"body": [
+			"import * as React from 'react';",
+			"import '@testing-library/jest-dom';",
+			"import { act } from 'react-dom/test-utils';",
+			"import { render, screen } from '@testing-library/react';",
+			"describe('$1', () => {",
+			"})"
+		]
+	},
+	"new describe() function": {
+		"prefix": ["desc-func", "df","describe-function"],
+		"description": "set up a new 'describe' test function",
+		"body": [
+			"describe('$1', () => {",
+			"	",
+			"})"
+		]
+	},
+	"new Jest unit test": {
+		"prefix": ["unit","utest"],
+		"description": "add a new Jest unit test",
+		"body": [
+			"it('should ${1:do x} when ${2:y}}', () => {",
+			"	// arrange",
+			"	// act",
+			"	// assert",
+			"	expect.fail('not implemented')",
+			"})"
+		]
+	},
+	"new async Jest unit test": {
+		"prefix": ["unit-async","utest-async"],
+		"description": "add a new async Jest unit test",
+		"body": [
+			"it('should ${1:do x} when ${2:y}}', async () => {",
+			"	// arrange",
+			"	// act",
+			"	// assert",
+			"	expect.fail('not implemented')",
+			"})"
+		]
 	}
 }

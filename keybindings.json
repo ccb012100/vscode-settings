@@ -3147,16 +3147,6 @@
     "when": "breadcrumbsPossible && breadcrumbsVisible"
   },
   {
-    "key": "alt+q alt+w",
-    "command": "-jump-extension.jump-to-the-end-of-a-word",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+q alt+r",
-    "command": "-jump-extension.select-to-the-end-of-a-word",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "ctrl+l ctrl+d",
     "command": "editor.action.formatDocument",
     "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
@@ -3701,7 +3691,7 @@
     "command": "explorer.newFile"
   },
   {
-    "key": "ctrl+l shift+n",
+    "key": "ctrl+j shift+n",
     "command": "explorer.newFolder"
   },
   {
@@ -3720,38 +3710,8 @@
     "when": "accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal'"
   },
   {
-    "key": "alt+q alt+e",
-    "command": "-jump-extension.select-to-the-start-of-a-word",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+q alt+q",
-    "command": "-jump-extension.jump-to-the-start-of-a-word",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "ctrl+j shift+z",
     "command": "workbench.action.maximizeEditorHideSidebar"
-  },
-  {
-    "key": "ctrl+;",
-    "command": "vscode-easymotion.jumpToWord",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+/",
-    "command": "-vscode-easymotion.jumpToWord",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+shift+;",
-    "command": "vscode-easymotion.jumpToEndOfWord",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "shift+alt+/",
-    "command": "-vscode-easymotion.jumpToEndOfWord",
-    "when": "editorTextFocus"
   },
   {
     "key": "ctrl+j a",
@@ -3847,5 +3807,61 @@
     "key": "ctrl+j k",
     "command": "workbench.action.closeActivePinnedEditor",
     "when": "activeEditorIsPinned"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "-markdown.extension.onCtrlEnterKey",
+    "when": "editorTextFocus && !editorHasMultipleSelections && !editorReadonly && !markdown.extension.editor.cursor.inFencedCodeBlock && !markdown.extension.editor.cursor.inMathEnv && !suggestWidgetVisible && editorLangId =~ /^markdown$|^rmd$|^quarto$/ || editorTextFocus && !editorHasMultipleSelections && !editorReadonly && !markdown.extension.editor.cursor.inFencedCodeBlock && !markdown.extension.editor.cursor.inMathEnv && config.editor.acceptSuggestionOnEnter == 'off' && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+  },
+  {
+    "key": "ctrl+j shift+w",
+    "command": "workbench.action.closeUnmodifiedEditors"
+  },
+  {
+    "key": "ctrl+h u",
+    "command": "references-view.findReferences",
+    "when": "editorHasReferenceProvider"
+  },
+  {
+    "key": "tab",
+    "command": "-editor.action.inlineSuggest.commit",
+    "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+;",
+    "command": "jump-extension.jump-to-the-start-of-a-word",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+q alt+q",
+    "command": "-jump-extension.jump-to-the-start-of-a-word",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+q alt+w",
+    "command": "-jump-extension.jump-to-the-end-of-a-word",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+q alt+r",
+    "command": "-jump-extension.select-to-the-end-of-a-word",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+q alt+e",
+    "command": "-jump-extension.select-to-the-start-of-a-word",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+;",
+    "command": "jump-extension.jump-to-the-end-of-a-word"
+  },
+  {
+    "key": "alt+;",
+    "command": "jump-extension.select-to-the-start-of-a-word"
+  },
+  {
+    "key": "shift+alt+;",
+    "command": "jump-extension.select-to-the-end-of-a-word"
   }
 ]

@@ -36,7 +36,7 @@
     "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "vscode.typescript-language-features",
     "editor.formatOnSave": false
   },
   "[json][jsonc]": {
@@ -119,7 +119,12 @@
   },
   "accessibility.dimUnfocused.enabled": true,
   "accessibility.dimUnfocused.opacity": 0.9,
-  "audioCues.lineHasBreakpoint": "on",
+  "accessibility.signals.lineHasBreakpoint": {
+    "sound": "on"
+  },
+  "accessibility.signals.terminalBell": {
+    "sound": "on"
+  },
   "breadcrumbs.enabled": true,
   "cmake.showOptionsMovedNotification": false,
   "debug.console.acceptSuggestionOnEnter": "on",
@@ -133,6 +138,7 @@
   "diffEditor.experimental.showMoves": true,
   "diffEditor.hideUnchangedRegions.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.renderSideBySide": false,
   "editor.acceptSuggestionOnEnter": "smart",
   "editor.accessibilitySupport": "off",
   "editor.autoClosingBrackets": "beforeWhitespace",
@@ -282,7 +288,7 @@
   "githubIssues.userCompletions.enabled": false,
   "githubPullRequests.assignCreated": "${user}",
   "githubPullRequests.createDraft": true,
-  "githubPullRequests.focusedMode": "overview",
+  "githubPullRequests.focusedMode": "multiDiff",
   "githubPullRequests.notifications": "pullRequests",
   "githubPullRequests.pullBranch": "never",
   "go.toolsManagement.autoUpdate": true,
@@ -301,15 +307,17 @@
   "jump.primaryCharset": "jklfdsavcxzmweruionbghtypqz7892341056",
   "lldb.suppressUpdateNotifications": true,
   "lldb.suppressUpdateNotifications": true,
+  "markdown.editor.pasteUrlAsFormattedLink.enabled": "never",
   "markdown.extension.list.indentationSize": "inherit",
   "markdown.extension.theming.decoration.renderHardLineBreak": true,
   "markdown.extension.theming.decoration.renderParagraph": true,
   "markdown.extension.theming.decoration.renderTrailingSpace": true,
+  "markdown.preview.breaks": true,
   "markdown.preview.fontFamily": "IBM Plex Serif, Cascadia Mono, Hack, Victor Mono, Inconsolata, Consolas",
   "markdown.preview.fontSize": 12,
   "markdown.preview.scrollEditorWithPreview": false,
   "markdown.preview.typographer": true,
-  "markdown.updateLinksOnFileMove.enabled": "prompt",
+  "markdown.updateLinksOnFileMove.enabled": "always",
   "markdownlint.config": {
     "MD013": false,
     "MD024": {
@@ -394,7 +402,6 @@
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.defaultProfile.linux": "fish",
   "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "terminal.integrated.enableBell": true,
   "terminal.integrated.env.windows": {
     "CHERE_INVOKING": "1",
     "MSYS2_PATH_TYPE": "inherit",
@@ -430,6 +437,7 @@
   "terminal.integrated.stickyScroll.maxLineCount": 3,
   "terminal.integrated.tabs.focusMode": "singleClick",
   "terminal.integrated.tabStopWidth": 4,
+  "terminal.integrated.enableVisualBell": true,
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "typescript.format.insertSpaceAfterConstructor": true,
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
@@ -452,9 +460,9 @@
   "window.density.editorTabHeight": "compact",
   "window.enableMenuBarMnemonics": false,
   "window.newWindowDimensions": "offset",
-  "window.title": "${dirty}${separator}${rootName}",
+  "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}[${profileName}]",
   "window.titleBarStyle": "custom",
-  "window.titleSeparator": "‣",
+  "window.titleSeparator": " ‧ ",
   "workbench.colorCustomizations": {
     "[Mcedit]": {
       "editor.lineHighlightBackground": "#000000"
