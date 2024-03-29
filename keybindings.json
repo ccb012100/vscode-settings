@@ -263,10 +263,6 @@
     "command": "workbench.action.openSettings2"
   },
   {
-    "key": "f1",
-    "command": "-workbench.action.showCommands"
-  },
-  {
     "key": "ctrl+m",
     "command": "-markdown.extension.editing.toggleMath",
     "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
@@ -1353,10 +1349,6 @@
     "command": "workbench.action.files.saveAll"
   },
   {
-    "key": "ctrl+l ctrl+u",
-    "command": "editor.action.transformToUppercase"
-  },
-  {
     "key": "ctrl+l ctrl+l",
     "command": "editor.action.transformToLowercase"
   },
@@ -1962,10 +1954,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+space",
-    "command": "workbench.action.showCommands"
-  },
-  {
     "key": "alt+c",
     "command": "toggleSearchEditorCaseSensitive",
     "when": "inSearchEditor && searchInputBoxFocus"
@@ -2273,11 +2261,11 @@
     "when": "CodeActionMenuVisible"
   },
   {
-    "key": "ctrl+j right",
+    "key": "ctrl+m right",
     "command": "workbench.action.moveEditorToRightGroup"
   },
   {
-    "key": "ctrl+j up",
+    "key": "ctrl+m up",
     "command": "workbench.action.moveEditorToAboveGroup"
   },
   {
@@ -2285,7 +2273,7 @@
     "command": "workbench.action.moveEditorToLeftGroup"
   },
   {
-    "key": "ctrl+j down",
+    "key": "ctrl+m down",
     "command": "workbench.action.moveEditorToBelowGroup"
   },
   {
@@ -2720,7 +2708,7 @@
     "when": "atEndOfWord && textInputFocus && !hasOtherSuggestions && !inSnippetMode && !suggestWidgetVisible && config.editor.tabCompletion == 'on'"
   },
   {
-    "key": "alt+l",
+    "key": "ctrl+m ctrl+m",
     "command": "emacs.C-l",
     "when": "editorTextFocus"
   },
@@ -3279,24 +3267,12 @@
     "command": "-gotoNextPreviousMember.nextMember"
   },
   {
-    "key": "alt+x",
-    "command": "workbench.action.showCommands"
-  },
-  {
     "key": "ctrl+space",
     "command": "workbench.action.showCommands"
   },
   {
     "key": "ctrl+w",
     "command": "editor.action.clipboardCutAction"
-  },
-  {
-    "key": "ctrl+\\",
-    "command": "workbench.action.showCommands"
-  },
-  {
-    "key": "ctrl+`",
-    "command": "workbench.action.showCommands"
   },
   {
     "key": "ctrl+shift+c",
@@ -3344,16 +3320,6 @@
     "when": "searchViewletFocus"
   },
   {
-    "key": "alt+pagedown",
-    "command": "-scrollPageDown",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "alt+pageup",
-    "command": "-scrollPageUp",
-    "when": "textInputFocus"
-  },
-  {
     "key": "shift+alt+down",
     "command": "-editor.action.copyLinesDownAction",
     "when": "editorTextFocus && !editorReadonly"
@@ -3364,7 +3330,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+j shift+tab",
+    "key": "ctrl+m shift+tab",
     "command": "workbench.action.moveEditorLeftInGroup"
   },
   {
@@ -3602,7 +3568,7 @@
     "when": "editorFocus"
   },
   {
-    "key": "ctrl+j tab",
+    "key": "ctrl+m f",
     "command": "workbench.action.moveEditorRightInGroup"
   },
   {
@@ -3763,7 +3729,7 @@
     "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated && resourceScheme == 'vscode-terminal' || terminalEditorFocus && terminalFocus && terminalProcessSupported && resourceScheme == 'vscode-terminal'"
   },
   {
-    "key": "ctrl+j d",
+    "key": "ctrl+m d",
     "command": "workbench.action.moveEditorToNewWindow"
   },
   {
@@ -3781,10 +3747,6 @@
   {
     "key": "ctrl+x ctrl+f",
     "command": "workbench.action.quickOpen"
-  },
-  {
-    "key": "ctrl+j shift+d",
-    "command": "workbench.action.moveEditorGroupToNewWindow"
   },
   {
     "key": "ctrl+x d",
@@ -3828,40 +3790,47 @@
     "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
   },
   {
+    "key": "ctrl+j space",
+    "command": "breadcrumbs.focusAndSelect"
+  },
+  {
     "key": "ctrl+;",
-    "command": "jump-extension.jump-to-the-start-of-a-word",
+    "command": "jumpy2.toggle",
     "when": "editorTextFocus"
   },
   {
-    "key": "alt+q alt+q",
-    "command": "-jump-extension.jump-to-the-start-of-a-word",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+q alt+w",
-    "command": "-jump-extension.jump-to-the-end-of-a-word",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+q alt+r",
-    "command": "-jump-extension.select-to-the-end-of-a-word",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+q alt+e",
-    "command": "-jump-extension.select-to-the-start-of-a-word",
+    "key": "shift+enter",
+    "command": "-jumpy2.toggle",
     "when": "editorTextFocus"
   },
   {
     "key": "ctrl+shift+;",
-    "command": "jump-extension.jump-to-the-end-of-a-word"
+    "command": "jumpy2.toggleSelection",
+    "when": "editorTextFocus"
   },
   {
-    "key": "alt+;",
-    "command": "jump-extension.select-to-the-start-of-a-word"
+    "key": "shift+alt+enter",
+    "command": "-jumpy2.toggleSelection",
+    "when": "editorTextFocus"
   },
   {
-    "key": "shift+alt+;",
-    "command": "jump-extension.select-to-the-end-of-a-word"
+    "key": "ctrl+g o",
+    "command": "workbench.panel.output.focus"
+  },
+  {
+    "key": "ctrl+l ctrl+u",
+    "command": "editor.action.transformToUppercase"
+  },
+  {
+    "key": "ctrl+m shift+d",
+    "command": "workbench.action.moveEditorToFirstGroup"
+  },
+  {
+    "key": "ctrl+m tab",
+    "command": "workbench.action.moveEditorRightInGroup"
+  },
+  {
+    "key": "ctrl+m left",
+    "command": "workbench.action.moveEditorToLeftGroup"
   }
 ]
