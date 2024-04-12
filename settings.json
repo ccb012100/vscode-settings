@@ -29,7 +29,7 @@
   "[go]": {
     "editor.defaultFormatter": "golang.go",
     "editor.rulers": [
-      120
+      150
     ]
   },
   "[html]": {
@@ -45,6 +45,9 @@
   },
   "[markdown]": {
     "editor.fontLigatures": false,
+    "editor.rulers": [
+      150
+    ],
     "editor.quickSuggestions": {
       "comments": "off",
       "other": "on",
@@ -71,7 +74,7 @@
   "[scminput][git-commit]": {
     "editor.fontLigatures": false,
     "editor.rulers": [
-      50,
+      72,
       72
     ],
     "rewrap.autoWrap.enabled": true,
@@ -95,7 +98,7 @@
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.rulers": [
-      120
+      150
     ]
   },
   "[vue]": {
@@ -138,7 +141,6 @@
   "diffEditor.experimental.showMoves": true,
   "diffEditor.hideUnchangedRegions.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
-  "diffEditor.renderSideBySide": false,
   "editor.acceptSuggestionOnEnter": "smart",
   "editor.accessibilitySupport": "off",
   "editor.autoClosingBrackets": "beforeWhitespace",
@@ -172,7 +174,7 @@
   },
   "editor.quickSuggestionsDelay": 200,
   "editor.rulers": [
-    120
+    150
   ],
   "editor.semanticHighlighting.enabled": true,
   "editor.stickyScroll.enabled": true,
@@ -216,17 +218,6 @@
   "extensions.experimental.affinity": {
     "wenfangdu.jump": 1
   },
-  "files.associations": {
-    ".gitignore_global": "txt",
-    "*.adoc": "asciidoc",
-    "*.conf": "editorconfig",
-    "*.DotSettings": "xml",
-    "*.vssettings": "xml",
-    "attributes": "properties",
-    "LICENSE": "plaintext",
-    "*.snippet": "xml",
-    "*.sqlite": "sql"
-  },
   "files.exclude": {
     "**/.DS_Store": true,
     "**/.git": true,
@@ -243,6 +234,9 @@
     "**/pnpm-lock.yaml": true
   },
   "files.trimTrailingWhitespace": true,
+  "files.watcherExclude": {
+    "**/.vs-code-server/**": true
+  },
   "git.allowForcePush": true,
   "git.allowNoVerifyCommit": true,
   "git.alwaysShowStagedChangesResourceGroup": true,
@@ -313,8 +307,8 @@
   "markdown.extension.theming.decoration.renderParagraph": true,
   "markdown.extension.theming.decoration.renderTrailingSpace": true,
   "markdown.preview.breaks": true,
-  "markdown.preview.fontFamily": "IBM Plex Serif, Cascadia Mono, Hack, Victor Mono, Inconsolata, Consolas",
-  "markdown.preview.fontSize": 12,
+  "markdown.preview.fontFamily": "IBM Plex Sans, Cascadia Mono, Hack, Victor Mono, Inconsolata, Consolas",
+  "markdown.preview.fontSize": 13,
   "markdown.preview.scrollEditorWithPreview": false,
   "markdown.preview.typographer": true,
   "markdown.updateLinksOnFileMove.enabled": "always",
@@ -357,7 +351,6 @@
   "redhat.telemetry.enabled": true,
   "remote.WSL.debug": true,
   "rewrap.autoWrap.enabled": false,
-  "rewrap.wrappingColumn": 120,
   "rust-analyzer.check.command": "clippy",
   "rust-analyzer.imports.granularity.enforce": true,
   "rust-analyzer.inlayHints.closureReturnTypeHints.enable": "with_block",
