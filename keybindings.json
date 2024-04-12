@@ -98,10 +98,6 @@
     "command": "-insertSnippet"
   },
   {
-    "key": "ctrl+d",
-    "command": "-editor.action.copyLinesDownAction"
-  },
-  {
     "key": "ctrl+w",
     "command": "-workbench.action.switchWindow"
   },
@@ -208,11 +204,6 @@
     "key": "ctrl+h",
     "command": "-deleteLeft",
     "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+t",
-    "command": "-editor.action.transposeLetters",
-    "when": "textInputFocus && !editorReadonly"
   },
   {
     "key": "ctrl+shift+o",
@@ -1796,11 +1787,6 @@
     "command": "-comment-ts.commentThis"
   },
   {
-    "key": "ctrl+t ctrl+t",
-    "command": "editor.action.transposeLetters",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "ctrl+c",
     "command": "problems.action.copyMessage",
     "when": "problemsVisibility && !relatedInformationFocus && focusedView == 'workbench.panel.markers.view'"
@@ -1930,11 +1916,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+shift+d",
-    "command": "editor.action.copyLinesDownAction",
-    "when": "editorTextFocus && !editorReadonly && !editorHasSelection"
-  },
-  {
     "key": "ctrl+h k",
     "command": "workbench.action.openGlobalKeybindings"
   },
@@ -1952,16 +1933,6 @@
     "key": "ctrl+shift+alt+i",
     "command": "-insertDateString.insertOwnFormatDateTime",
     "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+c",
-    "command": "toggleSearchEditorCaseSensitive",
-    "when": "inSearchEditor && searchInputBoxFocus"
-  },
-  {
-    "key": "alt+c",
-    "command": "-toggleSearchEditorCaseSensitive",
-    "when": "inSearchEditor && searchInputBoxFocus"
   },
   {
     "key": "ctrl+shift+i",
@@ -2673,16 +2644,6 @@
     "command": "deleteAllLeft"
   },
   {
-    "key": "alt+k",
-    "command": "editor.action.duplicateSelection",
-    "when": "editorTextFocus && !editorReadonly && editorHasSelection"
-  },
-  {
-    "key": "alt+k",
-    "command": "editor.action.copyLinesDownAction",
-    "when": "editorTextFocus && !editorReadonly && !editorHasSelection"
-  },
-  {
     "key": "ctrl+shift+d",
     "command": "editor.action.duplicateSelection",
     "when": "editorHasSelection && editorTextFocus && !editorReadonly"
@@ -2804,7 +2765,7 @@
     "when": "focusedView != 'outline'"
   },
   {
-    "key": "ctrl+t e",
+    "key": "ctrl+g t",
     "command": "workbench.view.testing.focus"
   },
   {
@@ -3080,56 +3041,6 @@
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+t r",
-    "command": "testing.refreshTests",
-    "when": "testing.canRefresh"
-  },
-  {
-    "key": "ctrl+; ctrl+r",
-    "command": "-testing.refreshTests",
-    "when": "testing.canRefresh"
-  },
-  {
-    "key": "ctrl+t ctrl+a",
-    "command": "testing.runAll"
-  },
-  {
-    "key": "ctrl+; a",
-    "command": "-testing.runAll"
-  },
-  {
-    "key": "ctrl+t a",
-    "command": "testing.reRunFailTests"
-  },
-  {
-    "key": "ctrl+; e",
-    "command": "-testing.reRunFailTests"
-  },
-  {
-    "key": "ctrl+t o",
-    "command": "testing.showMostRecentOutput",
-    "when": "testing.hasAnyResults"
-  },
-  {
-    "key": "ctrl+; ctrl+o",
-    "command": "-testing.showMostRecentOutput",
-    "when": "testing.hasAnyResults"
-  },
-  {
-    "key": "ctrl+t c",
-    "command": "dotnet.test.runTestsInContext"
-  },
-  {
-    "key": "ctrl+t f",
-    "command": "testing.runCurrentFile",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+; f",
-    "command": "-testing.runCurrentFile",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "ctrl+shift+;",
     "command": "-breadcrumbs.focus",
     "when": "breadcrumbsPossible && breadcrumbsVisible"
@@ -3168,11 +3079,6 @@
     "key": "ctrl+w",
     "command": "filesExplorer.cut",
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-  },
-  {
-    "key": "ctrl+shift+d",
-    "command": "markdown.extension.onCopyLineDown",
-    "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
   },
   {
     "key": "ctrl+l ctrl+`",
@@ -3320,11 +3226,6 @@
     "when": "searchViewletFocus"
   },
   {
-    "key": "shift+alt+down",
-    "command": "-editor.action.copyLinesDownAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
     "key": "shift+alt+up",
     "command": "-editor.action.copyLinesUpAction",
     "when": "editorTextFocus && !editorReadonly"
@@ -3400,11 +3301,6 @@
   {
     "key": "ctrl+shift+i",
     "command": "editor.action.inlineSuggest.trigger"
-  },
-  {
-    "key": "ctrl+x u",
-    "command": "editor.action.autoFix",
-    "when": "textInputFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)quickfix\\b/"
   },
   {
     "key": "shift+alt+.",
@@ -3719,11 +3615,6 @@
     "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
   },
   {
-    "key": "ctrl+g t",
-    "command": "terminal.focus",
-    "when": "!terminalFocus"
-  },
-  {
     "key": "ctrl+shift+q",
     "command": "workbench.action.terminal.killEditor",
     "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated && resourceScheme == 'vscode-terminal' || terminalEditorFocus && terminalFocus && terminalProcessSupported && resourceScheme == 'vscode-terminal'"
@@ -3739,10 +3630,6 @@
   {
     "key": "ctrl+p",
     "command": "-workbench.action.quickOpen"
-  },
-  {
-    "key": "ctrl+j f",
-    "command": "workbench.action.quickOpen"
   },
   {
     "key": "ctrl+x ctrl+f",
@@ -3832,5 +3719,96 @@
   {
     "key": "ctrl+m left",
     "command": "workbench.action.moveEditorToLeftGroup"
+  },
+  {
+    "key": "ctrl+g shift+t",
+    "command": "testing.showMostRecentOutput",
+    "when": "testing.hasAnyResults"
+  },
+  {
+    "key": "ctrl+; ctrl+o",
+    "command": "-testing.showMostRecentOutput",
+    "when": "testing.hasAnyResults"
+  },
+  {
+    "key": "ctrl+; ctrl+r",
+    "command": "-testing.refreshTests",
+    "when": "testing.canRefresh"
+  },
+  {
+    "key": "ctrl+; e",
+    "command": "-testing.reRunFailTests"
+  },
+  {
+    "key": "ctrl+; ctrl+shift+l",
+    "command": "-testing.coverageLastRun"
+  },
+  {
+    "key": "ctrl+; a",
+    "command": "-testing.runAll"
+  },
+  {
+    "key": "ctrl+; ctrl+shift+a",
+    "command": "-testing.coverageAll"
+  },
+  {
+    "key": "ctrl+; ctrl+shift+c",
+    "command": "-testing.coverageAtCursor",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+; f",
+    "command": "-testing.runCurrentFile",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+; ctrl+shift+f",
+    "command": "-testing.coverageCurrentFile",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+; ctrl+shift+i",
+    "command": "-testing.toggleInlineCoverage",
+    "when": "testing.isTestCoverageOpen"
+  },
+  {
+    "key": "ctrl+down",
+    "command": "-workbench.action.terminal.focus",
+    "when": "accessibilityModeEnabled && accessibleViewOnLastLine && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewOnLastLine && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+  },
+  {
+    "key": "ctrl+x u",
+    "command": "editor.action.autoFix"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "-editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+up",
+    "command": "-markdown.extension.onCopyLineUp",
+    "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "-markdown.extension.onCopyLineDown",
+    "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+  },
+  {
+    "key": "alt+1",
+    "command": "workbench.action.holdLockedScrolling"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "editor.action.transpose"
+  },
+  {
+    "key": "ctrl+j f",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+h f",
+    "command": "workbench.action.quickOpen"
   }
 ]
