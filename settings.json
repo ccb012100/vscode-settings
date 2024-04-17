@@ -369,6 +369,7 @@
     "**/*.svg": true,
     "**/pnpm-lock.yaml": true
   },
+  "search.searchEditor.singleClickBehaviour": "peekDefinition",
   "search.showLineNumbers": true,
   "search.useGlobalIgnoreFiles": true,
   "search.useParentIgnoreFiles": true,
