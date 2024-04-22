@@ -664,11 +664,6 @@
     "when": "emptyWorkspaceSupport && workbenchState != 'empty'"
   },
   {
-    "key": "ctrl+k ctrl+a",
-    "command": "-keybindings.editor.addKeybinding",
-    "when": "inKeybindings && keybindingFocus"
-  },
-  {
     "key": "ctrl+k s",
     "command": "-saveAll"
   },
@@ -1861,11 +1856,6 @@
     "when": "!editorFocus"
   },
   {
-    "key": "ctrl+enter",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "findInputFocussed"
-  },
-  {
     "key": "ctrl+l ctrl+s",
     "command": "editor.action.sortLinesAscending",
     "when": "editorHasSelection && editorTextFocus"
@@ -2277,10 +2267,6 @@
     "when": "sideBySideEditorActive"
   },
   {
-    "key": "alt+g c",
-    "command": "git.commitStaged"
-  },
-  {
     "key": "ctrl+k ctrl+\\",
     "command": "-workbench.action.splitEditorDown"
   },
@@ -2390,11 +2376,6 @@
   {
     "key": "ctrl+; ctrl+m",
     "command": "-testing.openOutputPeek"
-  },
-  {
-    "key": "ctrl+enter",
-    "command": "keybindings.editor.addKeybinding",
-    "when": "inKeybindings && keybindingFocus"
   },
   {
     "key": "ctrl+l shift+m",
@@ -3865,7 +3846,7 @@
     "when": "customTreeView && listFocus && !inputFocus && !treestickyScrollFocused"
   },
   {
-    "key": "cmd+j enter",
+    "key": "ctrl+j enter",
     "command": "editor.action.openLink",
     "when": "editorTextFocus && editorLangId == 'markdown'"
   },
@@ -3935,5 +3916,13 @@
   {
     "key": "shift+cmd+t",
     "command": "-workbench.action.reopenClosedEditor"
+  },
+  {
+    "key": "ctrl+shift+f",
+    "command": "workbench.action.findInFiles"
+  },
+  {
+    "key": "shift+cmd+f",
+    "command": "-workbench.action.findInFiles"
   }
 ]
