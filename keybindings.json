@@ -3846,7 +3846,7 @@
     "when": "customTreeView && listFocus && !inputFocus && !treestickyScrollFocused"
   },
   {
-    "key": "ctrl+j enter",
+    "key": "cmd+enter",
     "command": "editor.action.openLink",
     "when": "editorTextFocus && editorLangId == 'markdown'"
   },
@@ -3924,5 +3924,10 @@
   {
     "key": "shift+cmd+f",
     "command": "-workbench.action.findInFiles"
+  },
+  {
+    "key": "cmd+enter",
+    "command": "git.commitStaged",
+    "when": "!editorFocus && view.workbench.scm.visible && focusedView == 'workbench.scm'"
   }
 ]
