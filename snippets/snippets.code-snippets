@@ -27,9 +27,42 @@
     "body": "$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
     "description": "Paste the current date in YYYY-MM-DD format"
   },
-  "UUID": {
-    "prefix": ["uuid", "guid"],
+  "generate new UUID": {
+    "prefix": [
+      "uuid",
+      "guid"
+    ],
     "body": "${UUID}",
     "description": "Generate a new UUID"
+  },
+  "add prettier directive": {
+    "prefix": "prettier",
+    "body": [
+      "/**",
+      "* @prettier",
+      "*/"
+    ],
+    "description": "Add a @prettier directive"
+  },
+  "Print to console": {
+    "scope": "javascript,typescript,typescriptreact",
+    "prefix": [
+      "log",
+      "con-log"
+    ],
+    "body": "console.log('$1');",
+    "description": "Log output to console"
+  },
+  "Log object to console": {
+    "scope": "javascript,typescript,typescriptreact",
+    "prefix": "log-obj",
+    "body": "console.log({$1});",
+    "description": "log a variable to the console as an object"
+  },
+  "Log object to console as JSON": {
+    "scope": "javascript,typescript,typescriptreact",
+    "prefix": "log-json",
+    "body": "console.log('$1: ' + JSON.stringify($1, null, 2));",
+    "description": "log a variable to the console as a pretty-printed JSON string"
   },
 }
