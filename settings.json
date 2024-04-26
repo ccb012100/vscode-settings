@@ -36,7 +36,7 @@
     "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
     "editor.formatOnSave": false
   },
   "[json][jsonc]": {
@@ -96,10 +96,13 @@
     "editor.codeActionsOnSave": {
       "source.fixAll": "explicit"
     },
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
     "editor.rulers": [
       150
     ]
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
   "[vue]": {
     "editor.defaultFormatter": "octref.vetur"
@@ -248,7 +251,6 @@
   "git.fetchOnPull": true,
   "git.useForcePushWithLease": true,
   "git.useForcePushIfIncludes": true,
-  "git.defaultCloneDirectory": "~/src/",
   "git.mergeEditor": true,
   "git.promptToSaveFilesBeforeCommit": "always",
   "git.pruneOnFetch": true,
@@ -389,12 +391,13 @@
     "1091"
   ],
   "sqlite.recordsPerPage": 100,
-  "terminal.external.osxExec": "zsh",
+  "terminal.external.osxExec": "kitty",
   "terminal.external.windowsExec": "C:\\Program Files\\Git\\bin\\bash.exe",
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.defaultProfile.osx": "fish",
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.env.windows": {
     "CHERE_INVOKING": "1",
@@ -403,6 +406,7 @@
   },
   "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font Mono,Hack Nerd Font,Hack",
   "terminal.integrated.hideOnStartup": "whenEmpty",
+  "terminal.integrated.macOptionIsMeta": true,
   "terminal.integrated.profiles.windows": {
     "Ubuntu (WSL)": {
       "path": "C:\\\\Windows\\\\System32\\\\wsl.exe",
@@ -453,8 +457,9 @@
   "window.commandCenter": true,
   "window.density.editorTabHeight": "compact",
   "window.enableMenuBarMnemonics": false,
+  "window.nativeTabs": true,
   "window.newWindowDimensions": "offset",
-  "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}[${profileName}]",
+  "window.title": "${dirty}${separator}${rootName}${separator}${activeEditorShort}",
   "window.titleBarStyle": "custom",
   "window.titleSeparator": " ‧ ",
   "workbench.colorCustomizations": {
