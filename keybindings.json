@@ -3086,10 +3086,6 @@
         "command": "-gotoNextPreviousMember.nextMember"
     },
     {
-        "key": "ctrl+space",
-        "command": "workbench.action.showCommands"
-    },
-    {
         "key": "ctrl+w",
         "command": "editor.action.clipboardCutAction"
     },
@@ -3238,7 +3234,8 @@
     },
     {
         "key": "shift+space",
-        "command": "workbench.action.showCommands"
+        "command": "workbench.action.showCommands",
+        "when": "!suggestWidgetVisible || !textInputFocus"
     },
     {
         "key": "ctrl+shift+v",
@@ -3797,16 +3794,6 @@
         "when": "customTreeView && listFocus && !inputFocus && !treestickyScrollFocused"
     },
     {
-        "key": "cmd+enter",
-        "command": "editor.action.openLink",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
-        "key": "cmd+enter",
-        "command": "-editor.action.openLink",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
-    },
-    {
         "key": "cmd+left",
         "command": "workbench.action.navigateBack",
         "when": "canNavigateBack"
@@ -3877,9 +3864,9 @@
         "command": "-workbench.action.findInFiles"
     },
     {
-        "key": "cmd+enter",
+        "key": "ctrl+enter",
         "command": "git.commitStaged",
-        "when": "!editorFocus && view.workbench.scm.visible && focusedView == 'workbench.scm'"
+        "when": "view.workbench.scm.visible && !editorFocus && focusedView == 'workbench.scm'"
     },
     {
         "key": "ctrl+j shift+u",
@@ -3958,5 +3945,32 @@
         "key": "ctrl+j ctrl+j",
         "command": "search.action.openInEditor",
         "when": "hasSearchResult && searchViewletFocus"
+    },
+    {
+        "key": "ctrl+shift+h",
+        "command": "deleteLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "editor.action.openLink",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+space",
+        "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "ctrl+j .",
+        "command": "workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "ctrl+j ,",
+        "command": "workbench.action.moveEditorToPreviousGroup"
+    },
+    {
+        "key": "ctrl+h ctrl+h",
+        "command": "deleteLeft",
+        "when": "textInputFocus"
     }
 ]
