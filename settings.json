@@ -64,6 +64,7 @@
     "rewrap.autoWrap.enabled": false
   },
   "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnType": true
   },
   "[rust]": {
@@ -131,6 +132,57 @@
   },
   "breadcrumbs.enabled": true,
   "cmake.showOptionsMovedNotification": false,
+  "colorful-comments-refreshed.highlightPlainText": true,
+  "colorful-comments-refreshed.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "?",
+      "color": "#0076FF",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "^",
+      "color": "#EAF622",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "*",
+      "color": "#28FF00",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "&",
+      "color": "#FF06A0",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "~",
+      "color": "#BE00FF",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "backgroundColor": "transparent"
+    }
+  ],
   "debug.console.acceptSuggestionOnEnter": "on",
   "debug.console.fontFamily": "IBM Plex Mono",
   "debug.console.fontSize": 12,
@@ -286,6 +338,7 @@
   "githubPullRequests.notifications": "pullRequests",
   "githubPullRequests.pullBranch": "never",
   "go.toolsManagement.autoUpdate": true,
+  "insert-unicode.recentlyUsedLimit": 25,
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
   "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
   "javascript.inlayHints.parameterNames.enabled": "all",
@@ -328,7 +381,6 @@
   "merge-conflict.autoNavigateNextConflict.enabled": true,
   "merge-conflict.diffViewPosition": "Below",
   "multiDiffEditor.experimental.enabled": true,
-  "omnisharp.enableRoslynAnalyzers": true,
   "openInGitHub.remote.name": "main",
   "openInGitHub.useLocalLine": true,
   "path-intellisense.autoSlashAfterDirectory": true,
@@ -361,10 +413,8 @@
   "scm.alwaysShowActions": true,
   "scm.alwaysShowRepositories": true,
   "scm.defaultViewMode": "tree",
-  "scm.experimental.showSyncView": true,
   "scm.inputFontFamily": "editor",
   "scm.inputFontSize": 12,
-  "scm.inputMaxLines": 25,
   "search.exclude": {
     "**/*.svg": true,
     "**/pnpm-lock.yaml": true
@@ -373,9 +423,6 @@
   "search.showLineNumbers": true,
   "search.useGlobalIgnoreFiles": true,
   "search.useParentIgnoreFiles": true,
-  "security.allowedUNCHosts": [
-    "wsl.localhost"
-  ],
   "security.workspace.trust.untrustedFiles": "open",
   "settingsSync.ignoredSettings": [
     "editor.fontSize",
@@ -388,7 +435,6 @@
     "1090",
     "1091"
   ],
-  "sqlite.recordsPerPage": 100,
   "terminal.external.osxExec": "kitty",
   "terminal.external.windowsExec": "C:\\Program Files\\Git\\bin\\bash.exe",
   "terminal.integrated.copyOnSelection": true,
@@ -405,6 +451,7 @@
   "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font Mono,Hack Nerd Font,Hack",
   "terminal.integrated.hideOnStartup": "whenEmpty",
   "terminal.integrated.macOptionIsMeta": true,
+  "terminal.integrated.middleClickBehavior": "paste",
   "terminal.integrated.profiles.windows": {
     "Ubuntu (WSL)": {
       "path": "C:\\\\Windows\\\\System32\\\\wsl.exe",
@@ -451,10 +498,8 @@
   "typescript.preferences.useAliasesForRenames": false,
   "typescript.suggest.completeFunctionCalls": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "window.commandCenter": true,
   "window.density.editorTabHeight": "compact",
-  "window.enableMenuBarMnemonics": false,
   "window.nativeTabs": true,
   "window.newWindowDimensions": "offset",
   "window.title": "${dirty}${separator}${rootName}${separator}${activeEditorShort}",
