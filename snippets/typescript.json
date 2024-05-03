@@ -43,7 +43,7 @@
         ],
         "description": "add a new Jest unit test",
         "body": [
-            "it('should ${1:do x} when ${2:y}}', () => {",
+            "it('should ${1:do x} when ${2:y}', () => {",
             "    // arrange",
             "",
             "    // act",
@@ -60,7 +60,7 @@
         ],
         "description": "add a new async Jest unit test",
         "body": [
-            "it('should ${1:do x} when ${2:y}}', async () => {",
+            "it('should ${1:do x} when ${2:y}', async () => {",
             "    // arrange",
             "    // act",
             "    // assert",
@@ -76,7 +76,7 @@
         "description": "add a new parameterized Jest unit test",
         "body": [
             "[].forEach((${1:element}) => {",
-            "   it('should ${2:do x} when ${3:y}}', () => {",
+            "   it('should ${2:do x} when ${3:y}', () => {",
             "       // arrange",
             "",
             "       // act",
@@ -95,7 +95,7 @@
         "description": "add a new parameterized async Jest unit test",
         "body": [
             "[].forEach((${1:element}) => {",
-            "   it('should ${2:do x} when ${3:y}}', async () => {",
+            "   it('should ${2:do x} when ${3:y}', async () => {",
             "       // arrange",
             "",
             "       // act",
