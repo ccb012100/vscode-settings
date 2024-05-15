@@ -20,12 +20,12 @@ connor4312.codesong
 daltonmenezes.aura-theme
 darkriszty.markdown-table-prettify
 davidanson.vscode-markdownlint
-davidlgoldberg.jumpy2
 daylerees.rainglow
 dbaeumer.vscode-eslint
 dcasella.monokai-plusplus
 dennisvash.summer-time
 dimitarnonov.jellybeans-theme
+divyanshu013.back-to-the-code-vscode-theme
 donjayamanne.githistory
 dracula-theme.theme-dracula
 editorconfig.editorconfig
@@ -87,7 +87,6 @@ ms-vscode.theme-tomorrowkit
 mtxr.sqltools
 mtxr.sqltools-driver-sqlite
 mvllow.rose-pine
-nick-rudenko.back-n-forth
 pawelgrzybek.gatito-theme
 pkief.material-icon-theme
 prateekmahendrakar.prettyxml
