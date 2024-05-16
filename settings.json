@@ -299,8 +299,9 @@
   "git.confirmForcePush": true,
   "git.confirmSync": false,
   "git.fetchOnPull": true,
-  "git.useForcePushWithLease": true,
-  "git.useForcePushIfIncludes": true,
+  "git.inputValidation": true,
+  "git.inputValidationLength": 72,
+  "git.inputValidationSubjectLength": 72,
   "git.mergeEditor": true,
   "git.promptToSaveFilesBeforeCommit": "always",
   "git.pruneOnFetch": true,
@@ -308,6 +309,8 @@
   "git.smartCommitChanges": "tracked",
   "git.suggestSmartCommit": false,
   "git.supportCancellation": true,
+  "git.useForcePushIfIncludes": true,
+  "git.useForcePushWithLease": true,
   "github.gitProtocol": "ssh",
   "githubIssues.createIssueTriggers": [
     "ISSUE"
@@ -315,7 +318,9 @@
   "githubIssues.ignoreUserCompletionTrigger": [
     "javascript",
     "python",
-    "typescript"
+    "typescript",
+    "csharp",
+    "typescriptreact"
   ],
   "githubIssues.queries": [
     {
@@ -350,8 +355,8 @@
   "js/ts.implicitProjectConfig.experimentalDecorators": true,
   "json.schemas": [],
   "jump.display.backgroundColor": "#0000FF",
-  "jump.display.color": "#FFFFFF",
-  "jump.primaryCharset": "jklfdsavcxzmweruionbghtypqz7892341056",
+  "jump.display.color": "#ffff00",
+  "jump.primaryCharset": "asdfjkl;weruiogh'vbnm,./vcxztyq",
   "lldb.suppressUpdateNotifications": true,
   "lldb.suppressUpdateNotifications": true,
   "markdown.editor.pasteUrlAsFormattedLink.enabled": "never",
