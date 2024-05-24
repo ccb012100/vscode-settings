@@ -7,4 +7,3 @@ sync_from_home() {
     rsync --recursive --times --progress --protect-args "$HOME/Library/Application Support/Code/User/$1" "$CODE_DIR/"
 }
 
-sync_from_home "keybindings.json"
