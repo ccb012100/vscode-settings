@@ -185,7 +185,6 @@
   ],
   "debug.console.acceptSuggestionOnEnter": "on",
   "debug.console.fontFamily": "IBM Plex Mono",
-  "debug.console.fontSize": 12,
   "debug.onTaskErrors": "showErrors",
   "debug.openExplorerOnEnd": true,
   "debug.showBreakpointsInOverviewRuler": true,
@@ -271,6 +270,19 @@
   "extensions.experimental.affinity": {
     "wenfangdu.jump": 1
   },
+  "files.associations": {
+    ".gitignore_global": "txt",
+    "*.adoc": "asciidoc",
+    "*.conf": "editorconfig",
+    "*.DotSettings": "xml",
+    "*.vssettings": "xml",
+    "appsettings*.json": "jsonc",
+    "attributes": "properties",
+    "LICENSE": "plaintext",
+    "*.snippet": "xml",
+    "*.sqlite": "sql",
+    "*.tmpl": "go-template"
+  },
   "files.exclude": {
     "**/.DS_Store": true,
     "**/.git": true,
@@ -315,6 +327,24 @@
   "githubIssues.createIssueTriggers": [
     "ISSUE"
   ],
+  "githubIssues.ignoreCompletionTrigger": [
+    "coffeescript",
+    "diff",
+    "dockerfile",
+    "dockercompose",
+    "ignore",
+    "ini",
+    "julia",
+    "makefile",
+    "perl",
+    "powershell",
+    "python",
+    "r",
+    "ruby",
+    "shellscript",
+    "yaml",
+    "plaintext"
+  ],
   "githubIssues.ignoreUserCompletionTrigger": [
     "javascript",
     "python",
@@ -356,7 +386,7 @@
   "json.schemas": [],
   "jump.display.backgroundColor": "#0000FF",
   "jump.display.color": "#ffff00",
-  "jump.primaryCharset": "asdfjkl;weruiogh'vbnm,./vcxztyq",
+  "jump.primaryCharset": "asdfjklweruioxcvmzghqpty",
   "lldb.suppressUpdateNotifications": true,
   "lldb.suppressUpdateNotifications": true,
   "markdown.editor.pasteUrlAsFormattedLink.enabled": "never",
