@@ -90,6 +90,9 @@
     "editor.defaultFormatter": "foxundermoon.shell-format",
     "files.eol": "\n"
   },
+  "[sql]": {
+    "editor.defaultFormatter": "ms-mssql.mssql"
+  },
   "[svelte]": {
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
@@ -130,6 +133,7 @@
   "accessibility.signals.terminalBell": {
     "sound": "on"
   },
+  "bookmarks.useWorkaroundForFormatters": true,
   "breadcrumbs.enabled": true,
   "cmake.showOptionsMovedNotification": false,
   "colorful-comments-refreshed.highlightPlainText": true,
