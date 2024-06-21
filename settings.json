@@ -327,6 +327,8 @@
   "git.supportCancellation": true,
   "git.useForcePushIfIncludes": true,
   "git.useForcePushWithLease": true,
+  "gitblame.commitUrl": "https://github.com${gitorigin.path}${tool.commitpath}${hash}",
+  "gitblame.ignoreWhitespace": true,
   "github.gitProtocol": "ssh",
   "githubIssues.createIssueTriggers": [
     "ISSUE"
