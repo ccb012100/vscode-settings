@@ -37,7 +37,7 @@
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true
   },
   "[json][jsonc]": {
     "editor.fontLigatures": false,
