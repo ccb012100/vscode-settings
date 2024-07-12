@@ -454,6 +454,7 @@
   "scm.alwaysShowActions": true,
   "scm.alwaysShowRepositories": true,
   "scm.defaultViewMode": "tree",
+  "scm.experimental.showHistoryGraph": true,
   "scm.inputFontFamily": "editor",
   "scm.inputFontSize": 12,
   "search.exclude": {
@@ -554,7 +555,6 @@
     "tab.activeModifiedBorder": "#FFC300",
     "terminal.background": "#000000"
   },
-  "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.pinnedTabsOnSeparateRow": true,
   "workbench.editor.preventPinnedEditorClose": "never",
