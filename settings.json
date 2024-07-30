@@ -48,18 +48,20 @@
     "editor.rulers": [
       150
     ],
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    "editor.guides.indentation": false,
     "editor.quickSuggestions": {
       "comments": "off",
       "other": "on",
       "strings": "off"
     },
+    "editor.tabSize": 2,
     "files.trimTrailingWhitespace": false,
     "rewrap.autoWrap.enabled": false,
-    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
-    "editor.tabSize": 2
   },
   "[plaintext]": {
     "editor.fontLigatures": false,
+    "editor.guides.indentation": false,
     "editor.insertSpaces": false,
     "rewrap.autoWrap.enabled": false
   },
