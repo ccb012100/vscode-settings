@@ -425,6 +425,8 @@
   "merge-conflict.autoNavigateNextConflict.enabled": true,
   "merge-conflict.diffViewPosition": "Below",
   "multiDiffEditor.experimental.enabled": true,
+  "numberedBookmarks.keepBookmarksOnLineDelete": true,
+  "numberedBookmarks.showBookmarkNotDefinedWarning": true,
   "openInGitHub.remote.name": "main",
   "openInGitHub.useLocalLine": true,
   "path-intellisense.autoSlashAfterDirectory": true,
