@@ -383,6 +383,8 @@
   "githubPullRequests.pullBranch": "never",
   "go.toolsManagement.autoUpdate": true,
   "insert-unicode.recentlyUsedLimit": 25,
+  "implicitParentheses.enable": true,
+  "implicitParentheses.parenStyle": "big",
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
   "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
   "javascript.inlayHints.parameterNames.enabled": "all",
@@ -556,6 +558,7 @@
     "[Mcedit]": {
       "editor.lineHighlightBackground": "#000000"
     },
+    "implicitParentheses.parens": "#fff",
     "tab.activeBackground": "#1857a4",
     "tab.activeModifiedBorder": "#FFC300",
     "terminal.background": "#000000"
