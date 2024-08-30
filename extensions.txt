@@ -1,3 +1,4 @@
+alefragnani.numbered-bookmarks
 allemandinstable.colorful-comments-refreshed
 ankitcode.firefly
 bceskavich.theme-dracula-at-night
@@ -42,6 +43,8 @@ foxundermoon.shell-format
 gerane.theme-eggplantparm
 gerane.theme-gooeypastel
 gerane.theme-mcedit
+github.copilot
+github.copilot-chat
 github.github-vscode-theme
 github.vscode-github-actions
 github.vscode-pull-request-github
@@ -56,6 +59,7 @@ jaredkent.laserwave
 jdinhlife.gruvbox
 jgrundback.vscode-mc-theme
 jinliming2.vscode-go-template
+jordaneldredge.implicit-parentheses
 jprestidge.theme-material-theme
 kacperbiedka.one-candy-dark
 kalk.borland
@@ -72,12 +76,22 @@ mindaro-dev.file-downloader
 mishkinf.goto-next-previous-member
 ms-dotnettools.csdevkit
 ms-dotnettools.csharp
+ms-dotnettools.dotnet-interactive-vscode
 ms-dotnettools.vscode-dotnet-runtime
 ms-dotnettools.vscodeintellicode-csharp
+ms-mssql.data-workspace-vscode
+ms-mssql.mssql
+ms-mssql.sql-bindings-vscode
+ms-mssql.sql-database-projects-vscode
 ms-python.black-formatter
 ms-python.debugpy
 ms-python.python
 ms-python.vscode-pylance
+ms-toolsai.jupyter
+ms-toolsai.jupyter-keymap
+ms-toolsai.jupyter-renderers
+ms-toolsai.vscode-jupyter-cell-tags
+ms-toolsai.vscode-jupyter-slideshow
 ms-vscode-remote.remote-containers
 ms-vscode-remote.remote-wsl
 ms-vscode.cmake-tools
@@ -103,6 +117,7 @@ sidneys1.gitconfig
 stkb.rewrap
 sumitnalavade.tinkswave-22
 sumitsaha.learn-with-sumit-theme
+sumneko.lua
 svsool.markdown-memo
 tamasfe.even-better-toml
 teabyii.ayu
@@ -113,10 +128,12 @@ tomphilbin.gruvbox-themes
 twxs.cmake
 usernamehw.errorlens
 voldemortensen.rainbow-tags
+waderyan.gitblame
 wenfangdu.faster-new
 wenfangdu.jump
 wesbos.theme-cobalt2
 xadillax.viml
+yoshi389111.visible-whitespace
 yzhang.markdown-all-in-one
 zadvorny.theme-happy-hipster
 zhuangtongfa.material-theme

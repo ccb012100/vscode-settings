@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2312
 
-# run the command `ln pre-commit .git/hooks/` from repo directory
+# run the command `ln -v pre-commit .git/hooks/` from repo directory
 
 echo "=> vscode-settings repository: pre-commit hook"
 
