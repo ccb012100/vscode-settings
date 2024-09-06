@@ -141,44 +141,32 @@
   "colorful-comments-refreshed.highlightPlainText": true,
   "colorful-comments-refreshed.tags": [
     {
-      "tag": "!",
+      "tag": "fixme",
       "color": "#FF2D00",
       "strikethrough": false,
       "backgroundColor": "transparent"
     },
     {
-      "tag": "?",
+      "tag": "review",
       "color": "#0076FF",
       "strikethrough": false,
       "backgroundColor": "transparent"
     },
     {
-      "tag": "//",
-      "color": "#474747",
-      "strikethrough": true,
-      "backgroundColor": "transparent"
-    },
-    {
-      "tag": "^",
+      "tag": "xxx",
       "color": "#EAF622",
       "strikethrough": false,
       "backgroundColor": "transparent"
     },
     {
-      "tag": "*",
+      "tag": "info",
       "color": "#28FF00",
       "strikethrough": false,
       "backgroundColor": "transparent"
     },
     {
-      "tag": "&",
+      "tag": "hack",
       "color": "#FF06A0",
-      "strikethrough": false,
-      "backgroundColor": "transparent"
-    },
-    {
-      "tag": "~",
-      "color": "#BE00FF",
       "strikethrough": false,
       "backgroundColor": "transparent"
     },
@@ -187,6 +175,21 @@
       "color": "#FF8C00",
       "strikethrough": false,
       "backgroundColor": "transparent"
+    },
+    {
+      "tag": "note",
+      "color": "#BE00FF",
+      "strikethrough": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "strikethrough": true,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
     }
   ],
   "debug.console.acceptSuggestionOnEnter": "on",
@@ -260,6 +263,7 @@
       "comments": "#32CD32"
     }
   },
+  "editor.unicodeHighlight.invisibleCharacters": false,
   "editor.wrappingIndent": "indent",
   "emmet.showAbbreviationSuggestions": false,
   "emmet.showExpandedAbbreviation": "never",
@@ -547,7 +551,7 @@
   "typescript.preferences.useAliasesForRenames": false,
   "typescript.suggest.completeFunctionCalls": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "window.commandCenter": true,
+  "visibleWhitespace.newLine.enable": false,"window.commandCenter": true,
   "window.density.editorTabHeight": "compact",
   "window.nativeTabs": true,
   "window.newWindowDimensions": "offset",

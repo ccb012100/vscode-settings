@@ -66,7 +66,6 @@ kalk.borland
 krueger71.crt-themes
 kuscamara.electron
 louisyoung.pastel-pro
-mark-wiemer.vscode-autohotkey-plus-plus
 mattn.lisp
 mechatroner.rainbow-csv
 mikestead.dotenv
