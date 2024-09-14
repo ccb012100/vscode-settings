@@ -59,6 +59,7 @@ jaredkent.laserwave
 jdinhlife.gruvbox
 jgrundback.vscode-mc-theme
 jinliming2.vscode-go-template
+joaomoreno.github-sharp-theme
 jordaneldredge.implicit-parentheses
 jprestidge.theme-material-theme
 kacperbiedka.one-candy-dark
@@ -78,10 +79,6 @@ ms-dotnettools.csharp
 ms-dotnettools.dotnet-interactive-vscode
 ms-dotnettools.vscode-dotnet-runtime
 ms-dotnettools.vscodeintellicode-csharp
-ms-mssql.data-workspace-vscode
-ms-mssql.mssql
-ms-mssql.sql-bindings-vscode
-ms-mssql.sql-database-projects-vscode
 ms-python.black-formatter
 ms-python.debugpy
 ms-python.python
@@ -97,14 +94,13 @@ ms-vscode.cmake-tools
 ms-vscode.remote-repositories
 ms-vscode.theme-1337
 ms-vscode.theme-tomorrowkit
-mtxr.sqltools
-mtxr.sqltools-driver-sqlite
 mvllow.rose-pine
 pawelgrzybek.gatito-theme
 pkief.material-icon-theme
 prateekmahendrakar.prettyxml
 qezhu.gitlink
 redhat.vscode-yaml
+renesaarsoo.sql-formatter-vsc
 robbowen.synthwave-vscode
 rust-lang.rust-analyzer
 rvest.vs-code-prettier-eslint

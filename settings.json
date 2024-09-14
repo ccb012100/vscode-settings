@@ -92,9 +92,6 @@
     "editor.defaultFormatter": "foxundermoon.shell-format",
     "files.eol": "\n"
   },
-  "[sql]": {
-    "editor.defaultFormatter": "ms-mssql.mssql"
-  },
   "[svelte]": {
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
@@ -203,6 +200,7 @@
   "diffEditor.experimental.useTrueInlineView": true,
   "diffEditor.hideUnchangedRegions.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
+  "dotnet.automaticallyCreateSolutionInWorkspace": false,
   "editor.acceptSuggestionOnEnter": "smart",
   "editor.accessibilitySupport": "off",
   "editor.autoClosingBrackets": "beforeWhitespace",
@@ -403,7 +401,6 @@
   "jump.display.color": "#ffffff",
   "jump.primaryCharset": "asdfjklweruioxcvmzghqpty",
   "lldb.suppressUpdateNotifications": true,
-  "lldb.suppressUpdateNotifications": true,
   "markdown.editor.pasteUrlAsFormattedLink.enabled": "never",
   "markdown.extension.list.indentationSize": "inherit",
   "markdown.extension.theming.decoration.renderHardLineBreak": true,
@@ -488,6 +485,9 @@
     "1090",
     "1091"
   ],
+  "SQL-Formatter-VSCode.dialect": "sqlite",
+  "SQL-Formatter-VSCode.functionCase": "upper",
+  "SQL-Formatter-VSCode.keywordCase": "upper",
   "terminal.external.osxExec": "kitty",
   "terminal.external.windowsExec": "C:\\Program Files\\Git\\bin\\bash.exe",
   "terminal.integrated.copyOnSelection": true,
@@ -551,7 +551,8 @@
   "typescript.preferences.useAliasesForRenames": false,
   "typescript.suggest.completeFunctionCalls": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "visibleWhitespace.newLine.enable": false,"window.commandCenter": true,
+  "visibleWhitespace.newLine.enable": false,
+  "window.commandCenter": true,
   "window.density.editorTabHeight": "compact",
   "window.nativeTabs": true,
   "window.newWindowDimensions": "offset",
