@@ -1,5 +1,4 @@
 alefragnani.numbered-bookmarks
-allemandinstable.colorful-comments-refreshed
 ankitcode.firefly
 bceskavich.theme-dracula-at-night
 bierner.github-markdown-preview
@@ -74,6 +73,7 @@ millsp.material-candy
 minamarkham.yonce-theme
 mindaro-dev.file-downloader
 mishkinf.goto-next-previous-member
+monokai.theme-monokai-pro-vscode
 ms-dotnettools.csdevkit
 ms-dotnettools.csharp
 ms-dotnettools.dotnet-interactive-vscode
@@ -127,6 +127,7 @@ waderyan.gitblame
 wenfangdu.faster-new
 wenfangdu.jump
 wesbos.theme-cobalt2
+willasm.comment-highlighter
 xadillax.viml
 yoshi389111.visible-whitespace
 yzhang.markdown-all-in-one

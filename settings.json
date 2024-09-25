@@ -132,63 +132,9 @@
   "accessibility.signals.terminalBell": {
     "sound": "on"
   },
-  "bookmarks.useWorkaroundForFormatters": true,
   "breadcrumbs.enabled": true,
   "cmake.showOptionsMovedNotification": false,
-  "colorful-comments-refreshed.highlightPlainText": true,
-  "colorful-comments-refreshed.tags": [
-    {
-      "tag": "fixme",
-      "color": "#FF2D00",
-      "strikethrough": false,
-      "backgroundColor": "transparent"
-    },
-    {
-      "tag": "review",
-      "color": "#0076FF",
-      "strikethrough": false,
-      "backgroundColor": "transparent"
-    },
-    {
-      "tag": "xxx",
-      "color": "#EAF622",
-      "strikethrough": false,
-      "backgroundColor": "transparent"
-    },
-    {
-      "tag": "info",
-      "color": "#28FF00",
-      "strikethrough": false,
-      "backgroundColor": "transparent"
-    },
-    {
-      "tag": "hack",
-      "color": "#FF06A0",
-      "strikethrough": false,
-      "backgroundColor": "transparent"
-    },
-    {
-      "tag": "todo",
-      "color": "#FF8C00",
-      "strikethrough": false,
-      "backgroundColor": "transparent"
-    },
-    {
-      "tag": "note",
-      "color": "#BE00FF",
-      "strikethrough": false,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    },
-    {
-      "tag": "//",
-      "strikethrough": true,
-      "backgroundColor": "transparent",
-      "bold": false,
-      "italic": false
-    }
-  ],
+  "csharp.suppressHiddenDiagnostics": false,
   "debug.console.acceptSuggestionOnEnter": "on",
   "debug.console.fontFamily": "IBM Plex Mono",
   "debug.onTaskErrors": "showErrors",
@@ -201,6 +147,7 @@
   "diffEditor.hideUnchangedRegions.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "dotnet.automaticallyCreateSolutionInWorkspace": false,
+  "dotnet.automaticallySyncWithActiveItem": true,
   "editor.acceptSuggestionOnEnter": "smart",
   "editor.accessibilitySupport": "off",
   "editor.autoClosingBrackets": "beforeWhitespace",
@@ -211,8 +158,8 @@
   "editor.codeLens": false,
   "editor.cursorSurroundingLines": 5,
   "editor.find.autoFindInSelection": "multiline",
-  "editor.fontFamily": "JetBrains Mono, Cascadia Code, IBM Plex Mono, Hack, Consolas",
-  "editor.fontLigatures": true,
+  "editor.fontFamily": "Fantasque Sans Mono, JetBrains Mono, Cascadia Code, IBM Plex Mono, Hack, Consolas",
+  "editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'liga'",
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
   "editor.guides.bracketPairs": true,
@@ -273,6 +220,21 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+    "Cargo.toml": "Cargo.lock",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
+  },
   "explorer.incrementalNaming": "smart",
   "explorer.openEditors.sortOrder": "alphabetical",
   "extensions.autoUpdate": "onlyEnabledExtensions",
@@ -385,7 +347,7 @@
   "githubPullRequests.pullBranch": "never",
   "go.toolsManagement.autoUpdate": true,
   "insert-unicode.recentlyUsedLimit": 25,
-  "implicitParentheses.enable": true,
+  "implicitParentheses.enable": false,
   "implicitParentheses.parenStyle": "big",
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
   "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
@@ -394,6 +356,7 @@
   "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
   "javascript.inlayHints.variableTypes.enabled": true,
   "javascript.preferences.quoteStyle": "single",
+  "javascript.suggest.completeFunctionCalls": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "js/ts.implicitProjectConfig.experimentalDecorators": true,
   "json.schemas": [],
@@ -551,11 +514,14 @@
   "typescript.preferences.useAliasesForRenames": false,
   "typescript.suggest.completeFunctionCalls": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "visibleWhitespace.eof.enable": false,
   "visibleWhitespace.newLine.enable": false,
+  "visibleWhitespace.other.borderColor": "#FF0000",
   "window.commandCenter": true,
   "window.density.editorTabHeight": "compact",
   "window.nativeTabs": true,
   "window.newWindowDimensions": "offset",
+  "window.newWindowProfile": "Default",
   "window.title": "${dirty}${separator}${rootName}${separator}${activeEditorShort}",
   "window.titleBarStyle": "custom",
   "window.titleSeparator": " ‧ ",
