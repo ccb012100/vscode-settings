@@ -532,7 +532,7 @@
     "implicitParentheses.parens": "#fff",
     "tab.activeBackground": "#1857a4",
     "tab.activeModifiedBorder": "#FFC300",
-    "terminal.background": "#000000"
+    "terminal.background": "#000000",
   },
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.pinnedTabsOnSeparateRow": true,
