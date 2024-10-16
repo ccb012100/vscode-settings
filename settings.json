@@ -1,6 +1,7 @@
 {
   "[c]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
+    "editor.formatOnSave": true,
+    "files.insertFinalNewline": true
   },
   "[csharp]": {
     "editor.defaultFormatter": "ms-dotnettools.csharp",
@@ -133,6 +134,7 @@
     "sound": "on"
   },
   "breadcrumbs.enabled": true,
+  "clangd.checkUpdates": true,
   "cmake.showOptionsMovedNotification": false,
   "csharp.suppressHiddenDiagnostics": false,
   "debug.console.acceptSuggestionOnEnter": "on",
@@ -246,13 +248,14 @@
     "*.adoc": "asciidoc",
     "*.conf": "editorconfig",
     "*.DotSettings": "xml",
+    "*.h": "c",
+    "*.snippet": "xml",
+    "*.sqlite": "sql",
+    "*.tmpl": "go-template",
     "*.vssettings": "xml",
     "appsettings*.json": "jsonc",
     "attributes": "properties",
     "LICENSE": "plaintext",
-    "*.snippet": "xml",
-    "*.sqlite": "sql",
-    "*.tmpl": "go-template"
   },
   "files.exclude": {
     "**/.DS_Store": true,
@@ -363,7 +366,7 @@
   "jump.display.backgroundColor": "#0000FF",
   "jump.display.color": "#ffffff",
   "jump.primaryCharset": "asdfjklweruioxcvmzghqpty",
-  "lldb.suppressUpdateNotifications": true,
+  "makefile.configureOnOpen": true,
   "markdown.editor.pasteUrlAsFormattedLink.enabled": "never",
   "markdown.extension.list.indentationSize": "inherit",
   "markdown.extension.theming.decoration.renderHardLineBreak": true,
