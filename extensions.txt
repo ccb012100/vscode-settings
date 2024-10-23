@@ -51,6 +51,7 @@ github.vscode-pull-request-github
 golang.go
 huacat.pink-theme
 ibm.output-colorizer
+idleberg.applescript
 idleberg.hopscotch
 ionutvmi.reg
 irongeek.vscode-env
@@ -111,12 +112,13 @@ s3gf4ult.monokai-vibrant
 sainnhe.gruvbox-material
 sdras.fortnite-vscode-theme
 selbh.keyboard-scroll
+shd101wyy.markdown-preview-enhanced
 sidneys1.gitconfig
+sswg.swift-lang
 stkb.rewrap
 sumitnalavade.tinkswave-22
 sumitsaha.learn-with-sumit-theme
 sumneko.lua
-svsool.markdown-memo
 tamasfe.even-better-toml
 teabyii.ayu
 timonwong.shellcheck
@@ -124,6 +126,7 @@ tinaciousdesign.theme-tinaciousdesign
 tinkertrain.theme-panda
 tomphilbin.gruvbox-themes
 usernamehw.errorlens
+vadimcn.vscode-lldb
 voldemortensen.rainbow-tags
 waderyan.gitblame
 wenfangdu.faster-new
