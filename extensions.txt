@@ -9,6 +9,7 @@ bierner.markdown-mermaid
 bierner.markdown-preview-github-styles
 bmalehorn.vscode-fish
 bodil.file-browser
+bpruitt-goddard.mermaid-markdown-syntax-highlighting
 brunnerh.insert-unicode
 canadaduane.vscode-kmonad
 catppuccin.catppuccin-vsc
@@ -20,14 +21,12 @@ connor4312.codesong
 daltonmenezes.aura-theme
 darkriszty.markdown-table-prettify
 davidanson.vscode-markdownlint
-daylerees.rainglow
 dbaeumer.vscode-eslint
 dberezin.lox-language
 dcasella.monokai-plusplus
 dennisvash.summer-time
 dimitarnonov.jellybeans-theme
 divyanshu013.back-to-the-code-vscode-theme
-donjayamanne.githistory
 dracula-theme.theme-dracula
 editorconfig.editorconfig
 eldritch.eldritch
@@ -50,6 +49,7 @@ github.vscode-github-actions
 github.vscode-pull-request-github
 golang.go
 huacat.pink-theme
+huizhou.githd
 ibm.output-colorizer
 idleberg.applescript
 idleberg.hopscotch
@@ -112,7 +112,6 @@ s3gf4ult.monokai-vibrant
 sainnhe.gruvbox-material
 sdras.fortnite-vscode-theme
 selbh.keyboard-scroll
-shd101wyy.markdown-preview-enhanced
 sidneys1.gitconfig
 sswg.swift-lang
 stkb.rewrap
@@ -134,6 +133,7 @@ wenfangdu.jump
 wesbos.theme-cobalt2
 willasm.comment-highlighter
 xadillax.viml
+xaver.clang-format
 yoshi389111.visible-whitespace
 yzhang.markdown-all-in-one
 zadvorny.theme-happy-hipster
