@@ -17,7 +17,6 @@ catppuccin.catppuccin-vsc-icons
 catppuccin.catppuccin-vsc-pack
 christian-kohler.path-intellisense
 codezombiech.gitignore
-connor4312.codesong
 daltonmenezes.aura-theme
 darkriszty.markdown-table-prettify
 davidanson.vscode-markdownlint
@@ -26,22 +25,16 @@ dberezin.lox-language
 dcasella.monokai-plusplus
 dennisvash.summer-time
 dimitarnonov.jellybeans-theme
-divyanshu013.back-to-the-code-vscode-theme
 dracula-theme.theme-dracula
 editorconfig.editorconfig
 eldritch.eldritch
 emilast.logfilehighlighter
-equinusocio.vsc-material-theme
-equinusocio.vsc-material-theme-icons
 ericsonwillians.oldschool-theme
 erik-rosengren.dark-candy
 esbenp.prettier-vscode
 fabiospampinato.vscode-open-in-github
 faceair.ayu-one-dark
 foxundermoon.shell-format
-gerane.theme-eggplantparm
-gerane.theme-gooeypastel
-gerane.theme-mcedit
 github.copilot
 github.copilot-chat
 github.github-vscode-theme
@@ -60,12 +53,8 @@ jaredkent.laserwave
 jdinhlife.gruvbox
 jgrundback.vscode-mc-theme
 jinliming2.vscode-go-template
-joaomoreno.github-sharp-theme
-jordaneldredge.implicit-parentheses
 jprestidge.theme-material-theme
 kacperbiedka.one-candy-dark
-kalk.borland
-krueger71.crt-themes
 kuscamara.electron
 llvm-vs-code-extensions.vscode-clangd
 louisyoung.pastel-pro
@@ -76,7 +65,6 @@ millsp.material-candy
 minamarkham.yonce-theme
 mindaro-dev.file-downloader
 mishkinf.goto-next-previous-member
-monokai.theme-monokai-pro-vscode
 ms-dotnettools.csdevkit
 ms-dotnettools.csharp
 ms-dotnettools.dotnet-interactive-vscode
@@ -95,11 +83,8 @@ ms-vscode-remote.remote-containers
 ms-vscode-remote.remote-wsl
 ms-vscode.makefile-tools
 ms-vscode.remote-repositories
-ms-vscode.theme-1337
-ms-vscode.theme-tomorrowkit
 ms-vsliveshare.vsliveshare
 mvllow.rose-pine
-pawelgrzybek.gatito-theme
 pkief.material-icon-theme
 prateekmahendrakar.prettyxml
 qezhu.gitlink
@@ -110,7 +95,6 @@ rust-lang.rust-analyzer
 rvest.vs-code-prettier-eslint
 s3gf4ult.monokai-vibrant
 sainnhe.gruvbox-material
-sdras.fortnite-vscode-theme
 selbh.keyboard-scroll
 sidneys1.gitconfig
 sswg.swift-lang
@@ -123,7 +107,6 @@ teabyii.ayu
 timonwong.shellcheck
 tinaciousdesign.theme-tinaciousdesign
 tinkertrain.theme-panda
-tomphilbin.gruvbox-themes
 usernamehw.errorlens
 vadimcn.vscode-lldb
 voldemortensen.rainbow-tags
@@ -133,7 +116,6 @@ wenfangdu.jump
 wesbos.theme-cobalt2
 willasm.comment-highlighter
 xadillax.viml
-xaver.clang-format
 yoshi389111.visible-whitespace
 yzhang.markdown-all-in-one
 zadvorny.theme-happy-hipster
