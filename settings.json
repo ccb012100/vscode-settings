@@ -1,7 +1,8 @@
 {
   "[c]": {
     "editor.formatOnSave": true,
-    "files.insertFinalNewline": true
+    "files.insertFinalNewline": true,
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
   },
   "[csharp]": {
     "editor.defaultFormatter": "ms-dotnettools.csharp",
@@ -304,9 +305,7 @@
   "gitblame.commitUrl": "https://github.com${gitorigin.path}${tool.commitpath}${hash}",
   "gitblame.ignoreWhitespace": true,
   "github.gitProtocol": "ssh",
-  "githubIssues.createIssueTriggers": [
-    "ISSUE"
-  ],
+  "githubIssues.createIssueTriggers": [],
   "githubIssues.ignoreCompletionTrigger": [
     "coffeescript",
     "diff",
@@ -387,6 +386,7 @@
     "MD026": false,
     "MD029": false,
     "MD030": false,
+    "MD033": false,
     "MD046": false
   },
   "material-icon-theme.activeIconPack": "nest",
