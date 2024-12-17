@@ -23,7 +23,6 @@ davidanson.vscode-markdownlint
 dbaeumer.vscode-eslint
 dberezin.lox-language
 dcasella.monokai-plusplus
-dennisvash.summer-time
 dimitarnonov.jellybeans-theme
 dracula-theme.theme-dracula
 editorconfig.editorconfig
@@ -49,11 +48,8 @@ idleberg.hopscotch
 ionutvmi.reg
 irongeek.vscode-env
 iwyvi.chinolor
-jaredkent.laserwave
 jdinhlife.gruvbox
-jgrundback.vscode-mc-theme
 jinliming2.vscode-go-template
-jprestidge.theme-material-theme
 kacperbiedka.one-candy-dark
 kuscamara.electron
 llvm-vs-code-extensions.vscode-clangd
@@ -88,6 +84,7 @@ mvllow.rose-pine
 pkief.material-icon-theme
 prateekmahendrakar.prettyxml
 qezhu.gitlink
+raillyhugo.one-hunter
 redhat.vscode-yaml
 renesaarsoo.sql-formatter-vsc
 robbowen.synthwave-vscode
@@ -96,6 +93,7 @@ rvest.vs-code-prettier-eslint
 s3gf4ult.monokai-vibrant
 sainnhe.gruvbox-material
 selbh.keyboard-scroll
+sglza.flexoki
 sidneys1.gitconfig
 sswg.swift-lang
 stkb.rewrap
@@ -110,7 +108,6 @@ tinkertrain.theme-panda
 usernamehw.errorlens
 vadimcn.vscode-lldb
 voldemortensen.rainbow-tags
-waderyan.gitblame
 wenfangdu.faster-new
 wenfangdu.jump
 wesbos.theme-cobalt2
