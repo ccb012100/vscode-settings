@@ -58,7 +58,7 @@
       "other": "on",
       "strings": "off"
     },
-    "editor.tabSize": 4,
+    "editor.tabSize": 2,
     "files.trimTrailingWhitespace": false,
     "rewrap.autoWrap.enabled": false,
   },
@@ -166,7 +166,7 @@
   "editor.codeLens": false,
   "editor.cursorSurroundingLines": 5,
   "editor.find.autoFindInSelection": "multiline",
-  "editor.fontFamily": "Fantasque Sans Mono, JetBrains Mono, Cascadia Code, IBM Plex Mono, Hack, Consolas",
+  "editor.fontFamily": "JetBrains Mono, Fantasque Sans Mono, Cascadia Code, IBM Plex Mono, Hack, Consolas",
   "editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'liga'",
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,

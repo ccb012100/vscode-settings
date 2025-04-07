@@ -3,7 +3,6 @@ ankitcode.firefly
 bceskavich.theme-dracula-at-night
 bierner.github-markdown-preview
 bierner.markdown-checkbox
-bierner.markdown-emoji
 bierner.markdown-footnotes
 bierner.markdown-mermaid
 bierner.markdown-preview-github-styles
@@ -86,7 +85,6 @@ prateekmahendrakar.prettyxml
 qezhu.gitlink
 raillyhugo.one-hunter
 redhat.vscode-yaml
-renesaarsoo.sql-formatter-vsc
 robbowen.synthwave-vscode
 rust-lang.rust-analyzer
 rvest.vs-code-prettier-eslint
@@ -95,11 +93,11 @@ sainnhe.gruvbox-material
 selbh.keyboard-scroll
 sglza.flexoki
 sidneys1.gitconfig
-sswg.swift-lang
 stkb.rewrap
 sumitnalavade.tinkswave-22
 sumitsaha.learn-with-sumit-theme
 sumneko.lua
+swiftlang.swift-vscode
 tamasfe.even-better-toml
 teabyii.ayu
 timonwong.shellcheck
@@ -114,6 +112,5 @@ wesbos.theme-cobalt2
 willasm.comment-highlighter
 xadillax.viml
 yoshi389111.visible-whitespace
-yzhang.markdown-all-in-one
 zadvorny.theme-happy-hipster
 zhuangtongfa.material-theme
