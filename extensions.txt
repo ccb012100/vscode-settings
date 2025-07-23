@@ -51,6 +51,7 @@ jdinhlife.gruvbox
 jinliming2.vscode-go-template
 kacperbiedka.one-candy-dark
 kuscamara.electron
+llvm-vs-code-extensions.lldb-dap
 llvm-vs-code-extensions.vscode-clangd
 louisyoung.pastel-pro
 mattn.lisp
@@ -69,6 +70,7 @@ ms-python.black-formatter
 ms-python.debugpy
 ms-python.python
 ms-python.vscode-pylance
+ms-python.vscode-python-envs
 ms-toolsai.jupyter
 ms-toolsai.jupyter-keymap
 ms-toolsai.jupyter-renderers
