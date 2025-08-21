@@ -2575,10 +2575,6 @@
         "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
     },
     {
-        "key": "ctrl+c ctrl+v",
-        "command": "paste"
-    },
-    {
         "key": "ctrl+y",
         "command": "editor.action.clipboardPasteAction"
     },
@@ -4096,5 +4092,19 @@
     {
         "key": "ctrl+g a",
         "command": "workbench.action.chat.openInSidebar"
+    },
+    {
+        "key": "ctrl+j l",
+        "command": "workbench.action.editor.changeLanguageMode",
+        "when": "!notebookEditorFocused"
+    },
+    {
+        "key": "cmd+k m",
+        "command": "-workbench.action.editor.changeLanguageMode",
+        "when": "!notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "editor.action.clipboardCopyAction"
     }
 ]
