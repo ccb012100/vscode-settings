@@ -118,10 +118,6 @@
         "when": "editorFocus"
     },
     {
-        "key": "ctrl+r",
-        "command": "-workbench.action.openRecent"
-    },
-    {
         "key": "ctrl+r ctrl+r",
         "command": "-editor.action.rename",
         "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
@@ -161,10 +157,6 @@
         "key": "alt+s",
         "command": "-markdown.extension.editing.toggleStrikethrough",
         "when": "editorTextFocus && !editorReadonly && !isMac && editorLangId == 'markdown'"
-    },
-    {
-        "key": "ctrl+x j",
-        "command": "workbench.action.openRecent"
     },
     {
         "key": "ctrl+shift+g",
@@ -2864,10 +2856,6 @@
         "command": "workbench.action.showAllEditorsByMostRecentlyUsed"
     },
     {
-        "key": "ctrl+j o",
-        "command": "workbench.action.openRecent"
-    },
-    {
         "key": "ctrl+shift+s",
         "command": "-workbench.action.files.saveAs"
     },
@@ -4106,5 +4094,13 @@
     {
         "key": "ctrl+c",
         "command": "editor.action.clipboardCopyAction"
+    },
+    {
+        "key": "ctrl+x j",
+        "command": "workbench.action.openRecent"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.openRecent"
     }
 ]
