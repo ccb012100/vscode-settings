@@ -1,6 +1,7 @@
 alefragnani.numbered-bookmarks
 ankitcode.firefly
 bceskavich.theme-dracula-at-night
+beardedbear.beardedtheme
 bierner.github-markdown-preview
 bierner.markdown-checkbox
 bierner.markdown-footnotes
@@ -22,11 +23,13 @@ davidanson.vscode-markdownlint
 dbaeumer.vscode-eslint
 dberezin.lox-language
 dcasella.monokai-plusplus
+digitalsanctuary.tron-legacy-theme
 dimitarnonov.jellybeans-theme
 dracula-theme.theme-dracula
 editorconfig.editorconfig
 eldritch.eldritch
 emilast.logfilehighlighter
+endormi.2077-theme
 ericsonwillians.oldschool-theme
 erik-rosengren.dark-candy
 esbenp.prettier-vscode
@@ -39,16 +42,17 @@ github.github-vscode-theme
 github.vscode-github-actions
 github.vscode-pull-request-github
 golang.go
+gulajavaministudio.mayukaithemevsc
 huacat.pink-theme
 huizhou.githd
 ibm.output-colorizer
-idleberg.applescript
 idleberg.hopscotch
 ionutvmi.reg
 irongeek.vscode-env
 iwyvi.chinolor
 jdinhlife.gruvbox
 jinliming2.vscode-go-template
+johnpapa.winteriscoming
 kacperbiedka.one-candy-dark
 kuscamara.electron
 llvm-vs-code-extensions.lldb-dap
@@ -61,6 +65,7 @@ millsp.material-candy
 minamarkham.yonce-theme
 mindaro-dev.file-downloader
 mishkinf.goto-next-previous-member
+ms-azuretools.vscode-containers
 ms-dotnettools.csdevkit
 ms-dotnettools.csharp
 ms-dotnettools.dotnet-interactive-vscode
@@ -82,6 +87,7 @@ ms-vscode.makefile-tools
 ms-vscode.remote-repositories
 ms-vsliveshare.vsliveshare
 mvllow.rose-pine
+pawelborkar.jellyfish
 pkief.material-icon-theme
 prateekmahendrakar.prettyxml
 qezhu.gitlink

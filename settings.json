@@ -138,7 +138,6 @@
   "accessibility.signals.terminalBell": {
     "sound": "on"
   },
-  "applescript.convertErrorRange": true,
   "breadcrumbs.enabled": true,
   "chat.mcp.autostart": "newAndOutdated",
   "clangd.checkUpdates": true,
@@ -189,6 +188,7 @@
     "strings": "on"
   },
   "editor.quickSuggestionsDelay": 200,
+  "editor.renderWhitespace": "boundary",
   "editor.rulers": [
     150
   ],
