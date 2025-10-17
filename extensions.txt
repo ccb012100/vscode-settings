@@ -52,6 +52,7 @@ irongeek.vscode-env
 iwyvi.chinolor
 jdinhlife.gruvbox
 jinliming2.vscode-go-template
+johnpapa.vscode-peacock
 johnpapa.winteriscoming
 kacperbiedka.one-candy-dark
 kuscamara.electron

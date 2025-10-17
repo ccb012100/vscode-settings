@@ -51,7 +51,7 @@
       "img"
     ],
     "description": "add an image tag",
-    "body": "![${2:alt text}](images/${1:path to image})$0"
+    "body": "![${2:alt text}](/images/${1:path to image})$0"
   },
   "important": {
     "prefix": "important",
