@@ -59,6 +59,7 @@ kuscamara.electron
 llvm-vs-code-extensions.lldb-dap
 llvm-vs-code-extensions.vscode-clangd
 louisyoung.pastel-pro
+mateocerquetella.xcode-12-theme
 mattn.lisp
 mechatroner.rainbow-csv
 mikestead.dotenv
@@ -71,7 +72,6 @@ ms-dotnettools.csdevkit
 ms-dotnettools.csharp
 ms-dotnettools.dotnet-interactive-vscode
 ms-dotnettools.vscode-dotnet-runtime
-ms-dotnettools.vscodeintellicode-csharp
 ms-python.black-formatter
 ms-python.debugpy
 ms-python.python
@@ -114,6 +114,7 @@ tinaciousdesign.theme-tinaciousdesign
 tinkertrain.theme-panda
 usernamehw.errorlens
 vadimcn.vscode-lldb
+vknabel.vscode-apple-swift-format
 voldemortensen.rainbow-tags
 wenfangdu.faster-new
 wenfangdu.jump

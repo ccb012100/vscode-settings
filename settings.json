@@ -99,7 +99,8 @@
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
   "[swift]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "vknabel.vscode-apple-swift-format"
   },
   "[typescript][typescriptreact]": {
     "editor.codeActionsOnSave": {
