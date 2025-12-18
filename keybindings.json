@@ -3633,10 +3633,6 @@
         "command": "workbench.action.tasks.test"
     },
     {
-        "key": "ctrl+l ctrl+l",
-        "command": "workbench.action.navigateToLastEditLocation"
-    },
-    {
         "key": "ctrl+h t",
         "command": "editor.action.peekTypeDefinition"
     },
@@ -4102,5 +4098,13 @@
     {
         "key": "ctrl+r",
         "command": "-workbench.action.openRecent"
+    },
+    {
+        "key": "ctrl+l ctrl+l",
+        "command": "workbench.action.navigateBackInEditLocations"
+    },
+    {
+        "key": "ctrl+l ctrl+h",
+        "command": "workbench.action.navigateForwardInEditLocations"
     }
 ]
