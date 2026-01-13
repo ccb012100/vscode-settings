@@ -307,6 +307,7 @@
   "git.supportCancellation": true,
   "git.useForcePushIfIncludes": true,
   "git.useForcePushWithLease": true,
+  "git.verboseCommit": true,
   "github.copilot.enable": {
     "*": false
   },
