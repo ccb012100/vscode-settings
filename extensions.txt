@@ -98,7 +98,6 @@ robbowen.synthwave-vscode
 rust-lang.rust-analyzer
 rvest.vs-code-prettier-eslint
 s3gf4ult.monokai-vibrant
-sainnhe.gruvbox-material
 selbh.keyboard-scroll
 sglza.flexoki
 sidneys1.gitconfig
@@ -114,7 +113,6 @@ tinaciousdesign.theme-tinaciousdesign
 tinkertrain.theme-panda
 usernamehw.errorlens
 vadimcn.vscode-lldb
-vknabel.vscode-apple-swift-format
 voldemortensen.rainbow-tags
 wenfangdu.faster-new
 wenfangdu.jump
