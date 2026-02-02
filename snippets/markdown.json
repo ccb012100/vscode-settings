@@ -1,7 +1,7 @@
 {
   "Date header": {
     "body": [
-      "##$0 ==> $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+      "## $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE - $0",
       ""
     ],
     "prefix": "dheader",
@@ -24,7 +24,7 @@
   "Source url": {
     "prefix": "source",
     "description": "add source URL for notes",
-    "body": "_source_: <$1>$0"
+    "body": "((source)[$1])$0"
   },
   "link": {
     "prefix": "link",
@@ -40,48 +40,82 @@
       "| $0 | |"
     ]
   },
-  "bash-code-block": {
-    "description": "add a Bash shell code block",
-    "prefix": "bash",
-    "body": [
-      "```bash",
-      "$0",
-      "```"
-    ]
-  },
   "see": {
     "prefix": "see",
     "description": "reference to link for more information",
     "body": "see: [${2:display text}](${1:URL})$0"
   },
   "image": {
-    "prefix": "img",
+    "prefix": [
+      "image",
+      "img"
+    ],
     "description": "add an image tag",
-    "body": "![${2:alt text}](/${1:path to image})$0"
+    "body": "![${2:alt text}](/images/${1:path to image})$0"
   },
-  "Mermaid node": {
-    "prefix": "mermaid-node",
-    "description": "square Mermaid node",
-    "body": "${1:Node name}[${2:Node text}]"
+  "important": {
+    "prefix": "important",
+    "description": "Add GitHub Markdown IMPORTANT alert",
+    "body": [
+      "> [!IMPORTANT]",
+      "> $0"
+    ]
   },
-  "Mermaid arrow": {
-    "prefix": "mermaid-arrow",
-    "description": "solid Mermaid arrow",
-    "body": "--> "
+  "caution": {
+    "prefix": "caution",
+    "description": "Add GitHub Markdown CAUTION alert",
+    "body": [
+      "> [!CAUTION]",
+      "> $0"
+    ]
   },
-  "Mermaid arrow with text": {
-    "prefix": "mermaid-label-text-arrow",
-    "description": "Mermaid arrow with label text on the body",
-    "body": "--> | $1 | $0"
+  "warning": {
+    "prefix": "warning",
+    "description": "Add GitHub Markdown WARNING alert",
+    "body": [
+      "> [!WARNING]",
+      "> $0"
+    ]
   },
-  "Mermaid rounded node":{
-    "prefix": "mermaid-rounded-node",
-    "description": "Mermaid rounded node",
-    "body": "${1:Node name}[(${2:Node text})]"
+  "note": {
+    "prefix": "note",
+    "description": "Add GitHub Markdown NOTE alert",
+    "body": [
+      "> [!NOTE]",
+      "> $0"
+    ]
   },
-  "Mermaid decision diamond node": {
-    "prefix": "mermaid-decision-diamond",
-    "description": "Mermaid diamond decision node",
-    "body": "${1:Node name}{${2:Node text}}"
-  }
+  "tip": {
+    "prefix": "tip",
+    "description": "Add GitHub Markdown TIP alert",
+    "body": [
+      "> [!TIP]",
+      "> $0"
+    ]
+  },
+  // "Mermaid node": {
+  //   "prefix": "mermaid-node",
+  //   "description": "square Mermaid node",
+  //   "body": "${1:Node name}[${2:Node text}]"
+  // },
+  // "Mermaid arrow": {
+  //   "prefix": "mermaid-arrow",
+  //   "description": "solid Mermaid arrow",
+  //   "body": "--> "
+  // },
+  // "Mermaid arrow with text": {
+  //   "prefix": "mermaid-label-text-arrow",
+  //   "description": "Mermaid arrow with label text on the body",
+  //   "body": "--> | $1 | $0"
+  // },
+  // "Mermaid rounded node": {
+  //   "prefix": "mermaid-rounded-node",
+  //   "description": "Mermaid rounded node",
+  //   "body": "${1:Node name}[(${2:Node text})]"
+  // },
+  // "Mermaid decision diamond node": {
+  //   "prefix": "mermaid-decision-diamond",
+  //   "description": "Mermaid diamond decision node",
+  //   "body": "${1:Node name}{${2:Node text}}"
+  // }
 }
