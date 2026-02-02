@@ -1,6 +1,8 @@
 {
   "[c]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
+    "editor.formatOnSave": true,
+    "files.insertFinalNewline": true,
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
   },
   "[csharp]": {
     "editor.defaultFormatter": "ms-dotnettools.csharp",
@@ -36,8 +38,9 @@
     "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features",
-    "editor.formatOnSave": false
+    "editor.maxTokenizationLineLength": 2500,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json][jsonc]": {
     "editor.fontLigatures": false,
@@ -48,22 +51,25 @@
     "editor.rulers": [
       150
     ],
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    "editor.guides.indentation": false,
     "editor.quickSuggestions": {
       "comments": "off",
       "other": "on",
       "strings": "off"
     },
+    "editor.tabSize": 2,
     "files.trimTrailingWhitespace": false,
     "rewrap.autoWrap.enabled": false,
-    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
-    "editor.tabSize": 2
   },
   "[plaintext]": {
     "editor.fontLigatures": false,
+    "editor.guides.indentation": false,
     "editor.insertSpaces": false,
     "rewrap.autoWrap.enabled": false
   },
   "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnType": true
   },
   "[rust]": {
@@ -90,16 +96,21 @@
     "files.eol": "\n"
   },
   "[svelte]": {
-    "editor.defaultFormatter": "svelte.svelte-vscode"
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
-  "[typescript]": {
+  "[swift]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "vknabel.vscode-apple-swift-format"
+  },
+  "[typescript][typescriptreact]": {
     "editor.codeActionsOnSave": {
       "source.fixAll": "explicit"
     },
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
     "editor.rulers": [
       150
-    ]
+    ],
+    "editor.formatOnSave": true
   },
   "[vue]": {
     "editor.defaultFormatter": "octref.vetur"
@@ -129,18 +140,22 @@
     "sound": "on"
   },
   "breadcrumbs.enabled": true,
-  "cmake.showOptionsMovedNotification": false,
+  "chat.mcp.autostart": "newAndOutdated",
+  "clangd.checkUpdates": true,
+  "csharp.preview.improvedLaunchExperience": true,
+  "csharp.suppressHiddenDiagnostics": false,
   "debug.console.acceptSuggestionOnEnter": "on",
   "debug.console.fontFamily": "IBM Plex Mono",
-  "debug.console.fontSize": 12,
   "debug.onTaskErrors": "showErrors",
   "debug.openExplorerOnEnd": true,
   "debug.showBreakpointsInOverviewRuler": true,
   "debug.toolBarLocation": "commandCenter",
   "diffEditor.experimental.showEmptyDecorations": true,
   "diffEditor.experimental.showMoves": true,
-  "diffEditor.hideUnchangedRegions.enabled": true,
+  "diffEditor.experimental.useTrueInlineView": true,
   "diffEditor.ignoreTrimWhitespace": false,
+  "dotnet.automaticallyCreateSolutionInWorkspace": false,
+  "dotnet.automaticallySyncWithActiveItem": true,
   "editor.acceptSuggestionOnEnter": "smart",
   "editor.accessibilitySupport": "off",
   "editor.autoClosingBrackets": "beforeWhitespace",
@@ -151,10 +166,11 @@
   "editor.codeLens": false,
   "editor.cursorSurroundingLines": 5,
   "editor.find.autoFindInSelection": "multiline",
-  "editor.fontFamily": "JetBrains Mono, Cascadia Code, IBM Plex Mono, Hack, Consolas",
-  "editor.fontLigatures": true,
+  "editor.fontFamily": "JetBrains Mono, Fantasque Sans Mono, IBM Plex Mono, Hack, Cascadia Code, Consolas",
+  "editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'liga'",
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
+  "editor.formatOnSaveMode": "modificationsIfAvailable",
   "editor.guides.bracketPairs": true,
   "editor.hover.above": false,
   "editor.inlayHints.enabled": "off",
@@ -173,6 +189,7 @@
     "strings": "on"
   },
   "editor.quickSuggestionsDelay": 200,
+  "editor.renderWhitespace": "boundary",
   "editor.rulers": [
     150
   ],
@@ -201,9 +218,11 @@
       "comments": "#32CD32"
     }
   },
+  "editor.unicodeHighlight.invisibleCharacters": false,
   "editor.wrappingIndent": "indent",
-  "emmet.showAbbreviationSuggestions": false,
-  "emmet.showExpandedAbbreviation": "never",
+  "emmet.showAbbreviationSuggestions": true,
+  "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
+  "emmet.showSuggestionsAsSnippets": true,
   "errorLens.followCursor": "activeLine",
   "errorLens.removeLinebreaks": false,
   "eslint.debug": true,
@@ -212,11 +231,40 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+    "Cargo.toml": "Cargo.lock",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
+  },
   "explorer.incrementalNaming": "smart",
   "explorer.openEditors.sortOrder": "alphabetical",
   "extensions.autoUpdate": "onlyEnabledExtensions",
   "extensions.experimental.affinity": {
     "wenfangdu.jump": 1
+  },
+  "files.associations": {
+    ".gitignore_global": "txt",
+    "*.adoc": "asciidoc",
+    "*.conf": "editorconfig",
+    "*.DotSettings": "xml",
+    "*.h": "c",
+    "*.snippet": "xml",
+    "*.sqlite": "sql",
+    "*.tmpl": "go-template",
+    "*.vssettings": "xml",
+    "appsettings*.json": "jsonc",
+    "attributes": "properties",
+    "LICENSE": "plaintext",
   },
   "files.exclude": {
     "**/.DS_Store": true,
@@ -242,13 +290,14 @@
   "git.alwaysShowStagedChangesResourceGroup": true,
   "git.autofetch": true,
   "git.autoStash": true,
+  "git.blame.statusBarItem.enabled": true,
   "git.closeDiffOnOperation": true,
   "git.confirmForcePush": true,
   "git.confirmSync": false,
   "git.fetchOnPull": true,
-  "git.useForcePushWithLease": true,
-  "git.useForcePushIfIncludes": true,
-  "git.defaultCloneDirectory": "~/src/",
+  "git.inputValidation": true,
+  "git.inputValidationLength": 72,
+  "git.inputValidationSubjectLength": 72,
   "git.mergeEditor": true,
   "git.promptToSaveFilesBeforeCommit": "always",
   "git.pruneOnFetch": true,
@@ -256,14 +305,38 @@
   "git.smartCommitChanges": "tracked",
   "git.suggestSmartCommit": false,
   "git.supportCancellation": true,
+  "git.useForcePushIfIncludes": true,
+  "git.useForcePushWithLease": true,
+  "git.verboseCommit": true,
+  "github.copilot.enable": {
+    "*": false
+  },
   "github.gitProtocol": "ssh",
-  "githubIssues.createIssueTriggers": [
-    "ISSUE"
+  "githubIssues.createIssueTriggers": [],
+  "githubIssues.ignoreCompletionTrigger": [
+    "coffeescript",
+    "diff",
+    "dockerfile",
+    "dockercompose",
+    "ignore",
+    "ini",
+    "julia",
+    "makefile",
+    "perl",
+    "powershell",
+    "python",
+    "r",
+    "ruby",
+    "shellscript",
+    "yaml",
+    "plaintext"
   ],
   "githubIssues.ignoreUserCompletionTrigger": [
     "javascript",
     "python",
-    "typescript"
+    "typescript",
+    "csharp",
+    "typescriptreact"
   ],
   "githubIssues.queries": [
     {
@@ -286,6 +359,7 @@
   "githubPullRequests.notifications": "pullRequests",
   "githubPullRequests.pullBranch": "never",
   "go.toolsManagement.autoUpdate": true,
+  "insert-unicode.recentlyUsedLimit": 25,
   "javascript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
   "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
   "javascript.inlayHints.parameterNames.enabled": "all",
@@ -293,22 +367,19 @@
   "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
   "javascript.inlayHints.variableTypes.enabled": true,
   "javascript.preferences.quoteStyle": "single",
+  "javascript.suggest.completeFunctionCalls": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "js/ts.implicitProjectConfig.experimentalDecorators": true,
   "json.schemas": [],
   "jump.display.backgroundColor": "#0000FF",
-  "jump.display.color": "#FFFFFF",
-  "jump.primaryCharset": "jklfdsavcxzmweruionbghtypqz7892341056",
-  "lldb.suppressUpdateNotifications": true,
-  "lldb.suppressUpdateNotifications": true,
+  "jump.display.color": "#ffffff",
+  "jump.primaryCharset": "asdfjklweruioxcvmzghqpty",
+  "lldb.library": "/Library/Developer/CommandLineTools/Library/PrivateFrameworks/LLDB.framework/Versions/A/LLDB",
+  "lldb.launch.expressions": "native",
+  "makefile.configureOnOpen": false,
   "markdown.editor.pasteUrlAsFormattedLink.enabled": "never",
-  "markdown.extension.list.indentationSize": "inherit",
-  "markdown.extension.theming.decoration.renderHardLineBreak": true,
-  "markdown.extension.theming.decoration.renderParagraph": true,
-  "markdown.extension.theming.decoration.renderTrailingSpace": true,
-  "markdown.preview.breaks": true,
-  "markdown.preview.fontFamily": "IBM Plex Sans, Cascadia Mono, Hack, Victor Mono, Inconsolata, Consolas",
-  "markdown.preview.fontSize": 13,
+  "markdown.occurrencesHighlight.enabled": true,
+  "markdown.preview.fontFamily": "IBM Plex Sans, IBM Plex Mono, Cascadia Mono, Consolas",
   "markdown.preview.scrollEditorWithPreview": false,
   "markdown.preview.typographer": true,
   "markdown.updateLinksOnFileMove.enabled": "always",
@@ -320,20 +391,18 @@
     "MD026": false,
     "MD029": false,
     "MD030": false,
+    "MD033": false,
+    "MD036": false,
     "MD046": false
   },
-  "material-icon-theme.activeIconPack": "nest",
-  "material-icon-theme.hidesExplorerArrows": true,
-  "material-icon-theme.saturation": 1,
   "merge-conflict.autoNavigateNextConflict.enabled": true,
   "merge-conflict.diffViewPosition": "Below",
-  "multiDiffEditor.experimental.enabled": true,
-  "omnisharp.enableRoslynAnalyzers": true,
-  "openInGitHub.remote.name": "main",
+  "openInGitHub.remote.branch": "main",
+  "openInGitHub.useLocalDomain": false,
   "openInGitHub.useLocalLine": true,
   "path-intellisense.autoSlashAfterDirectory": true,
   "path-intellisense.showHiddenFiles": true,
-  "prettier.printWidth": 140,
+  "path-intellisense.showOnAbsoluteSlash": false,
   "prettier.singleQuote": true,
   "problems.showCurrentInStatus": true,
   "python.analysis.autoImportCompletions": true,
@@ -353,18 +422,18 @@
   "rewrap.autoWrap.enabled": false,
   "rust-analyzer.check.command": "clippy",
   "rust-analyzer.imports.granularity.enforce": true,
+  "rust-analyzer.initializeStopped": true,
   "rust-analyzer.inlayHints.closureReturnTypeHints.enable": "with_block",
   "rust-analyzer.inlayHints.lifetimeElisionHints.enable": "skip_trivial",
   "rust-analyzer.inlayHints.lifetimeElisionHints.useParameterNames": true,
   "rust-analyzer.inlayHints.reborrowHints.enable": "mutable",
   "rust-analyzer.lens.enable": true,
+  "rust-analyzer.restartServerOnConfigChange": true,
   "scm.alwaysShowActions": true,
   "scm.alwaysShowRepositories": true,
   "scm.defaultViewMode": "tree",
-  "scm.experimental.showSyncView": true,
   "scm.inputFontFamily": "editor",
   "scm.inputFontSize": 12,
-  "scm.inputMaxLines": 25,
   "search.exclude": {
     "**/*.svg": true,
     "**/pnpm-lock.yaml": true
@@ -373,9 +442,6 @@
   "search.showLineNumbers": true,
   "search.useGlobalIgnoreFiles": true,
   "search.useParentIgnoreFiles": true,
-  "security.allowedUNCHosts": [
-    "wsl.localhost"
-  ],
   "security.workspace.trust.untrustedFiles": "open",
   "settingsSync.ignoredSettings": [
     "editor.fontSize",
@@ -388,13 +454,13 @@
     "1090",
     "1091"
   ],
-  "sqlite.recordsPerPage": 100,
-  "terminal.external.osxExec": "zsh",
+  "terminal.external.osxExec": "kitty",
   "terminal.external.windowsExec": "C:\\Program Files\\Git\\bin\\bash.exe",
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.integrated.defaultProfile.osx": "fish",
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.env.windows": {
     "CHERE_INVOKING": "1",
@@ -403,6 +469,8 @@
   },
   "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font Mono,Hack Nerd Font,Hack",
   "terminal.integrated.hideOnStartup": "whenEmpty",
+  "terminal.integrated.macOptionIsMeta": true,
+  "terminal.integrated.middleClickBehavior": "paste",
   "terminal.integrated.profiles.windows": {
     "Ubuntu (WSL)": {
       "path": "C:\\\\Windows\\\\System32\\\\wsl.exe",
@@ -449,36 +517,44 @@
   "typescript.preferences.useAliasesForRenames": false,
   "typescript.suggest.completeFunctionCalls": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "visibleWhitespace.eof.enable": false,
+  "visibleWhitespace.newLine.enable": false,
+  "visibleWhitespace.other.borderColor": "#FF0000",
   "window.commandCenter": true,
   "window.density.editorTabHeight": "compact",
-  "window.enableMenuBarMnemonics": false,
+  "window.menuStyle": "custom",
   "window.newWindowDimensions": "offset",
-  "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}[${profileName}]",
+  "window.newWindowProfile": "Default",
+  "window.title": "${dirty}${separator}${rootName}${separator}${activeEditorShort}",
   "window.titleBarStyle": "custom",
   "window.titleSeparator": " ‧ ",
   "workbench.colorCustomizations": {
     "[Mcedit]": {
       "editor.lineHighlightBackground": "#000000"
     },
+    "implicitParentheses.parens": "#fff",
     "tab.activeBackground": "#1857a4",
     "tab.activeModifiedBorder": "#FFC300",
-    "terminal.background": "#000000"
+    "terminal.background": "#000000",
   },
-  "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.pinnedTabsOnSeparateRow": true,
   "workbench.editor.preventPinnedEditorClose": "never",
   "workbench.editor.scrollToSwitchTabs": true,
   "workbench.editor.splitInGroupLayout": "vertical",
   "workbench.editor.tabSizing": "shrink",
-  "workbench.preferredDarkColorTheme": "Gruvbox Material Dark",
-  "workbench.preferredLightColorTheme": "Gruvbox Light (Hard)",
+  "workbench.iconTheme": "catppuccin-macchiato",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
   "workbench.settings.useSplitJSON": true,
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.tree.enableStickyScroll": true,
   "yaml.format.enable": true,
   "yaml.format.singleQuote": true,
-  "zenMode.hideStatusBar": false
+  "zenMode.hideStatusBar": false,
+  /*
+   * LOCAL SETTINGS
+   */
+  "editor.fontSize": 18,
+  "workbench.colorTheme": "Gruvbox Dark Hard",
 }
