@@ -1441,11 +1441,6 @@
         "when": "listFocus && listSupportsFind"
     },
     {
-        "key": "ctrl+p",
-        "command": "focusPreviousCodeAction",
-        "when": "CodeActionMenuVisible"
-    },
-    {
         "key": "ctrl+right",
         "command": "cursorWordRight",
         "when": "textInputFocus"
@@ -1896,16 +1891,6 @@
         "key": "ctrl+shift+m",
         "command": "-workbench.actions.view.problems",
         "when": "workbench.panel.markers.view.active"
-    },
-    {
-        "key": "down",
-        "command": "focusNextCodeAction",
-        "when": "codeActionMenuVisible"
-    },
-    {
-        "key": "up",
-        "command": "focusPreviousCodeAction",
-        "when": "codeActionMenuVisible"
     },
     {
         "key": "up",
@@ -4106,5 +4091,15 @@
     {
         "key": "ctrl+l ctrl+h",
         "command": "workbench.action.navigateForwardInEditLocations"
+    },
+    {
+        "key": "ctrl+j ctrl+k",
+        "command": "workbench.panel.chat",
+        "when": "workbench.panel.chat.view.copilot.active"
+    },
+    {
+        "key": "ctrl+cmd+i",
+        "command": "-workbench.panel.chat",
+        "when": "workbench.panel.chat.view.copilot.active"
     }
 ]
