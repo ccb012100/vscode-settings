@@ -3326,10 +3326,6 @@
         "when": "github.copilot.activated && github.copilot.panelVisible && activeWebviewPanelId == 'GitHub Copilot Suggestions'"
     },
     {
-        "key": "ctrl+g c",
-        "command": "workbench.panel.chat.view.copilot.focus"
-    },
-    {
         "key": "ctrl+g ctrl+g",
         "command": "workbench.view.scm",
         "when": "workbench.scm.active"
@@ -4093,7 +4089,7 @@
         "command": "workbench.action.navigateForwardInEditLocations"
     },
     {
-        "key": "ctrl+j ctrl+k",
+        "key": "ctrl+g c",
         "command": "workbench.panel.chat",
         "when": "workbench.panel.chat.view.copilot.active"
     },
