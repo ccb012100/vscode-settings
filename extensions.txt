@@ -1,7 +1,6 @@
 alefragnani.numbered-bookmarks
 ankitcode.firefly
 bceskavich.theme-dracula-at-night
-beardedbear.beardedtheme
 bierner.github-markdown-preview
 bierner.markdown-checkbox
 bierner.markdown-footnotes
@@ -23,6 +22,7 @@ davidanson.vscode-markdownlint
 dbaeumer.vscode-eslint
 dberezin.lox-language
 dcasella.monokai-plusplus
+dcortes92.freemarker
 digitalsanctuary.tron-legacy-theme
 dimitarnonov.jellybeans-theme
 dracula-theme.theme-dracula
