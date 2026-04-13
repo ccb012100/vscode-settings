@@ -3866,5 +3866,14 @@
   {
     "key": "ctrl+a",
     "command": "-editor.action.selectAll"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "editor.action.clipboardCutAction"
+  },
+  {
+    "key": "shift+alt+backspace",
+    "command": "deleteInsideWord",
+    "when": "textInputFocus && !editorReadonly"
   }
 ]
