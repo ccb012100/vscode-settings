@@ -2,4 +2,4 @@
 # cat files-to-format |
 while read -r file; do
     jq . "$file" | sponge "$file"
-done < <(fd -H --type file . --full-path "$HOME/src/vscode-settings/vscode-profiles/")
+done < <(fd -H --type file . --full-path "$HOME/src/ccb012100/vscode-settings/vscode-profiles/")
