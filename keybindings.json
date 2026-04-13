@@ -654,11 +654,6 @@
     "when": "notificationFocus && notificationToastsVisible"
   },
   {
-    "key": "ctrl+a",
-    "command": "-file-browser.actions",
-    "when": "inFileBrowser"
-  },
-  {
     "key": "ctrl+x h",
     "command": "list.selectAll",
     "when": "listFocus && listSupportsMultiselect && !inputFocus"
@@ -1906,10 +1901,6 @@
     "command": "workbench.action.togglePanel"
   },
   {
-    "key": "f2",
-    "command": "file-browser.rename"
-  },
-  {
     "key": "shift+alt+p",
     "command": "-openapi.preview",
     "when": "editorTextFocus && !openapiErrors"
@@ -2508,18 +2499,8 @@
     "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
   },
   {
-    "key": "ctrl+x ctrl+x",
-    "command": "filesExplorer.cut",
-    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-  },
-  {
     "key": "ctrl+x",
     "command": "-filesExplorer.cut",
-    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-  },
-  {
-    "key": "ctrl+w",
-    "command": "filesExplorer.cut",
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
   },
   {
@@ -2560,10 +2541,6 @@
     "command": "-editor.action.clipboardCutAction"
   },
   {
-    "key": "ctrl+x ctrl+x",
-    "command": "editor.action.clipboardCutAction"
-  },
-  {
     "key": "ctrl+shift+x",
     "command": "editor.action.clipboardCutAction"
   },
@@ -2574,10 +2551,6 @@
   {
     "key": "ctrl+down",
     "command": "-gotoNextPreviousMember.nextMember"
-  },
-  {
-    "key": "ctrl+w",
-    "command": "editor.action.clipboardCutAction"
   },
   {
     "key": "ctrl+shift+c",
@@ -2942,10 +2915,6 @@
   {
     "key": "ctrl+x ctrl+f",
     "command": "workbench.action.quickOpen"
-  },
-  {
-    "key": "ctrl+x d",
-    "command": "file-browser.open"
   },
   {
     "key": "ctrl+j p",
@@ -3653,14 +3622,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+x 2",
-    "command": "workbench.action.moveEditorToBelowGroup"
-  },
-  {
-    "key": "ctrl+x 3",
-    "command": "workbench.action.moveEditorToRightGroup"
-  },
-  {
     "key": "ctrl+x 0",
     "command": "workbench.action.closeAllGroups"
   },
@@ -3816,11 +3777,11 @@
     "when": "!editorReadonly && editorFocus && !editorHasSelection && editorLangId != 'html'"
   },
   {
-    "key": "ctrl+x n",
+    "key": "ctrl+`",
     "command": "workbench.action.showNextWindowTab"
   },
   {
-    "key": "ctrl+x p",
+    "key": "ctrl+shift+`",
     "command": "workbench.action.showPreviousWindowTab"
   },
   {
