@@ -9,5 +9,21 @@
             "$0"
         ],
         "description": "define the Resolve<T> type"
-    }
+    },
+    "Test snippet": {
+        "prefix": [
+            "test",
+            "ts"
+        ],
+        "body": "test(\"$1\", () => {\n\t$0\n});",
+        "include": [
+            "**/*.test.ts",
+            "**/*.test.tsx",
+            "*.spec.ts"
+        ],
+        "exclude": [
+            "**/temp/*.ts"
+        ],
+        "description": "Insert test block"
+    },
 }
