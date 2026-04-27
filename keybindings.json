@@ -123,10 +123,6 @@
     "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+r ctrl+w",
-    "command": "-editor.action.toggleRenderWhitespace"
-  },
-  {
     "key": "ctrl+l r",
     "command": "editor.action.rename",
     "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
@@ -161,15 +157,6 @@
   {
     "key": "ctrl+shift+g",
     "command": "-workbench.action.files.openFileFolder"
-  },
-  {
-    "key": "alt+z",
-    "command": "-editor.action.toggleWordWrap"
-  },
-  {
-    "key": "ctrl+l a",
-    "command": "editor.action.toggleWordWrap",
-    "when": "editorFocus"
   },
   {
     "key": "ctrl+alt+l",
@@ -917,10 +904,6 @@
     "key": "ctrl+shift+n",
     "command": "cursorDownSelect",
     "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+l w",
-    "command": "editor.action.toggleRenderWhitespace"
   },
   {
     "key": "ctrl+/",
@@ -3640,7 +3623,7 @@
     "when": "!notebookEditorFocused && editorLangId == 'markdown'"
   },
   {
-    "key": "ctrl+l space",
+    "key": "ctrl+l w",
     "command": "editor.action.toggleWordWrap",
     "when": "editorFocus"
   },
