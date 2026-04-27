@@ -2861,8 +2861,9 @@
     "command": "workbench.action.maximizeEditorHideSidebar"
   },
   {
-    "key": "ctrl+shift+a",
-    "command": "editor.action.selectAll"
+    "key": "ctrl+j a",
+    "command": "editor.action.selectAll",
+    "when": "!listFocus"
   },
   {
     "key": "ctrl+l ctrl+d",
@@ -3152,7 +3153,7 @@
     "command": "workbench.action.switchWindow"
   },
   {
-    "key": "ctrl+;",
+    "key": "alt+;",
     "command": "jump-extension.jump-to-the-end-of-a-word",
     "when": "editorTextFocus"
   },
@@ -3162,7 +3163,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "alt+;",
+    "key": "ctrl+;",
     "command": "jump-extension.jump-to-the-start-of-a-word",
     "when": "editorTextFocus"
   },
@@ -3172,7 +3173,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+shift+;",
+    "key": "shift+alt+;",
     "command": "jump-extension.select-to-the-end-of-a-word",
     "when": "editorTextFocus"
   },
@@ -3182,7 +3183,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "shift+alt+;",
+    "key": "ctrl+shift+;",
     "command": "jump-extension.select-to-the-start-of-a-word",
     "when": "editorTextFocus"
   },
@@ -3326,56 +3327,6 @@
     "when": "config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
   },
   {
-    "key": "ctrl+shift+1",
-    "command": "numberedBookmarks.jumpToBookmark1",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+shift+2",
-    "command": "numberedBookmarks.jumpToBookmark2",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+shift+3",
-    "command": "numberedBookmarks.jumpToBookmark3",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+shift+4",
-    "command": "numberedBookmarks.jumpToBookmark4",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+shift+5",
-    "command": "numberedBookmarks.jumpToBookmark5",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+shift+6",
-    "command": "numberedBookmarks.jumpToBookmark6",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+shift+7",
-    "command": "numberedBookmarks.jumpToBookmark7",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+shift+8",
-    "command": "numberedBookmarks.jumpToBookmark8",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+shift+9",
-    "command": "numberedBookmarks.jumpToBookmark9",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+shift+0",
-    "command": "numberedBookmarks.jumpToBookmark0",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "alt+shift+1",
     "command": "numberedBookmarks.toggleBookmark1",
     "when": "editorTextFocus"
@@ -3423,56 +3374,6 @@
   {
     "key": "alt+shift+0",
     "command": "numberedBookmarks.toggleBookmark0",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+1",
-    "command": "numberedBookmarks.jumpToBookmark1",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+2",
-    "command": "numberedBookmarks.jumpToBookmark2",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+3",
-    "command": "numberedBookmarks.jumpToBookmark3",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+4",
-    "command": "numberedBookmarks.jumpToBookmark4",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+5",
-    "command": "numberedBookmarks.jumpToBookmark5",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+6",
-    "command": "numberedBookmarks.jumpToBookmark6",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+7",
-    "command": "numberedBookmarks.jumpToBookmark7",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+8",
-    "command": "numberedBookmarks.jumpToBookmark8",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+9",
-    "command": "numberedBookmarks.jumpToBookmark9",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+0",
-    "command": "numberedBookmarks.jumpToBookmark0",
     "when": "editorTextFocus"
   },
   {
@@ -3830,10 +3731,6 @@
     "when": "editorTextFocus && foldingEnabled"
   },
   {
-    "key": "ctrl+g a",
-    "command": "workbench.action.chat.openInSidebar"
-  },
-  {
     "key": "ctrl+j l",
     "command": "workbench.action.editor.changeLanguageMode",
     "when": "!notebookEditorFocused"
@@ -3859,11 +3756,6 @@
     "command": "workbench.action.navigateForwardInEditLocations"
   },
   {
-    "key": "ctrl+j ctrl+k",
-    "command": "workbench.panel.chat",
-    "when": "workbench.panel.chat.view.copilot.active"
-  },
-  {
     "key": "ctrl+a",
     "command": "-editor.action.selectAll"
   },
@@ -3875,5 +3767,34 @@
     "key": "shift+alt+backspace",
     "command": "deleteInsideWord",
     "when": "textInputFocus && !editorReadonly"
-  }
+  },
+  {
+    "key": "shift+alt+s",
+    "command": "markdown.todo.toggleDone",
+    "when": "editorTextFocus && editorLangId == 'markdown'"
+  },
+  {
+    "key": "alt+d",
+    "command": "-markdown.todo.toggleDone",
+    "when": "editorTextFocus && editorLangId == 'markdown'"
+  },
+  {
+    "key": "f2",
+    "command": "editor.renameFile",
+    "when": "editorFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+enter",
+    "command": "markdown.todo.toggleDone",
+    "when": "editorTextFocus && editorLangId == 'markdown'"
+  },
+  {
+    "key": "shift+cmd+enter",
+    "command": "markdown.todo.toggleDone",
+    "when": "editorTextFocus && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+j ctrl+'",
+    "command": "workbench.action.toggleAuxiliaryBar"
+  },
 ]

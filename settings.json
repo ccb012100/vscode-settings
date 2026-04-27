@@ -93,6 +93,7 @@
     "editor.codeActionsOnSave": {
       "source.fixAll": "explicit"
     },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.rulers": [
       150
     ],
@@ -359,7 +360,8 @@
   "js/ts.preferences.quoteStyle": "single",
   "js/ts.preferences.useAliasesForRenames": false,
   "js/ts.suggest.completeFunctionCalls": true,
-  "js/ts.updateImportsOnFileMove.enabled": "always",  "json.schemaDownload.trustedDomains": {
+  "js/ts.updateImportsOnFileMove.enabled": "always",
+  "json.schemaDownload.trustedDomains": {
     "https://developer.microsoft.com/json-schemas/": true,
     "https://esm.sh": true,
     "https://json-schema.org/": true,
@@ -453,7 +455,7 @@
     "1090",
     "1091"
   ],
-  "terminal.external.osxExec": "kitty",
+  "terminal.external.osxExec": "wezterm",
   "terminal.external.windowsExec": "C:\\Program Files\\Git\\bin\\bash.exe",
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorBlinking": true,
