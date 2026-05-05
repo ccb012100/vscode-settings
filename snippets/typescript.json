@@ -11,19 +11,43 @@
         "description": "define the Resolve<T> type"
     },
     "Test snippet": {
-        "prefix": [
-            "test",
-            "ts"
-        ],
-        "body": "test(\"$1\", () => {\n\t$0\n});",
+        "prefix": "test",
+        "body": "test('$1', () => {\n\t$0\n});",
         "include": [
             "**/*.test.ts",
-            "**/*.test.tsx",
-            "*.spec.ts"
+            "**/*.test.tsx"
         ],
         "exclude": [
             "**/temp/*.ts"
         ],
         "description": "Insert test block"
+    },
+    "new parameterized async Jest unit test": {
+        "prefix": "test-param",
+        "description": "add a new paramterized test",
+        "body": "[].forEach((${1:element}) => { it('$2', () => {\n\t$0\n})",
+        "include": [
+            "**/*.test.ts",
+            "**/*.test.tsx"
+        ],
+        "exclude": [
+            "**/temp/*.ts"
+        ],
+    },
+    "new describe() block": {
+        "prefix": [
+            "df",
+        ],
+        "description": "set up a new 'describe' test block",
+        "body": [
+            "describe('$1', () => {\n\t$0\n})"
+        ],
+        "include": [
+            "**/*.test.ts",
+            "**/*.test.tsx"
+        ],
+        "exclude": [
+            "**/temp/*.ts"
+        ]
     },
 }
