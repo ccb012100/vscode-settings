@@ -1880,7 +1880,7 @@
     "command": "workbench.action.showAllEditorsByMostRecentlyUsed"
   },
   {
-    "key": "ctrl+j ;",
+    "key": "ctrl+j '",
     "command": "workbench.action.togglePanel"
   },
   {
@@ -2099,7 +2099,7 @@
     "when": "editorTextFocus && !editorReadonly && !editorHasSelection"
   },
   {
-    "key": "ctrl+j shift+;",
+    "key": "ctrl+j shift+'",
     "command": "workbench.action.toggleMaximizedPanel"
   },
   {
@@ -3310,60 +3310,6 @@
     "when": "config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
   },
   {
-    "key": "alt+shift+1",
-    "command": "numberedBookmarks.toggleBookmark1",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+shift+2",
-    "command": "numberedBookmarks.toggleBookmark2",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+shift+3",
-    "command": "numberedBookmarks.toggleBookmark3",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+shift+4",
-    "command": "numberedBookmarks.toggleBookmark4",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+shift+5",
-    "command": "numberedBookmarks.toggleBookmark5",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+shift+6",
-    "command": "numberedBookmarks.toggleBookmark6",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+shift+7",
-    "command": "numberedBookmarks.toggleBookmark7",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+shift+8",
-    "command": "numberedBookmarks.toggleBookmark8",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+shift+9",
-    "command": "numberedBookmarks.toggleBookmark9",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+shift+0",
-    "command": "numberedBookmarks.toggleBookmark0",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+g b",
-    "command": "numberedBookmarks.listFromAllFiles"
-  },
-  {
     "key": "alt+x",
     "command": "workbench.action.holdLockedScrolling"
   },
@@ -3439,16 +3385,6 @@
   {
     "key": "right",
     "command": "editor.action.inlineSuggest.commit",
-    "when": "inlineSuggestionVisible && !editorReadonly"
-  },
-  {
-    "key": "ctrl+right",
-    "command": "editor.action.inlineSuggest.acceptNextWord",
-    "when": "inlineSuggestionVisible && !editorReadonly"
-  },
-  {
-    "key": "alt+right",
-    "command": "editor.action.inlineSuggest.acceptNextWord",
     "when": "inlineSuggestionVisible && !editorReadonly"
   },
   {
@@ -3704,16 +3640,6 @@
     "when": "canNavigateForward"
   },
   {
-    "key": "alt+[",
-    "command": "editor.foldAll",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  {
-    "key": "alt+]",
-    "command": "editor.unfoldAll",
-    "when": "editorTextFocus && foldingEnabled"
-  },
-  {
     "key": "ctrl+j l",
     "command": "workbench.action.editor.changeLanguageMode",
     "when": "!notebookEditorFocused"
@@ -3735,7 +3661,7 @@
     "command": "workbench.action.navigateBackInEditLocations"
   },
   {
-    "key": "ctrl+l ctrl+h",
+    "key": "ctrl+l ctrl+shift+l",
     "command": "workbench.action.navigateForwardInEditLocations"
   },
   {
@@ -3777,7 +3703,57 @@
     "when": "editorTextFocus && editorLangId == 'markdown'"
   },
   {
-    "key": "ctrl+j ctrl+'",
+    "key": "ctrl+j ;",
     "command": "workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "ctrl+j h",
+    "command": "workbench.action.openPreviousEditorFromHistory"
+  },
+  {
+    "key": "cmd+[",
+    "command": "-editor.action.outdentLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+]",
+    "command": "-editor.action.indentLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+[",
+    "command": "workbench.action.navigateBack",
+    "when": "canNavigateBack"
+  },
+  {
+    "key": "cmd+]",
+    "command": "workbench.action.navigateForward",
+    "when": "canNavigateForward"
+  },
+  {
+    "key": "ctrl+l b",
+    "command": "bookmarks.listFromAllFiles"
+  },
+  {
+    "key": "ctrl+l shift+b",
+    "command": "bookmarks.list"
+  },
+  {
+    "key": "ctrl+g b",
+    "command": "bookmarksExplorer.focus"
+  },
+  {
+    "key": "alt+y",
+    "command": "bookmarks.toggle",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+cmd+k",
+    "command": "-bookmarks.toggle",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+g m",
+    "command": "workbench.view.search.focus"
   },
 ]
