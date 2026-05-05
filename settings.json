@@ -523,15 +523,7 @@
   "window.title": "${dirty}${separator}${rootName}${separator}${activeEditorShort}",
   "window.titleBarStyle": "custom",
   "window.titleSeparator": " ‧ ",
-  "workbench.colorCustomizations": {
-    "[Mcedit]": {
-      "editor.lineHighlightBackground": "#000000"
-    },
-    "implicitParentheses.parens": "#fff",
-    "tab.activeBackground": "#1857a4",
-    "tab.activeModifiedBorder": "#FFC300",
-    "terminal.background": "#000000"
-  },
+  "workbench.colorCustomizations": {},
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.pinnedTabsOnSeparateRow": true,
   "workbench.editor.preventPinnedEditorClose": "never",
@@ -547,7 +539,5 @@
   "yaml.format.enable": true,
   "yaml.format.singleQuote": true,
   "zenMode.hideStatusBar": false,
-  /*
-   * LOCAL SETTINGS
-   */
+  // DO NOT COPY ANYTHING BELOW THIS LINE
 }
