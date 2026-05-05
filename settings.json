@@ -1,7 +1,7 @@
 {
   "[c]": {
     "editor.formatOnSave": true,
-    "files.insertFinalNewline": true,
+    "files.insertFinalNewline": true
   },
   "[csharp]": {
     "editor.defaultFormatter": "ms-dotnettools.csharp",
@@ -55,12 +55,12 @@
       "strings": "off"
     },
     "editor.tabSize": 2,
-    "files.trimTrailingWhitespace": false,
+    "files.trimTrailingWhitespace": false
   },
   "[plaintext]": {
     "editor.fontLigatures": false,
     "editor.guides.indentation": false,
-    "editor.insertSpaces": false,
+    "editor.insertSpaces": false
   },
   "[python]": {
     "editor.formatOnType": true
@@ -68,7 +68,7 @@
   "[rust]": {
     "editor.formatOnSave": false,
     "editor.formatOnType": true,
-    "editor.rulers": [],
+    "editor.rulers": []
   },
   "[scminput][git-commit]": {
     "editor.fontLigatures": false,
@@ -87,7 +87,7 @@
   },
   "[svelte]": {},
   "[swift]": {
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": true
   },
   "[typescript][typescriptreact]": {
     "editor.codeActionsOnSave": {
@@ -101,7 +101,7 @@
   },
   "[vue]": {},
   "[xml]": {
-    "editor.fontLigatures": false,
+    "editor.fontLigatures": false
   },
   "[yaml]": {
     "editor.fontLigatures": false,
@@ -125,6 +125,7 @@
   },
   "breadcrumbs.enabled": true,
   "chat.mcp.autostart": "newAndOutdated",
+  "chat.viewSessions.orientation": "stacked",
   "clangd.checkUpdates": true,
   "csharp.preview.improvedLaunchExperience": true,
   "csharp.suppressHiddenDiagnostics": false,
@@ -138,6 +139,8 @@
   "diffEditor.experimental.showMoves": true,
   "diffEditor.experimental.useTrueInlineView": true,
   "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "diffEditor.renderSideBySide": false,
   "dotnet.automaticallyCreateSolutionInWorkspace": false,
   "dotnet.automaticallySyncWithActiveItem": true,
   "editor.acceptSuggestionOnEnter": "smart",
@@ -173,7 +176,6 @@
     "strings": "on"
   },
   "editor.quickSuggestionsDelay": 200,
-  "editor.renderWhitespace": "boundary",
   "editor.rulers": [
     150
   ],
@@ -209,6 +211,7 @@
   "emmet.showSuggestionsAsSnippets": true,
   "errorLens.followCursor": "activeLine",
   "errorLens.removeLinebreaks": false,
+  "errorLens.messageEnabled": true,
   "eslint.debug": true,
   "eslint.lintTask.enable": true,
   "explorer.confirmDelete": false,
@@ -247,7 +250,7 @@
     "*.vssettings": "xml",
     "appsettings*.json": "jsonc",
     "attributes": "properties",
-    "LICENSE": "plaintext",
+    "LICENSE": "plaintext"
   },
   "files.exclude": {
     "**/.DS_Store": true,
@@ -268,11 +271,13 @@
   "files.watcherExclude": {
     "**/.vs-code-server/**": true
   },
+  "git.addAICoAuthor": "chatAndAgent",
   "git.allowForcePush": true,
   "git.allowNoVerifyCommit": true,
   "git.alwaysShowStagedChangesResourceGroup": true,
   "git.autofetch": true,
   "git.autoStash": true,
+  "git.blame.editorDecoration.enabled": true,
   "git.blame.statusBarItem.enabled": true,
   "git.closeDiffOnOperation": true,
   "git.confirmForcePush": true,
@@ -291,8 +296,12 @@
   "git.useForcePushIfIncludes": true,
   "git.useForcePushWithLease": true,
   "git.verboseCommit": true,
+  "github.copilot.chat.agentDebugLog.fileLogging.enabled": true,
   "github.copilot.enable": {
-    "*": false
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
   },
   "github.gitProtocol": "ssh",
   "githubIssues.createIssueTriggers": [],
@@ -404,6 +413,7 @@
   "path-intellisense.autoSlashAfterDirectory": true,
   "path-intellisense.showHiddenFiles": true,
   "path-intellisense.showOnAbsoluteSlash": false,
+  "peacock.affectSashHover": false,
   "prettier.singleQuote": true,
   "problems.showCurrentInStatus": true,
   "python.analysis.autoImportCompletions": true,
@@ -470,6 +480,7 @@
   },
   "terminal.integrated.fontFamily": "JetBrainsMonoNL Nerd Font Mono",
   "terminal.integrated.hideOnStartup": "whenEmpty",
+  "terminal.integrated.initialHint": false,
   "terminal.integrated.macOptionIsMeta": true,
   "terminal.integrated.middleClickBehavior": "paste",
   "terminal.integrated.profiles.windows": {
@@ -519,7 +530,7 @@
     "implicitParentheses.parens": "#fff",
     "tab.activeBackground": "#1857a4",
     "tab.activeModifiedBorder": "#FFC300",
-    "terminal.background": "#000000",
+    "terminal.background": "#000000"
   },
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.pinnedTabsOnSeparateRow": true,
