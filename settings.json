@@ -5,7 +5,6 @@
   },
   "[csharp]": {
     "editor.defaultFormatter": "ms-dotnettools.csharp",
-    "editor.formatOnSave": false
   },
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -157,7 +156,8 @@
   "editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'liga'",
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
-  "editor.formatOnSaveMode": "modificationsIfAvailable",
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "modifications",
   "editor.guides.bracketPairs": true,
   "editor.hover.above": false,
   "editor.inlayHints.enabled": "off",
@@ -298,7 +298,7 @@
   "git.verboseCommit": true,
   "github.copilot.chat.agentDebugLog.fileLogging.enabled": true,
   "github.copilot.enable": {
-    "*": true,
+    "*": false,
     "plaintext": false,
     "markdown": false,
     "scminput": false
@@ -470,8 +470,8 @@
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.defaultProfile.linux": "fish",
-  "terminal.integrated.defaultProfile.osx": "fish",
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.defaultProfile.osx": "bash",
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.env.windows": {
     "CHERE_INVOKING": "1",
@@ -518,6 +518,7 @@
   "window.commandCenter": true,
   "window.density.editorTabHeight": "compact",
   "window.menuStyle": "custom",
+  "window.nativeTabs": true,
   "window.newWindowDimensions": "offset",
   "window.newWindowProfile": "Default",
   "window.title": "${dirty}${separator}${rootName}${separator}${activeEditorShort}",
@@ -530,7 +531,7 @@
   "workbench.editor.scrollToSwitchTabs": true,
   "workbench.editor.splitInGroupLayout": "vertical",
   "workbench.editor.tabSizing": "shrink",
-  "window.nativeTabs": true,
+  "workbench.editor.useModal": "off",
   "workbench.secondarySideBar.defaultVisibility": "hidden",
   "workbench.settings.useSplitJSON": true,
   "workbench.sideBar.location": "right",
