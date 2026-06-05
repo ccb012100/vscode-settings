@@ -1396,7 +1396,7 @@
     "command": "workbench.action.gotoLine"
   },
   {
-    "key": "ctrl+g ctrl+h",
+    "key": "ctrl+g g",
     "command": "pr:github.focus"
   },
   {
@@ -3759,4 +3759,12 @@
     "key": "ctrl+g v",
     "command": "jsoncrack-vscode.start"
   },
+  {
+    "key": "ctrl+j t",
+    "command": "workbench.action.selectTheme"
+  },
+  {
+    "key": "cmd+k cmd+t",
+    "command": "-workbench.action.selectTheme"
+  }
 ]
