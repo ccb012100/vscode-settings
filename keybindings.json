@@ -2807,10 +2807,6 @@
     "command": "-workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "ctrl+j n",
-    "command": "explorer.newFile"
-  },
-  {
     "key": "ctrl+j shift+n",
     "command": "explorer.newFolder"
   },
@@ -3422,16 +3418,6 @@
     "when": "inSnippetMode"
   },
   {
-    "key": "alt+,",
-    "command": "emacs.C-l",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+l",
-    "command": "-emacs.C-l",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "ctrl+x 0",
     "command": "workbench.action.closeAllGroups"
   },
@@ -3541,7 +3527,7 @@
     "when": "!notebookEditorFocused && editorLangId == 'markdown'"
   },
   {
-    "key": "ctrl+l w",
+    "key": "ctrl+l space",
     "command": "editor.action.toggleWordWrap",
     "when": "editorFocus"
   },
@@ -3766,5 +3752,24 @@
   {
     "key": "cmd+k cmd+t",
     "command": "-workbench.action.selectTheme"
+  },
+  {
+    "key": "ctrl+g shift+c",
+    "command": "workbench.action.openChat",
+    "when": "chatIsEnabled"
+  },
+  {
+    "key": "ctrl+j n",
+    "command": "workbench.action.chat.newChat",
+    "when": "chatIsEnabled && inChat && chatLocation == 'panel'"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "-workbench.action.chat.newChat",
+    "when": "chatIsEnabled && inChat && chatLocation == 'panel'"
+  },
+  {
+    "key": "ctrl+j n",
+    "command": "explorer.newFile"
   }
 ]
