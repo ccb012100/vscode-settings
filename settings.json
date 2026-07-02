@@ -232,7 +232,7 @@
   },
   "explorer.incrementalNaming": "smart",
   "explorer.openEditors.sortOrder": "alphabetical",
-  "extensions.autoUpdate": "onlyEnabledExtensions",
+  "extensions.autoUpdate": "on",
   "extensions.experimental.affinity": {
     "wenfangdu.jump": 1
   },
