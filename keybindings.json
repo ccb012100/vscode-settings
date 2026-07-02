@@ -580,10 +580,6 @@
     "command": "-workbench.action.splitEditorOrthogonal"
   },
   {
-    "key": "ctrl+k z",
-    "command": "-workbench.action.toggleZenMode"
-  },
-  {
     "key": "ctrl+k f",
     "command": "-workbench.action.closeFolder",
     "when": "emptyWorkspaceSupport && workbenchState != 'empty'"
@@ -733,11 +729,6 @@
   {
     "key": "ctrl+x 0",
     "command": "workbench.action.closeEditorsAndGroup"
-  },
-  {
-    "key": "ctrl+x 1",
-    "command": "workbench.action.closeEditorsInOtherGroups",
-    "when": "multipleEditorGroups"
   },
   {
     "key": "ctrl+[",
@@ -1553,8 +1544,7 @@
   },
   {
     "key": "ctrl+x 1",
-    "command": "workbench.action.closeOtherEditors",
-    "when": "!multipleEditorGroups"
+    "command": "workbench.action.closeOtherEditors"
   },
   {
     "key": "ctrl+8",
@@ -2658,10 +2648,6 @@
     "key": "ctrl+shift+v",
     "command": "-markdown.extension.closePreview",
     "when": "markdownPreviewFocus"
-  },
-  {
-    "key": "ctrl+x ctrl+z",
-    "command": "workbench.action.toggleZenMode"
   },
   {
     "key": "alt+w",
@@ -3771,5 +3757,30 @@
   {
     "key": "ctrl+j n",
     "command": "explorer.newFile"
+  },
+  {
+    "key": "alt+, f",
+    "command": "testing.runCurrentFile",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+, e",
+    "command": "testing.reRunFailTests"
+  },
+  {
+    "key": "alt+, a",
+    "command": "testing.runAll"
+  },
+  {
+    "key": "ctrl+j z",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "workbench.action.closePanel",
+        "workbench.action.closeSidebar",
+        "workbench.action.closeAuxiliaryBar",
+        "workbench.action.focusActiveEditorGroup"
+      ]
+    }
   }
 ]
