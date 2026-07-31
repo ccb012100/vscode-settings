@@ -93,6 +93,15 @@
       "> $0"
     ]
   },
+  "codeblock": {
+    "prefix": "codeblock",
+    "description": "co",
+    "body": [
+      "```${1:lang}",
+      "$TM_SELECTED_TEXT",
+      "```"
+    ]
+  }
   // "Mermaid node": {
   //   "prefix": "mermaid-node",
   //   "description": "square Mermaid node",
