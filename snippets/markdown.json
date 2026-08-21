@@ -98,10 +98,10 @@
     "description": "co",
     "body": [
       "```${1:lang}",
-      "$TM_SELECTED_TEXT",
+      "$TM_SELECTED_TEXT${0}",
       "```"
     ]
-  }
+  },
   // "Mermaid node": {
   //   "prefix": "mermaid-node",
   //   "description": "square Mermaid node",

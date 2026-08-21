@@ -1866,7 +1866,7 @@
     "when": "textInputFocus && !codeActionMenuVisible && !inQuickOpen && listFocus"
   },
   {
-    "key": "ctrl+x ctrl+b",
+    "key": "ctrl+x b",
     "command": "workbench.action.showAllEditorsByMostRecentlyUsed"
   },
   {
@@ -2745,7 +2745,7 @@
     "when": "!editorFocus"
   },
   {
-    "key": "ctrl+x b",
+    "key": "ctrl+x ctrl+b",
     "command": "workbench.action.showAllEditors"
   },
   {
@@ -2767,10 +2767,6 @@
     "key": "ctrl+x o",
     "command": "workbench.action.focusNextGroup",
     "when": "activeWebviewPanelId == 'markdown.preview'"
-  },
-  {
-    "key": "ctrl+j j",
-    "command": "workbench.action.showAllEditorsByMostRecentlyUsed"
   },
   {
     "key": "ctrl+shift+s",
@@ -3782,5 +3778,24 @@
         "workbench.action.focusActiveEditorGroup"
       ]
     }
+  },
+  {
+    "key": "ctrl+j j",
+    "command": "workbench.action.showAllEditorsByMostRecentlyUsed"
+  },
+  {
+    "key": "cmd+c",
+    "command": "editor.action.clipboardCopyAction",
+    // default Cmd+c binding has a "where" context and doesn't apply to non-editor contexts
+  },
+  {
+    "key": "cmd+v",
+    "command": "editor.action.clipboardPasteAction",
+    // default Cmd+v binding has a "where" context and doesn't apply to non-editor contexts
+  },
+  {
+    "key": "enter",
+    "command": "jumpToNextSnippetPlaceholder",
+    "when": "hasNextTabstop && inSnippetMode && textInputFocus"
   }
 ]
