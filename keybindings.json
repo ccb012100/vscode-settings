@@ -3797,5 +3797,20 @@
     "key": "enter",
     "command": "jumpToNextSnippetPlaceholder",
     "when": "hasNextTabstop && inSnippetMode && textInputFocus"
+  },
+  {
+    "key": "alt+cmd+m",
+    "command": "markdownTablePrettify.prettifyTableAtCursor",
+    "when": "editorTextFocus && !editorReadonly && !inCompositeEditor"
+  },
+  {
+    "key": "alt+cmd+m",
+    "command": "-markdownTablePrettify.prettifyTables",
+    "when": "editorTextFocus && !editorReadonly && !inCompositeEditor"
+  },
+  {
+    "key": "shift+alt+cmd+m",
+    "command": "markdownTablePrettify.prettifyTables",
+    "when": "editorTextFocus && !editorReadonly && !inCompositeEditor"
   }
 ]
