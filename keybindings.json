@@ -2104,10 +2104,6 @@
     "when": "workbench.panel.output.active"
   },
   {
-    "key": "ctrl+u",
-    "command": "deleteAllLeft"
-  },
-  {
     "key": "ctrl+l p",
     "command": "workbench.action.unpinEditor",
     "when": "activeEditorIsPinned"
@@ -3781,6 +3777,11 @@
   },
   {
     "key": "ctrl+shift+backspace",
+    "command": "editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+k",
     "command": "editor.action.deleteLines",
     "when": "textInputFocus && !editorReadonly"
   }
