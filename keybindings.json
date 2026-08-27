@@ -168,16 +168,6 @@
     "when": "workbench.panel.output.active"
   },
   {
-    "key": "ctrl+backspace",
-    "command": "-deleteLeft",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+h",
-    "command": "-deleteLeft",
-    "when": "textInputFocus"
-  },
-  {
     "key": "ctrl+shift+o",
     "command": "editor.action.insertLineBefore",
     "when": "editorTextFocus && !editorReadonly"
@@ -1273,12 +1263,12 @@
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+i",
+    "key": "ctrl+shift+i",
     "command": "cursorWordRight",
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+u",
+    "key": "ctrl+shift+u",
     "command": "cursorWordLeft",
     "when": "textInputFocus"
   },
@@ -1949,15 +1939,6 @@
   },
   {
     "key": "ctrl+shift+k",
-    "command": "deleteAllRight"
-  },
-  {
-    "key": "ctrl+k",
-    "command": "editor.action.deleteLines",
-    "when": "textInputFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+shift+k",
     "command": "-editor.action.deleteLines",
     "when": "textInputFocus && !editorReadonly"
   },
@@ -2123,7 +2104,7 @@
     "when": "workbench.panel.output.active"
   },
   {
-    "key": "ctrl+shift+u",
+    "key": "ctrl+u",
     "command": "deleteAllLeft"
   },
   {
@@ -2425,16 +2406,6 @@
     "key": "ctrl+y",
     "command": "filesExplorer.paste",
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus"
-  },
-  {
-    "key": "shift+backspace",
-    "command": "-deleteLeft",
-    "when": "textInputFocus"
-  },
-  {
-    "key": "ctrl+shift+backspace",
-    "command": "deleteWordPartLeft",
-    "when": "textInputFocus"
   },
   {
     "key": "ctrl+shift+;",
@@ -3035,11 +3006,6 @@
     "when": "hasSearchResult && searchViewletFocus"
   },
   {
-    "key": "ctrl+shift+h",
-    "command": "deleteLeft",
-    "when": "textInputFocus"
-  },
-  {
     "key": "ctrl+enter",
     "command": "editor.action.openLink",
     "when": "editorTextFocus"
@@ -3047,11 +3013,6 @@
   {
     "key": "ctrl+space",
     "command": "workbench.action.showCommands"
-  },
-  {
-    "key": "ctrl+h ctrl+h",
-    "command": "deleteLeft",
-    "when": "textInputFocus"
   },
   {
     "key": "ctrl+shift+down",
@@ -3812,5 +3773,15 @@
     "key": "shift+alt+cmd+m",
     "command": "markdownTablePrettify.prettifyTables",
     "when": "editorTextFocus && !editorReadonly && !inCompositeEditor"
+  },
+  {
+    "key": "shift+cmd+k",
+    "command": "-editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+backspace",
+    "command": "editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
   }
 ]
