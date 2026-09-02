@@ -3787,5 +3787,19 @@
     "key": "cmd+k cmd+k",
     "command": "-editor.action.selectFromAnchorToCursor",
     "when": "editorTextFocus && selectionAnchorSet"
+  },
+  {
+    "key": "ctrl+j c",
+    "command": "workbench.action.chat.openInEditor",
+    "when": "chatIsEnabled && inChat && !inChatEditor"
+  },
+  {
+    "key": "ctrl+j c",
+    "command": "workbench.action.chat.openInSidebar",
+    "when": "chatIsEnabled && inChat && inChatEditor"
+  },
+  {
+    "key": "ctrl+h ctrl+shift+s",
+    "command": "workbench.action.openWorkspaceSettingsFile"
   }
 ]
