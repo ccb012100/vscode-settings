@@ -542,5 +542,5 @@
   "yaml.format.enable": true,
   "yaml.format.singleQuote": true,
   "zenMode.hideStatusBar": false,
-  // DO NOT COPY ANYTHING BELOW THIS LINE
+  /* DO NOT COPY ANYTHING BELOW THIS LINE */
 }
