@@ -3653,14 +3653,14 @@
     "command": "-workbench.action.selectTheme"
   },
   {
-    "key": "ctrl+g shift+c",
+    "key": "ctrl+j n",
     "command": "workbench.action.openChat",
-    "when": "chatIsEnabled"
+    "when": "chatIsEnabled && inChat && inChatEditor"
   },
   {
     "key": "ctrl+j n",
     "command": "workbench.action.chat.newChat",
-    "when": "chatIsEnabled && inChat && chatLocation == 'panel'"
+    "when": "chatIsEnabled && inChat && !inChatEditor"
   },
   {
     "key": "ctrl+l",
@@ -3801,5 +3801,9 @@
   {
     "key": "ctrl+h ctrl+shift+s",
     "command": "workbench.action.openWorkspaceSettingsFile"
+  },
+  {
+    "key": "ctrl+x m",
+    "command": "workbench.action.toggleCenteredLayout"
   }
 ]
