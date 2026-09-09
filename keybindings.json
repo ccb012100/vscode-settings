@@ -3653,9 +3653,9 @@
     "command": "-workbench.action.selectTheme"
   },
   {
-    "key": "ctrl+j n",
+    "key": "cmd+n",
     "command": "workbench.action.openChat",
-    "when": "chatIsEnabled && inChat && inChatEditor"
+    "when": "chatIsEnabled && inChat && inChatEditor && chatLocation == 'panel'"
   },
   {
     "key": "ctrl+j n",
@@ -3805,5 +3805,20 @@
   {
     "key": "ctrl+x m",
     "command": "workbench.action.toggleCenteredLayout"
+  },
+  {
+    "key": "shift+alt+b",
+    "command": "breadcrumbs.focusAndSelect",
+    "when": "breadcrumbsPossible && breadcrumbsVisible"
+  },
+  {
+    "key": "cmd+n",
+    "command": "-workbench.action.openChat",
+    "when": "chatIsEnabled && inChat && inChatEditor"
+  },
+  {
+    "key": "ctrl+u",
+    "command": "deleteAllLeft",
+    "when": "textInputFocus && !editorReadonly"
   }
 ]
