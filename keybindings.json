@@ -2678,7 +2678,7 @@
   {
     "key": "ctrl+j z",
     "command": "workbench.action.toggleMaximizeEditorGroup",
-    "when": "maximizedEditorGroup || multipleEditorGroups"
+    "when": "editorPartMaximizedEditorGroup || editorPartMultipleEditorGroups"
   },
   {
     "key": "ctrl+k ctrl+m",
@@ -2700,20 +2700,8 @@
     "command": "-workbench.action.files.saveAs"
   },
   {
-    "key": "ctrl+j ctrl+;",
-    "command": "workbench.action.toggleSidebarVisibility"
-  },
-  {
     "key": "ctrl+x ctrl+c",
     "command": "workbench.action.closeWindow"
-  },
-  {
-    "key": "ctrl+alt+b",
-    "command": "-workbench.action.toggleAuxiliaryBar"
-  },
-  {
-    "key": "ctrl+b",
-    "command": "-workbench.action.toggleSidebarVisibility"
   },
   {
     "key": "ctrl+j shift+n",
@@ -2733,10 +2721,6 @@
     "key": "ctrl+shift+g",
     "command": "-workbench.action.terminal.openDetectedLink",
     "when": "accessibleViewIsShown && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal'"
-  },
-  {
-    "key": "ctrl+j shift+z",
-    "command": "workbench.action.maximizeEditorHideSidebar"
   },
   {
     "key": "ctrl+j a",
@@ -3570,10 +3554,6 @@
     "when": "editorTextFocus && editorLangId == 'markdown'"
   },
   {
-    "key": "ctrl+j ;",
-    "command": "workbench.action.toggleAuxiliaryBar"
-  },
-  {
     "key": "ctrl+j h",
     "command": "workbench.action.openPreviousEditorFromHistory"
   },
@@ -3820,5 +3800,29 @@
     "key": "ctrl+u",
     "command": "deleteAllLeft",
     "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+j ctrl+'",
+    "command": "workbench.action.maximizeEditorHideSidebar"
+  },
+  {
+    "key": "ctrl+j shift+z",
+    "command": "workbench.action.toggleMaximizedAuxiliaryBar"
+  },
+  {
+    "key": "ctrl+j ;",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "cmd+b",
+    "command": "-workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+j shift+;",
+    "command": "workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "alt+cmd+b",
+    "command": "-workbench.action.toggleAuxiliaryBar"
   }
 ]
