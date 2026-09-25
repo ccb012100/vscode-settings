@@ -3319,22 +3319,6 @@
     "command": "editor.action.selectToBracket"
   },
   {
-    "key": "ctrl+x ctrl+k",
-    "command": "workbench.action.moveEditorToAboveGroup"
-  },
-  {
-    "key": "ctrl+x ctrl+j",
-    "command": "workbench.action.moveEditorToBelowGroup"
-  },
-  {
-    "key": "ctrl+x ctrl+l",
-    "command": "workbench.action.moveEditorToRightGroup"
-  },
-  {
-    "key": "ctrl+x ctrl+h",
-    "command": "workbench.action.moveEditorToLeftGroup"
-  },
-  {
     "key": "ctrl+x ctrl+shift+h",
     "command": "workbench.action.moveActiveEditorGroupLeft"
   },
@@ -3779,7 +3763,7 @@
     "when": "chatIsEnabled && inChat && inChatEditor"
   },
   {
-    "key": "ctrl+h ctrl+shift+s",
+    "key": "ctrl+h shift+w",
     "command": "workbench.action.openWorkspaceSettingsFile"
   },
   {
@@ -3824,5 +3808,14 @@
   {
     "key": "alt+cmd+b",
     "command": "-workbench.action.toggleAuxiliaryBar"
+  },
+  {
+    "key": "alt+enter",
+    "command": "git.push",
+    "when": "view.workbench.scm.visible && !editorFocus && focusedView == 'workbench.scm'"
+  },
+  {
+    "key": "ctrl+h w",
+    "command": "workbench.action.openWorkspaceSettings"
   }
 ]
