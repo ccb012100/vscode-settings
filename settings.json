@@ -203,6 +203,7 @@
     }
   },
   "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.wordWrapIndicator": true,
   "editor.wrappingIndent": "indent",
   "emmet.showAbbreviationSuggestions": true,
   "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
