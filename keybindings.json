@@ -1569,7 +1569,7 @@
     "when": "textInputFocus"
   },
   {
-    "key": "ctrl+g e",
+    "key": "ctrl+j ctrl+j",
     "command": "workbench.action.focusActiveEditorGroup",
     "when": "!editorFocus"
   },
@@ -2049,9 +2049,9 @@
     "when": "debuggersAvailable && debugState == 'inactive' && editorLangId != 'sql' && editorLangId != 'sqlite'"
   },
   {
-    "key": "ctrl+x o",
+    "key": "ctrl+j ctrl+j",
     "command": "workbench.action.focusNextGroup",
-    "when": "editorFocus"
+    "when": "inChat"
   },
   {
     "key": "ctrl+x ctrl+q",
@@ -3649,18 +3649,6 @@
     "command": "testing.runAll"
   },
   {
-    "key": "ctrl+j z",
-    "command": "runCommands",
-    "args": {
-      "commands": [
-        "workbench.action.closePanel",
-        "workbench.action.closeSidebar",
-        "workbench.action.closeAuxiliaryBar",
-        "workbench.action.focusActiveEditorGroup"
-      ]
-    }
-  },
-  {
     "key": "ctrl+j j",
     "command": "workbench.action.showAllEditorsByMostRecentlyUsed"
   },
@@ -3817,5 +3805,17 @@
   {
     "key": "ctrl+h w",
     "command": "workbench.action.openWorkspaceSettings"
+  },
+  {
+    "key": "ctrl+j z",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "workbench.action.closePanel",
+        "workbench.action.closeSidebar",
+        "workbench.action.closeAuxiliaryBar",
+        "workbench.action.focusActiveEditorGroup"
+      ]
+    }
   }
 ]
