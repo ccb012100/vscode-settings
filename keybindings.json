@@ -1918,11 +1918,6 @@
     "when": "terminalEditorFocus && terminalFocus && terminalHasBeenCreated && resourceScheme == 'vscode-terminal' || terminalEditorFocus && terminalFocus && terminalProcessSupported && resourceScheme == 'vscode-terminal'"
   },
   {
-    "key": "ctrl+shift+k",
-    "command": "-editor.action.deleteLines",
-    "when": "textInputFocus && !editorReadonly"
-  },
-  {
     "key": "alt+enter",
     "command": "keybindings.editor.defineWhenExpression",
     "when": "inKeybindings && keybindingFocus"
@@ -3683,17 +3678,7 @@
     "when": "editorTextFocus && !editorReadonly && !inCompositeEditor"
   },
   {
-    "key": "shift+cmd+k",
-    "command": "-editor.action.deleteLines",
-    "when": "textInputFocus && !editorReadonly"
-  },
-  {
     "key": "ctrl+shift+backspace",
-    "command": "editor.action.deleteLines",
-    "when": "textInputFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+shift+k",
     "command": "editor.action.deleteLines",
     "when": "textInputFocus && !editorReadonly"
   },
@@ -3817,5 +3802,10 @@
         "workbench.action.focusActiveEditorGroup"
       ]
     }
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
   }
 ]
