@@ -3050,11 +3050,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "alt+l",
-    "command": "editor.action.addSelectionToNextFindMatch",
-    "when": "editorFocus"
-  },
-  {
     "key": "ctrl+shift+l",
     "command": "editor.action.inlineSuggest.trigger",
     "when": "editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
@@ -3807,5 +3802,15 @@
     "key": "ctrl+shift+k",
     "command": "editor.action.deleteLines",
     "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+l",
+    "command": "bookmarks.jumpToNext",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+h",
+    "command": "bookmarks.jumpToPrevious",
+    "when": "editorTextFocus"
   }
 ]
