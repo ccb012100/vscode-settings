@@ -397,6 +397,7 @@
   "markdown.preview.scrollEditorWithPreview": false,
   "markdown.preview.typographer": true,
   "markdown.updateLinksOnFileMove.enabled": "always",
+  "markdownlint.configFile": "${userHome}/.markdownlint.json",
   "merge-conflict.autoNavigateNextConflict.enabled": true,
   "merge-conflict.diffViewPosition": "Below",
   "multiDiffEditor.experimental.fileList": true,
@@ -415,15 +416,7 @@
   "python.analysis.inlayHints.variableTypes": true,
   "python.analysis.typeCheckingMode": "basic",
   "python.languageServer": "Default",
-  "rainbowTags.colors": [
-    "#F92672",
-    "#AE81FF",
-    "#A6E22E",
-    "#66D9EF"
-  ],
   "redhat.telemetry.enabled": true,
-  "remote.WSL.debug": true,
-  "rewrap.autoWrap.enabled": false,
   "rust-analyzer.check.command": "clippy",
   "rust-analyzer.imports.granularity.enforce": true,
   "rust-analyzer.initializeStopped": true,
