@@ -116,7 +116,13 @@
   },
   "accessibility.dimUnfocused.enabled": true,
   "accessibility.dimUnfocused.opacity": 0.9,
-  "accessibility.signals.lineHasBreakpoint": {
+  "accessibility.signals.chatUserActionRequired": {
+    "sound": "on"
+  },
+  "accessibility.signals.chatResponseReceived": {
+    "sound": "on"
+  },
+  "accessibility.signals.onDebugBreak": {
     "sound": "on"
   },
   "accessibility.signals.terminalBell": {
@@ -125,7 +131,6 @@
   "breadcrumbs.enabled": true,
   "chat.mcp.autostart": "newAndOutdated",
   "clangd.checkUpdates": true,
-  "csharp.preview.improvedLaunchExperience": true,
   "csharp.suppressHiddenDiagnostics": false,
   "debug.console.acceptSuggestionOnEnter": "on",
   "debug.console.fontFamily": "IBM Plex Mono",
@@ -392,20 +397,9 @@
   "markdown.preview.scrollEditorWithPreview": false,
   "markdown.preview.typographer": true,
   "markdown.updateLinksOnFileMove.enabled": "always",
-  "markdownlint.config": {
-    "MD013": false,
-    "MD024": {
-      "siblings_only": true
-    },
-    "MD026": false,
-    "MD029": false,
-    "MD030": false,
-    "MD033": false,
-    "MD036": false,
-    "MD046": false
-  },
   "merge-conflict.autoNavigateNextConflict.enabled": true,
   "merge-conflict.diffViewPosition": "Below",
+  "multiDiffEditor.experimental.fileList": true,
   "openInGitHub.remote.branch": "main",
   "openInGitHub.useLocalDomain": false,
   "openInGitHub.useLocalLine": true,
