@@ -143,9 +143,7 @@
   "diffEditor.experimental.useTrueInlineView": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.hideUnchangedRegions.enabled": true,
-  "diffEditor.renderSideBySide": true,
   "diffEditor.useInlineViewWhenSpaceIsLimited": true,
-  "dotnet.automaticallyCreateSolutionInWorkspace": false,
   "dotnet.automaticallySyncWithActiveItem": true,
   "editor.acceptSuggestionOnEnter": "smart",
   "editor.accessibilitySupport": "off",
@@ -397,7 +395,19 @@
   "markdown.preview.scrollEditorWithPreview": false,
   "markdown.preview.typographer": true,
   "markdown.updateLinksOnFileMove.enabled": "always",
-  "markdownlint.configFile": "${userHome}/.markdownlint.json",
+  "markdownlint.config": {
+    "MD013": false,
+    "MD024": {
+      "siblings_only": true
+    },
+    "MD026": false,
+    "MD029": false,
+    "MD030": false,
+    "MD033": false,
+    "MD036": false,
+    "MD046": false
+  },
+  // "markdownlint.configFile": "${userHome}/.markdownlint.json",
   "merge-conflict.autoNavigateNextConflict.enabled": true,
   "merge-conflict.diffViewPosition": "Below",
   "multiDiffEditor.experimental.fileList": true,
